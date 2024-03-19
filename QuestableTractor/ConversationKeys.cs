@@ -117,7 +117,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 // Consider making this a conversation key
                 topics["fall_Thu8"] = topics["winter_Thu8"]
-                    = "I have a bit of a confession to make...When I told you how to repair the tractor engine, you didn't *really* need to run around it six times...  I just...  Well...#$b#Sometimes I just can't help myself.";
+                    = "I have a bit of a confession to make...When I told you how to repair the tractor engine, you didn't *really* need to run around the chest six times...  I just...  Well...#$b#Sometimes I just can't help myself.";
             }
         }
     }

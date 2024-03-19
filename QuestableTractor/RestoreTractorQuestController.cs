@@ -20,7 +20,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
             new EngineRequirement("62", "an aquamarine", 1),
         };
 
-
         protected override string ModDataKey => ModDataKeys.MainQuestStatus;
 
         private Stable? GetGarage() => Game1.getFarm().buildings.OfType<Stable>().FirstOrDefault(s => s.buildingType.Value == TractorModConfig.GarageBuildingId);
@@ -68,6 +67,11 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         protected override void OnStateChanged()
         {
+            if (!this.IsStarted)
+            {
+                return;
+            }
+
             // Doing these invalidations here rather than when the state is set is kindof roundabout,
             // but at least in the case of AdvanceStateForDayPassing, that doesn't work because when
             // you invalidate the cache state of buildings, it immediately reloads them, and thus the
@@ -115,8 +119,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 }
             }
         }
-
-
 
         private static bool CheckForest()
         {
