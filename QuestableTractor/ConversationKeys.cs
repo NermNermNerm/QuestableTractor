@@ -97,7 +97,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (nameWithoutLocale.IsEquivalentTo("Characters/Dialogue/Willy"))
             {
-                topics[ConversationKeys.TractorNotFound] = "Have you been out on the west side of your property yet?  Your Granddad had a tractor that he kept under a lean-to that always teetered on the brink of collapse.#$b#Know how he got it?  Me and Pappy boated it in from Knopperville.$l#$b#I didn't understand why he bought it -- the engine was had thrown a rod bent the crankshaft and cracked the case.$s#$b#But somehow he got it to live again!  Funny that.  He wasn't much of a mechanic...";
+                topics[ConversationKeys.TractorNotFound] = "Have you been out on the west side of your property yet?  Your Granddad had a tractor that he kept under a lean-to that always teetered on the brink of collapse.#$b#Know how he got it?  Me and Pappy boated it in from Knopperville.$l#$b#I didn't understand why he bought it -- the engine had thrown a rod, had bent crankshaft and a cracked case.$s#$b#But somehow he got it to live again!  Funny that.  He wasn't much of a mechanic...";
                 topics[ConversationKeys.WatererNotFound] = "Ah, but yaknow, the biggest catch on your farm isn't the fish!  Nay laddy, it's the watering wagon for the tractor!$3#$b#That ol' thing sunk into the depths of the pond ne'er to be seen again!$1#$b#You'll probably lose a lure or two to it if you fish on your pond.$3";
                 topics[ConversationKeys.SeederNotFound] = "You know your Grandad and George were really good friends; it hit George pretty hard when your Granddad passed.$2#$b#You might do well to be nice to George, he might know a few secrets about your farm.";
             }

@@ -60,14 +60,14 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 2);
             addQuestItem(
                 ScythePart1,
-                "shiny sprocket", // TODO: 18n
-                "One of the missing parts for the scythe attachment", // TODO: 18n
-                7);
-            addQuestItem(
-                ScythePart2,
                 "crop shakerlooser", // TODO: 18n
                 "One of the missing parts for the scythe attachment", // TODO: 18n
                 6);
+            addQuestItem(
+                ScythePart2,
+                "shiny sprocket", // TODO: 18n
+                "One of the missing parts for the scythe attachment", // TODO: 18n
+                7);
             addQuestItem(
                 BustedWaterer,
                 "broken watering attachment for the tractor", // TODO: 18n

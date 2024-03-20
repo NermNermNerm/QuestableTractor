@@ -11,7 +11,7 @@
     "Dependencies": [
         {
             "UniqueID": "Pathoschild.TractorMod",
-            "MinimumVersion": "4.16.5",
+            "MinimumVersion": "4.17.0",
             "IsRequired": true
         }
     ]
