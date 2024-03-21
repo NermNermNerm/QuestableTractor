@@ -141,6 +141,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 }
                 else
                 {
+                    chanceOfHookingWaterer *= 1.15F; // Reward determination.  1.15^10 (10 casts) is 4x the original chance.
                     return null;
                 }
             }
