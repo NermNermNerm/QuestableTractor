@@ -91,7 +91,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 => b.intersects(new Rectangle(new Point((int)c.Position.X, (int)c.Position.Y - 128), new Point(64, 128)));
 
             var itemInHand = Game1.player?.CurrentItem;
-            if (Game1.player is not null && Game1.player.currentLocation is not null && itemInHand is not null && Game1.player.currentLocation == Game1.getFarm()
+            if (Game1.player is not null && Game1.player.currentLocation is Farm && itemInHand is not null
                 && Game1.player.currentLocation.buildings
                     .OfType<Stable>()
                     .Where(s => s.buildingType.Value == TractorModConfig.GarageBuildingId)
