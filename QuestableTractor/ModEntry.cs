@@ -34,6 +34,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
         public Harmony Harmony = null!;
         internal readonly TractorModConfig TractorModConfig;
 
+        public static ModEntry Instance;
+
         public ModEntry()
         {
             this.TractorModConfig = new TractorModConfig(this);
@@ -41,6 +43,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public override void Entry(IModHelper helper)
         {
+            Instance = this;
             this.Harmony = new Harmony(this.ModManifest.UniqueID);
 
             this.loaderQuestController = new LoaderQuestController(this);
