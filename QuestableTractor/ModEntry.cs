@@ -1,6 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Reflection;
+using System.Xml;
+using System.Xml.Serialization;
 using HarmonyLib;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -12,6 +15,7 @@ using StardewValley.GameData.Buildings;
 using StardewValley.GameData.GarbageCans;
 using StardewValley.GameData.Objects;
 using StardewValley.GameData.Tools;
+using StardewValley.Quests;
 
 namespace NermNermNerm.Stardew.QuestableTractor
 {
@@ -34,12 +38,16 @@ namespace NermNermNerm.Stardew.QuestableTractor
         public Harmony Harmony = null!;
         internal readonly TractorModConfig TractorModConfig;
 
-        public static ModEntry Instance;
+        public static ModEntry Instance = null!; // Set in ModEntry
 
         public ModEntry()
         {
             this.TractorModConfig = new TractorModConfig(this);
+
+            // Not a good idea - there's no way to constructively combine these things with other mods.
+            // SaveGame.farmerSerializer = new XmlSerializer(typeof(Farmer), new Type[] { typeof(Item), typeof(RestoreTractorQuest) });
         }
+
 
         public override void Entry(IModHelper helper)
         {

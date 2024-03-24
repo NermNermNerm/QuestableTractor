@@ -89,7 +89,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
         }
 
-        protected override BaseQuest CreateQuest() => new RestoreTractorQuest(this);
+        protected override BaseQuest CreateQuest() => new RestoreTractorQuest();
 
         protected override void OnDayStartedQuestNotStarted()
         {

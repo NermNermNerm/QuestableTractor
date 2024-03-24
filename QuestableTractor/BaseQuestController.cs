@@ -249,7 +249,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 string? rawState = this.RawQuestState;
                 if (rawState == null)
                 {
-                    throw new InvalidOperationException("State should not be queried when the quest isn't started");
+                    return default(TQuestState);// TODO: Figure out
+                    // throw new InvalidOperationException("State should not be queried when the quest isn't started");
                 }
 
                 if (!this.TryParse(rawState, out TQuestState result))

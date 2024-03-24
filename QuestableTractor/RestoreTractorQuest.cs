@@ -10,8 +10,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
         private static string combineEngineRequirementsText =
             $"{string.Join(", ", RestoreTractorQuestController.engineRequirements.Take(RestoreTractorQuestController.engineRequirements.Count - 1).Select(er => er.displayName))}, and {RestoreTractorQuestController.engineRequirements.Last().displayName}";
 
-        public RestoreTractorQuest(RestoreTractorQuestController controller)
-            : base(controller)
+        public RestoreTractorQuest()
+            : base(ModEntry.Instance.RestoreTractorQuestController)
         {
             this.questTitle = "Investigate the tractor";
             this.questDescription = "There's a rusty old tractor in the fields; it sure would be nice if it could be restored.  Perhaps the townspeople can help.";

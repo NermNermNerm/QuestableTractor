@@ -3,23 +3,34 @@ using System.Collections.Generic;
 using System.Linq;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
+using StardewModdingAPI;
 using StardewValley;
 using StardewValley.Buildings;
 using StardewValley.TerrainFeatures;
 
 namespace NermNermNerm.Stardew.QuestableTractor
 {
+    /// <summary>
+    ///   draws and handles collisions for the derelict tractor
+    /// </summary>
+    /// <remarks>
+    ///  <para>
+    ///   This is probably not a great way to get where we're trying to go.
+    ///   It has two main hacks in it.  The first is that it gets created and
+    ///   destroyed every day to avoid it being saved into the save file
+    ///   and the second is that we actually have to have two of these in
+    ///   order to have a 2x1-tile collision boundary.  (So the rightmost
+    ///   one's draw function does nothing).
+    ///  </para>
+    /// </remarks>
     public class DerelictTractorTerrainFeature
         : TerrainFeature
     {
-        private readonly Texture2D texture;
-        private readonly Vector2 tile;
+        private Texture2D? texture;
 
-        public DerelictTractorTerrainFeature(Texture2D texture, Vector2 tile)
+        public DerelictTractorTerrainFeature()
             : base(needsTick: false)
         {
-            this.texture = texture;
-            this.tile = tile;
         }
 
         public static void PlaceInField(ModEntry mod)
@@ -115,14 +126,11 @@ namespace NermNermNerm.Stardew.QuestableTractor
         private static void Place(ModEntry mod, Vector2 position)
         {
             mod.LogInfoOnce($"Derelict tractor drawn at {position}");
-            var derelictTractorTexture = mod.Helper.ModContent.Load<Texture2D>("assets/rustyTractor.png");
-
-            var tf = new DerelictTractorTerrainFeature(derelictTractorTexture, position);
 
             Game1.getFarm().removeObject(position, showDestroyedObject: false);
             Game1.getFarm().removeObject(position + new Vector2(1, 0), showDestroyedObject: false);
-            Game1.getFarm().terrainFeatures[position] = tf;
-            Game1.getFarm().terrainFeatures[position + new Vector2(1, 0)] = tf;
+            Game1.getFarm().terrainFeatures[position] = new DerelictTractorTerrainFeature();
+            Game1.getFarm().terrainFeatures[position + new Vector2(1, 0)] = new DerelictTractorTerrainFeature();
         }
 
         private static bool TryParse(string s, out Vector2 position)
@@ -143,11 +151,14 @@ namespace NermNermNerm.Stardew.QuestableTractor
         }
 
 
-        public override Rectangle getBoundingBox()
-        {
-            var r = new Rectangle((int)this.tile.X * 64, (int)this.tile.Y * 64, 64*2, 64);
-            return r;
-        }
+        // This might seem like a thing, but it's not -- the game code will only call this
+        //  if the thing it's checking against impinges on the tile we're on, so you can't
+        //  really make a bounding box bigger than 64x64.
+        //public override Rectangle getBoundingBox()
+        //{
+        //    var r = new Rectangle((int)this.Tile.X * 64, (int)this.Tile.Y * 64, 64*2, 64);
+        //    return r;
+        //}
 
         public override bool isPassable(Character c)
         {
@@ -167,18 +178,29 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public override void draw(SpriteBatch spriteBatch)
         {
+            if (this.Location.terrainFeatures.TryGetValue(this.Tile-new Vector2(1,0), out var tfAtLeft) && tfAtLeft is DerelictTractorTerrainFeature)
+            {
+                // See hack alert in the class description
+                return;
+            }
+
+            if (this.texture is null)
+            {
+                this.texture = ModEntry.Instance.Helper.ModContent.Load<Texture2D>("assets/rustyTractor.png");
+            }
+
             Rectangle tileSheetRect = Game1.getSourceRectForStandardTileSheet(this.texture, 0, 16, 16);
             tileSheetRect.Width = 32;
             tileSheetRect.Height = 32;
             spriteBatch.Draw(this.texture,
-                              Game1.GlobalToLocal(Game1.viewport, (this.tile - new Vector2(0,1)) * 64f),
+                              Game1.GlobalToLocal(Game1.viewport, (this.Tile - new Vector2(0,1)) * 64f),
                               tileSheetRect,
                               color: Color.White,
                               rotation: 0f,
                               origin: Vector2.Zero,
                               scale: 4f,
                               effects: SpriteEffects.None,
-                              layerDepth: this.tile.Y * 64f / 10000f + this.tile.X / 100000f);
+                              layerDepth: this.Tile.Y * 64f / 10000f + this.Tile.X / 100000f);
         }
     }
 }
