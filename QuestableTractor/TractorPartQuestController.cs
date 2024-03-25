@@ -37,7 +37,11 @@ namespace NermNermNerm.Stardew.QuestableTractor
         {
             if (this.OverallQuestState == OverallQuestState.NotStarted)
             {
-                this.HideStarterItemIfNeeded();
+                if (Game1.IsMasterGame)
+                {
+                    this.HideStarterItemIfNeeded();
+                }
+
                 this.MonitorInventoryForItem(this.BrokenAttachmentPartId, this.PlayerGotBrokenPart);
                 this.StopMonitoringInventoryFor(this.WorkingAttachmentPartId);
             }

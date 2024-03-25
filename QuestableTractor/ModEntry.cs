@@ -85,10 +85,10 @@ namespace NermNermNerm.Stardew.QuestableTractor
         {
             this.TractorModConfig.SetConfig(
                 isHoeUnlocked: true, // <- comes stock
-                isLoaderUnlocked: this.loaderQuestController.IsComplete,
-                isHarvesterUnlocked: this.scytheQuestController.IsComplete,
-                isSpreaderUnlocked: this.seederQuestController.IsComplete,
-                isWatererUnlocked: this.WatererQuestController.IsComplete);
+                isLoaderUnlocked: this.loaderQuestController.IsCompletedByMasterPlayer,
+                isHarvesterUnlocked: this.scytheQuestController.IsCompletedByMasterPlayer,
+                isSpreaderUnlocked: this.seederQuestController.IsCompletedByMasterPlayer,
+                isWatererUnlocked: this.WatererQuestController.IsCompletedByMasterPlayer);
         }
 
         private void GameLoop_OneSecondUpdateTicked(object? sender, OneSecondUpdateTickedEventArgs e)

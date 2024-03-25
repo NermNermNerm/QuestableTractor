@@ -37,6 +37,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
         public bool IsStarted => this.OverallQuestState != OverallQuestState.NotStarted;
         public bool IsComplete => this.OverallQuestState == OverallQuestState.Completed;
 
+        public bool IsCompletedByMasterPlayer => this.GetOverallQuestState(Game1.MasterPlayer) == OverallQuestState.Completed;
+        public bool IsStartedByMasterPlayer => this.GetOverallQuestState(Game1.MasterPlayer) != OverallQuestState.NotStarted;
+
         public static void Spout(string message)
         {
             Game1.DrawDialogue(new Dialogue(null, null, message));
@@ -111,35 +114,43 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public string? RawQuestState
         {
-            get
-            {
-                Game1.MasterPlayer.modData.TryGetValue(this.ModDataKey, out string storedValue);
-                return storedValue;
-            }
+            get => this.GetRawQuestState(Game1.player);
             set
             {
-                if (!Game1.player.IsMainPlayer)
-                {
-                    throw new NotImplementedException("QuestableTractorMod quests should only be playable by the main player");
-                }
+                this.SetRawQuestState(Game1.player, value);
+            }
+        }
 
-                bool wasChanged;
-                if (value is null)
-                {
-                    wasChanged = Game1.player.modData.Remove(this.ModDataKey);
-                }
-                else
-                {
-                    Game1.player.modData.TryGetValue(this.ModDataKey, out string? oldValue);
-                    Game1.player.modData[this.ModDataKey] = value;
-                    wasChanged = (value != oldValue);
-                }
 
-                if (wasChanged)
-                {
-                    this.LogTrace($"Set {Game1.player.Name}'s ModData[{this.ModDataKey}] to '{value ?? "<null>"}'");
-                    this.OnStateChanged();
-                }
+        public string? GetRawQuestState(Farmer player)
+        {
+            player.modData.TryGetValue(this.ModDataKey, out string storedValue);
+            return storedValue;
+        }
+
+        public void SetRawQuestState(Farmer player, string? value)
+        {
+            if (player != Game1.MasterPlayer)
+            {
+                throw new NotImplementedException("QuestableTractorMod quests should only be playable by the main player");
+            }
+
+            bool wasChanged;
+            if (value is null)
+            {
+                wasChanged = player.modData.Remove(this.ModDataKey);
+            }
+            else
+            {
+                player.modData.TryGetValue(this.ModDataKey, out string? oldValue);
+                player.modData[this.ModDataKey] = value;
+                wasChanged = (value != oldValue);
+            }
+
+            if (wasChanged)
+            {
+                this.LogTrace($"Set {player.Name}'s ModData[{this.ModDataKey}] to '{value ?? "<null>"}'");
+                this.OnStateChanged();
             }
         }
 
@@ -148,14 +159,15 @@ namespace NermNermNerm.Stardew.QuestableTractor
         /// </summary>
         protected virtual void OnStateChanged() { }
 
-        public OverallQuestState OverallQuestState =>
-            this.RawQuestState switch
+        public OverallQuestState OverallQuestState => this.GetOverallQuestState(Game1.player);
+
+        public OverallQuestState GetOverallQuestState(Farmer player) =>
+            this.GetRawQuestState(player) switch
             {
                 null => OverallQuestState.NotStarted,
                 QuestCompleteStateMagicWord => OverallQuestState.Completed,
                 _ => OverallQuestState.InProgress
             };
-
 
         /// <summary>
         ///   This is a hacky way to deal with quest completion until something more clever can be thought up.
@@ -248,28 +260,29 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public TQuestState State
         {
-            get
-            {
-                string? rawState = this.RawQuestState;
-                if (rawState == null)
-                {
-                    return default(TQuestState);// TODO: Figure out
-                    // throw new InvalidOperationException("State should not be queried when the quest isn't started");
-                }
-
-                if (!this.TryParse(rawState, out TQuestState result))
-                {
-                    // Part of the design of the state enums should include making sure that the default value of
-                    // the enum is the starting condition of the quest, so we can possibly recover from this error.
-                    this.LogError($"{this.GetType().Name} quest has invalid state: {rawState}");
-                }
-
-                return result;
-            }
+            get => this.GetState(Game1.player);
             set
             {
                 this.RawQuestState = value.ToString();
             }
+        }
+
+        public TQuestState GetState(Farmer player)
+        {
+            string? rawState = this.GetRawQuestState(player);
+            if (rawState == null)
+            {
+                throw new InvalidOperationException("State should not be queried when the quest isn't started");
+            }
+
+            if (!this.TryParse(rawState, out TQuestState result))
+            {
+                // Part of the design of the state enums should include making sure that the default value of
+                // the enum is the starting condition of the quest, so we can possibly recover from this error.
+                this.LogError($"{this.GetType().Name} quest has invalid state: {rawState}");
+            }
+
+            return result;
         }
 
         protected virtual bool TryParse(string rawState, out TQuestState result) => Enum.TryParse(rawState, out result);

@@ -39,7 +39,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         {
             base.OnStateChanged();
 
-            if (this.Mod.WatererQuestController.OverallQuestState == OverallQuestState.NotStarted)
+            if (Game1.IsMasterGame && this.Mod.WatererQuestController.OverallQuestState == OverallQuestState.NotStarted)
             {
                 chanceOfHookingWaterer = this.Mod.RestoreTractorQuestController.IsComplete
                     ? 0.01f + Game1.Date.TotalDays / 200f
