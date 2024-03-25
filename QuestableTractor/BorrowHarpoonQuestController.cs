@@ -25,12 +25,12 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         protected override BaseQuest CreateQuest() => new BorrowHarpoonQuest(this);
 
-        public void StartQuest()
+        public void StartQuest(Farmer player)
         {
             if (!this.IsStarted)
             {
                 Game1.addHUDMessage(new HUDMessage("Whoah, I snagged onto something big down there, but this line's nowhere near strong enough to yank it up!", HUDMessage.newQuest_type));
-                this.CreateQuestNew();
+                this.CreateQuestNew(player);
                 Game1.playSound("questcomplete"); // Note documentation suggests its for quest complete and "journal update".  That's what we are using it for.
             }
         }
@@ -39,7 +39,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         {
             base.OnStateChanged();
 
-            if (this.OverallQuestState == OverallQuestState.NotStarted)
+            if (this.Mod.WatererQuestController.OverallQuestState == OverallQuestState.NotStarted)
             {
                 chanceOfHookingWaterer = this.Mod.RestoreTractorQuestController.IsComplete
                     ? 0.01f + Game1.Date.TotalDays / 200f
@@ -54,8 +54,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             if (!hasPatchBeenInstalled && chanceOfHookingWaterer > 0)
             {
                 this.LogTrace("Applying harmony patch to Farm.getFish");
-                var farmType = typeof(Farm);
-                var getFishMethod = farmType.GetMethod("getFish");
+                var getFishMethod = typeof(Farm).GetMethod("getFish");
                 BorrowHarpoonQuestController.instance = this; // Harmony doesn't support creating prefixes with instance methods...  Faking it.
                 this.Mod.Harmony.Patch(getFishMethod, prefix: new HarmonyMethod(typeof(BorrowHarpoonQuestController), nameof(Prefix_GetFish)));
                 hasPatchBeenInstalled = true;
@@ -65,7 +64,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         private static bool Prefix_GetFish(ref Item __result)
         {
-            bool isFishingWithHarpoon = Game1.player.CurrentTool?.ItemId == HarpoonToolId;
             var newFish = instance.ReplaceFish();
             if (newFish is null)
             {
@@ -90,12 +88,12 @@ namespace NermNermNerm.Stardew.QuestableTractor
         {
             // attaching to Farm.getFish should ensure we only get called from this location, but just to be sure nothing
             // else uses the same type...
-            if (Game1.currentLocation != Game1.getFarm())
+            if (Game1.currentLocation != Game1.getFarm() || !Game1.IsMasterGame)
             {
                 return null;
             }
 
-            var borrowHarpoonQuest = Game1.player.questLog.OfType<BorrowHarpoonQuest>().FirstOrDefault();
+            var borrowHarpoonQuest = FakeQuest.GetFakeQuestByType<BorrowHarpoonQuest>(Game1.player);
             if (Game1.player.CurrentTool?.ItemId == HarpoonToolId)
             {
                 if (borrowHarpoonQuest is null)
@@ -131,7 +129,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 if (borrowHarpoonQuest is null && Game1.random.NextDouble() < chanceOfHookingWaterer)
                 {
-                    this.Mod.BorrowHarpoonQuestController.StartQuest();
+                    this.Mod.BorrowHarpoonQuestController.StartQuest(Game1.player);
                     return ItemRegistry.Create(TrashItemId);
                 }
                 else if (borrowHarpoonQuest is not null && borrowHarpoonQuest.State == BorrowHarpoonQuestState.CatchTheBigOne && Game1.random.NextDouble() < .25) // prolly indicates the user goofed and is still using the regular rod
