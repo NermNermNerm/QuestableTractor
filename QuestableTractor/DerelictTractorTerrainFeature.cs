@@ -167,10 +167,10 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public override bool performToolAction(Tool t, int damage, Vector2 tileLocation)
         {
-            if (Game1.IsMasterGame && !Game1.player.questLog.Any(q => q is RestoreTractorQuest))
+            if (Game1.IsMasterGame && FakeQuest.GetFakeQuestByType<RestoreTractorQuest>(Game1.player) is null)
             {
                 Game1.drawObjectDialogue("This looks like an old tractor.  Perhaps it could help you out around the farm, but it's been out in the weather a long time.  It'll need some fixing.  Maybe somebody in town can help?");
-                ModEntry.Instance.RestoreTractorQuestController.CreateQuestNew();
+                ModEntry.Instance.RestoreTractorQuestController.CreateQuestNew(Game1.player);
             }
 
             return base.performToolAction(t, damage, tileLocation);

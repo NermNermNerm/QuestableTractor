@@ -49,7 +49,16 @@ namespace NermNermNerm.Stardew.QuestableTractor
         /// </summary>
         public virtual string? HintTopicConversationKey { get; } = null;
 
-        protected void MonitorInventoryForItem(string itemId, Action<Item> onItemAdded)
+        /// <summary>
+        ///   Registers for watching for an item appearing in the player's inventory.
+        ///   The assumption is that <paramref name="itemId"/> is a quest item, and
+        ///   <paramref name="onItemAddedToHostPlayer"/> will only be called if the host player
+        ///   gets the item.  For non-host players, there's a dialog telling them to give
+        ///   the item to the host.
+        /// </summary>
+        /// <param name="itemId">The item to watch for</param>
+        /// <param name="onItemAddedToHostPlayer">A callback for when the host player gets the item.</param>
+        protected void MonitorInventoryForItem(string itemId, Action<Item> onItemAddedToHostPlayer)
         {
             if (!this.isWatchingInventory)
             {
@@ -63,7 +72,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 this.LogTrace($"{this.GetType().Name} Started monitoring inventory for {itemId}");
             }
 
-            this.itemsToWatch[itemId] = onItemAdded;
+            this.itemsToWatch[itemId] = onItemAddedToHostPlayer;
         }
 
         protected void StopMonitoringInventoryFor(string itemId)
@@ -172,15 +181,15 @@ namespace NermNermNerm.Stardew.QuestableTractor
         /// <summary>
         ///   Creates a new instance of the Quest object, assuming the State empty.
         /// </summary>
-        public void CreateQuestNew()
+        public void CreateQuestNew(Farmer player)
         {
             this.RawQuestState = this.InitialQuestState;
             var quest = this.CreateQuest();
             quest.SetDisplayAsNew();
-            Game1.player.questLog.Add(quest);
+            FakeQuest.AddToQuestLog(player, quest);
         }
 
-        public BaseQuest? GetQuest() => Game1.player.questLog.OfType<BaseQuest>().FirstOrDefault(bc => bc.Controller == this);
+        public BaseQuest? GetQuest(Farmer player) => FakeQuest.GetFakeQuestByController(player, this);
 
         /// <summary>
         ///   Called once at the start of every day when the quest is not started.
@@ -220,17 +229,12 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
 
             // Re-test the state beause it might have completed overnight
-            if (this.OverallQuestState == OverallQuestState.InProgress)
+            if (Game1.IsMasterGame && this.OverallQuestState == OverallQuestState.InProgress)
             {
                 var newQuest = this.CreateQuest();
                 newQuest.MarkAsViewed();
-                Game1.player.questLog.Add(newQuest);
+                FakeQuest.AddToQuestLog(Game1.player, newQuest);
             }
-        }
-
-        public void OnDayEnding()
-        {
-            Game1.player.questLog.RemoveWhere(q => q is BaseQuest bq && bq.Controller == this);
         }
     }
 

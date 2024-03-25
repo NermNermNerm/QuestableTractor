@@ -6,7 +6,7 @@ using StardewValley.Quests;
 
 namespace NermNermNerm.Stardew.QuestableTractor
 {
-    public abstract class BaseQuest : Quest, ISimpleLog
+    public abstract class BaseQuest : FakeQuest, ISimpleLog
     {
         // Putting this implementation here denies a few other usages, and it also means that our suppressions are
         //  tied to the quest, and thus get tossed out every day.  I can't say if that's a bug or a feature right now.
@@ -78,11 +78,11 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public abstract void CheckIfComplete(NPC n, Item? item);
 
-        public void SetDisplayAsNew()
+        public override void questComplete()
         {
-            this.showNew.Value = true;
+            this.Controller.RawQuestState = BaseQuestController.QuestCompleteStateMagicWord;
+            base.questComplete();
         }
-
 
         public void IndicateQuestHasMadeProgress()
         {
@@ -177,12 +177,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public virtual void WriteToLog(string message, StardewModdingAPI.LogLevel level, bool isOnceOnly)
             => this.Controller.WriteToLog(message, level, isOnceOnly);
-
-        public override void questComplete()
-        {
-            this.Controller.RawQuestState = BaseQuestController.QuestCompleteStateMagicWord;
-            base.questComplete();
-        }
     }
 
     public abstract class BaseQuest<TState> : BaseQuest

@@ -24,7 +24,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         protected sealed override BaseQuest CreateQuest() => this.CreatePartQuest();
 
-        public new TractorPartQuest<TQuestState>? GetQuest() => (TractorPartQuest<TQuestState>?)base.GetQuest();
+        public new TractorPartQuest<TQuestState>? GetQuest(Farmer player) => (TractorPartQuest<TQuestState>?)base.GetQuest(player);
 
         protected abstract TractorPartQuest<TQuestState> CreatePartQuest();
 
@@ -55,6 +55,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         private void PlayerGotBrokenPart(Item brokenPart)
         {
+            // This is a callback from MonitorInventoryItem so Game1.player.IsMainPlayer must be true.
             if (this.IsStarted)
             {
                 this.LogWarning($"Player found a broken attachment, {brokenPart.ItemId}, when the quest was active?!");
@@ -62,14 +63,15 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
 
             this.AnnounceGotBrokenPart(brokenPart);
-            this.CreateQuestNew();
+            this.CreateQuestNew(Game1.player);
             this.MonitorInventoryForItem(this.WorkingAttachmentPartId, this.PlayerGotWorkingPart);
             this.StopMonitoringInventoryFor(this.BrokenAttachmentPartId);
         }
 
         public void PlayerGotWorkingPart(Item workingPart)
         {
-            var quest = this.GetQuest();
+            // This is a callback from MonitorInventoryItem so Game1.player.IsMainPlayer must be true.
+            var quest = this.GetQuest(Game1.player);
             if (quest is null)
             {
                 this.LogWarning($"Player found a working attachment, {workingPart.ItemId}, when the quest was not active?!");
@@ -90,7 +92,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 return false;
             }
 
-            var activeQuest = this.GetQuest();
+            var activeQuest = this.GetQuest(Game1.player);
             if (activeQuest is null)
             {
                 this.LogWarning($"An active quest for {this.GetType().Name} should exist, but doesn't?!");

@@ -67,7 +67,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         private void OnPlayerGotOldShoes(Item oldShoes)
         {
-            var quest = Game1.player.questLog.OfType<LoaderQuest>().FirstOrDefault();
+            //  MonitorInventoryForItem guarantees Game1.player.IsMainPlayer
+            var quest = FakeQuest.GetFakeQuestByType<LoaderQuest>(Game1.player);
             if (quest is null)
             {
                 this.LogWarning($"Player found {oldShoes.ItemId} when the Loader quest was not active");
@@ -78,12 +79,12 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
         }
 
-        protected new LoaderQuest? GetQuest() => (LoaderQuest?)base.GetQuest();
+        protected new LoaderQuest? GetQuest(Farmer player) => (LoaderQuest?)base.GetQuest(player);
 
         private void OnPlayerGotDisguisedShoes(Item dyedShoes)
         {
             this.StopMonitoringInventoryFor(ObjectIds.DisguisedShoe);
-            var quest = this.GetQuest();
+            var quest = this.GetQuest(Game1.player);
             if (quest is null)
             {
                 this.LogWarning($"Player found {dyedShoes.ItemId}, when the quest was not active");
