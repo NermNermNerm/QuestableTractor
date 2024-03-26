@@ -178,6 +178,12 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public override void draw(SpriteBatch spriteBatch)
         {
+            if (this.Location is null)
+            {
+                // ModEntry.Instance.LogError("In DerelictTractorTerrainFeature.draw and this.Location was null");
+                return;
+            }
+
             if (this.Location.terrainFeatures.TryGetValue(this.Tile-new Vector2(1,0), out var tfAtLeft) && tfAtLeft is DerelictTractorTerrainFeature)
             {
                 // See hack alert in the class description
