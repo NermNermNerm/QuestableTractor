@@ -67,6 +67,47 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.Helper.Events.GameLoop.SaveLoaded += (_, _) => this.UpdateTractorModConfig();
             this.Helper.Events.GameLoop.DayStarted += this.OnDayStarted;
             this.Helper.Events.GameLoop.DayEnding += this.OnDayEnding;
+
+            this.Helper.Events.Multiplayer.ModMessageReceived += this.Multiplayer_ModMessageReceived;
+        }
+
+        private const string InvalidateAssetMessageType = "InvalidateAsset";
+        private const string UpdateTractorConfigMessageType = "UpdateTractorConfig";
+
+        public void TransmitInvalidateCache(string assetName)
+        {
+            this.Helper.Multiplayer.SendMessage(assetName, InvalidateAssetMessageType, new string[] { this.Helper.ModContent.ModID });
+        }
+
+        public void TransmitUpdateTractorConfig()
+        {
+            bool[] content = [true, // <- comes stock
+                        this.loaderQuestController.IsCompletedByMasterPlayer,
+                        this.scytheQuestController.IsCompletedByMasterPlayer,
+                        this.WatererQuestController.IsCompletedByMasterPlayer,
+                        this.seederQuestController.IsCompletedByMasterPlayer];
+            this.Helper.Multiplayer.SendMessage(content, UpdateTractorConfigMessageType, new string[] { this.Helper.ModContent.ModID });
+        }
+
+        private void Multiplayer_ModMessageReceived(object? sender, ModMessageReceivedEventArgs e)
+        {
+            switch(e.Type)
+            {
+                case InvalidateAssetMessageType:
+                    string assetName = e.ReadAs<string>();
+                    this.Helper.GameContent.InvalidateCache(assetName);
+                    this.LogTrace($"Invalidating asset '{assetName}' because of remote request");
+                    break;
+                case UpdateTractorConfigMessageType:
+                    bool[] settings = e.ReadAs<bool[]>();
+                    this.TractorModConfig.SetConfig(
+                        settings[0], settings[1], settings[2], settings[3], settings[4]);
+                    this.LogTrace("Got a message to update the tractor mod config.");
+                    break;
+                default:
+                    this.LogWarning($"Got an unknown message of type: {e.Type}");
+                    break;
+            }
         }
 
         void ISimpleLog.WriteToLog(string message, LogLevel level, bool isOnceOnly)
@@ -115,6 +156,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
                     if (qc.PlayerIsInGarage(Game1.player.CurrentItem))
                     {
                         this.UpdateTractorModConfig();
+                        this.TransmitUpdateTractorConfig();
+                        break;
                     }
                 }
             }

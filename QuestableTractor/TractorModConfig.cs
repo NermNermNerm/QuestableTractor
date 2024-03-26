@@ -27,7 +27,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
         public void TractorGarageBuildingCostChanged()
         {
             this.mod.Helper.GameContent.InvalidateCache("Data/Buildings");
-            this.mod.LogTrace("Invalidating Data/Buildings");
+            this.mod.TransmitInvalidateCache("Data/Buildings");
+            this.mod.LogTrace("Invalidating asset 'Data/Buildings' because of local request.");
         }
 
         public void SetConfig(bool isHoeUnlocked, bool isLoaderUnlocked, bool isHarvesterUnlocked, bool isWatererUnlocked, bool isSpreaderUnlocked)
@@ -76,7 +77,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         internal void OnDayStarted()
         {
             // TractorMod creates a tractor on day start.  We remove it if it's not configured.  Otherwise, doing nothing is the right thing.
-            if (!this.mod.RestoreTractorQuestController.IsCompletedByMasterPlayer)
+            if (Game1.IsMasterGame && !this.mod.RestoreTractorQuestController.IsCompletedByMasterPlayer)
             {
                 Farm farm = Game1.getFarm();
                 var tractorIds = farm.buildings.OfType<Stable>().Where(s => s.buildingType.Value == GarageBuildingId).Select(s => s.HorseId).ToHashSet();

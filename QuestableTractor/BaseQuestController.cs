@@ -102,7 +102,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                     if (!e.Player.IsMainPlayer)
                     {
                         e.Player.holdUpItemThenMessage(item, true);
-                        Spout("This item is for unlocking the tractor - only the host can advance this quest.  Give this item to the host.");
+                        Spout("This item is for unlocking the tractor - only the host can advance this quest.  Give this item to the host.  (You have to put in a chest for them.)");
                     }
                     else
                     {
