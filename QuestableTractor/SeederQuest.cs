@@ -1,4 +1,5 @@
 using StardewValley;
+using StardewValley.Network;
 
 namespace NermNermNerm.Stardew.QuestableTractor
 {
@@ -7,48 +8,13 @@ namespace NermNermNerm.Stardew.QuestableTractor
     {
         private bool pesteredGeorgeToday = false; // Ensure the player doesn't zero out their hearts with George banging on this quest.
 
+        // This is a sketchy way of dealing with the fact that you need to be able to talk to Evelyn while you're
+        //  still working on her heart-level.
+        private static bool pesteredEvelynThisSession = false;
+
         public const int GeorgeSendsBrokenPartHeartLevel = 3;
         private const int evelynWillingToHelpLevel = 3;
         private const int alexWillingToHelpLevel = 2;
-
-        // Story:
-        //   Before George's accident, Grandpa gave it to George to repair, and George had given him a parts list,
-        //   but Grandpa had left it for a long time, then George had the accident and Grandpa didn't ask for it
-        //   and then Grandpa died, and here we are.
-        //
-        //   After getting 4 hearts with George, he sends you the seeder and says it's all good except for the
-        //   iron bars which Grandpa never came up with.
-        //
-        //   If you bring it back to George, he gets all grumpy and says he mailed it to you on-purpose and he's
-        //   too old and broke down to fix it.  Quest directs you to talk to his "old friends", and everybody
-        //   points you to Lewis.
-        //
-        //   Lewis says something like "Evelyn can be a big help if you earn her trust.  Talking to Evelyn gives
-        //   you a grumpy response until you get a few hearts with her and then she confides that his hands are
-        //   too shaky to do fine work anymore.
-        //
-        //   If you talk to Alex with less than 3 hearts, he blows you off with a "these hands were made for
-        //   gridball, not farm work."
-        //
-        //   After talking to Alex once, talking to Granny and anybody else about it will say that Alex has a
-        //   hard time trusting people and you should build up some friendship with him.
-        //
-        //   After Alex gets to 3 hearts, he'll confide that he just doesn't feel confident and he'll just screw
-        //   up and make his grandpa mad.
-        //
-        //   If you talk to Lewis, Emily or Penny, they'll tell you to talk to Haley.
-        //
-        //   Haley will (regardless of your heart level with her), declare that confident men are more attractive
-        //   and that she knows for sure his hands are plenty nimble enough to do the job and tells you she'll
-        //   fix it for you.  A couple days later, you get a mail from her saying that she thinks she's got
-        //   him on-side.
-        //
-        //   After that, you ask Alex and he says he'll do it.  Give him the item and the iron and he asserts
-        //   that they'll take care of it.  After a couple days, you get a mail from him saying that the job's
-        //   done and tells you to pick it up from George.
-        //
-        //   When you pick it up from George, you get a friendship heart for him, Alex, Evelyn and half a heart
-        //   for Lewis.
 
         private const int ironBarCount = 10;
 
@@ -90,9 +56,10 @@ namespace NermNermNerm.Stardew.QuestableTractor
                     Game1.player.mailForTomorrow.Add(MailKeys.EvelynPointsToAlex);
                     this.State = SeederQuestState.WaitForEvelyn;
                 }
-                else
+                else if (!pesteredEvelynThisSession || item?.ItemId == ObjectIds.BustedSeeder)
                 {
                     this.Spout(n, "Sorry, what did you say?  I didn't quite hear...");
+                    pesteredEvelynThisSession = true;
                 }
             }
             else if (n.Name == "Alex" && this.State == SeederQuestState.TalkToAlex1)
