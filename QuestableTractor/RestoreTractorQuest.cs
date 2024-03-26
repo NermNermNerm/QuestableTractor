@@ -113,11 +113,11 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n?.Name == "Sebastian" && item?.ItemId == ObjectIds.BustedEngine)
             {
-                this.Spout(n, "That is the craziest engine I've ever seen.  Have  you shown it to Clint?  I mean, he knows something about metalworking.  Maybe it's some kinda wierd alloy?^ ^Or...^Maybe aliens.");
+                this.Spout(n, "That is the craziest engine I've ever seen.  Have  you shown it to Clint?  I mean, he knows something about metalworking.  Maybe it's some kinda weird alloy?^ ^Or...^Maybe aliens.");
             }
             else if (n?.Name == "Clint" && item?.ItemId == ObjectIds.BustedEngine)
             {
-                this.Spout(n, "Uh...#$b#What is it?  you say it's an Engine?$s#$b#I say it's wierd. . .  Hey, is that thing moving?$a#$b#I don't know.  Maybe the Wizard would know what it is, and even if he doesn't, he'll sure pretend like he does if you show it to him.$");
+                this.Spout(n, "Uh...#$b#What is it?  you say it's an Engine?$s#$b#I say it's weird. . .  Hey, is that thing moving?$a#$b#I don't know.  Maybe the Wizard would know what it is, and even if he doesn't, he'll sure pretend like he does if you show it to him.$");
             }
             else if ((n?.Name == "Abigail" || n?.Name == "Vincent") && item?.ItemId == ObjectIds.BustedEngine)
             {
@@ -130,11 +130,11 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n is not null && item?.ItemId == ObjectIds.BustedEngine)
             {
-                this.Spout(n, "I've never seen anything like that before...#$b#It gives me this uncanny feeling like...  it's missing something.#$b#Wierd.");
+                this.Spout(n, "I've never seen anything like that before...#$b#It gives me this uncanny feeling like...  it's missing something.#$b#Weird.");
             }
             else if (n?.Name == "Sebastian" && item?.ItemId == ObjectIds.WorkingEngine)
             {
-                this.Spout(n, "Whoah....$s#$b#I mean, if you say it's fixed, I can believe it.  Definitely has a look of workiness about it!$l#$b#But seriously...  I shouldn't be installing this thing.  It's, yaknow, out of my area but...$s#$b#I hate to say it, my Sister would be able to figure it out, no matter how wierd it is.");
+                this.Spout(n, "Whoah....$s#$b#I mean, if you say it's fixed, I can believe it.  Definitely has a look of workiness about it!$l#$b#But seriously...  I shouldn't be installing this thing.  It's, yaknow, out of my area but...$s#$b#I hate to say it, my Sister would be able to figure it out, no matter how weird it is.");
                 this.State = RestorationState.BringEngineToMaru;
             }
             else if (n?.Name == "Maru" && item?.ItemId == ObjectIds.WorkingEngine)
