@@ -1,9 +1,6 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Reflection;
-using System.Xml;
-using System.Xml.Serialization;
 using HarmonyLib;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
@@ -15,7 +12,6 @@ using StardewValley.GameData.Buildings;
 using StardewValley.GameData.GarbageCans;
 using StardewValley.GameData.Objects;
 using StardewValley.GameData.Tools;
-using StardewValley.Quests;
 
 namespace NermNermNerm.Stardew.QuestableTractor
 {
@@ -64,20 +60,17 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
             this.Helper.Events.Content.AssetRequested += this.OnAssetRequested;
             this.Helper.Events.GameLoop.OneSecondUpdateTicked += this.GameLoop_OneSecondUpdateTicked;
-            this.Helper.Events.GameLoop.SaveLoaded += (_, _) => this.UpdateTractorModConfig();
+            this.Helper.Events.GameLoop.SaveLoaded += (_, _) =>
+            {
+                this.UpdateTractorModConfig();
+            };
             this.Helper.Events.GameLoop.DayStarted += this.OnDayStarted;
             this.Helper.Events.GameLoop.DayEnding += this.OnDayEnding;
 
             this.Helper.Events.Multiplayer.ModMessageReceived += this.Multiplayer_ModMessageReceived;
         }
 
-        private const string InvalidateAssetMessageType = "InvalidateAsset";
         private const string UpdateTractorConfigMessageType = "UpdateTractorConfig";
-
-        public void TransmitInvalidateCache(string assetName)
-        {
-            this.Helper.Multiplayer.SendMessage(assetName, InvalidateAssetMessageType, new string[] { this.Helper.ModContent.ModID });
-        }
 
         public void TransmitUpdateTractorConfig()
         {
@@ -91,13 +84,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         private void Multiplayer_ModMessageReceived(object? sender, ModMessageReceivedEventArgs e)
         {
+            // TODO: Someday should replace this with monitoring in OnOneSecondUpdateTick to simplify things.
             switch(e.Type)
             {
-                case InvalidateAssetMessageType:
-                    string assetName = e.ReadAs<string>();
-                    this.Helper.GameContent.InvalidateCache(assetName);
-                    this.LogTrace($"Invalidating asset '{assetName}' because of remote request");
-                    break;
                 case UpdateTractorConfigMessageType:
                     bool[] settings = e.ReadAs<bool[]>();
                     this.TractorModConfig.SetConfig(
@@ -132,34 +121,57 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 isWatererUnlocked: this.WatererQuestController.IsCompletedByMasterPlayer);
         }
 
+        private RestorationState? lastValueOfMainQuestState;
+
         private void GameLoop_OneSecondUpdateTicked(object? sender, OneSecondUpdateTickedEventArgs e)
         {
-            if (!Context.IsMainPlayer)
+            if (!Game1.hasLoadedGame)
             {
                 return;
             }
 
-            bool IsPlayerInGarage(Character c, Stable b)
-                => b.intersects(new Rectangle(new Point((int)c.Position.X, (int)c.Position.Y - 128), new Point(64, 128)));
-
-            if (Game1.player is not null
-                && Game1.player.IsMainPlayer
-                && Game1.player.currentLocation is Farm
-                && Game1.player.CurrentItem is not null
-                && Game1.player.currentLocation.buildings
-                    .OfType<Stable>()
-                    .Where(s => s.buildingType.Value == TractorModConfig.GarageBuildingId)
-                    .Any(s => IsPlayerInGarage(Game1.player, s)))
+            if (Context.IsMainPlayer)
             {
-                foreach (var qc in this.QuestControllers)
+                bool IsPlayerInGarage(Character c, Stable b)
+                    => b.intersects(new Rectangle(new Point((int)c.Position.X, (int)c.Position.Y - 128), new Point(64, 128)));
+
+                if (Game1.player is not null
+                    && Game1.player.IsMainPlayer
+                    && Game1.player.currentLocation is Farm
+                    && Game1.player.CurrentItem is not null
+                    && Game1.player.currentLocation.buildings
+                        .OfType<Stable>()
+                        .Where(s => s.buildingType.Value == TractorModConfig.GarageBuildingId)
+                        .Any(s => IsPlayerInGarage(Game1.player, s)))
                 {
-                    if (qc.PlayerIsInGarage(Game1.player.CurrentItem))
+                    foreach (var qc in this.QuestControllers)
                     {
-                        this.UpdateTractorModConfig();
-                        this.TransmitUpdateTractorConfig();
-                        break;
+                        if (qc.PlayerIsInGarage(Game1.player.CurrentItem))
+                        {
+                            this.UpdateTractorModConfig();
+                            this.TransmitUpdateTractorConfig();
+                            break;
+                        }
                     }
                 }
+            }
+            else
+            {
+                // Polling is a really un-stylish way to deal with updates like this.  There are two ways to do it
+                //  on an interrupt-like basis:
+                // this.Helper.Multiplayer.SendMessage - works, but it arrives *BEFORE* changes to Game1.MasterPlayer.ModData.
+                //  So if you go this route, you have to pass whatever new value is coming through your callstack, which
+                //  means you might have two sources of truth in the world with all the mayhem that can bring.
+                // Game1.player.modData.OnValueTargetUpdated - works, but again, it's not really properly named - it should
+                //  be OnValueTargetUpdati*ING* because the change it tells you about hasn't taken effect when the event pops.
+                //  Also, handlers for those events need to be extra careful to not throw and be quick,
+                //  and InvalidateCache, contrary to its documentation, does the entire asset-loading sequence.
+                var restoreTractorQuestState = this.RestoreTractorQuestController.GetState(Game1.MasterPlayer);
+                if (this.lastValueOfMainQuestState.HasValue && this.lastValueOfMainQuestState.Value != restoreTractorQuestState)
+                {
+                    this.Helper.GameContent.InvalidateCache("Data/Buildings");
+                }
+                this.lastValueOfMainQuestState = restoreTractorQuestState;
             }
         }
 
