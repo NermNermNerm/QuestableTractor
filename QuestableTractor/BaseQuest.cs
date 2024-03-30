@@ -128,7 +128,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         protected bool TryTakeItemsFromPlayer(string itemId, int count = 1)
         {
-            var stack = Game1.player.Items.FirstOrDefault(i => i?.ItemId == itemId && i.stack.Value >= count);
+            // This is busted for partial stacks e.g. 2 silver and one base item.
+            string qualifiedItemId = itemId.StartsWith("(") ? itemId : "(O)" + itemId;
+            var stack = Game1.player.Items.FirstOrDefault(i => i?.QualifiedItemId == qualifiedItemId && i.stack.Value >= count);
             if (stack == null)
             {
                 return false;
