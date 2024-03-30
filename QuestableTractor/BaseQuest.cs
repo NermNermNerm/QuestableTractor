@@ -129,51 +129,29 @@ namespace NermNermNerm.Stardew.QuestableTractor
         protected bool TryTakeItemsFromPlayer(string itemId, int count = 1)
         {
             // This is busted for partial stacks e.g. 2 silver and one base item.
-            string qualifiedItemId = itemId.StartsWith("(") ? itemId : "(O)" + itemId;
-            var stack = Game1.player.Items.FirstOrDefault(i => i?.QualifiedItemId == qualifiedItemId && i.stack.Value >= count);
-            if (stack == null)
+            string qualifiedItemId = ItemRegistry.IsQualifiedItemId(itemId) ? itemId : "(O)" + itemId;
+            if (Game1.player.Items.Where(i => i.QualifiedItemId == qualifiedItemId).Sum(c => c.Stack) < count)
             {
                 return false;
             }
-            else if (stack.Stack == count)
-            {
-                Game1.player.removeItemFromInventory(stack);
-                return true;
-            }
-            else
-            {
-                stack.Stack -= 3;
-                return true;
-            }
+
+            Game1.player.Items.ReduceId(qualifiedItemId, count);
+            return true;
         }
 
         protected bool TryTakeItemsFromPlayer(string item1Id, int count1, string item2Id, int count2)
         {
-            var stack1 = Game1.player.Items.FirstOrDefault(i => i?.ItemId == item1Id && i.stack.Value >= count1);
-            var stack2 = Game1.player.Items.FirstOrDefault(i => i?.ItemId == item2Id && i.stack.Value >= count2);
-            if (stack1 is null || stack2 is null)
+            string qualifiedItem1Id = ItemRegistry.IsQualifiedItemId(item1Id) ? item1Id : "(O)" + item1Id;
+            string qualifiedItem2Id = ItemRegistry.IsQualifiedItemId(item2Id) ? item2Id : "(O)" + item2Id;
+
+            if (Game1.player.Items.Where(i => i.QualifiedItemId == qualifiedItem1Id).Sum(c => c.Stack) < count1
+                || Game1.player.Items.Where(i => i.QualifiedItemId == qualifiedItem2Id).Sum(c => c.Stack) < count2)
             {
                 return false;
             }
 
-            if (stack1.Stack == count1)
-            {
-                Game1.player.removeItemFromInventory(stack1);
-            }
-            else
-            {
-                stack1.Stack -= count1;
-            }
-
-            if (stack2.Stack == count2)
-            {
-                Game1.player.removeItemFromInventory(stack2);
-            }
-            else
-            {
-                stack2.Stack -= count2;
-            }
-
+            Game1.player.Items.ReduceId(qualifiedItem1Id, count1);
+            Game1.player.Items.ReduceId(qualifiedItem2Id, count2);
             return true;
         }
 
