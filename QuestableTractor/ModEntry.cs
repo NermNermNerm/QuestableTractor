@@ -24,7 +24,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
         private SeederQuestController seederQuestController = null!;
         private BorrowHarpoonQuestController borrowHarpoonQuestController = null!;
         private RestoreTractorQuestController restoreTractorQuestController = null!;
-        private MasterPlayerModDataMonitor? modDataMonitor = null!;
 
         public WatererQuestController WatererQuestController = null!;
         public BorrowHarpoonQuestController BorrowHarpoonQuestController => this.borrowHarpoonQuestController;
@@ -40,9 +39,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
         public ModEntry()
         {
             this.TractorModConfig = new TractorModConfig(this);
-
-            // Not a good idea - there's no way to constructively combine these things with other mods.
-            // SaveGame.farmerSerializer = new XmlSerializer(typeof(Farmer), new Type[] { typeof(Item), typeof(RestoreTractorQuest) });
         }
 
 
