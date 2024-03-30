@@ -8,8 +8,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
     public class ScytheQuest
         : TractorPartQuest<ScytheQuestState>
     {
-        private const string crawfishItemId = "716";
-        private static readonly HashSet<string> shinyItems = new HashSet<string>() { "80" /* quartz */, "82" /* fire quartz */, "68" /* topaz */, "66" /* amethyst */, "60" /* Emerald */, "62" /* Aquamarine */, "70" /* jade */};
+        private const string crawfishItemId = "(O)716";
+        private static readonly HashSet<string> shinyItems = new HashSet<string>() { "(O)80" /* quartz */, "(O)82" /* fire quartz */, "(O)68" /* topaz */, "(O)66" /* amethyst */, "(O)60" /* Emerald */, "(O)62" /* Aquamarine */, "(O)70" /* jade */};
 
         internal ScytheQuest(ScytheQuestController controller)
             : base(controller)
@@ -102,10 +102,10 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 //  only one gem will be shiny enough on that day.  I don't see a way to make that happen right now.
                 foreach (string shinyItemId in shinyItems)
                 {
-                    var shinyThing = Game1.player.Items.FirstOrDefault(i => i?.ItemId == shinyItemId);
+                    var shinyThing = Game1.player.Items.FirstOrDefault(i => i?.QualifiedItemId == shinyItemId && i.Stack > 0);
                     if (shinyThing is not null)
                     {
-                        _ = this.TryTakeItemsFromPlayer(shinyItemId, 1);
+                        _ = this.TryTakeItemsFromPlayer(shinyItemId, 1); // Guaranteed true
 
                         this.AddQuestItemToInventory(ObjectIds.ScythePart2);
 

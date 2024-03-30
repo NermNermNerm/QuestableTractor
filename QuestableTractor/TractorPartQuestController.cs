@@ -17,13 +17,13 @@ namespace NermNermNerm.Stardew.QuestableTractor
     public abstract class TractorPartQuestController<TQuestState> : BaseQuestController<TQuestState>
         where TQuestState : struct
     {
-        private MasterPlayerModDataMonitor? monitor;
+#pragma warning disable IDE0052 // Remove unread private members -- This is here to ensure it lives as long as the surrounding class.  If this class wasn't permanent, we'd dispose it.
+        private readonly MasterPlayerModDataMonitor monitor;
+#pragma warning restore IDE0052 // Remove unread private members
+
         protected TractorPartQuestController(ModEntry mod) : base(mod)
         {
-            if (!Game1.IsMasterGame)
-            {
-                this.monitor = new ModDataMonitor(mod.Helper, Game1.MasterPlayer.modData, this.ModDataKey, this.OnMasterPlayerQuestStatusChanged);
-            }
+            this.monitor = new MasterPlayerModDataMonitor(mod.Helper, this.ModDataKey, this.OnMasterPlayerQuestStatusChanged);
         }
 
         private void OnMasterPlayerQuestStatusChanged()

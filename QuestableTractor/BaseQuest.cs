@@ -130,7 +130,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         {
             // This is busted for partial stacks e.g. 2 silver and one base item.
             string qualifiedItemId = ItemRegistry.IsQualifiedItemId(itemId) ? itemId : "(O)" + itemId;
-            if (Game1.player.Items.Where(i => i.QualifiedItemId == qualifiedItemId).Sum(c => c.Stack) < count)
+            if (Game1.player.Items.Where(i => i?.QualifiedItemId == qualifiedItemId).Sum(c => c.Stack) < count)
             {
                 return false;
             }
@@ -144,8 +144,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
             string qualifiedItem1Id = ItemRegistry.IsQualifiedItemId(item1Id) ? item1Id : "(O)" + item1Id;
             string qualifiedItem2Id = ItemRegistry.IsQualifiedItemId(item2Id) ? item2Id : "(O)" + item2Id;
 
-            if (Game1.player.Items.Where(i => i.QualifiedItemId == qualifiedItem1Id).Sum(c => c.Stack) < count1
-                || Game1.player.Items.Where(i => i.QualifiedItemId == qualifiedItem2Id).Sum(c => c.Stack) < count2)
+            if (Game1.player.Items.Where(i => i?.QualifiedItemId == qualifiedItem1Id).Sum(c => c.Stack) < count1
+                || Game1.player.Items.Where(i => i?.QualifiedItemId == qualifiedItem2Id).Sum(c => c.Stack) < count2)
             {
                 return false;
             }

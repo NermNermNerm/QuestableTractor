@@ -106,7 +106,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 Game1.drawDialogue(n);
                 this.hasDoneStatusCheckToday = true;
             }
-            else if (n?.Name == "Wizard" && this.State == RestorationState.TalkToWizard && item?.ItemId == ObjectIds.BustedEngine)
+            else if (n?.Name == "Wizard" && this.State >= RestorationState.TalkToWizard && item?.ItemId == ObjectIds.BustedEngine)
             {
                 this.Spout(n, $"Oh...  Now where did you get that??!$l#$b#Ooooh... Ah.  Yes.  I see...  Mmm...$s#$b#Yes.  Your grandfather dabbled a bit in Forest Magic.  He was nowhere near as adept as myself, of course...#$b#He lacked the mechanical ability to restore the mundane engine, so he enlisted some forest magic to make one.#$b#As you can see, the Junimos that he recruited to keep the motor running have gotten bored and wandered away.  You'll need to coax them back.$s#$b#Now, pay attention!  This will require your utmost concentration!$a#$b#You must place {combineEngineRequirementsText} in a chest in the secret woods in front of the statue...#$b#Then, you must run around the chest, six times, clockwise very, very quickly.  Overnight, your engine will be restored.#$b#Now GO!  I have concerns much greater than yours right now.$a");
                 this.State = RestorationState.BringStuffToForest;
@@ -134,7 +134,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n?.Name == "Sebastian" && item?.ItemId == ObjectIds.WorkingEngine)
             {
-                this.Spout(n, "Whoah....$s#$b#I mean, if you say it's fixed, I can believe it.  Definitely has a look of workiness about it!$l#$b#But seriously...  I shouldn't be installing this thing.  It's, yaknow, out of my area but...$s#$b#I hate to say it, my Sister would be able to figure it out, no matter how weird it is.");
+                this.Spout(n, "Whoah....$s#$b#I mean, if you say it's fixed, I can believe it.  Definitely has a look of workiness about it!$l#$b#But seriously...  I shouldn't be installing this thing.  It's, yaknow, out of my area but...$s#$b#I hate to say it, my sister would be able to figure it out, no matter how weird it is.");
                 this.State = RestorationState.BringEngineToMaru;
             }
             else if (n?.Name == "Maru" && item?.ItemId == ObjectIds.WorkingEngine)

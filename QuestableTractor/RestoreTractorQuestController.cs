@@ -9,9 +9,13 @@ namespace NermNermNerm.Stardew.QuestableTractor
     public class RestoreTractorQuestController
         : BaseQuestController<RestorationState>
     {
+#pragma warning disable IDE0052 // Remove unread private members -- This is here to ensure it lives as long as the surrounding class.  If this class wasn't permanent, we'd dispose it.
+        private readonly MasterPlayerModDataMonitor monitor;
+#pragma warning restore IDE0052 // Remove unread private members
+
         public RestoreTractorQuestController(ModEntry mod) : base(mod)
         {
-            _ = new MasterPlayerModDataMonitor(mod.Helper, ModDataKeys.MainQuestStatus, () => mod.TractorModConfig.TractorGarageBuildingCostChanged());
+            this.monitor = new MasterPlayerModDataMonitor(mod.Helper, ModDataKeys.MainQuestStatus, () => mod.TractorModConfig.TractorGarageBuildingCostChanged());
         }
 
         public record EngineRequirement(string itemId, string displayName, int quantity);
