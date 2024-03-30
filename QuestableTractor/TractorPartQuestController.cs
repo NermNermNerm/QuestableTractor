@@ -17,7 +17,19 @@ namespace NermNermNerm.Stardew.QuestableTractor
     public abstract class TractorPartQuestController<TQuestState> : BaseQuestController<TQuestState>
         where TQuestState : struct
     {
-        protected TractorPartQuestController(ModEntry mod) : base(mod) { }
+        private MasterPlayerModDataMonitor? monitor;
+        protected TractorPartQuestController(ModEntry mod) : base(mod)
+        {
+            if (!Game1.IsMasterGame)
+            {
+                this.monitor = new ModDataMonitor(mod.Helper, Game1.MasterPlayer.modData, this.ModDataKey, this.OnMasterPlayerQuestStatusChanged);
+            }
+        }
+
+        private void OnMasterPlayerQuestStatusChanged()
+        {
+            this.Mod.UpdateTractorModConfig();
+        }
 
         public abstract string WorkingAttachmentPartId { get; }
         public abstract string BrokenAttachmentPartId { get; }
@@ -89,25 +101,24 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         protected abstract string QuestCompleteMessage { get; }
 
-        public override bool PlayerIsInGarage(Item itemInHand)
+        public override void PlayerIsInGarage(Item itemInHand)
         {
             if (itemInHand.ItemId != this.WorkingAttachmentPartId)
             {
-                return false;
+                return;
             }
 
             var activeQuest = this.GetQuest(Game1.player);
             if (activeQuest is null)
             {
                 this.LogWarning($"An active quest for {this.GetType().Name} should exist, but doesn't?!");
-                return false;
+                return;
             }
 
             activeQuest.questComplete();
             Game1.player.removeFirstOfThisItemFromInventory(this.WorkingAttachmentPartId);
             Game1.DrawDialogue(new Dialogue(null, null, this.QuestCompleteMessage));
-            return true;
-        }
+            this.Mod.UpdateTractorModConfig();        }
 
         protected virtual void HideStarterItemIfNeeded() { }
 

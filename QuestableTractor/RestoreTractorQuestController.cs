@@ -9,7 +9,10 @@ namespace NermNermNerm.Stardew.QuestableTractor
     public class RestoreTractorQuestController
         : BaseQuestController<RestorationState>
     {
-        public RestoreTractorQuestController(ModEntry mod) : base(mod) { }
+        public RestoreTractorQuestController(ModEntry mod) : base(mod)
+        {
+            _ = new MasterPlayerModDataMonitor(mod.Helper, ModDataKeys.MainQuestStatus, () => mod.TractorModConfig.TractorGarageBuildingCostChanged());
+        }
 
         public record EngineRequirement(string itemId, string displayName, int quantity);
         public static readonly IReadOnlyCollection<EngineRequirement> engineRequirements = new EngineRequirement[]
@@ -80,8 +83,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
             switch (this.State)
             {
                 case RestorationState.BuildTractorGarage:
-                    this.Mod.TractorModConfig.TractorGarageBuildingCostChanged();
-                    break;
                 case RestorationState.WaitingForSebastianDay1:
                     this.Mod.TractorModConfig.TractorGarageBuildingCostChanged();
                     break;

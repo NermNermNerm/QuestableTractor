@@ -174,7 +174,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         ///   Right now this gets called in the 1-second-tick callback.  It returns true if the item resulted
         ///   in quest completion and the tractor config should be rebuilt.
         /// </summary>
-        public virtual bool PlayerIsInGarage(Item itemInHand) { return false; }
+        public virtual void PlayerIsInGarage(Item itemInHand) {}
 
         public virtual void WriteToLog(string message, LogLevel level, bool isOnceOnly)
             => ((ISimpleLog)this.Mod).WriteToLog(message, level, isOnceOnly);

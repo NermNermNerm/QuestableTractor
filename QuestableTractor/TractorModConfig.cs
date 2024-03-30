@@ -27,7 +27,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         public void TractorGarageBuildingCostChanged()
         {
             this.mod.Helper.GameContent.InvalidateCache("Data/Buildings");
-            this.mod.LogTrace("Invalidating asset 'Data/Buildings' because of local request.");
+            this.mod.LogTrace("Invalidating asset 'Data/Buildings'.");
         }
 
         public void SetConfig(bool isHoeUnlocked, bool isLoaderUnlocked, bool isHarvesterUnlocked, bool isWatererUnlocked, bool isSpreaderUnlocked)

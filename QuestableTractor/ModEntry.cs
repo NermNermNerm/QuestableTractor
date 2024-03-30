@@ -24,6 +24,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         private SeederQuestController seederQuestController = null!;
         private BorrowHarpoonQuestController borrowHarpoonQuestController = null!;
         private RestoreTractorQuestController restoreTractorQuestController = null!;
+        private MasterPlayerModDataMonitor? modDataMonitor = null!;
 
         public WatererQuestController WatererQuestController = null!;
         public BorrowHarpoonQuestController BorrowHarpoonQuestController => this.borrowHarpoonQuestController;
@@ -66,37 +67,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
             };
             this.Helper.Events.GameLoop.DayStarted += this.OnDayStarted;
             this.Helper.Events.GameLoop.DayEnding += this.OnDayEnding;
-
-            this.Helper.Events.Multiplayer.ModMessageReceived += this.Multiplayer_ModMessageReceived;
-        }
-
-        private const string UpdateTractorConfigMessageType = "UpdateTractorConfig";
-
-        public void TransmitUpdateTractorConfig()
-        {
-            bool[] content = [true, // <- comes stock
-                        this.loaderQuestController.IsCompletedByMasterPlayer,
-                        this.scytheQuestController.IsCompletedByMasterPlayer,
-                        this.WatererQuestController.IsCompletedByMasterPlayer,
-                        this.seederQuestController.IsCompletedByMasterPlayer];
-            this.Helper.Multiplayer.SendMessage(content, UpdateTractorConfigMessageType, new string[] { this.Helper.ModContent.ModID });
-        }
-
-        private void Multiplayer_ModMessageReceived(object? sender, ModMessageReceivedEventArgs e)
-        {
-            // TODO: Someday should replace this with monitoring in OnOneSecondUpdateTick to simplify things.
-            switch(e.Type)
-            {
-                case UpdateTractorConfigMessageType:
-                    bool[] settings = e.ReadAs<bool[]>();
-                    this.TractorModConfig.SetConfig(
-                        settings[0], settings[1], settings[2], settings[3], settings[4]);
-                    this.LogTrace("Got a message to update the tractor mod config.");
-                    break;
-                default:
-                    this.LogWarning($"Got an unknown message of type: {e.Type}");
-                    break;
-            }
         }
 
         void ISimpleLog.WriteToLog(string message, LogLevel level, bool isOnceOnly)
@@ -111,7 +81,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
         }
 
-        private void UpdateTractorModConfig()
+        public void UpdateTractorModConfig()
         {
             this.TractorModConfig.SetConfig(
                 isHoeUnlocked: true, // <- comes stock
@@ -120,8 +90,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 isSpreaderUnlocked: this.seederQuestController.IsCompletedByMasterPlayer,
                 isWatererUnlocked: this.WatererQuestController.IsCompletedByMasterPlayer);
         }
-
-        private RestorationState? lastValueOfMainQuestState;
 
         private void GameLoop_OneSecondUpdateTicked(object? sender, OneSecondUpdateTickedEventArgs e)
         {
@@ -146,32 +114,13 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 {
                     foreach (var qc in this.QuestControllers)
                     {
-                        if (qc.PlayerIsInGarage(Game1.player.CurrentItem))
+                        qc.PlayerIsInGarage(Game1.player.CurrentItem);
+                        if (Game1.player.CurrentItem == null)
                         {
-                            this.UpdateTractorModConfig();
-                            this.TransmitUpdateTractorConfig();
                             break;
                         }
                     }
                 }
-            }
-            else
-            {
-                // Polling is a really un-stylish way to deal with updates like this.  There are two ways to do it
-                //  on an interrupt-like basis:
-                // this.Helper.Multiplayer.SendMessage - works, but it arrives *BEFORE* changes to Game1.MasterPlayer.ModData.
-                //  So if you go this route, you have to pass whatever new value is coming through your callstack, which
-                //  means you might have two sources of truth in the world with all the mayhem that can bring.
-                // Game1.player.modData.OnValueTargetUpdated - works, but again, it's not really properly named - it should
-                //  be OnValueTargetUpdati*ING* because the change it tells you about hasn't taken effect when the event pops.
-                //  Also, handlers for those events need to be extra careful to not throw and be quick,
-                //  and InvalidateCache, contrary to its documentation, does the entire asset-loading sequence.
-                var restoreTractorQuestState = this.RestoreTractorQuestController.GetState(Game1.MasterPlayer);
-                if (this.lastValueOfMainQuestState.HasValue && this.lastValueOfMainQuestState.Value != restoreTractorQuestState)
-                {
-                    this.Helper.GameContent.InvalidateCache("Data/Buildings");
-                }
-                this.lastValueOfMainQuestState = restoreTractorQuestState;
             }
         }
 
