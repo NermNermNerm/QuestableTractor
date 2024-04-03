@@ -11,11 +11,12 @@ namespace NermNermNerm.Stardew.QuestableTractor
         : BaseQuestController<BorrowHarpoonQuestState>
     {
         public const string HarpoonToolId = "NermNermNerm.QuestableTractor.Harpoon";
+        public const string HarpoonToolQualifiedId = ItemRegistry.type_tool + HarpoonToolId;
 
         private static float chanceOfHookingWaterer = 0;
         private static bool hasPatchBeenInstalled = false;
         private static BorrowHarpoonQuestController instance = null!;
-        private const string TrashItemId = "(O)168";
+        private const string TrashItemQualifiedId = "(O)168";
 
         public BorrowHarpoonQuestController(ModEntry entry) : base(entry) { }
 
@@ -94,7 +95,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
 
             var borrowHarpoonQuest = FakeQuest.GetFakeQuestByType<BorrowHarpoonQuest>(Game1.player);
-            if (Game1.player.CurrentTool?.ItemId == HarpoonToolId)
+            if (Game1.player.CurrentTool?.QualifiedItemId == HarpoonToolQualifiedId)
             {
                 if (borrowHarpoonQuest is null)
                 {
@@ -122,7 +123,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                     }[Game1.random.Next(3)];
                     Game1.addHUDMessage(new HUDMessage(message) { noIcon = true });
 
-                    return ItemRegistry.Create(TrashItemId);
+                    return ItemRegistry.Create(TrashItemQualifiedId);
                 }
             }
             else // we're not fishing with the harpoon
@@ -130,12 +131,12 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 if (borrowHarpoonQuest is null && Game1.random.NextDouble() < chanceOfHookingWaterer)
                 {
                     this.Mod.BorrowHarpoonQuestController.StartQuest(Game1.player);
-                    return ItemRegistry.Create(TrashItemId);
+                    return ItemRegistry.Create(TrashItemQualifiedId);
                 }
                 else if (borrowHarpoonQuest is not null && borrowHarpoonQuest.State == BorrowHarpoonQuestState.CatchTheBigOne && Game1.random.NextDouble() < .25) // prolly indicates the user goofed and is still using the regular rod
                 {
                     Game1.addHUDMessage(new HUDMessage("Dang! Snapped a line on that waterer again!  Perhaps switching rods to Willy's Harpoon would help.") { noIcon = true });
-                    return ItemRegistry.Create(TrashItemId);
+                    return ItemRegistry.Create(TrashItemQualifiedId);
                 }
                 else
                 {
