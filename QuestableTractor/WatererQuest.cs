@@ -18,7 +18,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public override void CheckIfComplete(NPC n, Item? item)
         {
-            bool itemIsWaterer = this.IsConversationPiece(item);
+            bool itemIsWaterer = item?.ItemId == ObjectIds.BustedWaterer;
             if ((itemIsWaterer || this.State == WatererQuestState.NoCluesYet) && new string[] { "Clint", "Lewis", "Pierre", "Abigail", "Pam", "Marnie", "Willy", "Linus", "Gus", "George", "Caroline" }.Contains(n.Name))
             {
                 this.Spout(n, "Oh, that isn't...  It is!  It's your grandpa's legendary irrigation attachment!  And you *fished* it up you say?  Hah!  Well you would'a had to, wouldn'tya!$1#$b#. . . #$b#Sorry, I gotta compose myself.  You'll want to take this up to the mountain.  Show it to Robin, she can give you the first-hand account.$1#$b#It might not be safe to show it to Demetrius.  I think he's still working through the afteraffects...$s");

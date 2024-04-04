@@ -65,26 +65,22 @@ namespace NermNermNerm.Stardew.QuestableTractor
         /// </returns>
         public override sealed bool checkIfComplete(NPC n, int number1, int number2, Item item, string str, bool probe)
         {
-            if (probe && n is not null && item is not null && this.IsConversationPiece(item))
+            if (probe)
             {
-                // TODO: This code results in making it so that if you hover over NPC's with the broken part, it makes a
-                //   gift icon over their head.  This isn't what it should do.  It should only do that if the NPC will
-                //   have something to say about the item.  To get there, we need yet another refactor of CheckIfComplete.
-                //   Perhaps finally make it where it returns an action or something.
-                return true;
+                return n is not null && item is not null && this.IsConversationPiece(item);
             }
 
-            if (probe || n is null)
+            if (n is null)
             {
                 return false;
             }
 
-            if (item is not null && !this.IsConversationPiece(item))
-            {
-                return false;
-            }
+            //if (item is not null && !this.IsConversationPiece(item))
+            //{
+            //    return false;
+            //}
 
-            this.isHeldItemRelatedToQuest = this.IsConversationPiece(item);
+            this.isHeldItemRelatedToQuest = item is not null && this.IsConversationPiece(item);
             this.didNpcTalk = false;
             this.CheckIfComplete(n, item);
             return this.didNpcTalk;
@@ -93,7 +89,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         /// <summary>
         ///   Returns true if the player holding the item indicates that the player wants to talk about this quest.
         /// </summary>
-        public abstract bool IsConversationPiece(Item? item);
+        public abstract bool IsConversationPiece(Item item);
 
         public abstract void CheckIfComplete(NPC n, Item? item);
 
@@ -132,14 +128,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
         }
 
-
-        public void SpoutIfPressed(NPC n, string message)
-        {
-            if (this.isHeldItemRelatedToQuest)
-            {
-                this.Spout(n, message);
-            }
-        }
 
         public void Spout(string message) => BaseQuestController.Spout(message);
 

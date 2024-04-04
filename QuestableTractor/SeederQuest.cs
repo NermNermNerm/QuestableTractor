@@ -56,7 +56,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                     Game1.player.mailForTomorrow.Add(MailKeys.EvelynPointsToAlex);
                     this.State = SeederQuestState.WaitForEvelyn;
                 }
-                else
+                else if (isHoldingSeeder)
                 {
                     this.Spout(n, "Sorry, what did you say?  I didn't quite hear...");
                 }

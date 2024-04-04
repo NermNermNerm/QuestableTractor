@@ -8,7 +8,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
     public class ScytheQuest
         : TractorPartQuest<ScytheQuestState>
     {
-        private const string crawfishItemId = "(O)716";
+        private const string crawfishQualifiedId = "(O)716";
         private static readonly HashSet<string> shinyItems = new HashSet<string>() { "(O)80" /* quartz */, "(O)82" /* fire quartz */, "(O)68" /* topaz */, "(O)66" /* amethyst */, "(O)60" /* Emerald */, "(O)62" /* Aquamarine */, "(O)70" /* jade */};
 
         internal ScytheQuest(ScytheQuestController controller)
@@ -23,15 +23,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.State = this.State with { Progress = ScytheQuestStateProgress.InstallPart };
         }
 
-        public override bool IsConversationPiece(Item item)
-        {
-            return base.IsConversationPiece(item)
-                || (this.State.VincentTradeKnown && item.ItemId == crawfishItemId)
-                || (this.State.JasTradeKnown && shinyItems.Contains(item.ItemId));
-        }
-
         public override void CheckIfComplete(NPC n, Item? item)
         {
+            bool itemIsBrokenPart = item?.ItemId == ObjectIds.BustedScythe;
             if (n.Name == "Clint" && this.State.Progress < ScytheQuestStateProgress.MissingParts)
             {
                 this.Spout(n, "Let's see what you go there...$s#$b#You know, there's no real metalwork to do here.  It basically needs a good cleaning and oiling.$h#$b#But something seems wrong about it still, like are you sure you got all of it out of the weeds?");
@@ -46,23 +40,23 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 this.Spout(n, "Oh you found the old harvester!  You know, just looking at it, I think it's okay, but I don't think it's quite complete.  Looks like there might be some parts missing.#$b#You're getting pretty good around the farm, I'm sure you could get it to work again if you can find the rest of the parts.  Let me know if you need help with it, though, I'd be happy to help.");
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.MissingParts };
             }
-            else if (n.Name == "Lewis" && this.State.Progress < ScytheQuestStateProgress.InstallPart)
+            else if (n.Name == "Lewis" && itemIsBrokenPart && this.State.Progress < ScytheQuestStateProgress.InstallPart)
             {
-                this.SpoutIfPressed(n, "Oh I'm not much for farm equipment.  You say that's a harvester?  Well, I'll have to take your word for it!$h#$b#Yaknow he broke a lot of stuff on that tractor, but I don't recall that being one of them.  Maybe it just needs cleaning and oiling?");
+                this.Spout(n, "Oh I'm not much for farm equipment.  You say that's a harvester?  Well, I'll have to take your word for it!$h#$b#Yaknow he broke a lot of stuff on that tractor, but I don't recall that being one of them.  Maybe it just needs cleaning and oiling?");
             }
-            else if (n.Name == "Marnie" && this.State.Progress < ScytheQuestStateProgress.JasAndVincentFingered)
+            else if (n.Name == "Marnie" && itemIsBrokenPart && this.State.Progress < ScytheQuestStateProgress.JasAndVincentFingered)
             {
-                this.SpoutIfPressed(n, "Oh that's the old harvester!  Or most of one anyway...$s#$b#Well, did you look around where you found that piece?  Might be more pieces under that log.#$b#You might enlist Jaz and Vincent to help - they used to play out in your south pasture, but when you moved back in, I asked them to keep clear so you could get your work done.  But they know that area pretty well.");
+                this.Spout(n, "Oh that's the old harvester!  Or most of one anyway...$s#$b#Well, did you look around where you found that piece?  Might be more pieces under that log.#$b#You might enlist Jaz and Vincent to help - they used to play out in your south pasture, but when you moved back in, I asked them to keep clear so you could get your work done.  But they know that area pretty well.");
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.JasAndVincentFingered };
             }
-            else if (n.Name == "Marnie" && this.State.Progress < ScytheQuestStateProgress.JasAndVincentFingered)
+            else if (n.Name == "Marnie" && itemIsBrokenPart && this.State.Progress < ScytheQuestStateProgress.JasAndVincentFingered)
             {
-                this.SpoutIfPressed(n, "Oh that's a *harvester*?  I never would have guessed!  Yep, I saw it on your farm and always wondered about it...#$b#Well, unless I was prepared to accept Jaz and Vincent's explanation that it was a machine made by Greebles!$l");
+                this.Spout(n, "Oh that's a *harvester*?  I never would have guessed!  Yep, I saw it on your farm and always wondered about it...#$b#Well, unless I was prepared to accept Jaz and Vincent's explanation that it was a machine made by Greebles!$l");
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.JasAndVincentFingered };
             }
-            else if (n.Name == "Penny" && this.State.Progress == ScytheQuestStateProgress.NoCluesYet)
+            else if (n.Name == "Penny" && itemIsBrokenPart && this.State.Progress == ScytheQuestStateProgress.NoCluesYet)
             {
-                this.SpoutIfPressed(n, "That's the old harvester for the tractor?  I guess it looks like that.#$b#I'm sorry, I don't know anything about farming.$2");
+                this.Spout(n, "That's the old harvester for the tractor?  I guess it looks like that.#$b#I'm sorry, I don't know anything about farming.$2");
             }
             else if (n.Name == "Penny" && this.State.Progress == ScytheQuestStateProgress.MissingParts)
             {
@@ -74,9 +68,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 this.Spout(n, "Oh yeah I've seen that - wedged under a tree, right?  Must have been a feat to get it out!#$b#Did Jaz or Vincent tell you where to find it?  They used to play near it quite a bit.");
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.JasAndVincentFingered };
             }
-            else if (n.Name == "Jodi" && this.State.Progress == ScytheQuestStateProgress.NoCluesYet)
+            else if (n.Name == "Jodi" && itemIsBrokenPart && this.State.Progress == ScytheQuestStateProgress.NoCluesYet)
             {
-                this.SpoutIfPressed(n, "What is that thing?  A harvester?  Sure, if you say so...  I tell you though, something about that thing seems familiar to me.$s#$b#Well, it looks like a mess, and I've cleaned up a lot messes.  It must be that!$l");
+                this.Spout(n, "What is that thing?  A harvester?  Sure, if you say so...  I tell you though, something about that thing seems familiar to me.$s#$b#Well, it looks like a mess, and I've cleaned up a lot messes.  It must be that!$l");
             }
             else if (n.Name == "Jodi" && this.State.Progress == ScytheQuestStateProgress.MissingParts)
             {
@@ -126,7 +120,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 this.Spout(n, "Did you have any luck getting it to fit back together?  I could probably help you put it back together, it sure came apart easy!$l");
             }
-            else if (n.Name == "Vincent" && this.State.VincentTradeKnown && this.TryTakeItemsFromPlayer("716", 3))
+            else if (n.Name == "Vincent" && this.State.VincentTradeKnown && this.TryTakeItemsFromPlayer("(O)716", 3))
             {
                 this.AddQuestItemToInventory(ObjectIds.ScythePart1);
                 this.Spout(n, "Ooh!  Oh these 3 crawdads would be great!  Thanks!  Here's your thingamajig.  I Hope it works!$l#$b#Sure, I won't tell Mom that you gave them to me if you want...  Why?$s");
@@ -134,7 +128,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n.Name == "Vincent" && this.State.VincentTradeKnown)
             {
-                this.Spout(n, "Did you get the bugs?  Big ones?");
+                this.Spout(n, "Did you get the bugs?  3 Big ones?");
             }
             else if (n.Name == "Vincent")
             {
