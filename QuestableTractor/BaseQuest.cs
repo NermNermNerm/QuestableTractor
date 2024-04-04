@@ -67,6 +67,10 @@ namespace NermNermNerm.Stardew.QuestableTractor
         {
             if (probe && n is not null && item is not null && this.IsConversationPiece(item))
             {
+                // TODO: This code results in making it so that if you hover over NPC's with the broken part, it makes a
+                //   gift icon over their head.  This isn't what it should do.  It should only do that if the NPC will
+                //   have something to say about the item.  To get there, we need yet another refactor of CheckIfComplete.
+                //   Perhaps finally make it where it returns an action or something.
                 return true;
             }
 

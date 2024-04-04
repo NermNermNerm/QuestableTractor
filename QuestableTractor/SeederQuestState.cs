@@ -3,6 +3,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
     internal enum SeederQuestState
     {
         GotPart,
+        GeorgePestered,
         GetEvelynOnSide,
         WaitForEvelyn,
         TalkToAlex1,
