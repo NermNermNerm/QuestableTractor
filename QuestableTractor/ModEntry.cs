@@ -60,6 +60,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.Helper.Events.GameLoop.SaveLoaded += (_, _) =>
             {
                 this.UpdateTractorModConfig();
+                BaseQuest.ClearOldNews();
             };
             this.Helper.Events.GameLoop.DayStarted += this.OnDayStarted;
             this.Helper.Events.GameLoop.DayEnding += this.OnDayEnding;

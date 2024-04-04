@@ -23,9 +23,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.State = this.State with { Progress = ScytheQuestStateProgress.InstallPart };
         }
 
-        public override bool IsItemForThisQuest(Item item)
+        public override bool IsConversationPiece(Item item)
         {
-            return base.IsItemForThisQuest(item)
+            return base.IsConversationPiece(item)
                 || (this.State.VincentTradeKnown && item.ItemId == crawfishItemId)
                 || (this.State.JasTradeKnown && shinyItems.Contains(item.ItemId));
         }
@@ -48,25 +48,25 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n.Name == "Lewis" && this.State.Progress < ScytheQuestStateProgress.InstallPart)
             {
-                this.Spout(n, "Oh I'm not much for farm equipment.  You say that's a harvester?  Well, I'll have to take your word for it!$h#$b#Yaknow he broke a lot of stuff on that tractor, but I don't recall that being one of them.  Maybe it just needs cleaning and oiling?");
+                this.SpoutIfPressed(n, "Oh I'm not much for farm equipment.  You say that's a harvester?  Well, I'll have to take your word for it!$h#$b#Yaknow he broke a lot of stuff on that tractor, but I don't recall that being one of them.  Maybe it just needs cleaning and oiling?");
             }
             else if (n.Name == "Marnie" && this.State.Progress < ScytheQuestStateProgress.JasAndVincentFingered)
             {
-                this.Spout(n, "Oh that's the old harvester!  Or most of one anyway...$s#$b#Well, did you look around where you found that piece?  Might be more pieces under that log.#$b#You might enlist Jaz and Vincent to help - they used to play out in your south pasture, but when you moved back in, I asked them to keep clear so you could get your work done.  But they know that area pretty well.");
+                this.SpoutIfPressed(n, "Oh that's the old harvester!  Or most of one anyway...$s#$b#Well, did you look around where you found that piece?  Might be more pieces under that log.#$b#You might enlist Jaz and Vincent to help - they used to play out in your south pasture, but when you moved back in, I asked them to keep clear so you could get your work done.  But they know that area pretty well.");
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.JasAndVincentFingered };
             }
             else if (n.Name == "Marnie" && this.State.Progress < ScytheQuestStateProgress.JasAndVincentFingered)
             {
-                this.Spout(n, "Oh that's a *harvester*?  I never would have guessed!  Yep, I saw it on your farm and always wondered about it...#$b#Well, unless I was prepared to accept Jaz and Vincent's explanation that it was a machine made by Greebles!$l");
+                this.SpoutIfPressed(n, "Oh that's a *harvester*?  I never would have guessed!  Yep, I saw it on your farm and always wondered about it...#$b#Well, unless I was prepared to accept Jaz and Vincent's explanation that it was a machine made by Greebles!$l");
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.JasAndVincentFingered };
             }
             else if (n.Name == "Penny" && this.State.Progress == ScytheQuestStateProgress.NoCluesYet)
             {
-                this.Spout(n, "That's the old harvester for the tractor?  I guess it looks like that.#$b#I'm sorry, I don't know anything about farming.$2");
+                this.SpoutIfPressed(n, "That's the old harvester for the tractor?  I guess it looks like that.#$b#I'm sorry, I don't know anything about farming.$2");
             }
             else if (n.Name == "Penny" && this.State.Progress == ScytheQuestStateProgress.MissingParts)
             {
-                this.Spout(n, "That's the old harvester for the tractor?  I guess it looks like that.  You think it's incomplete?$s#$b#You might ask Jaz and Vincent to help look for other parts like that - they told me they used to play out in your south pasture, but they don't anymore because Marnie shooed them away.$4");
+                this.Spout(n, "Missing parts for a 'harvester'?$s#$b#You might ask Jaz and Vincent to help look for other parts like that - they told me they used to play out in your south pasture, but they don't anymore because Marnie shooed them away.$4");
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.JasAndVincentFingered };
             }
             else if (n.Name == "Abigail" && this.State.Progress < ScytheQuestStateProgress.JasAndVincentFingered)
@@ -76,7 +76,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n.Name == "Jodi" && this.State.Progress == ScytheQuestStateProgress.NoCluesYet)
             {
-                this.Spout(n, "What is that thing?  A harvester?  Sure, if you say so...  I tell you though, something about that thing seems familiar to me.$s#$b#Well, it looks like a mess, and I've cleaned up a lot messes.  It must be that!$l");
+                this.SpoutIfPressed(n, "What is that thing?  A harvester?  Sure, if you say so...  I tell you though, something about that thing seems familiar to me.$s#$b#Well, it looks like a mess, and I've cleaned up a lot messes.  It must be that!$l");
             }
             else if (n.Name == "Jodi" && this.State.Progress == ScytheQuestStateProgress.MissingParts)
             {
@@ -90,7 +90,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n.Name == "Wizard" && item is not null && (Game1.Date.DayOfWeek == DayOfWeek.Friday || Game1.Date.DayOfWeek == DayOfWeek.Saturday))
             {
-                this.Spout(n, "BAH!  Begone with this mundane contrivance!$a");
+                this.Spout(n, "BAH!  Begone with this mundane contrivance!  Return on Friday or Saturday and I may have time.$a");
             }
             else if (n.Name == "Jas" && this.State.JasPartGot)
             {

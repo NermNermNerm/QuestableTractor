@@ -17,7 +17,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.questDescription = "There's a rusty old tractor in the fields; it sure would be nice if it could be restored.  Perhaps the townspeople can help.";
         }
 
-        public override bool IsItemForThisQuest(Item item)
+        public override bool IsConversationPiece(Item item)
         {
             return item.ItemId == ObjectIds.BustedEngine || item.ItemId == ObjectIds.WorkingEngine;
         }
@@ -117,20 +117,20 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n?.Name == "Clint" && item?.ItemId == ObjectIds.BustedEngine)
             {
-                this.Spout(n, "Uh...#$b#What is it?  you say it's an Engine?$s#$b#I say it's weird. . .  Hey, is that thing moving?$a#$b#I don't know.  Maybe the Wizard would know what it is, and even if he doesn't, he'll sure pretend like he does if you show it to him.$");
+                this.SpoutIfPressed(n, "Uh...#$b#What is it?  you say it's an Engine?$s#$b#I say it's weird. . .  Hey, is that thing moving?$a#$b#I don't know.  Maybe the Wizard would know what it is, and even if he doesn't, he'll sure pretend like he does if you show it to him.$");
             }
             else if ((n?.Name == "Abigail" || n?.Name == "Vincent") && item?.ItemId == ObjectIds.BustedEngine)
             {
-                this.Spout(n, "Oh wow...#$b#Can I have it?");
+                this.SpoutIfPressed(n, "Oh wow...#$b#Can I have it?");
             }
             else if (n?.Name == "Marnie" && item?.ItemId == ObjectIds.BustedEngine)
             {
-                this.Spout(n, "AAAAHHH!!!  IT'S MOVING!  TAKE IT AWAY!$4");
+                this.SpoutIfPressed(n, "AAAAHHH!!!  IT'S MOVING!  TAKE IT AWAY!$4");
                 // TODO: Remember that Marnie saw it and have gossip later about it.
             }
             else if (n is not null && item?.ItemId == ObjectIds.BustedEngine)
             {
-                this.Spout(n, "I've never seen anything like that before...#$b#It gives me this uncanny feeling like...  it's missing something.#$b#Weird.");
+                this.SpoutIfPressed(n, "I've never seen anything like that before...#$b#It gives me this uncanny feeling like...  it's missing something.#$b#Weird.");
             }
             else if (n?.Name == "Sebastian" && item?.ItemId == ObjectIds.WorkingEngine)
             {

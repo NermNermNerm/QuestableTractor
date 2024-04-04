@@ -28,7 +28,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
         }
 
-        public override bool IsItemForThisQuest(Item item) => item.QualifiedItemId == BorrowHarpoonQuestController.HarpoonToolQualifiedId;
+        public override bool IsConversationPiece(Item item) => item.QualifiedItemId == BorrowHarpoonQuestController.HarpoonToolQualifiedId;
 
         public void LandedTheWaterer() => this.State = BorrowHarpoonQuestState.ReturnThePole;
 

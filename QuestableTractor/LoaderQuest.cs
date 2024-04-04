@@ -60,8 +60,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
         }
 
-        public override bool IsItemForThisQuest(Item item) =>
-            item.ItemId == ObjectIds.AlexesOldShoe || item.ItemId == ObjectIds.DisguisedShoe || base.IsItemForThisQuest(item);
+        public override bool IsConversationPiece(Item? item) =>
+            item?.ItemId == ObjectIds.AlexesOldShoe || item?.ItemId == ObjectIds.DisguisedShoe || base.IsConversationPiece(item);
 
         public override void GotWorkingPart(Item workingPart)
         {

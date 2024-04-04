@@ -8,10 +8,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
     {
         private bool pesteredGeorgeToday = false; // Ensure the player doesn't zero out their hearts with George banging on this quest.
 
-        // This is a sketchy way of dealing with the fact that you need to be able to talk to Evelyn while you're
-        //  still working on her heart-level.
-        private static bool pesteredEvelynThisSession = false;
-
         public const int GeorgeSendsBrokenPartHeartLevel = 3;
         private const int evelynWillingToHelpLevel = 3;
         private const int alexWillingToHelpLevel = 2;
@@ -56,17 +52,16 @@ namespace NermNermNerm.Stardew.QuestableTractor
                     Game1.player.mailForTomorrow.Add(MailKeys.EvelynPointsToAlex);
                     this.State = SeederQuestState.WaitForEvelyn;
                 }
-                else if (!pesteredEvelynThisSession || item?.ItemId == ObjectIds.BustedSeeder)
+                else if (item?.ItemId == ObjectIds.BustedSeeder)
                 {
                     this.Spout(n, "Sorry, what did you say?  I didn't quite hear...");
-                    pesteredEvelynThisSession = true;
                 }
             }
             else if (n.Name == "Alex" && this.State == SeederQuestState.TalkToAlex1)
             {
                 if (Game1.player.getFriendshipHeartLevelForNPC("Alex") < alexWillingToHelpLevel)
                 {
-                    this.Spout(n, "Look, I got my life to live, and it doesn't involve fixing farm equipment.");
+                    this.Spout(n, "Look, I got my life to live, and it doesn't involve fixing farm equipment.#$b#Take it to Maru.  Mechanics is her game, not mine.");
                 }
                 else
                 {
@@ -76,11 +71,11 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n.Name == "Lewis" && this.State == SeederQuestState.GetHaleyOnSide)
             {
-                this.Spout(n, "Heh, isn't easy is it.  Keep it up, maybe you'll learn how to be mayor someday!$1#$b#Evelyn was probably right, in that somebody his own age could do it.  Somebody he hangs out with alot.");
+                this.Spout(n, "Heh, isn't easy is it.  Keep it up, maybe you'll learn how to be mayor someday!$1#$b#Evelyn was probably right, in that somebody his own age could do it.  Somebody he spends a lot of time with.");
             }
             else if ((n.Name == "Sebastian" || n.Name == "Abigail" || n.Name == "Sam") && this.State == SeederQuestState.GetHaleyOnSide)
             {
-                this.Spout(n, "You think *I* have a clue what goes on inside Alex's head??$5#$b#Oh wait, I *DO* know...  Absolutely nothing.#4");
+                this.Spout(n, "You think *I* have a clue what goes on inside Alex's head??$5#$b#Oh wait, I *DO* know...  Absolutely nothing.$4");
             }
             else if (n.Name == "Emily" && this.State == SeederQuestState.GetHaleyOnSide)
             {
