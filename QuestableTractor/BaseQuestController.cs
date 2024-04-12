@@ -222,12 +222,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public void OnDayStarted()
         {
-            if (!Game1.IsMasterGame)
-            {
-                return;  // All of the quests are master-player only, so no advancement or other start-of-day
-                         // events should happen.
-            }
-
             // The promise is that we call this when the state changes and on initial load...  But right now
             // we haven't hooked into that event and, in any case, OnStateChange shouldn't suffer from being
             // called more frequently than needed, so here it is.
@@ -247,7 +241,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
 
             // Re-test the state beause it might have completed overnight
-            if (this.OverallQuestState == OverallQuestState.InProgress)
+            if (Game1.IsMasterGame && this.OverallQuestState == OverallQuestState.InProgress)
             {
                 var newQuest = this.CreateQuest();
                 newQuest.MarkAsViewed();
