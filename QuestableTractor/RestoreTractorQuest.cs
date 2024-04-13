@@ -89,7 +89,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n?.Name == "Lewis" && this.State == RestorationState.TalkToLewisAgain)
             {
-                this.Spout(n, "He said that?$a#$b#Well, I can't say I'm really surprised...  A bit disappointed, tho.$s#$b#Hm. . .$u#$b#Welp, I guess this is why they pay me the big money, eh?  I'll see if I can make this happen for you, but it might take a couple days.");
+                this.Spout(n, "He said that?$a#$b#Well, I can't say I'm really surprised...  Just a bit disappointed.$s#$b#Hm. . .$u#$b#Welp, I guess this is why they pay me the big money, eh?  I'll see if I can make this happen for you, but it might take a couple days.");
                 Game1.drawDialogue(n);
                 this.State = RestorationState.WaitingForMailFromRobinDay1;
             }
