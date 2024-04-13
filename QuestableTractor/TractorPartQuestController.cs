@@ -78,6 +78,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 return;
             }
 
+            this.Mod.PetFindsThings.ObjectForPetToFindHasBeenPickedUp(Game1.getFarm(), this.BrokenAttachmentPartId);
             this.AnnounceGotBrokenPart(brokenPart);
             this.CreateQuestNew(Game1.player);
             this.MonitorInventoryForItem(this.WorkingAttachmentPartId, this.PlayerGotWorkingPart);
@@ -129,6 +130,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             if (existing is not null)
             {
                 this.LogInfoOnce($"{this.BrokenAttachmentPartId} is already placed at {existing.TileLocation.X},{existing.TileLocation.Y}");
+                this.Mod.PetFindsThings.AddObjectForPetToFind(farm, this.BrokenAttachmentPartId, existing.TileLocation.ToPoint());
                 return;
             }
 
@@ -137,9 +139,10 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 var o = ItemRegistry.Create<StardewValley.Object>(this.BrokenAttachmentPartId);
                 o.questItem.Value = true;
-                o.Location = Game1.getFarm();
+                o.Location = farm;
                 o.TileLocation = position;
                 this.LogInfoOnce($"{this.BrokenAttachmentPartId} placed at {position.X},{position.Y}");
+                this.Mod.PetFindsThings.AddObjectForPetToFind(farm, this.BrokenAttachmentPartId, position.ToPoint());
                 o.IsSpawnedObject = true;
                 farm.objects[o.TileLocation] = o;
             }

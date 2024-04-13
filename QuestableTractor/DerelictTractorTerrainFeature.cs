@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using StardewModdingAPI;
@@ -27,6 +28,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
         : TerrainFeature
     {
         private Texture2D? texture;
+        private const string DerelictTractorPetFinderId = "QuestableTractor.DerelictTractor";
+        private bool farmhandHasFoundTractor = false;
+
 
         public DerelictTractorTerrainFeature()
             : base(needsTick: false)
@@ -35,6 +39,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public static void PlaceInField(ModEntry mod)
         {
+            if (!Game1.IsMasterGame) return;
+
             Game1.player.modData.TryGetValue(ModDataKeys.DerelictPosition, out string? positionAsString);
             if (positionAsString is null || !TryParse(positionAsString, out Vector2 position))
             {
@@ -54,6 +60,10 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 mod.LogInfo($"Derelict tractor placed at {position}");
                 Game1.player.modData[ModDataKeys.DerelictPosition] = FormattableString.Invariant($"{position.X},{position.Y}");
             }
+
+            // We're doing this step unconditionally to support players that installed the mod and then updated to the version with the pet finder before finding the tractor
+            mod.PetFindsThings.AddObjectForPetToFind(Game1.getFarm(), DerelictTractorPetFinderId, position.ToPoint());
+
             Place(mod, position);
         }
 
@@ -119,6 +129,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public static void PlaceInGarage(ModEntry mod, Stable garage)
         {
+            if (!Game1.IsMasterGame) return;
+
             mod.LogInfoOnce($"Derelict tractor is in the garage");
             Place(mod, new Vector2(garage.tileX.Value + 1, garage.tileY.Value + 1));
         }
@@ -167,10 +179,19 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public override bool performToolAction(Tool t, int damage, Vector2 tileLocation)
         {
-            if (Game1.IsMasterGame && FakeQuest.GetFakeQuestByType<RestoreTractorQuest>(Game1.player) is null)
+            if (!ModEntry.Instance.RestoreTractorQuestController.IsStartedByMasterPlayer)
             {
-                Game1.drawObjectDialogue("This looks like an old tractor.  Perhaps it could help you out around the farm, but it's been out in the weather a long time.  It'll need some fixing.  Maybe somebody in town can help?");
-                ModEntry.Instance.RestoreTractorQuestController.CreateQuestNew(Game1.player);
+                if (Game1.IsMasterGame)
+                {
+                    Game1.drawObjectDialogue("This looks like an old tractor.  Perhaps it could help you out around the farm, but it's been out in the weather a long time.  It'll need some fixing.  Maybe somebody in town can help?");
+                    ModEntry.Instance.PetFindsThings.ObjectForPetToFindHasBeenPickedUp(Game1.getFarm(), DerelictTractorPetFinderId);
+                    ModEntry.Instance.RestoreTractorQuestController.CreateQuestNew(Game1.player);
+                }
+                else if (!this.farmhandHasFoundTractor)
+                {
+                    Game1.drawObjectDialogue($"This looks like an old tractor.  You should tell {Game1.MasterPlayer.Name} about this thing.");
+                    this.farmhandHasFoundTractor = true;
+                }
             }
 
             return base.performToolAction(t, damage, tileLocation);

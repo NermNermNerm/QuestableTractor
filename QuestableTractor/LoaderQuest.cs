@@ -92,7 +92,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 this.Spout(n, "Well, I mostly get my shoes from secondhand stores, but I don't really know about men's shoes.  Have you asked Sam, or Alex?");
             }
-            else if (n.Name == "Sebastian" && this.State < LoaderQuestState.SnagAlexsOldShoes)
+            else if (n.Name == "Sebastian" && this.State < LoaderQuestState.SnagAlexsOldShoes && this.State > LoaderQuestState.TalkToClint)
             {
                 this.Spout(n, "Shoes..  Yeah man, decent shoes cost a fortune.  I always wear black, though, which makes it easy.  Blacken anything and it looks cool.");
             }

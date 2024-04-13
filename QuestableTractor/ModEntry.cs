@@ -41,6 +41,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.TractorModConfig = new TractorModConfig(this);
         }
 
+        public PetFindsThings PetFindsThings = new PetFindsThings();
+
 
         public override void Entry(IModHelper helper)
         {
@@ -54,6 +56,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.borrowHarpoonQuestController = new BorrowHarpoonQuestController(this);
             this.restoreTractorQuestController = new RestoreTractorQuestController(this);
             this.QuestControllers = new List<BaseQuestController> { this.loaderQuestController, this.scytheQuestController, this.seederQuestController, this.WatererQuestController, this.borrowHarpoonQuestController, this.restoreTractorQuestController };
+            this.PetFindsThings.Entry(this);
 
             this.Helper.Events.Content.AssetRequested += this.OnAssetRequested;
             this.Helper.Events.GameLoop.OneSecondUpdateTicked += this.GameLoop_OneSecondUpdateTicked;
@@ -66,7 +69,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.Helper.Events.GameLoop.DayEnding += this.OnDayEnding;
         }
 
-        void ISimpleLog.WriteToLog(string message, LogLevel level, bool isOnceOnly)
+        public void WriteToLog(string message, LogLevel level, bool isOnceOnly)
         {
             if (isOnceOnly)
             {
