@@ -41,14 +41,14 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 n.doEmote(20); // hearts
                 this.questComplete();
             }
-            else if (n?.Name == "Willy" && this.State == BorrowHarpoonQuestState.GetThePole && Game1.player.currentLocation.Name == "FishShop")
+            else if (n.Name == "Willy" && this.State == BorrowHarpoonQuestState.GetThePole && Game1.player.currentLocation.Name == "FishShop")
             {
                 this.Spout(n, "Ah laddy...  I do think I know what you mighta hooked into and yer right that ya need a lot more pole than what you got.#$b#Here's a wee bit o' fishin' kit that my great great grandpappy used to land whales back before we knew better.#$b#I think ya will find it fit for tha purpose.");
 
                 Game1.player.addItemByMenuIfNecessary(ItemRegistry.Create(BorrowHarpoonQuestController.HarpoonToolQualifiedId));
                 this.State = BorrowHarpoonQuestState.CatchTheBigOne;
             }
-            else if (n?.Name == "Willy" && this.State == BorrowHarpoonQuestState.GetThePole && Game1.player.currentLocation.Name != "FishShop")
+            else if (n.Name == "Willy" && this.State == BorrowHarpoonQuestState.GetThePole && Game1.player.currentLocation.Name != "FishShop")
             {
                 this.Spout(n, "Ah laddy...  I do think I know what you mighta hooked into and yer right that ya need a lot more pole than what you got.#$b#Come visit me in my shop and I'll set you up with something that might work");
             }

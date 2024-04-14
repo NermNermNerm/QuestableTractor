@@ -62,7 +62,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                             this.Spout(n, "Alrighty, I'll get to work on it and have it back to you in a couple days.  I'll just drop it in the mail for you.");
                             this.State = WatererQuestState.WaitForMaruDay1;
                         }
-                        else
+                        else if (itemIsWaterer)
                         {
                             this.Spout(n, "Have you found some gold bars yet?  Gotta go pretty deep in the mines to get it, but I'm sure you're up for it.");
                         }

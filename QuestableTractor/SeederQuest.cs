@@ -43,6 +43,10 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 this.Spout(n, "I'm honored that you're asking me to look at this, but it'd really be better if George did the work...#$b#I know it won't be easy for him...  Maybe he'll need help.$s#$b#But if he actually did it, well, it'd do him a lot of good.#$b#You should talk to Lewis.  He and George go back a long way.  He'll know what to do.#$b#If it all goes wrong, come back to me and I'll try to fix it.");
             }
+            else if (n.Name == "Maru" && isHoldingSeeder && this.State == SeederQuestState.GetHaleyOnSide)
+            {
+                this.Spout(n, "I'm flattered that Alex thinks I can fix it...  Maybe I can, but we should stick to Evelyn's plan.  Alex and I don't exactly click, but I'm sure there's somebody who knows Alex well enough to help convince him to do it.");
+            }
             else if (n.Name == "Lewis" && this.State <= SeederQuestState.GeorgePestered)
             {
                 this.Spout(n, "Oh dear oh dear oh dear...$2#$b#Hm...$2#$b#George isn't wrong -- physically, he's just not in good shape.  Mentally, though, he's still as sharp as ever.  Alas, not like your Grandpa, towards the end.$s#$b#But if he can somehow do this, or at least help in doing it, it'll do him so much good.#$b#We need some help here...  We need Evelyn, and YOU have to get her to cajole George into trying this.  I can't be seen to be involved for, err...  reasons.#$b#You need to build some trust with her before you broach the topic, however.  Tread carefully.");
@@ -67,7 +71,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 this.Spout(n, "Nah man, these hands were made for gridball.  You're good with this sort of thing, you should talk Grandpa into showing you how.  Or get Maru, she's good at mechanical stuff.$3");
                 this.State = SeederQuestState.GetHaleyOnSide;
             }
-            else if (n.Name == "Lewis" && isHoldingSeeder && this.State <= SeederQuestState.GetHaleyOnSide)
+            else if (n.Name == "Lewis" && isHoldingSeeder && this.State == SeederQuestState.GetHaleyOnSide)
             {
                 this.Spout(n, "Heh, isn't easy is it.  Keep it up, maybe you'll learn how to be mayor someday!$1#$b#Evelyn was probably right, in that somebody his own age could convince him.  Somebody he spends a lot of time with.");
             }
