@@ -61,8 +61,12 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 Game1.player.modData[ModDataKeys.DerelictPosition] = FormattableString.Invariant($"{position.X},{position.Y}");
             }
 
-            // We're doing this step unconditionally to support players that installed the mod and then updated to the version with the pet finder before finding the tractor
-            mod.PetFindsThings.AddObjectForPetToFind(Game1.getFarm(), DerelictTractorPetFinderId, position.ToPoint());
+            if (!mod.RestoreTractorQuestController.IsStartedByMasterPlayer)
+            {
+                // We're doing this even if the tractor is already placed to support players that installed the mod and
+                // then updated to the version with the pet finder before finding the tractor
+                mod.PetFindsThings.AddObjectForPetToFind(Game1.getFarm(), DerelictTractorPetFinderId, position.ToPoint());
+            }
 
             Place(mod, position);
         }
