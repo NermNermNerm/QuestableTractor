@@ -8,7 +8,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
     public class ScytheQuest
         : TractorPartQuest<ScytheQuestState>
     {
-        private const string crawfishQualifiedId = "(O)716";
+        private const string crawfishQiid = "(O)716";
         private static readonly HashSet<string> shinyItems = new HashSet<string>() { "(O)80" /* quartz */, "(O)82" /* fire quartz */, "(O)68" /* topaz */, "(O)66" /* amethyst */, "(O)60" /* Emerald */, "(O)62" /* Aquamarine */, "(O)70" /* jade */};
 
         internal ScytheQuest(ScytheQuestController controller)
@@ -63,7 +63,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 this.Spout(n, "Missing parts for a 'harvester'?$s#$b#You might ask Jaz and Vincent to help look for other parts like that - they told me they used to play out in your south pasture, but they don't anymore because Marnie shooed them away.$4");
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.JasAndVincentFingered };
             }
-            else if (n.Name == "Abigail" && this.State.Progress < ScytheQuestStateProgress.JasAndVincentFingered)
+            else if (n.Name == "Abigail" && (itemIsBrokenPart || this.State.Progress < ScytheQuestStateProgress.JasAndVincentFingered))
             {
                 this.Spout(n, "Oh yeah I've seen that - wedged under a tree, right?  Must have been a feat to get it out!#$b#Did Jaz or Vincent tell you where to find it?  They used to play near it quite a bit.");
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.JasAndVincentFingered };
@@ -77,20 +77,23 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 this.Spout(n, "That's the old harvester for the tractor?  I guess it looks like that.  You think it's incomplete?$s#$b#You might ask Jaz and Vincent to help look for other parts like that - they used to play out in your south pasture, but don't worry!  Marnie and I asked them not to since you moved in.#$b#You've got enough on your hands without those two hooligans running through the corn!$l");
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.JasAndVincentFingered };
             }
-            else if (n.Name == "Wizard" && this.State.Progress < ScytheQuestStateProgress.InstallPart && (Game1.Date.DayOfWeek == DayOfWeek.Friday || Game1.Date.DayOfWeek == DayOfWeek.Saturday))
+            else if (n.Name == "Wizard"
+                && (itemIsBrokenPart || (!this.State.JasTradeKnown || !this.State.VincentTradeKnown))
+                && (!this.State.JasPartGot || !this.State.VincentPartGot)
+                && (Game1.Date.DayOfWeek == DayOfWeek.Friday || Game1.Date.DayOfWeek == DayOfWeek.Saturday))
             {
                 this.Spout(n, "Aha!!!!  I FORESEE THAT YOU HAVE NEED OF A SCRY!$a#$b#And you've come at the perfect time.  I happen to have need to flex my muscles from time to time, to keep in tip top form, you know.  Let's have a look#$b#Aahh through the mists I see two people, NO, CHILDREN, in your farm playing...#$b#They have taken parts of off and headed off...  But wait, there's more...  Yes...#$b#They will each need to be placated to get them to give the parts back.  The boy will want 3 crayfish and the girl will want a gemstone, but her tastes are not yet developed, so a cheap one will do...");
-                this.State = this.State with { Progress = ScytheQuestStateProgress.JasAndVincentFingered, JasTradeKnown = true, VincentTradeKnown = true };
+                this.State = this.State with { Progress = ScytheQuestStateProgress.JasAndVincentFingered }; // Don't set TradeKnown because the kids don't know you know.
             }
-            else if (n.Name == "Wizard" && itemIsBrokenPart && this.State.Progress < ScytheQuestStateProgress.InstallPart && !(Game1.Date.DayOfWeek == DayOfWeek.Friday || Game1.Date.DayOfWeek == DayOfWeek.Saturday))
+            else if (n.Name == "Wizard" && itemIsBrokenPart && (!this.State.JasPartGot || !this.State.VincentPartGot) && !(Game1.Date.DayOfWeek == DayOfWeek.Friday || Game1.Date.DayOfWeek == DayOfWeek.Saturday))
             {
                 this.Spout(n, "BAH!  Begone with this mundane contrivance!  Return on Friday or Saturday and I may have time.$a");
             }
-            else if (n.Name == "Jas" && this.State.JasPartGot)
+            else if (n.Name == "Jas" && itemIsBrokenPart && this.State.JasPartGot)
             {
                 this.Spout(n, "I love how my jumprope sparkles in the sun now!  Did you have any luck getting it to fit back together?");
             }
-            else if (n.Name == "Jas" && this.State.JasTradeKnown)
+            else if (n.Name == "Jas" && this.State.JasTradeKnown && !this.State.JasPartGot)
             {
                 // It'd be nice if there was a way to make this a little more interactive with Jaz having, like a random taste-of-the-day and
                 //  only one gem will be shiny enough on that day.  I don't see a way to make that happen right now.
@@ -109,31 +112,34 @@ namespace NermNermNerm.Stardew.QuestableTractor
                     }
                 }
 
-                this.Spout(n, "Oohh when are you gonna bring me something shiny!  I'm really looking forward to it!");
+                if (itemIsBrokenPart)
+                {
+                    this.Spout(n, "Oohh when are you gonna bring me something shiny!  I'm really looking forward to it!");
+                }
             }
-            else if (n.Name == "Jas")
+            else if (n.Name == "Jas" && !this.State.JasTradeKnown)
             {
                 this.Spout(n, "Ooh!  You found the Greeble machine!$h#$b#Vincent and I used to play games with that, but we had to stop because Aunt Marnie told us we couldn't go into your pasture anymore unless you invite us.#$b#There are parts missing?  Well of course there are!  Vincent and I kept some of the shinier bits, see, one's on my jumprope!  It's so shiny, it sparkles when I jump!  Oh, and FINDERS KEEPERS!$l#$b#Well, I suppose I could give it back to you...  BUT ONLY IF YOU TRADE ME SOMETHING REALLY SHINY!$h");
                 this.State = this.State with { Progress = ScytheQuestStateProgress.JasAndVincentFingered, JasTradeKnown = true };
             }
-            else if (n.Name == "Vincent" && this.State.VincentPartGot)
+            else if (n.Name == "Vincent" && itemIsBrokenPart && this.State.VincentPartGot)
             {
                 this.Spout(n, "Did you have any luck getting it to fit back together?  I could probably help you put it back together, it sure came apart easy!$l");
             }
-            else if (n.Name == "Vincent" && this.State.VincentTradeKnown && this.TryTakeItemsFromPlayer("(O)716", 3))
+            else if (n.Name == "Vincent" && this.State.VincentTradeKnown && !this.State.VincentPartGot && this.TryTakeItemsFromPlayer(crawfishQiid, 3))
             {
                 this.AddQuestItemToInventory(ObjectIds.ScythePart1);
                 this.Spout(n, "Ooh!  Oh these 3 crawdads would be great!  Thanks!  Here's your thingamajig.  I Hope it works!$l#$b#Sure, I won't tell Mom that you gave them to me if you want...  Why?$s");
                 this.State = this.State with { VincentPartGot = true };
             }
-            else if (n.Name == "Vincent" && this.State.VincentTradeKnown)
+            else if (n.Name == "Vincent" && itemIsBrokenPart && this.State.VincentTradeKnown && !this.State.VincentPartGot)
             {
                 this.Spout(n, "Did you get the bugs?  3 Big ones?");
             }
-            else if (n.Name == "Vincent")
+            else if (n.Name == "Vincent" && !this.State.VincentTradeKnown)
             {
                 this.Spout(n, "The Greeble machine!$h#$b#Jaz and I used to play games with that, but we had to stop because Marnie told us we couldn't go into your pasture anymore unless you invite us.#$b#There are parts missing?  Sure there are!  Me and Jaz took a couple of pieces.  I used mine in a trap I was building to trap the Greebles under my bed!  It didn't work.  Hey, have you got any good bugs on your farm?  I'll find it for you if you can bring me some really big crawly ones!$h");
-                this.State = this.State with { VincentTradeKnown = true };
+                this.State = this.State with { Progress = ScytheQuestStateProgress.JasAndVincentFingered, VincentTradeKnown = true };
             }
             // else this.Spout(n, "What is that thing?  A harvester?  Sure, if you say so...$s");
         }
