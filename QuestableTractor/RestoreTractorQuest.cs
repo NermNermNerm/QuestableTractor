@@ -119,7 +119,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 this.Spout(n, "Uh...#$b#What is it?  you say it's an Engine?$s#$b#I say it's weird. . .  Hey, is that thing moving?$a#$b#I don't know.  Maybe the Wizard would know what it is, and even if he doesn't, he'll sure pretend like he does if you show it to him.");
             }
-            else if ((n.Name == "Abigail" || n?.Name == "Vincent") && item?.ItemId == ObjectIds.BustedEngine)
+            else if ((n.Name == "Abigail" || n.Name == "Vincent") && item?.ItemId == ObjectIds.BustedEngine)
             {
                 this.Spout(n, "Oh wow...#$b#Can I have it?");
             }
