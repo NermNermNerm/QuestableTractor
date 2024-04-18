@@ -183,7 +183,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 // crazy long duration since the player could take a while getting hold of the language scrolls.
                 // Note that if the player talks to the dwarf, it'll probably eat this event anyway.  Such is life.
-                Game1.player.activeDialogueEvents.Add(ConversationKeys.DwarfShoesTaken, 100);
+                Game1.player.activeDialogueEvents[ConversationKeys.DwarfShoesTaken] = 100;
             }
 
             this.InvalidateGarbageCanData();

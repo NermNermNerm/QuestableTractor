@@ -5,6 +5,7 @@ using StardewValley;
 using Microsoft.Xna.Framework;
 using System.Collections.Generic;
 using StardewValley.Quests;
+using StardewValley.Objects;
 
 namespace NermNermNerm.Stardew.QuestableTractor
 {
@@ -43,6 +44,46 @@ namespace NermNermNerm.Stardew.QuestableTractor
         public static void Spout(string message)
         {
             Game1.DrawDialogue(new Dialogue(null, null, message));
+        }
+
+        /// <summary>
+        ///   Attempt to fix a player in a broken state.
+        /// </summary>
+        public abstract void Fix();
+
+        protected void EnsureInventory(string itemId, bool shouldContain)
+        {
+            if (shouldContain)
+            {
+                this.EnsureItemIsInInventory(itemId);
+            }
+            else
+            {
+                this.EnsureItemIsNotInInventory(itemId);
+            }
+        }
+
+        protected void EnsureItemIsInInventory(string itemId)
+        {
+            string qiid = ItemRegistry.QualifyItemId(itemId)!;
+            if (!Game1.player.Items.Any(i => i?.QualifiedItemId == qiid))
+            {
+                var restoredItem = ItemRegistry.Create(qiid);
+                if (restoredItem is StardewValley.Object o)
+                {
+                    o.questItem.Value = true;
+                }
+                Game1.player.addItemToInventory(restoredItem);
+            }
+        }
+
+        protected void EnsureItemIsNotInInventory(string itemId)
+        {
+            string qiid = ItemRegistry.QualifyItemId(itemId)!;
+            while (Game1.player.Items.Any(i => i?.QualifiedItemId == qiid))
+            {
+                Game1.player.removeFirstOfThisItemFromInventory(qiid);
+            }
         }
 
         /// <summary>

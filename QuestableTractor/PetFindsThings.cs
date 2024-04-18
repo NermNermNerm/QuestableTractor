@@ -109,6 +109,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 location.modData[InterestingTilesModDataKey]
                     = string.Join("\n", values.Values.Select(iandp => iandp.ToString()));
+                this.LogWarning($"New Value:\n{location.modData[InterestingTilesModDataKey]}");
             }
             else
             {

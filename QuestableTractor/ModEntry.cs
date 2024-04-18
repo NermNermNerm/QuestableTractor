@@ -67,6 +67,37 @@ namespace NermNermNerm.Stardew.QuestableTractor
             };
             this.Helper.Events.GameLoop.DayStarted += this.OnDayStarted;
             this.Helper.Events.GameLoop.DayEnding += this.OnDayEnding;
+
+            this.Helper.ConsoleCommands.Add(
+                "fqtm",
+                "Fixes questable tractor mod - it finds all the objects buried on the farm and adds them to our inventory.  It starts the main tractor quest, replaces any missing quest items, and deletes excess quest items.  Note if you have left a quest item in a chest somewhere, it will get left there.  You can run this command again to get rid of the duplicate if you need to.",
+                this.FixItAll);
+        }
+
+        private void FixItAll(string cmd, string[] args)
+        {
+            if (Game1.player is null || !Game1.hasLoadedGame)
+            {
+                this.LogInfo("Cannot run command - the game isn't loaded/started yet.");
+                return;
+            }
+
+            if (!Game1.IsMasterGame)
+            {
+                this.LogInfo("Cannot run command - only the master player in a multiplayer game can run this command.");
+                return;
+            }
+
+            if (Game1.player.freeSpotsInInventory() < 5)
+            {
+                this.LogInfo("Cannot run command - need at least 5 free spots in your inventory.");
+                return;
+            }
+
+            foreach (var qc in this.QuestControllers)
+            {
+                qc.Fix();
+            }
         }
 
         public void WriteToLog(string message, LogLevel level, bool isOnceOnly)

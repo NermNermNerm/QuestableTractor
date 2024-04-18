@@ -71,6 +71,11 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         private void PlayerGotBrokenPart(Item brokenPart)
         {
+            if (brokenPart is StardewValley.Object o) // Should be true for all the things we scan for, but just in case...
+            {
+                o.questItem.Value = true;
+            }
+
             // This is a callback from MonitorInventoryItem so Game1.player.IsMainPlayer must be true.
             if (this.IsStarted)
             {
@@ -87,6 +92,11 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public void PlayerGotWorkingPart(Item workingPart)
         {
+            if (workingPart is StardewValley.Object o) // Should be true for all the things we scan for, but just in case...
+            {
+                o.questItem.Value = true;
+            }
+
             // This is a callback from MonitorInventoryItem so Game1.player.IsMainPlayer must be true.
             var quest = this.GetQuest(Game1.player);
             if (quest is null)
@@ -122,6 +132,17 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.Mod.UpdateTractorModConfig();        }
 
         protected virtual void HideStarterItemIfNeeded() { }
+
+        protected void PickUpBrokenAttachmentPart()
+        {
+            var bustedPart = Game1.getFarm().objects.Values.FirstOrDefault(o => o.ItemId == this.BrokenAttachmentPartId);
+            while (bustedPart is not null)
+            {
+                Game1.getFarm().objects.Remove(bustedPart.TileLocation);
+                bustedPart = Game1.getFarm().objects.Values.FirstOrDefault(o => o.ItemId == this.BrokenAttachmentPartId);
+            }
+            this.Mod.PetFindsThings.ObjectForPetToFindHasBeenPickedUp(Game1.getFarm(), this.BrokenAttachmentPartId);
+        }
 
         protected void PlaceBrokenPartUnderClump(int preferredResourceClumpToHideUnder)
         {

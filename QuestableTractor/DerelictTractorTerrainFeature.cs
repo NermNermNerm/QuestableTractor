@@ -28,7 +28,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         : TerrainFeature
     {
         private Texture2D? texture;
-        private const string DerelictTractorPetFinderId = "QuestableTractor.DerelictTractor";
+        public const string DerelictTractorPetFinderId = "QuestableTractor.DerelictTractor";
         private bool farmhandHasFoundTractor = false;
 
 

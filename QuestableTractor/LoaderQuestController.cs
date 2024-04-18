@@ -27,6 +27,18 @@ namespace NermNermNerm.Stardew.QuestableTractor
             return new LoaderQuest(this);
         }
 
+        public override void Fix()
+        {
+            // Assume that the player can't get the part because it's somewhere crazy - clear it off the farm because we're always going to start the quest.
+            this.PickUpBrokenAttachmentPart();
+
+            this.EnsureInventory(ObjectIds.BustedLoader, this.OverallQuestState == OverallQuestState.NotStarted
+                || (this.OverallQuestState == OverallQuestState.InProgress && this.State < LoaderQuestState.WaitForClint1));
+            this.EnsureInventory(ObjectIds.WorkingLoader, this.OverallQuestState == OverallQuestState.InProgress && this.State == LoaderQuestState.InstallTheLoader);
+            this.EnsureInventory(ObjectIds.AlexesOldShoe, this.OverallQuestState == OverallQuestState.InProgress && this.State == LoaderQuestState.DisguiseTheShoes);
+            this.EnsureInventory(ObjectIds.DisguisedShoe, this.OverallQuestState == OverallQuestState.InProgress && this.State == LoaderQuestState.GiveShoesToClint);
+        }
+
         protected override LoaderQuestState AdvanceStateForDayPassing(LoaderQuestState oldState)
         {
             switch (oldState)

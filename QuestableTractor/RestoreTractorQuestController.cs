@@ -18,6 +18,20 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.monitor = new MasterPlayerModDataMonitor(mod.Helper, ModDataKeys.MainQuestStatus, () => mod.TractorModConfig.TractorGarageBuildingCostChanged());
         }
 
+        public override void Fix()
+        {
+            this.EnsureInventory(ObjectIds.BustedEngine, this.OverallQuestState == OverallQuestState.InProgress && (this.State == RestorationState.TalkToWizard || this.State == RestorationState.BringStuffToForest));
+            this.EnsureInventory(ObjectIds.WorkingEngine, this.OverallQuestState == OverallQuestState.InProgress && (this.State == RestorationState.BringEngineToMaru || this.State == RestorationState.BringEngineToSebastian));
+
+            if (this.OverallQuestState == OverallQuestState.NotStarted)
+            {
+                // Assume the tractor is unreachable - start the quest.
+                this.CreateQuestNew(Game1.player);
+            }
+
+            this.Mod.PetFindsThings.ObjectForPetToFindHasBeenPickedUp(Game1.getFarm(), DerelictTractorTerrainFeature.DerelictTractorPetFinderId);
+        }
+
         public record EngineRequirement(string itemId, string displayName, int quantity);
         public static readonly IReadOnlyCollection<EngineRequirement> engineRequirements = new EngineRequirement[]
         {
@@ -147,7 +161,10 @@ namespace NermNermNerm.Stardew.QuestableTractor
                     magicChest.Items.Remove(item);
                 }
             }
-            magicChest.Items.Add(new StardewValley.Object(ObjectIds.WorkingEngine, 1));
+
+            var workingEngine = ItemRegistry.Create<StardewValley.Object>(ObjectIds.WorkingEngine, 1);
+            workingEngine.questItem.Value = true;
+            magicChest.Items.Add(workingEngine);
 
             return true;
         }

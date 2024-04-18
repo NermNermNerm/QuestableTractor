@@ -11,7 +11,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         : BaseQuestController<BorrowHarpoonQuestState>
     {
         public const string HarpoonToolId = "NermNermNerm.QuestableTractor.Harpoon";
-        public const string HarpoonToolQualifiedId = ItemRegistry.type_tool + HarpoonToolId;
+        public const string HarpoonToolQiid = ItemRegistry.type_tool + HarpoonToolId;
 
         private static float chanceOfHookingWaterer = 0;
         private static bool hasPatchBeenInstalled = false;
@@ -34,6 +34,11 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 this.CreateQuestNew(player);
                 Game1.playSound("questcomplete"); // Note documentation suggests its for quest complete and "journal update".  That's what we are using it for.
             }
+        }
+
+        public override void Fix()
+        {
+            this.EnsureInventory(HarpoonToolQiid, this.OverallQuestState == OverallQuestState.InProgress && (this.State == BorrowHarpoonQuestState.CatchTheBigOne || this.State == BorrowHarpoonQuestState.ReturnThePole));
         }
 
         protected override void OnStateChanged()
@@ -95,7 +100,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
 
             var borrowHarpoonQuest = FakeQuest.GetFakeQuestByType<BorrowHarpoonQuest>(Game1.player);
-            if (Game1.player.CurrentTool?.QualifiedItemId == HarpoonToolQualifiedId)
+            if (Game1.player.CurrentTool?.QualifiedItemId == HarpoonToolQiid)
             {
                 if (borrowHarpoonQuest is null)
                 {
