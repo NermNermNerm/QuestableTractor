@@ -8,7 +8,10 @@ namespace NermNermNerm.Stardew.QuestableTractor
 {
     public class ScytheQuestController : TractorPartQuestController<ScytheQuestState>
     {
-        public ScytheQuestController(ModEntry mod) : base(mod) { }
+        public ScytheQuestController(ModEntry mod) : base(mod)
+        {
+            this.AddPetFinder();
+        }
 
         public override void Fix()
         {

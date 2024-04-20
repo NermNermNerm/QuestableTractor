@@ -14,7 +14,10 @@ namespace NermNermNerm.Stardew.QuestableTractor
     internal class LoaderQuestController
         : TractorPartQuestController<LoaderQuestState>
     {
-        public LoaderQuestController(ModEntry mod) : base(mod) { }
+        public LoaderQuestController(ModEntry mod) : base(mod)
+        {
+            this.AddPetFinder();
+        }
 
         protected override string QuestCompleteMessage => "Sweet!  You've now got a front-end loader attachment for your tractor to clear out debris!#$b#HINT: To use it, equip the pick or the axe while on the tractor.";
         protected override string ModDataKey => ModDataKeys.LoaderQuestStatus;

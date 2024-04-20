@@ -49,6 +49,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             Instance = this;
             this.Harmony = new Harmony(this.ModManifest.UniqueID);
 
+            this.PetFindsThings.Entry(this);
             this.loaderQuestController = new LoaderQuestController(this);
             this.scytheQuestController = new ScytheQuestController(this);
             this.seederQuestController = new SeederQuestController(this);
@@ -56,7 +57,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.borrowHarpoonQuestController = new BorrowHarpoonQuestController(this);
             this.restoreTractorQuestController = new RestoreTractorQuestController(this);
             this.QuestControllers = new List<BaseQuestController> { this.loaderQuestController, this.scytheQuestController, this.seederQuestController, this.WatererQuestController, this.borrowHarpoonQuestController, this.restoreTractorQuestController };
-            this.PetFindsThings.Entry(this);
 
             this.Helper.Events.Content.AssetRequested += this.OnAssetRequested;
             this.Helper.Events.GameLoop.OneSecondUpdateTicked += this.GameLoop_OneSecondUpdateTicked;
@@ -64,6 +64,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 this.UpdateTractorModConfig();
                 BaseQuest.ClearOldNews();
+
+                // Clean up an entry in modData that was added in 1.1.4 that's no longer a thing.
+                Game1.getFarm()?.modData.Remove("PetFindsThings.InterestingTiles");
             };
             this.Helper.Events.GameLoop.DayStarted += this.OnDayStarted;
             this.Helper.Events.GameLoop.DayEnding += this.OnDayEnding;

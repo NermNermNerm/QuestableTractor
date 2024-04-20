@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Xna.Framework;
 using StardewValley;
 using StardewValley.Buildings;
 using StardewValley.Objects;
@@ -16,6 +17,20 @@ namespace NermNermNerm.Stardew.QuestableTractor
         public RestoreTractorQuestController(ModEntry mod) : base(mod)
         {
             this.monitor = new MasterPlayerModDataMonitor(mod.Helper, ModDataKeys.MainQuestStatus, () => mod.TractorModConfig.TractorGarageBuildingCostChanged());
+
+            this.Mod.PetFindsThings.AddObjectFinder(this.PetTargetFinder);
+        }
+
+        private IEnumerable<(Point tileLocation, double chance)> PetTargetFinder()
+        {
+            if (this.OverallQuestState == OverallQuestState.NotStarted)
+            {
+                foreach (var tf in Game1.currentLocation.terrainFeatures.Values.OfType<DerelictTractorTerrainFeature>())
+                {
+                    yield return new() { tileLocation = tf.Tile.ToPoint(), chance = .03 };
+                    break;
+                }
+            }
         }
 
         public override void Fix()
@@ -28,8 +43,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 // Assume the tractor is unreachable - start the quest.
                 this.CreateQuestNew(Game1.player);
             }
-
-            this.Mod.PetFindsThings.ObjectForPetToFindHasBeenPickedUp(Game1.getFarm(), DerelictTractorTerrainFeature.DerelictTractorPetFinderId);
         }
 
         public record EngineRequirement(string itemId, string displayName, int quantity);
@@ -168,6 +181,5 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
             return true;
         }
-
     }
 }

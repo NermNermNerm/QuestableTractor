@@ -1,6 +1,6 @@
 using System.Linq;
-using StardewValley;
 using Microsoft.Xna.Framework;
+using StardewValley;
 
 namespace NermNermNerm.Stardew.QuestableTractor
 {
@@ -24,6 +24,11 @@ namespace NermNermNerm.Stardew.QuestableTractor
         protected TractorPartQuestController(ModEntry mod) : base(mod)
         {
             this.monitor = new MasterPlayerModDataMonitor(mod.Helper, this.ModDataKey, this.OnMasterPlayerQuestStatusChanged);
+        }
+
+        protected void AddPetFinder(double chance = .02)
+        {
+            this.Mod.PetFindsThings.AddObjectFinder(this.BrokenAttachmentPartId, chance);
         }
 
         private void OnMasterPlayerQuestStatusChanged()
@@ -83,7 +88,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 return;
             }
 
-            this.Mod.PetFindsThings.ObjectForPetToFindHasBeenPickedUp(Game1.getFarm(), this.BrokenAttachmentPartId);
             this.AnnounceGotBrokenPart(brokenPart);
             this.CreateQuestNew(Game1.player);
             this.MonitorInventoryForItem(this.WorkingAttachmentPartId, this.PlayerGotWorkingPart);
@@ -141,7 +145,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 Game1.getFarm().objects.Remove(bustedPart.TileLocation);
                 bustedPart = Game1.getFarm().objects.Values.FirstOrDefault(o => o.ItemId == this.BrokenAttachmentPartId);
             }
-            this.Mod.PetFindsThings.ObjectForPetToFindHasBeenPickedUp(Game1.getFarm(), this.BrokenAttachmentPartId);
         }
 
         protected void PlaceBrokenPartUnderClump(int preferredResourceClumpToHideUnder)
@@ -151,7 +154,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
             if (existing is not null)
             {
                 this.LogInfoOnce($"{this.BrokenAttachmentPartId} is already placed at {existing.TileLocation.X},{existing.TileLocation.Y}");
-                this.Mod.PetFindsThings.AddObjectForPetToFind(farm, this.BrokenAttachmentPartId, existing.TileLocation.ToPoint());
                 return;
             }
 
@@ -163,7 +165,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 o.Location = farm;
                 o.TileLocation = position;
                 this.LogInfoOnce($"{this.BrokenAttachmentPartId} placed at {position.X},{position.Y}");
-                this.Mod.PetFindsThings.AddObjectForPetToFind(farm, this.BrokenAttachmentPartId, position.ToPoint());
                 o.IsSpawnedObject = true;
                 farm.objects[o.TileLocation] = o;
             }
