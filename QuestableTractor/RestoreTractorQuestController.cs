@@ -155,7 +155,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         private static bool CheckForest()
         {
             var magicChest = Game1.getLocationFromName("Woods").objects.Values.OfType<Chest>()
-                .FirstOrDefault(chest => engineRequirements.All(er => chest.Items.Any(i => i.ItemId == er.itemId && i.Stack >= er.quantity)));
+                .FirstOrDefault(chest => engineRequirements.All(er => chest.Items.Any(i => i is not null && i.ItemId == er.itemId && i.Stack >= er.quantity)));
 
             if (magicChest == null)
             {
@@ -164,7 +164,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
             foreach (var requirement in engineRequirements)
             {
-                var item = magicChest.Items.First(i => i.ItemId == requirement.itemId && i.Stack >= requirement.quantity);
+                var item = magicChest.Items.First(i => i is not null && i.ItemId == requirement.itemId && i.Stack >= requirement.quantity);
                 if (item.Stack > requirement.quantity)
                 {
                     item.Stack -= requirement.quantity;
