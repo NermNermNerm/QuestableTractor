@@ -72,8 +72,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.Helper.Events.GameLoop.DayEnding += this.OnDayEnding;
 
             this.Helper.ConsoleCommands.Add(
-                "fqtm",
-                "Fixes questable tractor mod - it finds all the objects buried on the farm and adds them to our inventory.  It starts the main tractor quest, replaces any missing quest items, and deletes excess quest items.  Note if you have left a quest item in a chest somewhere, it will get left there.  You can run this command again to get rid of the duplicate if you need to.",
+                "fixqt",
+                "Fixes Questable Tractor - It finds all the objects buried on the farm and adds them to our inventory.  It starts the main tractor quest and the quests for the two hidden parts.  It replaces any missing quest items and deletes excess quest items.  Note this command does not look at or alter chests or other players' inventories.  You can run this command again to get rid of the duplicate if you need to.",
                 this.FixItAll);
         }
 
