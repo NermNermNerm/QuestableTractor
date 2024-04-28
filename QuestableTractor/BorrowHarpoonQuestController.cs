@@ -155,6 +155,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 return null;
             }
 
+            this.LogTrace("Intercepted a call to Farm.GetFish");
+
             var borrowHarpoonQuest = FakeQuest.GetFakeQuestByType<BorrowHarpoonQuest>(Game1.player);
             if (Game1.player.CurrentTool?.QualifiedItemId == HarpoonToolQiid)
             {
