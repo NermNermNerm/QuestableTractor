@@ -87,7 +87,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         private bool IsActuallyFishing()
         {
             // When would you not be fishing?  In the stock game, the only thing that calls the method
-            // we're Harmony-Patching is the inemicably-named FishingRod.DoFunction, which does a ton
+            // we're Harmony-Patching is the inimically-named FishingRod.DoFunction, which does a ton
             // of stuff before calling GameLocation.getFish to see what got snagged.
             // However, VisibleFish also calls GameLocation.getFish to figure out what fish to draw,
             // and it calls it a whole bunch.  So we need to figure out if we're being called for
@@ -122,7 +122,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                     var method = frame.GetMethod();
                     if (method is not null)
                     {
-                        if (method.DeclaringType == typeof(FishingRod))
+                        if (method.DeclaringType == typeof(FishingRod) || method.Name.Contains("DoFunction_PatchedBy"))
                         {
                             return true;
                         }
