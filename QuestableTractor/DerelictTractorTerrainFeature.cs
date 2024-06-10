@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using Microsoft.CodeAnalysis.CSharp.Syntax;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
-using StardewModdingAPI;
 using StardewValley;
 using StardewValley.Buildings;
 using StardewValley.TerrainFeatures;
+
+using static NermNermNerm.Stardew.LocalizeFromSource.SdvLocalize;
 
 namespace NermNermNerm.Stardew.QuestableTractor
 {
@@ -53,7 +53,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 if (position == new Vector2())
                 {
                     // Hope for better luck tomorrow
-                    mod.LogError("No clear spot could be found to place the derelict tractor.");
+                    mod.LogError($"No clear spot could be found to place the derelict tractor.");
                     return;
                 }
 
@@ -180,12 +180,12 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 if (Game1.IsMasterGame)
                 {
-                    Game1.drawObjectDialogue("This looks like an old tractor.  Perhaps it could help you out around the farm, but it's been out in the weather a long time.  It'll need some fixing.  Maybe somebody in town can help?");
+                    Game1.drawObjectDialogue(L("This looks like an old tractor.  Perhaps it could help you out around the farm, but it's been out in the weather a long time.  It'll need some fixing.  Maybe somebody in town can help?"));
                     ModEntry.Instance.RestoreTractorQuestController.CreateQuestNew(Game1.player);
                 }
                 else if (!this.farmhandHasFoundTractor)
                 {
-                    Game1.drawObjectDialogue($"This looks like an old tractor.  You should tell {Game1.MasterPlayer.Name} about this thing.");
+                    Game1.drawObjectDialogue(LF($"This looks like an old tractor.  You should tell {Game1.MasterPlayer.Name} about this thing."));
                     this.farmhandHasFoundTractor = true;
                 }
             }
