@@ -45,18 +45,11 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public PetFindsThings PetFindsThings = new PetFindsThings();
 
-
         public override void Entry(IModHelper helper)
         {
             Instance = this;
 
-            // Localization
-            Initialize(() => helper.Translation.Locale);
-            OnBadTranslation += (message) => this.LogInfoOnce($"Translation issue: {message}");
-            OnTranslationFilesCorrupt += (message) => this.LogErrorOnce($"Translation error: {message}");
-#if DEBUG
-            DoPseudoLoc = true;
-#endif
+            Initialize(this, I("en"));
 
             this.Harmony = new Harmony(this.ModManifest.UniqueID);
 
