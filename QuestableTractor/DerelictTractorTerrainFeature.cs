@@ -66,9 +66,13 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public static Vector2 GetClearSpotForTractor(ModEntry mod)
         {
-            // Find a spot under a tree on the West side of the map
+            // Find a spot behind a tree on the West side of the map
+            bool isGrandpasFarmModRunning = mod.IsRunningGrandpasFarm;
             var farm = Game1.getFarm();
-            foreach (var eastSideTree in farm.terrainFeatures.Values.OfType<Tree>().Where(t => t.growthStage.Value == Tree.treeStage).OrderBy(tf => tf.Tile.X))
+            var trees = farm.terrainFeatures.Values.OfType<Tree>()
+                .Where(t => t.growthStage.Value == Tree.treeStage)
+                .Where(t => !isGrandpasFarmModRunning || t.Tile.X > 43); // avoid actual far west side on this farm, as it is inaccessible.
+            foreach (var eastSideTree in trees.OrderBy(tf => tf.Tile.X))
             {
                 bool anyCollisions = false;
                 List<Vector2> tilesToClear = new List<Vector2>();
@@ -111,7 +115,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
 
             // No tree is around.  We're probably dealing with an old save,  Try looking for any clear space.
-            //  This technique is kinda dumb, but whatev's.  This mod is going to suck with a fully-developed farm.
+            //  This technique is kinda dumb, but whatev's.  This mod isn't a good match for fully-developed farms.
             for (int i = 0; i < 10000; ++i)
             {
                 Vector2 positionToCheck = new Vector2(Game1.random.Next(farm.map.DisplayWidth / 64), Game1.random.Next(farm.map.DisplayHeight / 64));

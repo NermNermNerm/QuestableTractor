@@ -81,6 +81,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 this.FixItAll);
         }
 
+        public bool IsRunningGrandpasFarm => this.Helper.ModRegistry.IsLoaded("flashshifter.GrandpasFarm");
+
+
         private void FixItAll(string cmd, string[] args)
         {
             if (Game1.player is null || !Game1.hasLoadedGame)
