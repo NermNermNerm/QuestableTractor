@@ -209,7 +209,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
         }
 
-
         internal static void EditToolAssets(IDictionary<string, ToolData> data)
         {
             data[HarpoonToolId] = new ToolData
