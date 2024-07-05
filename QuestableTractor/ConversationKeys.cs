@@ -20,7 +20,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         {
             if (nameWithoutLocale.IsEquivalentTo("Characters/Dialogue/Abigail"))
             {
-                topics[ConversationKeys.TractorNotFound] = L("Have you run across the old tractor yet?  It's off on the west side of the farm, in behind the some trees in an old lean-to.  It's just about one with the vegetation now, but it hasn't rusted away completely.  It sure would be fun to see it run!");
+                topics[ConversationKeys.TractorNotFound] = L("Have you run across the old tractor yet?  It's off on the west side of the farm, in behind some trees in an old lean-to.  It's just about one with the vegetation now, but it hasn't rusted away completely.  It sure would be fun to see it run!");
                 topics[ConversationKeys.ScytheNotFound]
                   = topics[ConversationKeys.LoaderNotFound]
                   = L("I used to tromp around your old farm; I loved the empty, haunted feel to it...$2#$b#Anyway...  I saw some things that probably work with the tractor, over on the South side of your farm near Marnie's ranch.#$b#One of them is buried under and old log and one is wedged into a boulder.#$b#Hey, if you get them working, does this mean I can drive the tractor?$4");
