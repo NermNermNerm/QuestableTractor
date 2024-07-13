@@ -33,7 +33,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 this.Spout(n, L("Let's see what you go there...$s#$b#You know, there's no real metalwork to do here.  It basically needs a good cleaning and oiling.$h#$b#But something seems wrong about it still, like are you sure you got all of it out of the weeds?"));
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.MissingParts };
             }
-            else if (n.Name == "Robin" && this.State.Progress < ScytheQuestStateProgress.InstallPart)
+            else if (n.Name == "Robin" && itemIsBrokenPart && this.State.Progress < ScytheQuestStateProgress.InstallPart)
             {
                 this.Spout(n, L("Oh you found the old harvester!  I think your Grandpa broke every other thing, but I don't recall any misadventures with that part.  If you can't get it to work, you might ask Demetrius or Maru.  They're good at metalworking."));
             }
