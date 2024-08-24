@@ -1,0 +1,1338 @@
+// Do not manually edit this file!  Follow these instructions to import changes:
+// https://github.com/NermNermNerm/LocalizeFromSource?tab=readme-ov-file#ingesting-translations
+{
+  "translations": [
+    {
+      "source": "This item is for unlocking the tractor - only the host can advance this quest.  Give this item to the host.  (You have to put in a chest for them.)",
+      "translation": "Dieses Teil wird für den Traktor benötigt - Nur der Server-Host kann diese Aufgabe vorantreiben.  Gib diesen Gegenstand dem Host.  (Leg es dafür in eine Kiste.)",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "We need a bigger pole",
+      "translation": "Wir brauchen etwas Größeres",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "There's something big down at the bottom of the farm pond.  Maybe Willy can loan me something to help get it out.",
+      "translation": "Da scheint etwas Schweres am Grund des Hofteiches zu liegen.  Vielleicht kann Willy dir etwas leihen, um es herauszubekommen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Go find Willy in his shop",
+      "translation": "Geh zu Willy in den Laden",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Use Willy's harpoon to haul in whatever's at the bottom of the pond",
+      "translation": "Benutze Willys Harpune um das schwere Ding aus dem Teich zu holen",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Give the Harpoon back to Willy",
+      "translation": "Gib die Harpune zurück an Willy",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ya reeled that ol water tank on wheels in, did ya laddy!$3#$b#Aye I do believe this'll be the talk of the Stardrop for many Fridays to come!$1",
+      "translation": "Na, haste den alten Wassertank mit Rädern eingeholt? Nicht schlecht!$3#$b#Aye, ich glaube die Geschichte wird noch einige Abende im Sternfall füllen!$1",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ah laddy...  I do think I know what you mighta hooked into and yer right that ya need a lot more pole than what ya got.^Ah lass...  I do think I know what you mighta hooked into and yer right that ya need a lot more pole than what you got.#$b#Here's a wee bit o' fishin' kit that my great great grandpappy used to land whales back before we knew better.#$b#I think ya will find it fit for tha purpose.",
+      "translation": "Ach Jungchen...  Ich glaub, ich weiß was du da am Haken hattest und du liegst richtig damit, dass du etwas Größeres brauchst.^Ach Mädel...  Ich glaub, ich weiß was du da am Haken hattest und du liegst richtig damit, dass du etwas Größeres brauchst.#$b#Hier hast ein kleines Angelgerät von meinem Urgroßvater, das er zum Walefangen benutzt hat bevor wir's besser wussten.#$b#Das sollte für dein Vorhaben passen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Come visit me in my shop.  I've got a little somethin' behind the counter that might be just the thing you need.",
+      "translation": "Komm in meinen Laden.  Ich hab da was hinter der Theke, was dir weiterhelfen kann.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Whoah, I snagged onto something big down there, but this line's nowhere near strong enough to yank it up!",
+      "translation": "Whoah, da ist was richtig Großes am Haken, aber die Angelschnur ist viel zu dünn um es hoch zu ziehen!",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Aaahhh! ! I had it!",
+      "translation": "Aaahhh! ! Ich hatte es fast!",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Nope...  nothing",
+      "translation": "Nein...  leider nichts.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ooohhh!  So close!",
+      "translation": "Ooohhh!  So knapp!",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Dang! Snapped a line on that waterer again!  Perhaps switching rods to Willy's Harpoon would help.",
+      "translation": "Verdammt! Die Schnur ist schon wieder zerrissen!  Vielleicht könnte Willys Harpune helfen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Great Grandpappy's Harpoon",
+      "translation": "Urgroßvaters Harpune",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Willy's Great Grandpappy used this to hunt whales back in the day.",
+      "translation": "Willys Urgroßvater jagte einst damit Wale.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  It's off on the west side of the farm, in behind some trees in an old lean-to.  It's just about one with the vegetation now, but it hasn't rusted away completely.  It sure would be fun to see it run!",
+      "translation": "Bist du schon über den alten Traktor gestolpert?  Er sollte irgendwo im Westen deines Hofs liegen, in einem Unterstand hinter einigen Bäumen.  Er ist mittlerweile völlig überwuchert, aber noch nicht völlig verrostet.  Es wäre nett ihn wieder heil zu sehen!",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I used to tromp around your old farm; I loved the empty, haunted feel to it...$2#$b#Anyway...  I saw some things that probably work with the tractor, over on the South side of your farm near Marnie's ranch.#$b#One of them is buried under and old log and one is wedged into a boulder.#$b#Hey, if you get them working, does this mean I can drive the tractor?$4",
+      "translation": "Ich bin oft über deinen alten Hof spaziert; Diese alte verlassene Atmosphäre war einfach zum verlieben...$2#$b#Jedenfalls...  habe ich auch ein paar alte Teile vom Traktor gefunden, sie lagen im Süden der Farm nahe Marnies Hof.#$b#Eins war unter einem alten Baumstamm eingeklemmt und das andere steckte in einem Felsen fest.#$b#Hey, wenn du ihn wieder zum laufen kriegst, kann ich dann auch mal Traktor fahren?$4",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  I doubt it still works, but maybe it could be restored.",
+      "translation": "Hast du schon den alten Traktor gefunden?  Ich bezweifle, dass er noch funktioniert, aber vielleicht kann man ihn reparieren.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Hey I saw you take those shoes.  I would have charged gold for them if I thought anybody would be stupid enough to want them.#$b#They don't fit. That's why I chucked them over there.  I'm glad you hauled off that junk.",
+      "translation": "Hey, du hast die Schuhe mitgenommen.  Hätte ich gewusst, dass die noch jemand haben will, hätte ich Geld dafür verlangt.#$b#Sie passen mir nicht. Darum habe ich sie dort hingeworfen.  Ich bin froh, wenn du den Müll mitnimmst.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "You granddad loved that tractor of his, bless his heart, but you could never tell that judging by the dents and broken off parts!#$b#He left little bits of that thing scattered all over the farm, I'm afraid.  You'll probably come across bits of it here and there!",
+      "translation": "Dein Großvater hat seinen Traktor geliebt, bei den ganzen Schrammen und Beulen hat man das allerdings selten mitbekommen!#$b#Er hat überall auf dem Hof Teile verloren fürchte ich.  Du findest hier und da bestimmt einige!",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  Your Grandpa kept it stored in a lean to out on the West side.#$b#It was a piece of junk when he bought it.  No idea how he kept it running.  He had no mechanical ability at all.  None.",
+      "translation": "Hast du schon den alten Traktor gesehen?  Dein Großvater bewahrte ihn in einem Unterstand westlich des Hofs auf.#$b#Er war bereits ein Stück Schrott als er ihn kaufte.  Keine Ahnung wie er ihn am laufen gehalten hat.  Er war nicht gerade mechanisch begabt.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I hear you found that old tractor - you should get Robin to tell you the tale of the irrigator.",
+      "translation": "Ich hörte, du hast den alten Traktor gefunden - du solltest Robin nach der Geschichte mit dem Bewässerungstank fragen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "You know your Grandad and George were really good friends; it hit George pretty hard when your Granddad passed.$2#$b#You might do well to be nice to George, he might know a few secrets about your farm.",
+      "translation": "Weißt du, dein Großvater und George waren wirklich gute Freunde; Es hat George schwer getroffen als dein Großvater von uns ging.$2#$b#Es wäre klug sich mit George gut zu stellen, er könnte Einiges über deinen Hof wissen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Hey, wanna know a secret about your farm?  Down in the brambles near Marnie's house, there's Greebles.  They've made some weird machines too.$3#$b#No...  I've never seen a Greeble, but cats can!",
+      "translation": "Hey, willst du ein Geheimnis über deine Farm wissen?  Unten in den Büschen bei Marnies Haus, gibt es Greebel.  Sie haben auch einige komische Maschinen gebaut.$3#$b#Nein...  Ich hab noch nie einen Greebel gesehen, aber Katzen finden sie ganz leicht!",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "The kids used to play out in the south field near Marnie's house.  They often came home with tales of high adventure!$1#$b#You might poke around down there sometime when you need a break, who knows what you'll find!",
+      "translation": "Die Kinder spielten gern im Süden der Farm nahe Marnies Hof.  Sie kamen oft mit wilden Abenteuergeschichten nach Hause!$1#$b#Du solltest dich dort mal umsehen wenn du Zeit hast. Wer weiß was du findest!",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "One day your granddad came to ask me for help because he had wedged the front-end loader under a boulder he was moving on the south side of the farm.#$b#I told him that maybe his little tractor wasn't up to moving such a big rock...  He seemed to take that kinda personal; he did love that little tractor.$2#$b#But then his eyes lit up and he ran into Pierre's.$1#$b#I'm not sure what happened after that.",
+      "translation": "Eines Tages kam dein Großvater zu mir, um nach Hilfe zu fragen. Er hatte bei dem Versuch einen Felsen im Süden der Farm zu bewegen, die Ladeschaufel des Traktors unter einem Stein festgerammt.#$b#Ich hatte im gesagt, dass sein kleiner Traktor mit diesem Brocken wohl überfordert wäre...  Das hat er wohl persönlich genommen; Er hat den kleinen Traktor wirklich geliebt.$2#$b#Doch dann leuchteten seine Augen auf und er lief zu Pierre.$1#$b#Ich weiß nicht was danach passiert ist.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "You know the kids used to play at your farm.  I've asked them to stay clear now that you're back.#$b#It's hard enough to run a farm with chickens running around, let alone kids!$1#$b#Ask me how I know...$2",
+      "translation": "Die Kinder haben immer gern auf deinem Hof gespielt, weißt du.  Jetzt wo du hier bist, habe ich sie aber gebeten das zu lassen.#$b#Es ist schon schwer genug einen Hof zu führen wenn überall Hühner herumlaufen, da machen es einem Kinder nicht leichter!$1#$b#Ich spreche aus Erfahrung...$2",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I hear you found the tractor!  Just a word of advice - might be best not to bring up the subject around my dad...$2#$b#It's a bit of a sore subject.#$b#You can talk to my Mom about it though - your only trouble will be getting her to stop!$1",
+      "translation": "Ich habe gehört du hast den Traktor gefunden!  Ein kleiner Rat - Du solltest das Ding meinem Vater gegenüber besser nicht erwähnen...$2#$b#Es ist ein heikles Thema.#$b#Du kannst aber mit meiner Mutter darüber sprechen - Du wirst danach aber Schwierigkeiten haben das Thema zu wechseln!$1",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  If you could get it running, it'd sure help you get more crops in the ground.#$b#If you need help finding it, Abigail might know where it is.",
+      "translation": "Hast du schon den alten Traktor gefunden?  Er wäre bei der Aussat sicher hilfreich, wenn du ihn zum laufen bekommst.#$b#Falls du Hilfe brauchst ihn zu finden, Abigail weiß sicher wo er ist.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I hear you found that old tractor - I wonder where all the attachments are?  One that's not a mystery is the irrigation rig.#$b#That's somewhere at the bottom of the farm pond, along with a big chunk of Demetrius' pride!#1",
+      "translation": "Du scheinst den alten Traktor gefunden zu haben - Ich frage mich nur wo sein Zubehör ist?  Ich weiß nur wo der Bewässerungstank liegt.#$b#Am Grund deines Hofteichs nämlich, zusammen mit einem großen Portion von Demetrius' Stolz !#1",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Did you ever find the front-end loader?  One day your Granddad came running into the store, bought a whole bunch of bombs and ran back out again.#$b#Lewis tells me he wedged the loader under a big rock and was trying to get it out...  So if you do find it, it might be in pieces!#1#$b#I'm just glad your Granddad didn't end up in pieces.$2#$b#That's why I don't sell explosives anymore.$2",
+      "translation": "Hast du schon die Frontladerschaufel wiedergefunden?  Dein Großvater kam einst in den Laden gestürmt, kaufte einen Haufen Bomben und lief sofort wieder hinaus.#$b#Lewis erzählte mir er hatte die Schaufel unter einem Felsen festgefahren und versuchte wohl sie wieder rauszubekommen...  Wenn du sie findest, könnte sie also nur noch Einzelteile sein!#1#$b#Ich bin nur froh, dass dein Großvater in einem Stück blieb.$2#$b#Genau deswegen verkaufe ich keine Sprengstoffe mehr.$2",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  That thing has some stories to tell, let me tell you.  It might make a good decoration for your front yard someday.",
+      "translation": "Bist du schon über den alten Traktor gestolpert?  Das Ding könnte dir Geschichten erzählen, glaub mir.  Vielleicht würde es sich auch gut als Deko in deinem Vorgarten machen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oh you want to find the tractor's irrigator?  Ha!  Good luck with that!$4#$b#Who knows, maybe you can fish it out!$1#$b#Demetrius tried to winch it out and ended up, well, let's just say the creases on his trousers weren't quite as crisp as usual after that attempt!$4",
+      "translation": "Oh, du suchst den Bewässerungstank des Traktors?  Ha!  Na dann viel Glück!$4#$b#Wer weiß, vielleicht kannst du ihn ja rausfischen!$1#$b#Demetrius hat mal versucht ihn rauszuziehen und, nun ja, sagen wir mal seine Hose war danach nicht mehr ganz trocken!$4",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "You know your Grandad and George were really good friends and it hit George pretty hard when your Granddad passed.$2#$b#You might do well to be nice to George; he might know a few secrets about your farm.",
+      "translation": "Dein Großvater und George waren wirklich gute Freunde, weißt du?  Als dein Großvater gestorben ist, hat das George ganz schön getroffen.$2#$b#Du solltest hin und wieder mit ihm sprechen; George kann dir bestimmt Einiges über deinen Hof erzählen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Have you been out on the west side of your property yet?  Your Granddad had a tractor that he kept under a lean-to that always teetered on the brink of collapse.#$b#Know how he got it?  Me and Pappy boated it in from Knopperville.$l#$b#I didn't understand why he bought it -- the engine had thrown a rod, had bent crankshaft and a cracked case.$s#$b#But somehow he got it to live again!  Funny that.  He wasn't much of a mechanic...",
+      "translation": "Hast du schon die westliche Seite deines Hofs untersucht?  Dein Großvater hatte dort einen Unterstand für seinen alten klapprigen Traktor.#$b#Weißt du wo er ihn her hatte?  Pops und ich haben ihn ganz von Knopperville hergeschifft.$l#$b#Ich habe nicht verstanden warum er ihn überhaupt wollte -- der Motor konnte nur noch husten, die Kurbelwelle war verbogen und es war mehr Rost als Lack da.$s#$b#Aber irgendwie hat er ihn wieder hingekriegt!  Sehr merkwürdig.  Er war nicht gerade ein Mechaniker...",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ah, but yaknow, the biggest catch on your farm isn't the fish!  Nay laddy, it's the watering wagon for the tractor!$3#$b#That ol' thing sunk into the depths of the pond ne'er to be seen again!$1#$b#You'll probably lose a lure or two to it if you fish on your pond.$3",
+      "translation": "Ah, wusstest, dass der dickste Brummer auf deiner Farm kein Fisch ist!  Nee, das wäre der Bewässerungstank vom Traktor!$3#$b#Das alte Teil hat sich einst im Teich versenkt und ist nie wieder aufgetaucht!$1#$b#Du wirst vermutlich einige Angelhaken an ihn verlieren, wenn du in deinem Teich fischst.$3",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I saw in one of Haley's magazines where it says that women unconsciously rate men based on their shoes...#$b#Hah!  I must be doing it wrong then.  If I ever did look at a man's shoes and I saw scuffed up old work boots, I'd be more attracted to him, not less!",
+      "translation": "Ich habe in einem von Haleys Heften gelesen, dass Frauen Männer unterbewusst nach ihren Schuhen beurteilen...#$b#Hah!  Ich hab's wohl die ganze Zeit falsch eingeschätzt.  Hätte ich je auf die Schuhe eines Mannes geachtet und verschrammte alte Arbeitsschuhe gesehen, hätte ich ihn attraktiver gefunden, nicht weniger!",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Your Grandad used to come in every Thursday night.  He had a standing date with George and Lewis; they'd play some cards and swap stories...#$b#That kept George going in the early years after the accident.  As you Granddad's mind started to slip away, that, well...$s#$b#George didn't need one more thing to feel bitter about, but life handed it to him anyway.$s",
+      "translation": "Dein Großvater kam früher jeden Donnerstagabend.  Es war sein Stammtreffen mit George und Lewis; Sie spielten Karten und tauschten Geschichten aus...#$b#Das hat George wirklich geholfen in den ersten Jahren nach dem Unfall.  Als das Gedächtnis deines Großvaters anfing nachzulassen, nun ja...$s#$b#George brauchte wirklich nicht noch einen Schicksalschlag, aber so ist das Leben manchmal.$s",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I have a bit of a confession to make...When I told you how to repair the tractor engine, you didn't *really* need to run around the chest six times...  I just...  Well...#$b#Sometimes I just can't help myself.",
+      "translation": "Ich muss ein Geständnis machen...Als ich dir erklärt habe wie man den Motor repariert, hättest du nicht *wirklich* sechsmal um die Kiste rennen müssen...  Es ist nur...  Na ja...#$b#Manchmal kann ich nicht anders.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "This looks like an old tractor.  Perhaps it could help you out around the farm, but it's been out in the weather a long time.  It'll need some fixing.  Maybe somebody in town can help?",
+      "translation": "Da sieht wie ein alter Traktor aus.  Er könnte auf dem Hof bestimmt nützlich sein, aber er ist den Witterungen wohl schon recht lang ausgesetzt.  Er wird einige Reparaturen brauchen.  Vielleicht kann jemand im Ort helfen?",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "This looks like an old tractor.  You should tell {{arg0}} about this thing.",
+      "translation": "Das sieht wie ein alter Traktor aus.  Du solltest {{arg0}} davon erzählen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Fix the loader",
+      "translation": "Repariere die Ladeschaufel",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I found the front end loader attachment for the tractor, but it's all bent up and rusted through in spots.",
+      "translation": "Ich habe die Frontladerschaufel des Traktors gefunden, aber sie ist völlig verbogen und in Teilen durchgerostet.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "This looks like a the sort of thing a blacksmith could fix.",
+      "translation": "Das sieht nach einer Aufgabe für einen Schmied aus.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Somehow I've been railroaded into finding Clint some new shoes.  Maybe some of the younger townspeople know where I could get some for cheap.",
+      "translation": "Irgendwie hat mich Clint dazu überredet ihm neue Schuhe zu finden.  Vielleicht wissen einige der jüngeren Leute hier, wo ich welche billig bekommen kann.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Somehow I've been maneuvered into finding Clint some new shoes.  Alex wears the same shoe size and tosses out shoes regularly...  Hm...  Ew...  Hm...",
+      "translation": "Irgendwie hat mich Clint dazu überredet ihm neue Schuhe zu finden.  Alex trägt dieselbe Schuhgröße und schmeißt wohl regelmäßig welche weg...  Hm...  Bäh...  Hm...",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I've got Linus recruited to look out for shoes in Alex's trash can, but he warns me that there's something else that might be looking as well...  Who could that be?",
+      "translation": "Ich habe Linus angeheuert in Alex' Mülltonne nach Schuhen Ausschau zu halten, aber er warnte mich, dass es noch jemanden gibt der nachts den Müll durchwühlt...  Wer könnte das sein?",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Somehow I need to disguise these shoes so that Alex doesn't recognize them...  And maybe do something about that smudge.  Perhaps Sam or Sebastian would loan me some shoe polish.",
+      "translation": "Ich muss diese Schuhe so abändern, dass Alex sie nicht wieder erkennt...  Und den Fleck sollte ich auch entfernen.  Vielleicht kann mir Sam oder Sebastian etwas Schuhcreme leihen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Give the shoes and the old loader to Clint",
+      "translation": "Gib die Schuhe und die alte Frontladerschaufel an Clint",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Take the fixed loader attachment to the tractor garage.",
+      "translation": "Bring die reparierte Frontladerschaufel zur Traktorgarage.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Wait for Clint to finish repairing the loader.",
+      "translation": "Warte bis Clint mit der Reparatur der Frontladerschaufel fertig ist.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Clint should be done repairing the loader by now.",
+      "translation": "Clint sollte mit der Reparatur der Frontladerschaufel fertig sein.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Shoes.  That's my problem.  I wear these scuffed up old work boots all over the place.$2#$b#What??  Oh.  Sorry.  Just been a bit distracted because I saw on TV that women judge a man by their shoes and look at these...  No wonder I've got no luck with the ladies.$3#$b#What?  You want me to fix that thing?  Sure, looks like it'd be just a bit of reforging, some welds here and there...#$b#Wait!  You're from the city, you know all about shoes!  Tell you what, you get me a nice pair of shoes and I'll fix your loader.  Deal??#$b#GREAT!  I wear 14EEE.",
+      "translation": "Schuhe.  Das ist mein Problem.  Ich trage diese alten abgewetzten Arbeitsschuhe fast überall hin.$2#$b#Was??  Oh.  Entschuldige.  Ich bin nur etwas abgelenkt seit ich im Fernsehen gesehen habe, dass Frauen Männer nach ihren Schuhen beurteilen und schau dir nur diese Dinger an...  Kein Wunder, dass ich kein Glück bei den Frauen habe.$3#$b#Was?  Du willst, dass ich dieses Teil für dich repariere?  Sicher, sieht aus als müsste ich es nur wieder gerade hämmern, ein paar Schweißnähte anbringen...#$b#Moment!  Du kommst doch aus der Stadt, du kennst dich bestimmt mit Schuhen aus!  Ich sag dir was, du besorgst mir ein schickes Paar Schuhe und ich mach dir deine Schaufel heil.  Deal??#$b#Klasse!  Ich trage Größe 14EEE.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Shoes, yeah man, nice shoes cost a fortune.  My gig at the library barely pays, so I roll around in these supercheapies from Joja.  I color mine every once in a while so they look fresh.",
+      "translation": "Schuhe, ja Mann, gute Schuhe kosten ein Vermögen.  Mein Job in der Bücherei wirft kaum was ab, also lauf ich in diesen Billigtretern von Joja rum.  Alle paar Wochen färb ich sie neu damit sie wieder frisch aussehen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Cheap shoes!  And you somehow deduce that *I* am authority on such matters?$5#$b$Heh.  Perhaps I am!$1#$b#Back before the Jojamart we'd order them online, but now, I've learned the art of Thrift Stores.  I'm actually kindof glad it happened, I really like shopping at thrift stores.#$b#Cheaper than that?  Welp, you could try dumpster-diving!$1",
+      "translation": "Billige Schuhe!  Und du bist irgendwie zu dem Schluss gekommen dass *ICH* Experte in dem Bereich bin?$5#$b$Heh.  Vielleicht bin ich das sogar!$1#$b#Bevor hier der Joja-Markt geöffnet wurde, haben wir Online bestellt,doch mittlerweile habe ich die Kunst des Secondhand-Kaufens gelernt.  Ich bin eigentlich ganz froh, dass es so gekommen ist, mir gefällt das Stöbern in Gebrauchtläden wirklich sehr.#$b#Noch billiger?  Ähm, du kannst es ja mal mit Mülltonnen-Tauchen versuchen!$1",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ladies' shoes I know.  Men's shoes I don't.  'Cheap' shoes is definitely not something I spend time thinking about.$3",
+      "translation": "Mit Damenschuhen kenne ich mich aus.  Mit Herrenschuhen nicht.  Mit 'billigen' Schuhen verschwende ich erst gar nicht meine Zeit.$3",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Well, I mostly get my shoes from secondhand stores, but I don't really know about men's shoes.  Have you asked Sam, or Alex?",
+      "translation": "Nun, ich habe meine Schuhe zum großen Teil aus Gebrauchtläden, aber mit Männerschuhen kenne ich mich echt nicht aus.  Hast du mal Sam oder Alex gefragt?",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Shoes..  Yeah man, decent shoes cost a fortune.  I always wear black, though, which makes it easy.  Blacken anything and it looks cool.",
+      "translation": "Schuhe..  Jup, wenn es was ordentliches sein soll, können die ganz schön kosten.  Aber ich trag immer schwarz, das macht es einfacher.  Man kann so ziemlich alles Schwarz färben und es cool aussehen lassen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I got these new shoes yesterday 'cuz my old pair had a brown smudge.#$b#I just threw them into the garbage. I would've donated them but I don't like the idea of some weirdo wearing my shoes, ya know?#$b#What size do I wear?  14EEE. . . .  Wait, why do you ask?",
+      "translation": "Schau, diese Schuhe habe ich gerade gestern neu besorgt, weil meine alten einen Fleck bekommen haben.#$b#Ich habe sie einfach in den Müll geworfen. Ich hätte sie ja gespendet, aber bei dem Gedanken dass irgendein gruseliger Typ meine Schuhe trägt lief's mir echt kalt den Rücken runter, weißt du?#$b#Welche Größe ich trage?  14EEE. . . .  Warum fragst du?",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": ". . . So...  what I think I'm hearing you say is you want me to scout the Mullner's trash can for shoes...#$b#You promise this is for a good cause?  Hm...  Okay.  I'll let you know if I come across them.#$b#I don't want to disturb you, but I'm not the only one nosing around town late at night.  I might not find them first.",
+      "translation": ". . . Also...  Verstehe ich richtig, du möchtest dass ich den Mülleimer der Mullners nach einem Paar Schuhe durchsuche...#$b#Du versprichst mir, dass du einen guten Grund hast, ja?  Hm...  Okay.  Ich lass es dich wissen, wenn ich was finde.#$b#Ich will dich nicht beunruhigen, aber ich bin nicht der Einzige der in letzter Zeit nachts im Ort herumschnüffelt.  Vielleicht werde ich nicht schnell genug sein.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "No luck last night, but I'm keeping an eye out for those shoes!",
+      "translation": "Ich hatte leider kein Glück letzte Nacht, aber ich halte weiter meine Augen offen!",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "sashimi",
+      "translation": "Sashimi",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "pizza",
+      "translation": "Pizza",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "You want to borrow my shoe polish?  That's kindof an odd request but, you know what?  Sure.  Knock yourself out.#$b#There better be some {{arg0}} in this for me somewhere down the road.",
+      "translation": "Du willst meine Schuhcreme ausleihen?  Das ist eine etwas selstsame Frage, aber weißt du was?  Klar.  Kannst sie ganz haben.#$b#Aber dafür will ich demnächst etwas {{arg0}} springen sehen, okay!",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ah, these shoes look great!  Fit good too.  But somehow I still don't quite feel like a ladykiller.#$b#Welp.  A deal's a deal.  I'll fix the loader.  You can pick it up in a couple days.",
+      "translation": "Ah, diese Schuhe sehen großartig aus!  Passen auch gut.  Aber irgendwie fühle ich mich immer noch nicht wie ein Womanizer.#$b#Tja.  Geschäft ist Geschäft.  Ich werde deine Ladeschaufel reparieren.  Du kannst sie in ein paar Tagen abholen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Here's your front-end loader, all fixed up.  Stick to small rocks, right?#$b#If you need to move big ones, get some explosives for the job.  Oh, and let me know when you're doing it.  I'll bring beer.",
+      "translation": "Hier ist deine Traktorschaufel, fast wie neu.  Bleib aber bei kleinen Steinen, ja?#$b#Wenn du an die Großen ran willst, besorg dir lieber etwas Sprengstoff.  Oh, und sag mir vorher kurz Bescheid.  Dann komm ich mit Bier vorbei.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Sweet!  You've now got a front-end loader attachment for your tractor to clear out debris!#$b#HINT: To use it, equip the pick or the axe while on the tractor.",
+      "translation": "Super!  Du besitzt nun einen Frontladerschaufelaufsatz für deinen Traktor um Schutt zu räumen!#$b#HINWEIS: Benutze ihn indem du die Spitzhacke oder Axt ausrüstest, während du auf dem Traktor sitzt.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Hey there!^I talked with Sebastian about your tractor and he has agreed to work on it, but only if he's got a decent place to work.  I understand that you're just starting out here and don't have a lot of money laying around, so I'm willing to do it at-cost.^ ^For my part, I'll need 300 wood, 200 stone and 350g for supplies.  Sebastian insisted that you bring a cup of coffee as well.  He's still a bit surly I think.  I caved on that one; gotta pick your battles.^ ^See you soon!^  - Robin",
+      "translation": "Hallo!^Ich habe mit Sebastian wegen deinem Traktor gesprochen und er ist einverstanden ihn sich anzuschauen, aber nur wenn er einen anständigen Platz zum arbeiten hat.  Ich verstehe, dass du gerade erst hier angefangen hast, aber ich habe selbst nicht viele Ersparnisse herumliegen, daher muss ich zumindest auf die Materialkosten bestehen.^ ^Ich benötige 300 Holz, 200 Steine and 350g für sonstige Materialien.  Sebastian besteht außerdem auf eine Tasse Kaffee für seine Arbeit.  Ich glaube er ist immer noch ein bißchen sauer.  Deswegen habe ich nachgegeben; Man muss sich seine Gegner eben aussuchen.^ ^Man sieht sich!^  - Robin",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Build the garage",
+      "translation": "Bau die Garage",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I got everything working except this engine.  I've never seen anything like it.  I mean, it's like it doesn't even need gas!^I don't know what you're gonna need to do to make it work, but I know I'm out of my area here.^If you manage to figure it out, bring it back up to my place and I'll see about getting it installed.^  - Sebastian",
+      "translation": "Ich hab alles zum Laufen bekommen außer diesen Motor.  Ich hab sowas noch nie gesehen.  Ich meine, es sieht aus als bräuchte er nicht mal Treibstoff!^Ich habe keine Ahnung was es braucht um ihn zu reparieren, aber ich bin hier definitiv unterqualifiziert.^Solltest du es doch noch herausfinden, bring ihn zu mir rüber und ich bau ihn dir ein.^  - Sebastian",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Wonky engine",
+      "translation": "Kaputter Motor",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Thanks for letting me work on this!  I even let my Dad do some of the work on it so that he got to feel like maybe he finally did make good on his promise to your Granddad all those years ago.  But me, well, I just like gadgets!  If it ever breaks down, let me know, I have a 10-year warranty on all my work :)",
+      "translation": "Danke, dass ich hier dran arbeiten durfte!  Ich hab sogar Dad etwas daran schrauben lassen, damit er endlich das Gefühl haben kann sein Versprechen gegenüber deinem Großvater doch noch eingelöst zu haben.  Mir macht tüfteln einfach nur Spaß!  Falls es je wieder Probleme macht, lass es mich wissen, ich gebe 10 Jahre Garantie auf alle meine Arbeiten :)",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Irrigator is fixed",
+      "translation": "Das Bewässerungsgerät ist repariert",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I hear you're restoring that old tractor.  Here's the seeder - it spreads fertilizer and seeds.  Your Grandpa gave it to me to fix after he decided to try going organic and put chicken droppings in it. I got it cleaned up, but it needed some iron bars.  Your Grandpa took his time rounding those up, and, well, my accident and his decline put an end to it.  But you're young, you can find somebody to fix it. I'm too old to be of any use anymore.",
+      "translation": "Ich hörte du bringst den alten Traktor wieder auf Vordermann.  Hier ist der Saatstreuer - Er verteilt Dünger und Saaten.  Dein Großvater gab ihn mir zur Reparatur nachdem er versuchte Bio zu produzieren und Hühnermist hineinkippte. Ich hatte ihn gereinigt, doch dann brauchte ich ein paar Barren Eisen.  Dein Großvater ließ sich Zeit mit der Beschaffung und, na ja, mein Unfall und seine abnehmende Gesundheit machten dem schließlich ein Ende.  Doch du bist jung, du findest sicher jemanden der ihn dir reparieren kann. Ich bin zu alt um noch jemandem von Nutzen zu sein.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Seeder from George",
+      "translation": "Saatstreuer von George",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Hello Dear,^I gave what you said a lot of thought and I think I have a way.  George would be really uncomfortable with you doing work he would want to do.^But George has had to get used to letting Alex do a lot of things for him already.^I talked to Alex about it, but he is reluctant and he wouldn't say why.  Maybe if someone nearer his own age, who he trusted, talked to him he would come around.^Good luck!^ - Granny",
+      "translation": "Hallo Liebes,^Ich habe viel über das was du sagtest nachgedacht und ich denke ich weiß was zu tun ist.  George wäre sicher nicht glücklich, wenn du die Arbeit erledigst die er eigentlich selbst machen will.^Aber George musste sich bereits daran gewöhnen, Alex viele seiner Aufgaben zu überlassen.^Ich habe schon mit Alex gesprochen, aber er zögert und wollte nicht sagen warum.  Vielleicht könnte er sich eher überwinden, wenn jemand in seinem Alter mal mit ihm redet.^Viel Glück!^ - Oma",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "@ - I think you'll find Alex is a little more... inspired... today.^ - Haley",
+      "translation": "@ - Ich denke du wirst Alex heute ein bißchen... inspirierter vorfinden.^ - Haley",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Haley has motivated Alex",
+      "translation": "Haley hat Alex motiviert",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Hey!^Grandpa and I got the seeder working last night!  You can pick it up from Grandpa whenever.  Now that it's done, I'm really happy you rooked me into doing this. I really love my grandpa, and well, sometimes it's hard to find things to do together.  And hey, maybe if the Gridball thing doesn't work out I can get a job repairing farm equipment!^ - Your friend,^   Alex",
+      "translation": "Hey!^Opa und ich haben gestern abend den Saatstreuer wieder hinbekommen!  Du kannst ihn jederzeit bei Opa abholen.  Jetzt wo wir fertig sind bin ich wirklich froh, dass du mich dazu überredet hast. Ich hab meinen Opa wirklich lieb und na ja, manchmal ist es wirklich schwierig Dinge zu finden die wir zusammen machen können.  Und hey, wenn das mit Gitterball nicht klappt kann ich vielleicht Farmgeräte reparieren!^ - Dein Kumpel,^   Alex",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Waterer is ready",
+      "translation": "Der Bewässerungstank ist fertig",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "The tractor's all ready to go!  It was kinda strange, I didn't really know how it all attached, but when I tried to plug something into the wrong place, it just wouldn't go.  Screws wouldn't find their threads, belts would jump off of pullies...^ ^But when I got a part even near the right spot, it'd just jump into place!  So I guess that engine really likes being in that tractor!^ ^Oh and the tiller was on the tractor when we found it.  It seems okay, so you'll be able to hoe areas.  The other attachments are probably around someplace!^ ^ - M^ ^HINT: To use the tractor, get on it and select your hoe.",
+      "translation": "Der Traktor ist bereit für eine Probefahrt!  Es war etwas seltsam, ich war mir nicht ganz sicher wie alles zusammengehört, aber wenn ich versucht habe etwas falsch anzustöpseln wollte es einfach nicht passen.  Schrauben fanden ihr Gewinde nicht, Riemen sprangen wieder von ihren Scheiben...^ ^Aber wenn ich ein Teil auch nur in die Nähe seiner richtigen Position brachte, sprang es fast von selber rein!  Also ich schätze, dem Motor gefällt es wirklich gut in diesem Traktor!^ ^Oh und der Pflugaufsatz war bereits am Traktor als wir ihn fanden.  Er sieht okay aus, du wirst also den Boden pflügen können.  Die anderen Aufsätze sind vermutlich auch irgendwo!^ ^ - M^ ^HINWEIS: Steig auf den Traktor und rüste die Hacke aus, um den Boden umzugraben.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Tractor is ready to go",
+      "translation": "Der Traktor ist bereit zum Fahren",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I found shoes in the garbage last night.  You're right, these are perfectly good shoes, ready for a second life!  I hope you give them a good home.",
+      "translation": "Ich habe letzte Nacht ein Paar Schuhe im Müll gefunden.  Du hattest recht, sie sind noch völlig in Ordnung, bereit für einen zweiten Besitzer!  Ich hoffe du gibst ihnen ein gutes Zuhause.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Linus found shoes",
+      "translation": "Linus hat ein Paar Schuhe gefunden",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "funky looking engine that doesn't work",
+      "translation": "Merkwürdiger kaputter Motor",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Sebastian pulled this off of the rusty tractor.  I need to find someone to fix it.",
+      "translation": "Sebastian hat dies vom rostigen Traktor abgebaut.  Ich brauche jemanden der es reparieren kann.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Junimo-powered tractor engine",
+      "translation": "Junimo-angetriebener Traktormotor",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "The engine for the tractor!  I need to find someone to install it.",
+      "translation": "Der Motor für den Traktor!  Ich muss jemanden finden, der ihn einbaut.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "core of the harvesting attachment for the tractor",
+      "translation": "Kernstück des Mähdreschers für den Traktor",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "This looks like it was a tractor attachment for harvesting crops, but it doesn't seem to be all together.",
+      "translation": "Es sieht aus wie ein Traktoraufsatz um Ernte einzufahren, aber er scheint nicht ganz vollständig zu sein.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "harvesting attachment for the tractor",
+      "translation": "Mähdrescheraufsatz für den Traktor",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Just need to bring this to the tractor garage to be able to use it with the tractor!",
+      "translation": "Bring es einfach zur Traktorgarage um es mit dem Traktor zu benutzen!",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "crop shakerlooser",
+      "translation": "Ernte-Losschüttler",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "One of the missing parts for the scythe attachment",
+      "translation": "Eins der fehlenden Teile für den Mähdrescher",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "shiny sprocket",
+      "translation": "Glänzender Zahnkranz",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "broken watering attachment for the tractor",
+      "translation": "Kaputter Wassertank für den Traktor",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "This looks like it was a tractor attachment for watering crops.  Sure hope somebody can help me get it working again, watering can really be a drag.",
+      "translation": "Sieht aus wie ein Traktoraufsatz zum Wässern von Pflanzen.  Ich hoffe es gibt jemanden der ihn wieder heil kriegt, Gießen kostet immer viel Zeit.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "watering attachment for the tractor",
+      "translation": "Bewässerungstank für den Traktor",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "The watering attachment for the tractor - it needs to be brought back to the tractor garage.",
+      "translation": "Der Bewässerungstank für den Traktor - Er muss zurück zur Traktorgarage.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "bent up and rusty front-end loader for the tractor",
+      "translation": "Verbogene und rostige Frontladerschaufel für den Traktor",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "This was the front-end loader attachment (for picking up rocks and sticks), but it's all bent up and rusted through in spots.  It needs to be fixed to be usable.",
+      "translation": "Eine Frontladerschaufel (zum Aufnehmen von Steinen und Ästen), aber sie ist komplett verbogen und in Teilen durchgerostet.  Sie muss repariert werden bevor du sie wieder nutzen kannst.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "front-end loader attachment for my tractor",
+      "translation": "Frontladerschaufel für meinen Traktor",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "This will allow me to clear rocks and sticks on my farm.  It needs to go into the tractor garage so I can use it.",
+      "translation": "Dies wird mir ermöglichen Steine und Äste auf meinem Hof zu räumen.  Sie muss zur Traktorgarage damit ich sie nutzen kann.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Alex's old shoes",
+      "translation": "Alex' alte Schuhe",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "14EEE, slightly smudged",
+      "translation": "14EEE, leicht verschmutzt",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "cleverly repackaged pair of shoes",
+      "translation": "Klever überholtes Paar Schuhe",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Alex's old shoes, cleverly dyed.  Nobody will ever know.",
+      "translation": "Alex' alte Schuhe, frisch gefärbt.  Niamand wird es je erfahren.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "broken fertilizer and seeder",
+      "translation": "Kaputter Dünger- und Saatstreuer",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "The fertilizer and seed spread for the old tractor.  It needs a good bit of fiddling to make work.",
+      "translation": "Der Dünger- und Saatstreuer für den alten Traktor.  Er wird einge Handgriffe brauchen ehe er wieder funktionstüchtig wird.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "fertilizer and seed Seeder attachment for the tractor",
+      "translation": "Dünge- und Saatstreuaufsatz für den Traktor",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Just needs to be brought back to the garage to use it on the tractor.",
+      "translation": "Muss nur zurück zur Garage um mit dem Traktor verwendet zu werden.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I wonder what {{arg0}} has been up to...",
+      "translation": "Ich frage mich wo {{arg0}} sich herumtreibt...",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Pets sometimes have an uncanny ability to spot missing things!$0#$b#Just last week I lost my favorite milking bucket.  I came across it a few days later and my cat, Muffin, was sleeping in it.$1#$b#Well, I guess she didn't exactly find it for me, but at least she knew where it was!$0",
+      "translation": "Haustiere scheinen die seltsame Fähigkeit zu haben, verlorene Dinge wiederzufinden!$0#$b#Gerade letzte Woche habe ich meinen liebsten Melkeimer verlegt.  Ein paar Tage später fand ich ihn wieder wie Muffin, meine Katze darin schlief.$1#$b#Nun, ich schätze sie hat ihn nicht direkt für mich wiedergefunden, aber sie wusste zumindest wo er war!$0",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Do I miss my \"normal\" life on days like this?$2#$b#No, not really.  Except for Jeremy Clarkson...$1#$b#...My pet Schnauzer.  He had an uncanny ability to fetch the thing I wanted before I even knew I wanted it.$0",
+      "translation": "Ob ich mein \"normales\" Leben an solchen Tagen vermisse?$2#$b#Nein, nicht wirklich.  Abgesehen von Jeremy Clarkson...$1#$b#...Meinem kleinen Schnauzer.  Er hatte die merkwürdige Angewohnheit mir wichtige Dinge zu bringen, bevor ich sie überhaupt suchen konnte.$0",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Investigate the tractor",
+      "translation": "Untersuche den Traktor",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "There's a rusty old tractor in the fields; it sure would be nice if it could be restored.  Perhaps the townspeople can help.",
+      "translation": "Da steht ein rostiger alter Traktor auf dem Feld; Er wäre sicher praktisch, wenn man ihn reparieren kann.  Vielleicht können die Einwohner helfen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Talk to mayor Lewis",
+      "translation": "Sprich mit Bürgermeister Lewis",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ask Sebastian to help restore the tractor",
+      "translation": "Bitte Sebastian um Hilfe mit der Reparatur des Traktors",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Welp, Sebastian was a bust.  Maybe Mayor Lewis knows somebody else who could be more helpful.",
+      "translation": "Tja, Sebastian war ein Fehlgriff.  Vielleicht kennt Bürgermeister Lewis jemand anderen der hilfsbereiter ist.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Wait for Lewis to work his magic",
+      "translation": "Warte bis Lewis seine Strippen gezogen hat",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Get Robin to build you a garage to get the tractor out of the weather.",
+      "translation": "Lass Robin dir die Garage bauen, um den Traktor ins Trockene zu bekommen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Sebastian promised to get on the job right after the barn got built.  Hopefully he's actually on the case.",
+      "translation": "Sebastian versprach sich gleich nachdem die Garage fertig ist um den Traktor zu kümmern.  Hoffentlich hält er Wort.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ask for help with the strange tractor motor.",
+      "translation": "Suche nach Hilfe mit dem merkwürdigen Traktormotor.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Put the engine, 20 sap, 5 mixed seeds and an aquamarine in a chest in the secret woods.",
+      "translation": "Leg den Motor, 20 Harze, 5 gemischte Saaten und einen Aquamarin in eine Kiste in die geheimen Wälder.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Hopefully the Junimo magic worked!  Get the engine out of the secret woods and bring it to Sebastian.",
+      "translation": "Hoffentlich hat die Junimo-Magie gewirkt!  Hol den Motor aus den geheimen Wäldern und bringe ihn zu Sebastian.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Bring the engine to Maru to install.",
+      "translation": "Bring den Motor zu Maru für den Einbau.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Maru says that after the engine is installed, it should actually run!  Just have to wait a little bit longer...",
+      "translation": "Maru meint wenn der Motor installiert ist, sollte der Traktor endlich wieder fahren!  Ich muss nur noch ein kleines bißchen warten...",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "An old tractor you say?#$b#I know your Grandfather had one - I thought he had sold it off before he died.  He never could keep it on the furrows.$h#$b#If you want to get it fixed, I suggest you talk to Robin's son, Sebastian; he's actually quite the gearhead.  Maybe he can help.",
+      "translation": "Ein alter Traktor sagst du?#$b#Ich weiß dein Großvater besaß einen - Ich dachte er hätte ihn verkauft bevor er verstorben ist.  Er konnte nie ganz damit umgehen.$h#$b#Wenn du ihn reparieren möchtest, rate ich dir mal mit Robins Sohn zu sprechen, Sebastian; Er ist ein ganz schöner Tüftler.  Vielleicht kann er helfen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Let me get this straight - I barely know who you are and I'm supposed to fix your rusty old tractor?$a#$b#Sorry, but I've got a lot of stuff going on and can't really spare the time.",
+      "translation": "Verstehe ich dich richtig - Ich kenn dich kaum, aber ich soll dir deinen alten Traktor reparieren?$a#$b#Sorry, aber ich hab echt viel zu tun und hab daher leider keine Zeit.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "He said that?$a#$b#Well, I can't say I'm really surprised...  Just a bit disappointed.$s#$b#Hm. . .$u#$b#Welp, I guess this is why they pay me the big money, eh?  I'll see if I can make this happen for you, but it might take a couple days.",
+      "translation": "Das hat er gesagt?$a#$b#Nun, ich kann nicht wirklich sagen, dass ich überrascht bin...  Nur ein wenig enttäuscht.$s#$b#Hm. . .$u#$b#Tja, ich schätze für solche Angelegenheiten werde ich bezahlt, nicht?  Ich werde sehen was ich hier für dich tun kann, aber es mag ein paar Tage dauern.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Trust me, I'm working on it, but I also have my day-gig to worry about.  I work odd hours, so you might not be around when I'm working on it.  Oh and thanks for the coffee.",
+      "translation": "Vertrau mir, ich bin an der Sache dran, aber ich muss mich auch um meine restliche Arbeit kümmern.  Meine Arbeitszeiten sind etwas ungewöhnlich, also wirst du vermutlich nicht da sein wenn ich dran bin.  Oh und danke für den Kaffee.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I made a lot of progress last night.  Most of it is cleaning up okay, but the engine itself is, well, it seems a little out of the ordinary. . .",
+      "translation": "Ich habe letzte Nacht einige Fortschritte gemacht.  Da meiste ließ sich recht gut reparieren, aber der Motor selbst ist, nun, er sieht ein wenig ungewöhnlich aus. . .",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oh...  Now where did you get that??!$l#$b#Ooooh... Ah.  Yes.  I see...  Mmm...$s#$b#Yes.  Your grandfather dabbled a bit in Forest Magic.  He was nowhere near as adept as myself, of course...#$b#He lacked the mechanical ability to restore the mundane engine, so he enlisted some forest magic to make one.#$b#As you can see, the Junimos that he recruited to keep the motor running have gotten bored and wandered away.  You'll need to coax them back.$s#$b#Now, pay attention!  This will require your utmost concentration!$a#$b#You must place the engine, 20 sap, 5 mixed seeds and an aquamarine in a chest in the secret woods in front of the statue...#$b#Then, you must run around the chest, six times, clockwise very, very quickly.  Overnight, your engine will be restored.#$b#Now GO!  I have concerns much greater than yours right now.$a",
+      "translation": "Oh...  Wo hast du das denn her??!$l#$b#Ooooh... Ah.  Ja.  Ich verstehe...  Mmm...$s#$b#Ja.  Dein Großvater experimentierte ein wenig mit Waldmagie.  Natürlich war er nie so begabt wie ich...#$b#Es mangelte im am mechanischen Verständnis um den profanen Motor wieder herzustellen, also benutzte er stattdessen etwas Waldmagie.#$b#Wie du sehen kannst, haben sich die Junimos, welche er beschwor um den Motor zum laufen zu bringen, gelangweilt und sind nun von dannen gezogen.  Du wirst sie zurück locken müssen.$s#$b#Jetzt pass gut auf!  Dies wird deine volle Konzentration verlangen!$a#$b#Du musst den Motor, 20 Harze, 5 gemischte Saaten und einen Aquamarin in eine Kiste legen und in den geheimen Wäldern vor der Statue platzieren...#$b#Anschließend musst du sechsmal schnell um die Kiste laufen, im Uhrzeigersinn.  Über Nacht wird dein Motor dann wieder hergestellt.#$b#Jetzt GEH!  Ich habe gerade weit größere Sorgen als du.$a",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "That is the craziest engine I've ever seen.  Have  you shown it to Clint?  I mean, he knows something about metalworking.  Maybe it's some kinda weird alloy?^ ^Or...^Maybe aliens.",
+      "translation": "Das ist der verrückteste Motor den ich je gesehen habe.  Hast du ihn Clint gezeigt?  Ich meine, er kennt sich recht gut mit Metallarbeit aus.  Vielleicht irgendeine seltene Legierung?^ ^Oder...^Vielleicht Aliens.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Uh...#$b#What is it?  you say it's an Engine?$s#$b#I say it's weird. . .  Hey, is that thing moving?$a#$b#I don't know.  Maybe the Wizard would know what it is, and even if he doesn't, he'll sure pretend like he does if you show it to him.",
+      "translation": "Äh...#$b#Was ist das?  Ein Motor, sagst du?$s#$b#Ich sage es ist seltsam. . .  Hey, hat sich das Ding gerade bewegt?$a#$b#Ich weiß nicht.  Vielleicht weiß der Zauberer was es ist und selbst wenn nicht, wird er zumindest so tun als ob er es wüsste, wenn du's ihm zeigst.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oh wow...#$b#Can I have it?",
+      "translation": "Oh Wow...#$b#Darf ich das haben?",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "AAAAHHH!!!  IT'S MOVING!  TAKE IT AWAY!$4",
+      "translation": "AAAAHHH!!!  ES BEWEGT SICH!  NIMM ES WEG!$4",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I've never seen anything like that before...#$b#It gives me this uncanny feeling like...  it's missing something.#$b#Weird.",
+      "translation": "Ich habe so etwas noch nie gesehen...#$b#Es gibt mir dieses unheimliche Gefühl, als ob...  ihm etwas fehlen würde.#$b#Merkwürdig.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Whoah....$s#$b#I mean, if you say it's fixed, I can believe it.  Definitely has a look of workiness about it!$l#$b#But seriously...  I shouldn't be installing this thing.  It's, yaknow, out of my area but...$s#$b#I hate to say it, my sister would be able to figure it out, no matter how weird it is.",
+      "translation": "Whoah....$s#$b#Ich meine, wenn du sagst er ist heil, dann glaub ich dir.  Sieht zumindest arbeitsfähig aus!$l#$b#Aber ernsthaft...  Ich sollte dieses Ding nicht einbauen.  Ist nicht ganz mein Bereich, weißt du...$s#$b#Ich sag es nicht gern, aber meine Schwester wäre wohl der bessere Ansprechpartner wenn es um so merkwürdige Dinge geht.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Wow!  I mean I have no idea what it does, but I'm sure it'll look cool doing it!$h#$b#You want me to install it in the tractor?  Sure, I'll do it.  I helped Seb haul it out of the mud.  He really did a great job polishing it up.#$b#Just give me a day or so, k?  And be sure to drive it up here sometime, I want to ride it around!$l",
+      "translation": "Wow!  Ich habe keine Ahnung was es tut, aber ich bin mir sicher es wird sehr cool aussehen!$h#$b#Du willst dass ich es in deinen Traktor einbaue?  Klar, mach ich.  Ich habe Seb schließlich auch geholfen es aus dem Schlamm zu ziehen.  Er hat es wirklich gut wieder aufpoliert.#$b#Gib mir nur nen Tag oder so, ja?  Und fahr ihn irgendwann mal rüber, ich will auch etwas damit herumfahren!$l",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Fix the harvester",
+      "translation": "Repariere den Mähdrescher",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I found the harvester attachment for the tractor, but won't work like it is now.  I should ask around town about it.",
+      "translation": "Ich habe den Mähdrescheraufsatz für den Traktor gefunden, aber so wie er ist wird er nicht funktionieren.  Ich sollte im Ort herumfragen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Let's see what you go there...$s#$b#You know, there's no real metalwork to do here.  It basically needs a good cleaning and oiling.$h#$b#But something seems wrong about it still, like are you sure you got all of it out of the weeds?",
+      "translation": "Zeig mal her, was du da hast...$s#$b#Tja, da gibt es für mich nicht viel dran zu tun.  Es braucht eigentlich nur eine gute Reinigung und etwas Öl.$h#$b#Aber irgendwas stimmt immer noch nicht damit, bist du sicher dass du alle Teile gefunden hast?",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oh you found the old harvester!  I think your Grandpa broke every other thing, but I don't recall any misadventures with that part.  If you can't get it to work, you might ask Demetrius or Maru.  They're good at metalworking.",
+      "translation": "Oh du hast den alten Mähdrescher gefunden!  Ich glaube dein Großvatere hat so ziemlich alles kaputt bekommen, nur bei diesem Teil kann ich mich an keine Katastrophe erinnern.  Falls du es nicht in Gang bekommst, kannst du Demetrius oder Maru fragen.  Die kennen sich mit Technik aus.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oh you found the old harvester!  You know, just looking at it, I think it's okay, but I don't think it's quite complete.  Looks like there might be some parts missing.#$b#You're getting pretty good around the farm, I'm sure you could get it to work again if you can find the rest of the parts.  Let me know if you need help with it, though, I'd be happy to help.",
+      "translation": "Oh du hast den alten Mähdrescher gefunden!  Auf den ersten Blick sieht er ganz in Ordnung aus, aber ich glaube er ist nicht ganz vollständig.  Es scheinen ein paar Teile zu fehlen.#$b#Du wirst immer besser mit der Hofarbeit, ich bin mir sicher du kriegst ihn wieder hin, wenn du die restlichen Bauteile findest.  Lass es mich wissen falls du Hilfe brauchst, ich helfe gern.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oh I'm not much for farm equipment.  You say that's a harvester?  Well, I'll have to take your word for it!$h#$b#Yaknow he broke a lot of stuff on that tractor, but I don't recall that being one of them.  Maybe it just needs cleaning and oiling?",
+      "translation": "Oh ich kenne mich mit Farmgeräten nicht besonders aus.  Ein Mähdrescher sagst du?  Nun, ich werde dich beim Wort nehmen!$h#$b#Weißt du er hat ziemlich viel vom Traktor kaputt bekommen, aber an dieses kann ich mich nicht erinnern.  Vielleicht muss er einfach nur etwas sauber gemacht und geölt werden?",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oh that's the old harvester!  Or most of one anyway...$s#$b#Well, did you look around where you found that piece?  Might be more pieces under that log.#$b#You might enlist Jaz and Vincent to help - they used to play out in your south pasture, but when you moved back in, I asked them to keep clear so you could get your work done.  But they know that area pretty well.",
+      "translation": "Oh das ist der alte Mähdrescher!  Oder das meiste davon zumindest...$s#$b#Hast du dich schon genauer umgesehen, wo du ihn gefunden hast?  Vielleicht liegen noch weiter Teile unter dem Baumstamm.#$b#Du kannst auch Jas und Vincent um Hilfe fragen - Sie haben oft im Süden des Felds gespielt, aber als du eingezogen bist habe ich sie gebeten es zu lassen, damit du in Ruhe arbeiten kannst.  Sie kennen sich dort ziemlich gut aus.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oh that's a *harvester*?  I never would have guessed!  Yep, I saw it on your farm and always wondered about it...#$b#Well, unless I was prepared to accept Jaz and Vincent's explanation that it was a machine made by Greebles!$l",
+      "translation": "Oh das ist also ein *Mähdrescher*?  Wär ich nie drauf gekommen!  Ich habe ihn auf deinem Hof gesehen und mich immer gewundert...#$b#WJas und Vincents Erklärung, es wäre eine Maschine von den Greebeln, war mir dann doch zu fantastisch!$l",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "That's the old harvester for the tractor?  I guess it looks like that.#$b#I'm sorry, I don't know anything about farming.$2",
+      "translation": "Das ist der alte Mähdrescher vom Traktor?  Ich schätze er sieht so aus.#$b#Entschuldige, ich kenne mich mit Landwirtschaft überhaupt nicht aus.$2",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Missing parts for a 'harvester'?$s#$b#You might ask Jaz and Vincent to help look for other parts like that - they told me they used to play out in your south pasture, but they don't anymore because Marnie shooed them away.$4",
+      "translation": "Fehlende Teile für einen 'Mähdrescher'?$s#$b#Du könntest Jas und Vincent fragen ob sie dir bei der Suche helfen - Sie erzählten mir dass sie oft im Süden deines Hofs spielten, mittlerweile hat Marnie ihnen das aber verboten.$4",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oh yeah I've seen that - wedged under a tree, right?  Must have been a feat to get it out!#$b#Did Jaz or Vincent tell you where to find it?  They used to play near it quite a bit.",
+      "translation": "Oh das Ding kenn ich - klemmte unter einem Baum, richtig?  War bestimmt nicht leicht es rauszubekommen!#$b#Haben Jas und Vincent dir davon erzählt?  Sie haben früher oft in seiner Nähe gespielt.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "What is that thing?  A harvester?  Sure, if you say so...  I tell you though, something about that thing seems familiar to me.$s#$b#Well, it looks like a mess, and I've cleaned up a lot messes.  It must be that!$l",
+      "translation": "Was ist das für ein Ding?  Ein Mähdrescher?  Wenn du meinst...  Ich sag's dir, irgendwie kommt es mir bekannt vor.$s#$b#Tja, es sieht ziemlich verdreckt aus und ich habe schon viel Dreck aufgeräumt.  Vielleicht liegt es daran!$l",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "That's the old harvester for the tractor?  I guess it looks like that.  You think it's incomplete?$s#$b#You might ask Jaz and Vincent to help look for other parts like that - they used to play out in your south pasture, but don't worry!  Marnie and I asked them not to since you moved in.#$b#You've got enough on your hands without those two hooligans running through the corn!$l",
+      "translation": "Das ist der alte Mähdrescher für den Traktor?  Ich schätze so sieht er aus.  Du meinst es fehlt etwas?$s#$b#Du könntest Jas und Vincent nach den Teilen fragen - Sie haben oft auf der südlichen Weide gespielt, doch keine Sorge!  Marnie und ich haben sie gebeten nach deinem Einzug fernzubleiben.#$b#Du hast schon genug zu tun ohne dass diese zwei Rabauken durch deine Kornfelder toben!$l",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Aha!!!!  I FORESEE THAT YOU HAVE NEED OF A SCRY!$a#$b#And you've come at the perfect time.  I happen to have need to flex my muscles from time to time, to keep in tip top form, you know.  Let's have a look#$b#Aahh through the mists I see two people, NO, CHILDREN, in your farm playing...#$b#They have taken parts of off and headed off...  But wait, there's more...  Yes...#$b#They will each need to be placated to get them to give the parts back.  The boy will want 3 crayfish and the girl will want a gemstone, but her tastes are not yet developed, so a cheap one will do...",
+      "translation": "Aha!!!!  ICH SEHE DASS DU EINER VORHERSAGE BENÖTIGST!$a#$b#Und du bist zu einem perfekten Zeitpunkt gekommen.  Ich muss hin und wieder meine Fähigkeiten spielen lassen um in Form zu bleiben, weißt du.  Lass uns einen Blick riskieren#$b#Aahh durch den Nebel erkenne ich zwei Personen, NEIN, KINDER, die auf deinem Hof spielen...#$b#Sie haben etwas aufgehoben und laufen davon...  Doch warte, da ist noch mehr...  Ja...#$b#Sie werden einen Pfand verlangen um dir zurückzugeben, was sie genommen haben.  Der Junge wird 3 Flusskrebse wollen and das Mädchen einen Edelstein, doch ihr Geschmack ist noch nicht ausgereift, ein billiger wird es also auch tun...",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "BAH!  Begone with this mundane contrivance!  Return on Friday or Saturday and I may have time.$a",
+      "translation": "BAH!  Hinfort mit diesem profanen Gerät!  Komm am Freitag oder Samstag wieder und ich habe vielleicht Zeit.$a",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I love how my jumprope sparkles in the sun now!  Did you have any luck getting it to fit back together?",
+      "translation": "Ich liebe wie mein Springseil jetzt in der Sonne glitzert!  Hast du schon Glück beim Zusammenbau gehabt?",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ooh!  Oh this {{arg0}} is very sparkly!  Thanks!  Here's your thingamajig.  I sure hope it works!  I really want to ride on your tractor some day!$l",
+      "translation": "Ooh!  Oh dieser {{arg0}} glitzert aber schön!  Danke!  Hier dein Dingsbums.  Ich hoffe es funktioniert!  Ich möchte wirklich mal auf dem Traktor fahren!$l",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oohh when are you gonna bring me something shiny!  I'm really looking forward to it!",
+      "translation": "Oohh wann bringst du mir endlich etwas Glitzerndes!  Ich kann's kaum abwarten!",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ooh!  You found the Greeble machine!$h#$b#Vincent and I used to play games with that, but we had to stop because Aunt Marnie told us we couldn't go into your pasture anymore unless you invite us.#$b#There are parts missing?  Well of course there are!  Vincent and I kept some of the shinier bits, see, one's on my jumprope!  It's so shiny, it sparkles when I jump!  Oh, and FINDERS KEEPERS!$l#$b#Well, I suppose I could give it back to you...  BUT ONLY IF YOU TRADE ME SOMETHING REALLY SHINY!$h",
+      "translation": "Ooh!  Du hast die Greebel-Maschine gefunden!$h#$b#Vincent und ich haben oft damit gespielt, aber jetzt dürfen wir nicht mehr, Tante Marnie hat gesagt dass wir nur auf die Weide dürfen wenn du es erlaubst.#$b#Es fehlt etwas?  Natürlich tut es das!  Vincent und ich haben ein paar der glänzenden Teile mitgenommen, siehst du, dieses ist an meinem Springseil!  Es glänzt so schön und glitzert in der Sonne wenn ich damit springe!  Oh, und wer es findet darf's behalten!$l#$b#Ich schätze ich könnte es dir zurückgeben...  ABER NUR WENN DU ES GEGEN ETWAS WIRKLICH RICHTIG GLITZERNDES TAUSCHST!$h",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Did you have any luck getting it to fit back together?  I could probably help you put it back together, it sure came apart easy!$l",
+      "translation": "Hast du es schon wieder zusammengebaut?  Ich könnte dir vielleicht dabei helfen, es war zumindest leicht auseinanderzunehmen!$l",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ooh!  Oh these 3 crawdads would be great!  Thanks!  Here's your thingamajig.  I Hope it works!$l#$b#Sure, I won't tell Mom that you gave them to me if you want...  Why?$s",
+      "translation": "Ooh!  Oh die 3 Krebse sind super!  Danke!  Hier dein Dings.  Ich hoffe es funktioniert!$l#$b#Klar, wenn du willst erzähle ich Mama nicht, dass du sie mir gegeben hast...  Warum?$s",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Did you get the bugs?  3 Big ones?",
+      "translation": "Hast du 3 Käfer?  3 richtig Große?",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "The Greeble machine!$h#$b#Jaz and I used to play games with that, but we had to stop because Marnie told us we couldn't go into your pasture anymore unless you invite us.#$b#There are parts missing?  Sure there are!  Me and Jaz took a couple of pieces.  I used mine in a trap I was building to trap the Greebles under my bed!  It didn't work.  Hey, have you got any good bugs on your farm?  I'll find it for you if you can bring me some really big crawly ones!$h",
+      "translation": "Die Greebel-Maschine!$h#$b#Jas und ich haben immer damit gespielt, aber wir mussten aufhören weil Marnie gesagt hat, dass wir nur noch auf's Feld dürfen mit deiner Erlaubnis.#$b#Es fehlen Sachen?  Klaro!  Ich und Jas haben ein paar Teile mitgenommen.  Ich habe mit meinem versucht ein Falle für die Greebel unter meinem Bett zu bauen!  Es hat nicht geklappt.  Hey, hast du viele Käfer auf deiner Farm?  Wenn du mir ein paar richtig große Krabbler bringst, tausche ich sie gegen mein Dings!$h",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "It seems some parts are missing, but I know there's nothing else out there in that field, at least not that's easy to see.  Maybe somebody else who noses around the farm would know about it.",
+      "translation": "Sieht aus als würden einige Teile fehlen, aber ich habe nichts weiteres auf dem Feld gefunden, zumindest nicht auf den ersten Blick.  Vielleicht weiß jemand mehr, der öfters auf dem Hof unterwegs war.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ask Jaz and Vincent about the harvester",
+      "translation": "Frag Jas und Vincent nach dem Mähdrescher",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Fix the scythe attachment (HINT: craft it from the parts)",
+      "translation": "Reparier den Mähaufsatz (HINWEIS: Stelle ihn aus den Teilen her)",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Get a 'shiny thing' for Jaz (perhaps a gem?) and 3 big bugs for Vincent.  (Hm.  The bugs in the mines seem TOO big...  Maybe a lobster?  Hm.  Again maybe too big...)",
+      "translation": "Besorge etwas 'Glitzerndes' für Jas (Vielleicht einen Edelstein?) und 3 große Käfer für Vincent.  (Hm.  Die Käfer in den Minen sind ZU groß...  Vielleicht ein Hummer?  Hm.  Vermutlich auch zu groß...)",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Find a way to get the kids to give me the parts",
+      "translation": "Finde einen Weg die Bauteile von den Kindern zurückzukriegen",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Take the fixed scythe attachment to the tractor garage.",
+      "translation": "Bring den reparierten Mähaufsatz zu Traktorgarage.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Sweet!  You've now got a harvester attachment for your tractor!#$b#HINT: To use it, equip the scythe while on the tractor.",
+      "translation": "Perfekt!  Du besitzt jetzt den Mähdrescheraufsatz für deinen Traktor!#$b#HINWEIS: Rüste die Sense auf deinem Traktor aus um ihn zu benutzen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Fix the seeder",
+      "translation": "Repariere den Saatstreuer",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Turns out George had the seeder attachment, maybe he can be talked into fixing it.",
+      "translation": "Stellt sich heraus dass George den Saatstreuer hatte, vielleicht kann er überredet werden ihn zu reparieren.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Young people just don't listen.  I told you, I'm too old to repair your equipment.$a",
+      "translation": "Junge Leute wollen einfach nicht zuhören.  Ich hab's dir gesagt, ich bin zu alt um deine Geräte zu reparieren.$a",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Hm.  George said that did he...  Hm.  This *is* a thorny problem.  I think you need to consult a politician.  Try Lewis.",
+      "translation": "Hm.  George meinte das ernst, nicht...  Hm.  Das *ist* ein heikles Thema.  Ich denke du solltest dich da an einen Politiker wenden.  Versuch's bei Lewis.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I'm honored that you're asking me to look at this, but it'd really be better if George did the work...#$b#I know it won't be easy for him...  Maybe he'll need help.$s#$b#But if he actually did it, well, it'd do him a lot of good.#$b#You should talk to Lewis.  He and George go back a long way.  He'll know what to do.#$b#If it all goes wrong, come back to me and I'll try to fix it.",
+      "translation": "Ich fühle mich wirklich geehrt dass du mich darum bittest, aber es wäre wirklich besser wenn George die Arbeit macht...#$b#Ich weiß es wird ihm nicht leicht fallen...  Vielleicht wird er Hilfe brauchen.$s#$b#Aber ich glaube es würde ihm wirklich gut tun daran zu arbeiten.#$b#Du solltest mit Lewis reden.  Er und George kennen sich schon ewig.  Er wird wissen was zu tun ist.#$b#Wenn alle Stricke reißen, komm zu mir zurück und ich versuche mein Glück.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I'm flattered that Alex thinks I can fix it...  Maybe I can, but we should stick to Evelyn's plan.  Alex and I don't exactly click, but I'm sure there's somebody who knows Alex well enough to help convince him to do it.",
+      "translation": "Ich fühle mich gechmeichelt, dass Alex denkt ich kann es reparieren...  Vermutlich kann ich das auch, doch wir sollten uns an Evelyns Plan halten.  Alex und ich sind nicht gerade auf einer Wellenlänge, aber ich bin mir sicher es gibt jemanden der Alex gut genug kennt um ihn zu überzeugen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oh dear oh dear oh dear...$2#$b#Hm...$2#$b#George isn't wrong -- physically, he's just not in good shape.  Mentally, though, he's still as sharp as ever.  Alas, not like your Grandpa, towards the end.$s#$b#But if he can somehow do this, or at least help in doing it, it'll do him so much good.#$b#We need some help here...  We need Evelyn, and YOU have to get her to cajole George into trying this.  I can't be seen to be involved for, err...  reasons.#$b#You need to build some trust with her before you broach the topic, however.  Tread carefully.",
+      "translation": "Oh je, oh je, oh je...$2#$b#Hm...$2#$b#George liegt nicht falsch -- körperlich, ist er einfach nicht in guter Verfassung.  Geistig jedoch, ist er immer noch so klar wie eh und je.  Nicht wie zum Schluss dein Großvater.$s#$b#Aber wenn er es irgendwie tun oder zumindest dabei helfen könnte, es würde ihm so gut tun.#$b#Wir brauchen Hilfe hierbei...  Wir brauchen Evelyn und DU musst sie dazu bringen George zu überzeugen, es zu versuchen.  Ich darf da nicht offen involviert sein wegen, ähm...  Gründen.#$b#Du wirst jedoch ein wenig Vertrauen mit ihr aufbauen müssen, bevor du das Thema ansprichst.  Sei nachsichtig.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ohhh...  I know George *could* repair that thing...  But he could also fail miserably, you see, it's not just his legs that have let him down.  Have you seen his hands, how they shake?  It's not so bad, but it really frustrates him.#$b#Oh deary, I'm old too...  I need time to think about this.",
+      "translation": "Ohhh...  Ich weiß George *könnte* das Ding reparieren...  Aber er könnte auch schwer scheitern, weißt du, es sind nicht nur seine Beine die ihm den Dienst versagen.  Hast du seine Hände gesehen, wie sie zittern?  Es ist nicht so schlimm, aber es frustriert ihn wirklich.#$b#Ach Liebes, ich bin auch schon alt...  Ich brauche Zeit um darüber nachzudenken.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Sorry, what did you say?  I didn't quite hear...",
+      "translation": "Entschuldige, was hast du gesagt?  Ich hab dich nicht ganz verstanden...",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Look, I got my life to live, and it doesn't involve fixing farm equipment.",
+      "translation": "Schau, ich hab mein Leben zu leben und das beinhaltet nicht Hofgeräte zu reparieren.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Nah man, these hands were made for gridball.  You're good with this sort of thing, you should talk Grandpa into showing you how.  Or get Maru, she's good at mechanical stuff.$3",
+      "translation": "Nee Mann, diese Hände sind für Gitterball gemacht.  Du kennst dich doch mit sowas aus, du solltest Opa fragen ob er's dir zeigt.  Oder Maru, sie ist gut mit so mechanischem Zeug.$3",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Heh, isn't easy is it.  Keep it up, maybe you'll learn how to be mayor someday!$1#$b#Evelyn was probably right, in that somebody his own age could convince him.  Somebody he spends a lot of time with.",
+      "translation": "Heh, ist alles nicht so einfach, was.  Mach weiter so, vielleicht lernst du eines Tages sogar wie man Bürgermeister wird!$1#$b#Evelyn hat vermutlich recht, dass jemand in seinem Alter ihn überzeugen könnte.  Jemand mit dem er viel Zeit verbringt.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "You think *I* have a clue what goes on inside Alex's head??$5#$b#Oh wait, I *DO* know...  Absolutely nothing.$4",
+      "translation": "Du glaubst dass *ich* weiß was in Alex Kopf vorgeht??$5#$b#Oh warte, ich *weiß* was...  Nämlich nichts.$4",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oh I hate to admit it, but the solution to your problem is Haley.  She can make any boy do any thing, ESPECIALLY Alex.$2#$b#She might seem vaccuous at times, but trust me, if you need some guy manipulated, she can do it.  I'm not saying it's a good thing all the time, but this sounds like a good cause.$4",
+      "translation": "Oh ich hasse das zu sagen, aber die Lösung zu deinem Problem ist Haley.  Sie kann jeden Jungen zu allem überreden, INSBESONDERE Alex.$2#$b#Sie mag manchmal etwas oberflächlich wirken, doch vertrau mir, wenn du einen Kerl manipulieren willst, sie kriegt's hin.  Es ist mit Sicherheit nicht immer eine gute Idee, aber hier ist es ja für einen guten Zweck.$4",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Hah.  Alex does more with his hands than just play Gridball.$3#$b#Tell me everything. every. little. detail.$7#$b#Ah...  I see...#$b#I'll take care of this for you.  Just give me a day or two.  I'll let you know.$2#$b#*Sigh*  Confidence is so very attractive in a man.$7",
+      "translation": "Ha.  Alex kann mit seinen Händen noch so viel mehr als nur Gitterball spielen.$3#$b#Erzähl mir alles. jedes. kleine. Detail.$7#$b#Ah...  Ich verstehe...#$b#Ich kümmere mich für dich darum.  Gib mir nur ein oder zwei Tage.  Ich sag dir Bescheid.$2#$b#*Hach*  Selbstvertrauen ist doch so attraktiv an einem Mann.$7",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Okay, I can do this.  Grandpa seems fired up too.  Give me the {{arg0}} iron bars Grandpa said we need and the broken seeder and we'll get on it.",
+      "translation": "Okay, ich krieg das hin.  Opa scheint sich auch zu freuen.  Gib mir die {{arg0}} Eisenbarren, welche Opa erwähnt hat und den kaputten Saatverteiler und wir machen uns an die Arbeit.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Thanks, that's all the stuff.  Well, I'm off the the garage with Gramps.  I'll send mail or something after we get it working.",
+      "translation": "Danke, das ist dann alles.  So, ich bin in der Garage mit Opa.  Ich schick dir eine Nachricht oder so, wenn er wieder funktioniert.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "We'll need the old seeder and {{arg0}} iron bars.  Bring 'em by when you can.",
+      "translation": "Wir brauchen den alten Saatverteiler und {{arg0}} Eisenbarren.  Bring sie vorbei wenn du kannst.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "There you go.  Fixed it myself.  Alex didn't screw it up too much; he's a good kid.#$b#Don't try and sprinkle chicken manure with the thing.  I don't want to see this thing back here again.",
+      "translation": "Bitte schön.  So gut wie neu.  Alex hat sich gar nicht mal so schlecht angestellt; Er ist ein guter Junge.#$b#Versuch keinen Hühnermist damit zu verteilen.  Ich will dieses Ding hier nicht wieder sehen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Hm.  I wonder what I should do.  I certainly can't fix it, and it'd cost a fortune to send it to Zuza city.",
+      "translation": "Hm.  Ich frage mich was ich tun soll.  Ich kann die Reparatur selbst nicht durchführen und es würde ein Vermögen kosten es nach Zuzu City zu schicken.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Talking to George didn't go well.  I'm going to have to find a different angle.",
+      "translation": "Das Gespräch mit George ist nicht gut gelaufen.  Ich muss einen anderen Weg finden.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Get Evelyn to help (Talk to her after getting her to {{arg0}} hearts)",
+      "translation": "Bring Evelyn dazu zu helfen (Rede mit ihr nachdem du {{arg0}} Herzen bei ihr erreicht hast)",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Granny said she'll think about it.  I guess we'll wait to hear from her.",
+      "translation": "Omi sagte sie denkt darüber nach.  Ich schätze wir müssen abwarten bis sie sich meldet.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Granny's mail said I should gain Alex's trust (2 hearts) and try and talk him into it.",
+      "translation": "Omi meinte in ihrem Brief, dass ich Alex Vertrauen gewinnen (2 Herzen) und dann versuchen soll ihn zu überreden.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Alex still seems resistant to the idea.  Maybe I need to get somebody else to give me another angle.",
+      "translation": "Alex scheint immer noch nichts von der Idee zu halten.  Vielleicht kann mir jemand anderes mit ihm helfen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Wait for Haley to cajole Alex into helping.",
+      "translation": "Warte bis Haley sich bei Alex eingeschmeichelt hat.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Talk to Alex",
+      "translation": "Sprich mit Alex",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Bring Alex the old seeder and {{arg0}} iron bars",
+      "translation": "Bringe Alex den alten Saatstreuer und {{arg0}} Eisenbarren",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Hopefully Alex and George are getting on with it.  Alex said he'd send mail when it's working.",
+      "translation": "Hoffentlich kommen Alex und George zurecht.  Alex sagte er schickt einen Brief, wenn sie fertig sind.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Alex's mail says the seeder is done and I just need to get it from George.",
+      "translation": "Alex Brief sagt der Saatstreuer ist bereit und ich brauche ihn nur bei George abholen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Bring the fixed seeder to the tractor garage.",
+      "translation": "Bringe den reparierten Saatstreuer zur Traktorgarage.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Awesome!  You've now got a way to plant and fertilize crops with your tractor!#$b#HINT: To use it, equip seeds or fertilizers while on the tractor.",
+      "translation": "Großartig!  Du kannst mit deinem Traktor nun Pflanzen sähen und Dünger verteilen!#$b#HINWEIS: Rüste Samen oder Dünger auf dem Traktor aus, um sie auf den Feldern zu verteilen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ask the people in town about this thing.",
+      "translation": "Frag die Leute im Ort nach diesem Ding.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Fix the waterer",
+      "translation": "Repariere den Wassertank",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I found the watering attachment for the tractor, but it's in bad shape, I should ask around town.",
+      "translation": "Ich habe den Bewässerungstank für den Traktor gefunden, aber er ist in keinem guten Zustand, ich sollte mich im Ort umhören.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oh, that isn't...  It is!  It's your grandpa's legendary irrigation attachment!  And you *fished* it up you say?  Hah!  Well you would'a had to, wouldn'tya!$1#$b#. . . #$b#Sorry, I gotta compose myself.  You'll want to take this up to the mountain.  Show it to Robin, she can give you the first-hand account.$1#$b#It might not be safe to show it to Demetrius.  I think he's still working through the aftereffects...$s",
+      "translation": "Oh, ist das nicht...  Tatsächlich!  Der legendäre Wassertank deines Großvater!  Und du hast ihn *rausgefischt*, sagst du?  Ha!  Muss wohl so sein, nicht!$1#$b#. . . #$b#Tschuldigung, ich sollte mich zusammenreißen.  Du musst das den Berg hochbringen.  Zeig ihn Robin, sie kann dir aus erster Hand berichten.$1#$b#Es ist vielleicht keine gute Idee ihn Demetrius zu zeigen.  Ich glaube daran hat er immer noch zu knabbern...$s",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oh my!  Is that the irrigation system?  It is!  None of us expected to see that again, not after that . . .$3#$b#Wait, did Robin put you up to this?#$b#Nope, I don't want to know.  Well, yes, I got very wet, but it wasn't any big deal.  Not nearly as much as she plays it up to be.  Not at all...#4#$b#But you just want the thing fixed, don't you.  Well, it seems like a complicated device, but I bet Maru would have no trouble with it.  Why don't you show it to her?",
+      "translation": "Oh mein...!  Ist das etwa der Bewässerungstank?  Nicht möglich!  Keiner glaubte den noch mal wiederzusehen, nicht nachdem . . .$3#$b#Warte, hat Robin dich dazu angestiftet?#$b#Nein, ich will es gar nicht wissen.  Ja, ja, ich bin etwas nass geworden, aber das war keine große Sache.  Nicht annähernd so gravierend wie sie es gern ausschmückt.  Mitnichten...#4#$b#Aber du willst das Ding nur repariert haben, nicht wahr.  Nun, es scheint ein etwas komplizierteres Gerät zu sein, aber ich wette Maru wird keine Probleme damit haben.  Warum zeigst du es ihr nicht?",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Oh you didn't!!  You fished up the watering doohickey?  Oh my I'll never forget that day!  Your granddad had the idea that instead of using the pump to fill it up he could just back his tractor into the pond.  Suffice it to say the tractor came out, but the irrigator did not!  He huffed up to the mountain, half soaked, thinking that Demetrius would have a net.  Well Demetrius was feeling especially can-do that day and offered to come help and, well, Maru was quite small and just had to go with her Dad everywhere and so I came along to ride herd.  Long story short, Demetrius ended up covered in mud right up to his starched buttoned up collar.  Maru decided to go rescue him, I went chasing after her, and, well, we all ended up wet, but Demetrius, well, his self-image took a hit that day, heh.#$b#Heh, and you know what happened to the irrigator, donchanow!$l#$b#You should take it to Maru and, heh, youknow, best not to bring it up with Demetrius!$4",
+      "translation": "Oh das kann nicht sein!!  Du hast das alte Bewässerungsding rausgefischt?  Oh den Tag werde ich nie vergessen!  Dein Großvater hatte die Idee den Tank, anstatt ihn mit der Pumpe zu füllen, ihn rückwärts mit dem Traktor in den Teich zu fahren.  Es bleibt zu sagen, dass der Traktor wieder rauskam, aber der Wassertank nicht!  Er schnaufte den Berg hoch, triefend nass, und fragte Demetrius nach einem Netz.  Tja Demetrius war an dem Tag besonders motiviert und bot seine Hilfe an, und Maru war damals noch so klein und musste ihrem Vater einfach überallhin hinterher laufen, also kam sie mit.  Kurz gesagt, Demetrius war zum Schluss bis an seinen Hemdkragen mit Schlamm bedeckt.  Maru entschied sich ihn zu retten, ich bin hinter ihr her und am Ende waren wir alle nass. Aber Demetrius' Selbstbild hat damals einen ganz schönen Knacks bekommen, heh.#$b#Ha, jetzt kennst du auch die Geschichte vom Wassertank!$l#$b#Du solltest ihn zu Maru bringen und, heh, vielleicht nicht gegenüber Demetrius erwähnen!$4",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Sure, I'd love to have a go at fixing it, afterall, it's practically a family heirloom!$4#$b#But let's have a look at it...  Hm...$2#$b#Yeah, all the fittings are shot.  If you can get me {{arg0}} gold bars, I can get it working again.#$b#I know, usually brass is used for this sort of thing, but it's surprisingly hard to come by around here.",
+      "translation": "Klar, ich versuche mich gern dran, immerhin ist es praktisch ein Familienerbstück!$4#$b#Aber lass mal sehen...  Hm...$2#$b#Jep, die Amaturen sind hinüber.  Wenn du mir {{arg0}} Goldbarren besorgen kannst, sollte ich ihn wieder hinbekommen.#$b#Ich weiß, normalerweise würde man Messing für sowas benutzen, aber es ist in dieser Gegend erstaunlich schwer zu bekommen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Alrighty, I'll get to work on it and have it back to you in a couple days.  I'll just drop it in the mail for you.",
+      "translation": "Okidoki, ich setz mich gleich ran und sollte es in ein paar Tagen fertig haben.  Ich schick's dir dann einfach mit der Post.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Have you found some gold bars yet?  Gotta go pretty deep in the mines to get it, but I'm sure you're up for it.",
+      "translation": "Hast du schon etwas Gold auftreiben können?  Man muss ziemlich tief in die Minen runter, aber ich bin mir sicher du schaffst das.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I'm still working on the irrigation system; you should have it day after tomorrow.",
+      "translation": "Ich arbeite noch am Bewässerungstank; Du solltest ihn übermorgen wiederkriegen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "I'm working through the bugs on the irrigation system; you should have it tomorrow if nothing goes haywire.$3",
+      "translation": "Ich bin noch mit dem Feinschliff des Bewässerungstanks beschäftigt; Du solltest ihn morgen wiederbekommen falls nichts schief geht.$3",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Ask Robin about this thing.",
+      "translation": "Frag Robin nach diesem Ding.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Take it to Maru to see if she'll fix it.",
+      "translation": "Bringe es zu Maru um zu sehen, ob sie es reparieren kann.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Bring the watering can and {{arg0}} gold bars to Maru.",
+      "translation": "Bring den Wassertank und {{arg0}} Goldbarren zu Maru.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Just gotta wait - should be in the mail any day now.",
+      "translation": "Ich muss nur warten - Es sollte in den nächsten Tagen mit der Post kommen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Bring the fixed waterer to the garage.",
+      "translation": "Bring reparierten Bewässerungstank zur Garage.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Maru came through!  Time to take it to the garage and water some crops!",
+      "translation": "Maru hat's geschafft!  Zeit das Ding zur Garage zu bringen und ein paar Pflanzen zu gießen!",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Awesome!  You've now got a way to water your crops with your tractor!#$b#HINT: To use it, equip the watering can while on the tractor.",
+      "translation": "Fantastisch!  Du kannst nun deine Pflanzen mit dem Traktor bewässern!#$b#HINWEIS: Rüste die Gießkanne auf deinem Traktor aus, um deine Pflanzen zu gießen.",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    },
+    {
+      "source": "Whoah that was heavy!  Looks like an irrigator attachment for a tractor under all that mud!",
+      "translation": "Whoah der war schwer!  Sieht aus als hätte da ein Wassertank für einen Traktor im Schlamm gesteckt!",
+      "author": "nexus:Beleteth",
+      "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
+    }
+  ]
+}
