@@ -131,7 +131,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             switch (this.State)
             {
                 case SeederQuestState.GotPart:
-                    this.currentObjective = L("Hm.  I wonder what I should do.  I certainly can't fix it, and it'd cost a fortune to send it to Zuza city.");
+                    this.currentObjective = L("Hm.  I wonder what I should do.  I certainly can't fix it, and it'd cost a fortune to send it to Zuzu city.");
                     break;
                 case SeederQuestState.GeorgePestered:
                     this.currentObjective = L("Talking to George didn't go well.  I'm going to have to find a different angle.");

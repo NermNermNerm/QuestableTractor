@@ -1,4 +1,4 @@
-// Do not manually edit this file!  Follow these instructions to import changes:
+﻿// Do not manually edit this file!  Follow these instructions to import changes:
 // https://github.com/NermNermNerm/LocalizeFromSource?tab=readme-ov-file#ingesting-translations
 {
   "translations": [
@@ -1143,7 +1143,7 @@
       "ingestionDate": "2024-07-23T16:30:00.0974919-07:00"
     },
     {
-      "source": "Hm.  I wonder what I should do.  I certainly can't fix it, and it'd cost a fortune to send it to Zuza city.",
+      "source": "Hm.  I wonder what I should do.  I certainly can't fix it, and it'd cost a fortune to send it to Zuzu city.",
       "translation": "Hm. Estou me perguntando o que eu deveria fazer. Certamente não posso consertar e custaria uma fortuna enviar para a cidade de Zuzu.",
       "author": "github:helens0uza",
       "ingestionDate": "2024-07-23T16:30:00.0974919-07:00"
