@@ -49,7 +49,12 @@ namespace NermNermNerm.Stardew.QuestableTractor
         {
             Instance = this;
 
-            Initialize(this, I("en"));
+            Initialize(this);
+            this.Helper.Events.Content.LocaleChanged += (_, _) =>
+            {
+                this.Helper.GameContent.InvalidateCache("Data/Objects");
+                this.Helper.GameContent.InvalidateCache("Data/Tools");
+            };
 
             this.Harmony = new Harmony(this.ModManifest.UniqueID);
 
