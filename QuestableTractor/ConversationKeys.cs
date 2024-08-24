@@ -53,7 +53,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 topics[ConversationKeys.SeederNotFound] = L("You know your Grandad and George were really good friends; it hit George pretty hard when your Granddad passed.$2#$b#You might do well to be nice to George, he might know a few secrets about your farm.");
             }
-            else if (nameWithoutLocale.IsEquivalentTo("Characters/Dialogue/Jaz")
+            else if (nameWithoutLocale.IsEquivalentTo("Characters/Dialogue/Jas")
                   || nameWithoutLocale.IsEquivalentTo("Characters/Dialogue/Vincent"))
             {
                 // It'd be kinda nice if this had a heart requirement

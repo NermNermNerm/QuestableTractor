@@ -885,13 +885,13 @@
       "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
     },
     {
-      "source": "Oh that's the old harvester!  Or most of one anyway...$s#$b#Well, did you look around where you found that piece?  Might be more pieces under that log.#$b#You might enlist Jaz and Vincent to help - they used to play out in your south pasture, but when you moved back in, I asked them to keep clear so you could get your work done.  But they know that area pretty well.",
+      "source": "Oh that's the old harvester!  Or most of one anyway...$s#$b#Well, did you look around where you found that piece?  Might be more pieces under that log.#$b#You might enlist Jas and Vincent to help - they used to play out in your south pasture, but when you moved back in, I asked them to keep clear so you could get your work done.  But they know that area pretty well.",
       "translation": "Oh das ist der alte Mähdrescher!  Oder das meiste davon zumindest...$s#$b#Hast du dich schon genauer umgesehen, wo du ihn gefunden hast?  Vielleicht liegen noch weiter Teile unter dem Baumstamm.#$b#Du kannst auch Jas und Vincent um Hilfe fragen - Sie haben oft im Süden des Felds gespielt, aber als du eingezogen bist habe ich sie gebeten es zu lassen, damit du in Ruhe arbeiten kannst.  Sie kennen sich dort ziemlich gut aus.",
       "author": "nexus:Beleteth",
       "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
     },
     {
-      "source": "Oh that's a *harvester*?  I never would have guessed!  Yep, I saw it on your farm and always wondered about it...#$b#Well, unless I was prepared to accept Jaz and Vincent's explanation that it was a machine made by Greebles!$l",
+      "source": "Oh that's a *harvester*?  I never would have guessed!  Yep, I saw it on your farm and always wondered about it...#$b#Well, unless I was prepared to accept Jas and Vincent's explanation that it was a machine made by Greebles!$l",
       "translation": "Oh das ist also ein *Mähdrescher*?  Wär ich nie drauf gekommen!  Ich habe ihn auf deinem Hof gesehen und mich immer gewundert...#$b#WJas und Vincents Erklärung, es wäre eine Maschine von den Greebeln, war mir dann doch zu fantastisch!$l",
       "author": "nexus:Beleteth",
       "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
@@ -903,13 +903,13 @@
       "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
     },
     {
-      "source": "Missing parts for a 'harvester'?$s#$b#You might ask Jaz and Vincent to help look for other parts like that - they told me they used to play out in your south pasture, but they don't anymore because Marnie shooed them away.$4",
+      "source": "Missing parts for a 'harvester'?$s#$b#You might ask Jas and Vincent to help look for other parts like that - they told me they used to play out in your south pasture, but they don't anymore because Marnie shooed them away.$4",
       "translation": "Fehlende Teile für einen 'Mähdrescher'?$s#$b#Du könntest Jas und Vincent fragen ob sie dir bei der Suche helfen - Sie erzählten mir dass sie oft im Süden deines Hofs spielten, mittlerweile hat Marnie ihnen das aber verboten.$4",
       "author": "nexus:Beleteth",
       "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
     },
     {
-      "source": "Oh yeah I've seen that - wedged under a tree, right?  Must have been a feat to get it out!#$b#Did Jaz or Vincent tell you where to find it?  They used to play near it quite a bit.",
+      "source": "Oh yeah I've seen that - wedged under a tree, right?  Must have been a feat to get it out!#$b#Did Jas or Vincent tell you where to find it?  They used to play near it quite a bit.",
       "translation": "Oh das Ding kenn ich - klemmte unter einem Baum, richtig?  War bestimmt nicht leicht es rauszubekommen!#$b#Haben Jas und Vincent dir davon erzählt?  Sie haben früher oft in seiner Nähe gespielt.",
       "author": "nexus:Beleteth",
       "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
@@ -921,7 +921,7 @@
       "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
     },
     {
-      "source": "That's the old harvester for the tractor?  I guess it looks like that.  You think it's incomplete?$s#$b#You might ask Jaz and Vincent to help look for other parts like that - they used to play out in your south pasture, but don't worry!  Marnie and I asked them not to since you moved in.#$b#You've got enough on your hands without those two hooligans running through the corn!$l",
+      "source": "That's the old harvester for the tractor?  I guess it looks like that.  You think it's incomplete?$s#$b#You might ask Jas and Vincent to help look for other parts like that - they used to play out in your south pasture, but don't worry!  Marnie and I asked them not to since you moved in.#$b#You've got enough on your hands without those two hooligans running through the corn!$l",
       "translation": "Das ist der alte Mähdrescher für den Traktor?  Ich schätze so sieht er aus.  Du meinst es fehlt etwas?$s#$b#Du könntest Jas und Vincent nach den Teilen fragen - Sie haben oft auf der südlichen Weide gespielt, doch keine Sorge!  Marnie und ich haben sie gebeten nach deinem Einzug fernzubleiben.#$b#Du hast schon genug zu tun ohne dass diese zwei Rabauken durch deine Kornfelder toben!$l",
       "author": "nexus:Beleteth",
       "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
@@ -981,7 +981,7 @@
       "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
     },
     {
-      "source": "The Greeble machine!$h#$b#Jaz and I used to play games with that, but we had to stop because Marnie told us we couldn't go into your pasture anymore unless you invite us.#$b#There are parts missing?  Sure there are!  Me and Jaz took a couple of pieces.  I used mine in a trap I was building to trap the Greebles under my bed!  It didn't work.  Hey, have you got any good bugs on your farm?  I'll find it for you if you can bring me some really big crawly ones!$h",
+      "source": "The Greeble machine!$h#$b#Jas and I used to play games with that, but we had to stop because Marnie told us we couldn't go into your pasture anymore unless you invite us.#$b#There are parts missing?  Sure there are!  Me and Jas took a couple of pieces.  I used mine in a trap I was building to trap the Greebles under my bed!  It didn't work.  Hey, have you got any good bugs on your farm?  I'll find it for you if you can bring me some really big crawly ones!$h",
       "translation": "Die Greebel-Maschine!$h#$b#Jas und ich haben immer damit gespielt, aber wir mussten aufhören weil Marnie gesagt hat, dass wir nur noch auf's Feld dürfen mit deiner Erlaubnis.#$b#Es fehlen Sachen?  Klaro!  Ich und Jas haben ein paar Teile mitgenommen.  Ich habe mit meinem versucht ein Falle für die Greebel unter meinem Bett zu bauen!  Es hat nicht geklappt.  Hey, hast du viele Käfer auf deiner Farm?  Wenn du mir ein paar richtig große Krabbler bringst, tausche ich sie gegen mein Dings!$h",
       "author": "nexus:Beleteth",
       "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
@@ -993,7 +993,7 @@
       "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
     },
     {
-      "source": "Ask Jaz and Vincent about the harvester",
+      "source": "Ask Jas and Vincent about the harvester",
       "translation": "Frag Jas und Vincent nach dem Mähdrescher",
       "author": "nexus:Beleteth",
       "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
@@ -1005,7 +1005,7 @@
       "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"
     },
     {
-      "source": "Get a 'shiny thing' for Jaz (perhaps a gem?) and 3 big bugs for Vincent.  (Hm.  The bugs in the mines seem TOO big...  Maybe a lobster?  Hm.  Again maybe too big...)",
+      "source": "Get a 'shiny thing' for Jas (perhaps a gem?) and 3 big bugs for Vincent.  (Hm.  The bugs in the mines seem TOO big...  Maybe a lobster?  Hm.  Again maybe too big...)",
       "translation": "Besorge etwas 'Glitzerndes' für Jas (Vielleicht einen Edelstein?) und 3 große Käfer für Vincent.  (Hm.  Die Käfer in den Minen sind ZU groß...  Vielleicht ein Hummer?  Hm.  Vermutlich auch zu groß...)",
       "author": "nexus:Beleteth",
       "ingestionDate": "2024-08-24T09:09:31.5323584-07:00"

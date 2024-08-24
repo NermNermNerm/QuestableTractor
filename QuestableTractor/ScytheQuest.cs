@@ -48,12 +48,12 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n.Name == "Marnie" && itemIsBrokenPart && this.State.Progress < ScytheQuestStateProgress.JasAndVincentFingered)
             {
-                this.Spout(n, L("Oh that's the old harvester!  Or most of one anyway...$s#$b#Well, did you look around where you found that piece?  Might be more pieces under that log.#$b#You might enlist Jaz and Vincent to help - they used to play out in your south pasture, but when you moved back in, I asked them to keep clear so you could get your work done.  But they know that area pretty well."));
+                this.Spout(n, L("Oh that's the old harvester!  Or most of one anyway...$s#$b#Well, did you look around where you found that piece?  Might be more pieces under that log.#$b#You might enlist Jas and Vincent to help - they used to play out in your south pasture, but when you moved back in, I asked them to keep clear so you could get your work done.  But they know that area pretty well."));
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.JasAndVincentFingered };
             }
             else if (n.Name == "Marnie" && itemIsBrokenPart && this.State.Progress < ScytheQuestStateProgress.JasAndVincentFingered)
             {
-                this.Spout(n, L("Oh that's a *harvester*?  I never would have guessed!  Yep, I saw it on your farm and always wondered about it...#$b#Well, unless I was prepared to accept Jaz and Vincent's explanation that it was a machine made by Greebles!$l"));
+                this.Spout(n, L("Oh that's a *harvester*?  I never would have guessed!  Yep, I saw it on your farm and always wondered about it...#$b#Well, unless I was prepared to accept Jas and Vincent's explanation that it was a machine made by Greebles!$l"));
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.JasAndVincentFingered };
             }
             else if (n.Name == "Penny" && itemIsBrokenPart && this.State.Progress == ScytheQuestStateProgress.NoCluesYet)
@@ -62,12 +62,12 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n.Name == "Penny" && this.State.Progress == ScytheQuestStateProgress.MissingParts)
             {
-                this.Spout(n, L("Missing parts for a 'harvester'?$s#$b#You might ask Jaz and Vincent to help look for other parts like that - they told me they used to play out in your south pasture, but they don't anymore because Marnie shooed them away.$4"));
+                this.Spout(n, L("Missing parts for a 'harvester'?$s#$b#You might ask Jas and Vincent to help look for other parts like that - they told me they used to play out in your south pasture, but they don't anymore because Marnie shooed them away.$4"));
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.JasAndVincentFingered };
             }
             else if (n.Name == "Abigail" && (itemIsBrokenPart || this.State.Progress < ScytheQuestStateProgress.JasAndVincentFingered))
             {
-                this.Spout(n, L("Oh yeah I've seen that - wedged under a tree, right?  Must have been a feat to get it out!#$b#Did Jaz or Vincent tell you where to find it?  They used to play near it quite a bit."));
+                this.Spout(n, L("Oh yeah I've seen that - wedged under a tree, right?  Must have been a feat to get it out!#$b#Did Jas or Vincent tell you where to find it?  They used to play near it quite a bit."));
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.JasAndVincentFingered };
             }
             else if (n.Name == "Jodi" && itemIsBrokenPart && this.State.Progress == ScytheQuestStateProgress.NoCluesYet)
@@ -76,7 +76,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n.Name == "Jodi" && this.State.Progress == ScytheQuestStateProgress.MissingParts)
             {
-                this.Spout(n, L("That's the old harvester for the tractor?  I guess it looks like that.  You think it's incomplete?$s#$b#You might ask Jaz and Vincent to help look for other parts like that - they used to play out in your south pasture, but don't worry!  Marnie and I asked them not to since you moved in.#$b#You've got enough on your hands without those two hooligans running through the corn!$l"));
+                this.Spout(n, L("That's the old harvester for the tractor?  I guess it looks like that.  You think it's incomplete?$s#$b#You might ask Jas and Vincent to help look for other parts like that - they used to play out in your south pasture, but don't worry!  Marnie and I asked them not to since you moved in.#$b#You've got enough on your hands without those two hooligans running through the corn!$l"));
                 this.State = new ScytheQuestState { Progress = ScytheQuestStateProgress.JasAndVincentFingered };
             }
             else if (n.Name == "Wizard"
@@ -97,7 +97,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n.Name == "Jas" && this.State.JasTradeKnown && !this.State.JasPartGot)
             {
-                // It'd be nice if there was a way to make this a little more interactive with Jaz having, like a random taste-of-the-day and
+                // It'd be nice if there was a way to make this a little more interactive with Jas having, like a random taste-of-the-day and
                 //  only one gem will be shiny enough on that day.  I don't see a way to make that happen right now.
                 foreach (string shinyItemId in shinyItems)
                 {
@@ -140,7 +140,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n.Name == "Vincent" && !this.State.VincentTradeKnown)
             {
-                this.Spout(n, L("The Greeble machine!$h#$b#Jaz and I used to play games with that, but we had to stop because Marnie told us we couldn't go into your pasture anymore unless you invite us.#$b#There are parts missing?  Sure there are!  Me and Jaz took a couple of pieces.  I used mine in a trap I was building to trap the Greebles under my bed!  It didn't work.  Hey, have you got any good bugs on your farm?  I'll find it for you if you can bring me some really big crawly ones!$h"));
+                this.Spout(n, L("The Greeble machine!$h#$b#Jas and I used to play games with that, but we had to stop because Marnie told us we couldn't go into your pasture anymore unless you invite us.#$b#There are parts missing?  Sure there are!  Me and Jas took a couple of pieces.  I used mine in a trap I was building to trap the Greebles under my bed!  It didn't work.  Hey, have you got any good bugs on your farm?  I'll find it for you if you can bring me some really big crawly ones!$h"));
                 this.State = this.State with { Progress = ScytheQuestStateProgress.JasAndVincentFingered, VincentTradeKnown = true };
             }
             // else this.Spout(n, "What is that thing?  A harvester?  Sure, if you say so...$s");
@@ -160,7 +160,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 case ScytheQuestStateProgress.JasAndVincentFingered:
                     if (!this.State.JasTradeKnown || !this.State.VincentTradeKnown)
                     {
-                        this.currentObjective = L("Ask Jaz and Vincent about the harvester");
+                        this.currentObjective = L("Ask Jas and Vincent about the harvester");
                     }
                     else if (this.State.JasPartGot && this.State.VincentPartGot)
                     {
@@ -168,7 +168,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                     }
                     else if (this.State.JasTradeKnown && this.State.VincentTradeKnown)
                     {
-                        this.currentObjective = L("Get a 'shiny thing' for Jaz (perhaps a gem?) and 3 big bugs for Vincent.  (Hm.  The bugs in the mines seem TOO big...  Maybe a lobster?  Hm.  Again maybe too big...)");
+                        this.currentObjective = L("Get a 'shiny thing' for Jas (perhaps a gem?) and 3 big bugs for Vincent.  (Hm.  The bugs in the mines seem TOO big...  Maybe a lobster?  Hm.  Again maybe too big...)");
                     }
                     else
                     {
