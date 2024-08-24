@@ -43,7 +43,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.SetupTool("MeleeDagger", false, "");
             this.SetupTool("MeleeSword", false, "");
             this.SetupTool("PickAxe", isLoaderUnlocked, "ClearDebris,ClearDirt,ClearWeeds");
-            this.SetupTool("Scythe", isHarvesterUnlocked, "HarvestCrops,HarvestFlowers,HarvestGrass,HarvestForage,ClearDeadCrops,ClearWeeds,IncreaseDistance");
+            this.SetupTool("Scythe", isHarvesterUnlocked, "HarvestCrops,HarvestFlowers,HarvestBlueGrass,HarvestNonBlueGrass,HarvestForage,ClearDeadCrops,ClearWeeds,IncreaseDistance");
             this.SetupTool("Seeds", isSpreaderUnlocked, "Enable");
             this.SetupTool("Shears", false, "");
             this.SetupTool("Slingshot", false, "");
