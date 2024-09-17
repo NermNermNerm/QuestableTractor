@@ -20,6 +20,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
     public class ModEntry
         : Mod, ISimpleLog
     {
+
         private IReadOnlyCollection<BaseQuestController> QuestControllers = null!;
         private LoaderQuestController loaderQuestController = null!;
         private ScytheQuestController scytheQuestController = null!;
@@ -67,6 +68,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.restoreTractorQuestController = new RestoreTractorQuestController(this);
             this.QuestControllers = new List<BaseQuestController> { this.loaderQuestController, this.scytheQuestController, this.seederQuestController, this.WatererQuestController, this.borrowHarpoonQuestController, this.restoreTractorQuestController };
 
+            this.Helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
             this.Helper.Events.Content.AssetRequested += this.OnAssetRequested;
             this.Helper.Events.GameLoop.OneSecondUpdateTicked += this.GameLoop_OneSecondUpdateTicked;
             this.Helper.Events.GameLoop.SaveLoaded += (_, _) =>
@@ -84,6 +86,27 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 I("fixqt"),
                 I("Fixes Questable Tractor - It finds all the objects buried on the farm and adds them to our inventory.  It starts the main tractor quest and the quests for the two hidden parts.  It replaces any missing quest items and deletes excess quest items.  Note this command does not look at or alter chests or other players' inventories.  You can run this command again to get rid of the duplicate if you need to."),
                 this.FixItAll);
+        }
+
+        private void OnGameLaunched(object? sender, GameLaunchedEventArgs e)
+        {
+            var quickSave = this.Helper.ModRegistry.GetApi<IQuickSaveAPI>("DLX.QuickSave");
+            if (quickSave != null)
+            {
+                quickSave.SavingEvent += this.Api_SavingEvent;
+
+                quickSave.SavedEvent += this.Api_SavedEvent;
+            }
+        }
+
+        private void Api_SavingEvent(object? sender, ISavingEventArgs e)
+        {
+            this.OnDayEnding(this, new DayEndingEventArgs());
+        }
+
+        private void Api_SavedEvent(object? sender, ISavedEventArgs e)
+        {
+            this.OnDayStarted(this, new DayStartedEventArgs());
         }
 
         public bool IsRunningGrandpasFarm => this.Helper.ModRegistry.IsLoaded("flashshifter.GrandpasFarm");
