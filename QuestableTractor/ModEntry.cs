@@ -66,7 +66,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.WatererQuestController = new WatererQuestController(this);
             this.borrowHarpoonQuestController = new BorrowHarpoonQuestController(this);
             this.restoreTractorQuestController = new RestoreTractorQuestController(this);
-            this.QuestControllers = new List<BaseQuestController> { this.loaderQuestController, this.scytheQuestController, this.seederQuestController, this.WatererQuestController, this.borrowHarpoonQuestController, this.restoreTractorQuestController };
+            this.QuestControllers = new List<BaseQuestController> { this.restoreTractorQuestController, this.loaderQuestController, this.scytheQuestController, this.seederQuestController, this.WatererQuestController, this.borrowHarpoonQuestController };
 
             this.Helper.Events.GameLoop.GameLaunched += this.OnGameLaunched;
             this.Helper.Events.Content.AssetRequested += this.OnAssetRequested;
