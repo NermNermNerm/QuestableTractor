@@ -83,7 +83,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n.Name == "Sebastian" && this.State == RestorationState.TalkToSebastian)
             {
-                this.Spout(n, L("Let me get this straight - I barely know who you, and I'm supposed to fix your rusty old tractor?$a#$b#Sorry, but I've got a lot of stuff going on and can't really spare the time."));
+                this.Spout(n, L("Let me get this straight - I barely know who you are and I'm supposed to fix your rusty old tractor?$a#$b#Sorry, but I've got a lot of stuff going on and can't really spare the time."));
                 Game1.drawDialogue(n);
                 this.State = RestorationState.TalkToLewisAgain;
             }
