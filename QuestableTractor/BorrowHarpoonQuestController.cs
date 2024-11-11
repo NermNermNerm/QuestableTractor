@@ -224,7 +224,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 SpriteIndex = 19,
                 MenuSpriteIndex = -1,
                 UpgradeLevel = 0,
-                ApplyUpgradeLevelToDisplayName = false,
                 ConventionalUpgradeFrom = null,
                 UpgradeFrom = null,
                 CanBeLostOnDeath = false,
