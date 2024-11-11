@@ -14,7 +14,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         private static readonly Dictionary<Quest, FakeQuest> realQuestToFakeQuestMap = new Dictionary<Quest, FakeQuest>();
         private static bool hasHarmonyPatchBeenInstalled = false;
 
-        public abstract bool checkIfComplete(NPC n, int number1, int number2, Item item, string str, bool probe);
+        public abstract bool checkIfComplete(NPC n, int number1, int number2, Item? item, string str, bool probe);
 
         private readonly Quest realQuest = new Quest();
 
@@ -48,17 +48,33 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 return;
             }
 
-            var checkIfCompleteMethod = typeof(Quest).GetMethod("checkIfComplete");
-            ModEntry.Instance.Harmony.Patch(checkIfCompleteMethod, prefix: new HarmonyMethod(typeof(FakeQuest), nameof(Prefix_checkIfComplete)));
+            var onItemOfferedToNpcMethod = typeof(Quest).GetMethod("OnItemOfferedToNpc");
+            ModEntry.Instance.Harmony.Patch(onItemOfferedToNpcMethod, prefix: new HarmonyMethod(typeof(FakeQuest), nameof(Prefix_OnItemOfferedToNpc)));
+
+            var onOnNpcSocializedMethod = typeof(Quest).GetMethod("OnNpcSocialized");
+            ModEntry.Instance.Harmony.Patch(onOnNpcSocializedMethod, prefix: new HarmonyMethod(typeof(FakeQuest), nameof(Prefix_OnNpcSocialized)));
 
             hasHarmonyPatchBeenInstalled = true;
         }
 
-        private static bool Prefix_checkIfComplete(Quest __instance, NPC n, int number1, int number2, Item item, string str, bool probe, ref bool __result)
+        private static bool Prefix_OnNpcSocialized(Quest __instance, NPC npc, bool probe, ref bool __result)
         {
             if (realQuestToFakeQuestMap.TryGetValue(__instance, out var fake))
             {
-                __result = fake.checkIfComplete(n, number1, number2, item, str, probe);
+                __result = fake.checkIfComplete(npc, 0, 0, null, "", probe);
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        private static bool Prefix_OnItemOfferedToNpc(Quest __instance, NPC npc, Item item, bool probe, ref bool __result)
+        {
+            if (realQuestToFakeQuestMap.TryGetValue(__instance, out var fake))
+            {
+                __result = fake.checkIfComplete(npc, 0, 0, item, "", probe);
                 return false;
             }
             else
