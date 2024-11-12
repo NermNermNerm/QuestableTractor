@@ -60,7 +60,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         ///   isQuest property is true, a false return value will trigger a "Wrong person" error to show up in the HUD.
         ///  </para>
         /// </returns>
-        public override sealed bool checkIfComplete(NPC n, int number1, int number2, Item item, string str, bool probe)
+        public override sealed bool checkIfComplete(NPC n, int number1, int number2, Item? item, string str, bool probe)
         {
             if (probe)
             {

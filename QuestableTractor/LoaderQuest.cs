@@ -173,28 +173,28 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         internal void OnPlayerGotOldShoes(Item oldShoes)
         {
-            Game1.player.holdUpItemThenMessage(oldShoes);
             if (this.State < LoaderQuestState.DisguiseTheShoes)
             {
+                Game1.player.holdUpItemThenMessage(oldShoes);
                 this.State = LoaderQuestState.DisguiseTheShoes;
-            }
 
-            if (Game1.player.currentLocation.Name == "Mine")
-            {
-                // crazy long duration since the player could take a while getting hold of the language scrolls.
-                // Note that if the player talks to the dwarf, it'll probably eat this event anyway.  Such is life.
-                Game1.player.activeDialogueEvents[ConversationKeys.DwarfShoesTaken] = 100;
-            }
+                if (Game1.player.currentLocation.Name == "Mine")
+                {
+                    // crazy long duration since the player could take a while getting hold of the language scrolls.
+                    // Note that if the player talks to the dwarf, it'll probably eat this event anyway.  Such is life.
+                    Game1.player.activeDialogueEvents[ConversationKeys.DwarfShoesTaken] = 100;
+                }
 
-            this.InvalidateGarbageCanData();
-            this.RemoveShoesNearDwarf();
+                this.InvalidateGarbageCanData();
+                this.RemoveShoesNearDwarf();
+            }
         }
 
         internal void OnPlayerGotDisguisedShoes(Item dyedShoes)
         {
-            Game1.player.holdUpItemThenMessage(dyedShoes);
             if (this.State < LoaderQuestState.GiveShoesToClint)
             {
+                Game1.player.holdUpItemThenMessage(dyedShoes);
                 this.State = LoaderQuestState.GiveShoesToClint;
             }
         }
