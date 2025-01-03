@@ -82,7 +82,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n.Name == "Abigail" && this.State < LoaderQuestState.SnagAlexsOldShoes && this.State > LoaderQuestState.TalkToClint)
             {
-                this.Spout(n, L("Cheap shoes!  And you somehow deduce that *I* am authority on such matters?$5#$b$Heh.  Perhaps I am!$1#$b#Back before the Jojamart we'd order them online, but now, I've learned the art of Thrift Stores.  I'm actually kindof glad it happened, I really like shopping at thrift stores.#$b#Cheaper than that?  Welp, you could try dumpster-diving!$1"));
+                this.Spout(n, L("Cheap shoes!  And you somehow deduce that *I* am authority on such matters?$5#$b#Heh.  Perhaps I am!$1#$b#Back before the Jojamart we'd order them online, but now, I've learned the art of Thrift Stores.  I'm actually kindof glad it happened, I really like shopping at thrift stores.#$b#Cheaper than that?  Welp, you could try dumpster-diving!$1"));
             }
             else if (n.Name == "Haley" && this.State < LoaderQuestState.SnagAlexsOldShoes && this.State > LoaderQuestState.TalkToClint)
             {
