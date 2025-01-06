@@ -1,8 +1,15 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Linq.Expressions;
 using System.Reflection;
+using System.Runtime.Serialization.Json;
+using System.Text.Json;
+using Force.DeepCloner;
+using HarmonyLib;
 using NermNermNerm.Stardew.LocalizeFromSource;
 using StardewModdingAPI;
+using StardewModdingAPI.Events;
 using StardewValley;
 using StardewValley.Buildings;
 using StardewValley.Characters;
@@ -21,9 +28,97 @@ namespace NermNermNerm.Stardew.QuestableTractor
         public const string GarageBuildingId = "Pathoschild.TractorMod_Stable";
         public const string TractorModId = "Pathoschild.TractorMod";
 
+        private Action tractorModUpdateConfig = null!; // all these are set in Entry
+        private Mod tractorModEntry = null!;
+        private Func<object> getTractorModConfig = null!;
+        private Action<object> setTractorModConfig = null!;
+
+        /// <summary>
+        ///   This is the copy of the config that TractorMod will use during gameplay; it has sections of it
+        ///   disabled depending on the unlock state of the tractor.
+        /// </summary>
+        private object tractorModConfigForInGame = null!;
+
+        /// <summary>
+        ///   This is the copy of the config that gets saved permanently and is the copy that the user sees
+        ///   when editing the settings.
+        /// </summary>
+        private object tractorModConfigForStorage = null!;
+
         public TractorModConfig(ModEntry mod)
         {
             this.mod = mod;
+        }
+
+        public void Entry()
+        {
+            // TODO: Skip all this hooliganism if GenericModConfigMenu is not installed.
+
+            var modInfo = this.mod.Helper.ModRegistry.Get(TractorModId);
+            if (modInfo is null)
+            {
+                this.mod.LogError($"QuestableTractorMod requires {TractorModId}, which is missing from your installation");
+                return;
+            }
+
+            if (this.mod.Helper.ModRegistry.Get("spacechase0.GenericModConfigMenu") is null)
+            {
+                this.mod.LogInfo($"Generic Mod Config Menu is not installed, so not dealing with run-time changes to configuration");
+                return;
+            }
+
+            this.tractorModEntry = (Mod)modInfo.GetType().GetProperty("Mod")!.GetValue(modInfo)!;
+            var tractorModConfigField = this.tractorModEntry.GetType().GetField("Config", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.GetField)!;
+            var tractorModUpdateConfigMethod = this.tractorModEntry.GetType().GetMethod("UpdateConfig", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public)!;
+            this.tractorModUpdateConfig = () => { tractorModUpdateConfigMethod.Invoke(this.tractorModEntry, Array.Empty<object>()); };
+            this.getTractorModConfig = () => tractorModConfigField.GetValue(this.tractorModEntry)!;
+            this.setTractorModConfig = config => tractorModConfigField.SetValue(this.tractorModEntry, config);
+
+            var apiType = this.tractorModEntry.GetType().Assembly.GetType("Pathoschild.Stardew.TractorMod.Framework.GenericModConfigMenuIntegrationForTractor", true)!;
+            instance = this;
+            var constructors = apiType.GetConstructors();
+            ModEntry.Instance.Harmony.Patch(
+                original: AccessTools.Constructor(apiType, constructors.First().GetParameters().Select(pi => pi.ParameterType).ToArray()),
+                prefix: new HarmonyMethod(typeof(TractorModConfig), nameof(GenericModConfigMenuIntegrationForTractor_Ctor_PrefixStatic)));
+        }
+
+        private static TractorModConfig instance = null!;
+        private static bool GenericModConfigMenuIntegrationForTractor_Ctor_PrefixStatic(ref object getConfig, ref Action reset, ref Action saveAndApply)
+            => instance.GenericModConfigMenuIntegrationForTractor_Ctor_Prefix(ref getConfig, ref reset, ref saveAndApply);
+
+        private bool GenericModConfigMenuIntegrationForTractor_Ctor_Prefix(ref object getConfig, ref Action reset, ref Action saveAndApply)
+        {
+            this.tractorModConfigForInGame = this.getTractorModConfig();
+            this.tractorModConfigForStorage = this.tractorModConfigForInGame.DeepClone()!;
+
+            // This is a fancy (but necessary) way of writing:  getConfig = ()=>this.tractorModConfigForStorage.
+            // Necessary because that produces a Func<Object>, but getConfig is expected to be a Func<ModConfig>
+            // where ModConfig is TractorMod's ModConfig, which we have no compile-time access to.
+            var lambdaBody = Expression.Convert(
+                Expression.Invoke(Expression.Constant(() => this.tractorModConfigForStorage)),
+                this.tractorModConfigForInGame.GetType());
+            getConfig = Expression.Lambda(getConfig.GetType(), lambdaBody).Compile();
+
+            var tractorModReset = reset;
+            reset = () =>
+            {
+                tractorModReset(); // This replaces TractorMod's Config with a new one!
+                this.tractorModConfigForStorage = this.getTractorModConfig(); // So get the new one
+                this.setTractorModConfig(this.tractorModConfigForInGame); // Put our runtime one back
+                this.mod.UpdateTractorModConfig(); // Sync-up with our current quest state
+                this.tractorModUpdateConfig(); // and tell TractorMod to deal with the merged world.
+            };
+            var tractorModSaveAndApply = saveAndApply;
+            saveAndApply = () =>
+            {
+                this.setTractorModConfig(this.tractorModConfigForStorage); // Let tractormod see the storage world
+                tractorModSaveAndApply(); // ...so it can save that view 
+                this.setTractorModConfig(this.tractorModConfigForInGame); // Now put our reduced state back
+                this.mod.UpdateTractorModConfig(); // Merge whatever changes the user made with the quest state
+                this.tractorModUpdateConfig(); // and tell TractorMod to deal with the merged world.
+            };
+
+            return true; // run the constructor as normal with our substituted hooks
         }
 
         public void TractorGarageBuildingCostChanged()
@@ -34,44 +129,38 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public void SetConfig(bool isHoeUnlocked, bool isLoaderUnlocked, bool isHarvesterUnlocked, bool isWatererUnlocked, bool isSpreaderUnlocked)
         {
-            this.SetupTool("Axe", isLoaderUnlocked, "CutTreeStumps,ClearTreeSeeds,ClearTreeSaplings,CutBushes,ClearDebris");
-            this.SetupTool("Fertilizer", isSpreaderUnlocked, "Enable");
-            this.SetupTool("GrassStarter", isSpreaderUnlocked, "Enable");
-            this.SetupTool("Hoe", isHoeUnlocked, "TillDirt,ClearWeeds,HarvestGinger");
-            this.SetupTool("MilkPail", false, "");
-            this.SetupTool("MeleeBlunt", false, "");
-            this.SetupTool("MeleeDagger", false, "");
-            this.SetupTool("MeleeSword", false, "");
-            this.SetupTool("PickAxe", isLoaderUnlocked, "ClearDebris,ClearDirt,ClearWeeds");
-            this.SetupTool("Scythe", isHarvesterUnlocked, "HarvestCrops,HarvestFlowers,HarvestBlueGrass,HarvestNonBlueGrass,HarvestForage,ClearDeadCrops,ClearWeeds,IncreaseDistance");
-            this.SetupTool("Seeds", isSpreaderUnlocked, "Enable");
-            this.SetupTool("Shears", false, "");
-            this.SetupTool("Slingshot", false, "");
-            this.SetupTool("WateringCan", isWatererUnlocked, "Enable,IncreaseDistance");
-            this.SetupTool("SeedBagMod", isSpreaderUnlocked, "Enable");
+            this.SetupTool("Axe", isLoaderUnlocked);
+            this.SetupTool("Fertilizer", isSpreaderUnlocked);
+            this.SetupTool("GrassStarter", isSpreaderUnlocked);
+            this.SetupTool("Hoe", isHoeUnlocked);
+            this.SetupTool("MilkPail", false);
+            this.SetupTool("MeleeBlunt", false);
+            this.SetupTool("MeleeDagger", false);
+            this.SetupTool("MeleeSword", false);
+            this.SetupTool("PickAxe", isLoaderUnlocked);
+            this.SetupTool("Scythe", isHarvesterUnlocked);
+            this.SetupTool("Seeds", isSpreaderUnlocked);
+            this.SetupTool("Shears", false);
+            this.SetupTool("Slingshot", false);
+            this.SetupTool("WateringCan", isWatererUnlocked);
+            this.SetupTool("SeedBagMod", isSpreaderUnlocked);
 
             this.TractorGarageBuildingCostChanged();
         }
 
-        private void SetupTool(string toolName, bool isEnabled, string enabledModes)
+        private void SetupTool(string toolName, bool isEnabled)
         {
-            // This is sorta what the golden path would look like:
-            // object? tractorModApi = this.mod.Helper.ModRegistry.GetApi(TractorModId)!;
+            var stdAttachProp = this.tractorModConfigForInGame.GetType().GetProperty("StandardAttachments")!;
+            object stdAttachInGame = stdAttachProp.GetValue(this.tractorModConfigForInGame)!;
+            object stdAttachInSettings = stdAttachProp.GetValue(this.tractorModConfigForStorage)!;
 
-            // But today...
-            var modInfo = this.mod.Helper.ModRegistry.Get(TractorModId)!;
-            object tractorModApi = modInfo.GetType().GetProperty("Mod")!.GetValue(modInfo)!;
-            var configProp = tractorModApi.GetType().GetField("Config", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.GetField)!;
-            object? tractorModConfig = configProp.GetValue(tractorModApi)!;
-            var stdAttachProp = tractorModConfig.GetType().GetProperty("StandardAttachments")!;
-            object? stdAttach = stdAttachProp.GetValue(tractorModConfig)!;
-            var toolProp = stdAttach.GetType().GetProperty(toolName)!;
-            object? tool = toolProp.GetValue(stdAttach)!;
+            var toolProp = stdAttachInGame.GetType().GetProperty(toolName)!;
+            object toolInGame = toolProp.GetValue(stdAttachInGame)!;
+            object toolInSettings = toolProp.GetValue(stdAttachInSettings)!;
 
-            var enabledModesHash = (isEnabled ? enabledModes.Split(",") : new string[0]).ToHashSet();
-            foreach (var prop in tool.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.SetProperty).Where(p => p.PropertyType == typeof(bool)))
+            foreach (var prop in toolInGame.GetType().GetProperties(BindingFlags.Public | BindingFlags.Instance | BindingFlags.SetProperty).Where(p => p.PropertyType == typeof(bool)))
             {
-                prop.SetValue(tool, enabledModesHash.Contains(prop.Name));
+                prop.SetValue(toolInGame, isEnabled && (bool)prop.GetValue(toolInSettings)!);
             }
         }
 

@@ -49,15 +49,15 @@ namespace NermNermNerm.Stardew.QuestableTractor
         public override void Entry(IModHelper helper)
         {
             Instance = this;
+            this.Harmony = new Harmony(this.ModManifest.UniqueID);
 
             Initialize(this);
+            this.TractorModConfig.Entry();
             this.Helper.Events.Content.LocaleChanged += (_, _) =>
             {
                 this.Helper.GameContent.InvalidateCache("Data/Objects");
                 this.Helper.GameContent.InvalidateCache("Data/Tools");
             };
-
-            this.Harmony = new Harmony(this.ModManifest.UniqueID);
 
             this.PetFindsThings.Entry(this);
             this.loaderQuestController = new LoaderQuestController(this);
