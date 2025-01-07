@@ -123,6 +123,14 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 this.Spout(n, L("Ah, these shoes look great!  Fit good too.  But somehow I still don't quite feel like a ladykiller.#$b#Welp.  A deal's a deal.  I'll fix the loader.  You can pick it up in a couple days."));
                 this.State = LoaderQuestState.WaitForClint1;
             }
+            else if (n.Name == "Clint" && this.State == LoaderQuestState.GiveShoesToClint && item?.ItemId == ObjectIds.DisguisedShoe)
+            {
+                this.Spout(n, L("Those shoes look great!  Come back with the loader and I'll get to work on it."));
+            }
+            else if (n.Name == "Clint" && this.State == LoaderQuestState.GiveShoesToClint && item?.ItemId == ObjectIds.BustedLoader)
+            {
+                this.Spout(n, L("Have you found any shoes for me yet?  Bring them by when you can, I'd love to see them!"));
+            }
             else if (n.Name == "Clint" && this.State == LoaderQuestState.PickUpLoader)
             {
                 this.Spout(n, L("Here's your front-end loader, all fixed up.  Stick to small rocks, right?#$b#If you need to move big ones, get some explosives for the job.  Oh, and let me know when you're doing it.  I'll bring beer."));
