@@ -12,7 +12,7 @@ using StardewValley.GameData.Buildings;
 using StardewValley.GameData.GarbageCans;
 using StardewValley.GameData.Objects;
 using StardewValley.GameData.Tools;
-
+using StardewValley.Tools;
 using static NermNermNerm.Stardew.LocalizeFromSource.SdvLocalize;
 
 namespace NermNermNerm.Stardew.QuestableTractor
@@ -20,13 +20,13 @@ namespace NermNermNerm.Stardew.QuestableTractor
     public class ModEntry
         : Mod, ISimpleLog
     {
-
         private IReadOnlyCollection<BaseQuestController> QuestControllers = null!;
         private LoaderQuestController loaderQuestController = null!;
         private ScytheQuestController scytheQuestController = null!;
         private SeederQuestController seederQuestController = null!;
         private BorrowHarpoonQuestController borrowHarpoonQuestController = null!;
         private RestoreTractorQuestController restoreTractorQuestController = null!;
+        private DistanceModlet distanceModlet = null!;
 
         public WatererQuestController WatererQuestController = null!;
         public BorrowHarpoonQuestController BorrowHarpoonQuestController => this.borrowHarpoonQuestController;
@@ -60,6 +60,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
             };
 
             this.PetFindsThings.Entry(this);
+            this.distanceModlet = new DistanceModlet(this);
+            this.distanceModlet.Entry();
+
             this.loaderQuestController = new LoaderQuestController(this);
             this.scytheQuestController = new ScytheQuestController(this);
             this.seederQuestController = new SeederQuestController(this);

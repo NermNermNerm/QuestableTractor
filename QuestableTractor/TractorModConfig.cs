@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Reflection;
-using System.Runtime.Serialization.Json;
-using System.Text.Json;
 using Force.DeepCloner;
 using HarmonyLib;
 using NermNermNerm.Stardew.LocalizeFromSource;
@@ -32,6 +30,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
         private Mod tractorModEntry = null!;
         private Func<object> getTractorModConfig = null!;
         private Action<object> setTractorModConfig = null!;
+
+        private PropertyInfo? distanceProperty = null;
 
         /// <summary>
         ///   This is the copy of the config that TractorMod will use during gameplay; it has sections of it
@@ -80,6 +80,18 @@ namespace NermNermNerm.Stardew.QuestableTractor
             ModEntry.Instance.Harmony.Patch(
                 original: AccessTools.Constructor(apiType, constructors.First().GetParameters().Select(pi => pi.ParameterType).ToArray()),
                 prefix: new HarmonyMethod(typeof(TractorModConfig), nameof(GenericModConfigMenuIntegrationForTractor_Ctor_PrefixStatic)));
+        }
+
+
+
+        public void SetDistanceModifier(int newValue)
+        {
+            if (this.distanceProperty is null)
+            {
+                this.distanceProperty = this.tractorModConfigForInGame.GetType().GetProperty("Distance")!;
+            }
+
+            this.distanceProperty.SetValue(this.tractorModConfigForInGame, newValue + (int)this.distanceProperty.GetValue(this.tractorModConfigForStorage)!);
         }
 
         private static TractorModConfig instance = null!;

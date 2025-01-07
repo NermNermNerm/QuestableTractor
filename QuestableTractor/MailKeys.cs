@@ -16,6 +16,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         public const string AlexThankYouMail = "QuestableTractor.AlexThankYouMail";
         public const string TractorDoneMail = "QuestableTractor.TractorDoneMail";
         public const string LinusFoundShoes = "QuestableTractor.LinusFoundShoes";
+        public const string DistanceShifterMail = "QuestableTractor.DistanceShifterMail";
 
         public static void EditAssets(IDictionary<string, string> mailItems)
         {
@@ -28,6 +29,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             mailItems[MailKeys.AlexThankYouMail] = SdvMail($"Hey!^Grandpa and I got the seeder working last night!  You can pick it up from Grandpa whenever.  Now that it's done, I'm really happy you rooked me into doing this. I really love my grandpa, and well, sometimes it's hard to find things to do together.  And hey, maybe if the Gridball thing doesn't work out I can get a job repairing farm equipment!^ - Your friend,^   Alex[#]Waterer is ready");
             mailItems[MailKeys.TractorDoneMail] = SdvMail($"The tractor's all ready to go!  It was kinda strange, I didn't really know how it all attached, but when I tried to plug something into the wrong place, it just wouldn't go.  Screws wouldn't find their threads, belts would jump off of pullies...^ ^But when I got a part even near the right spot, it'd just jump into place!  So I guess that engine really likes being in that tractor!^ ^Oh and the tiller was on the tractor when we found it.  It seems okay, so you'll be able to hoe areas.  The other attachments are probably around someplace!^ ^ - M^ ^HINT: To use the tractor, get on it and select your hoe.[#]Tractor is ready to go");
             mailItems[MailKeys.LinusFoundShoes] = SdvMail($"I found shoes in the garbage last night.  You're right, these are perfectly good shoes, ready for a second life!  I hope you give them a good home.%item object {ObjectIds.AlexesOldShoe} 1%%[#]Linus found shoes");
+            mailItems[MailKeys.DistanceShifterMail] = SdvMail($"Hey @!  Maru here!  I forgot to tell you something about your tractor!  There's a knob down by your left knee that you can use to widen or narrow the spread of your tools!  It works well to go narrow, but the wide setting is really fiddly.  I'm sure you'll get the hang of it with practice!^ - M^ ^(Hint - use the keypad plus and minus keys to increase or decrease the area of effect of your tools.  The max area is 3x3 until you get farming skill of 10, when it goes to 5x5.)[#]Tractor Tool Shift Knob HowTo");
         }
     }
 }
