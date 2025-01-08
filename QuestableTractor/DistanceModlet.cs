@@ -14,6 +14,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
     /// </summary>
     internal class DistanceModlet
     {
+        private const string PerToolDistanceModDataKey = "QuestableTractor.PerToolDistance";
+
         private readonly ModEntry mod;
 
         public DistanceModlet(ModEntry mod)
@@ -39,15 +41,18 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         private void OnSaveLoaded(object? sender, SaveLoadedEventArgs e)
         {
-            this.toolDistanceOverrides.Clear();
-            if (Game1.player.modData.TryGetValue(ToolDistanceModDataKey, out string toolWidthModifiers))
+            this.perToolDistance.Clear();
+            if (Game1.player.modData.TryGetValue(PerToolDistanceModDataKey, out string perToolDistances))
             {
-                foreach (string pair in toolWidthModifiers.Split("|", StringSplitOptions.RemoveEmptyEntries)) {
+                foreach (string pair in perToolDistances.Split("|", StringSplitOptions.RemoveEmptyEntries)) {
                     string[] nameValue = pair.Split("=", 2);
-                    this.toolDistanceOverrides[nameValue[0]] = int.Parse(nameValue[1]);
+                    this.perToolDistance[nameValue[0]] = int.Parse(nameValue[1]);
                 }
             }
         }
+
+        private int MaxDistanceForThisFarmer
+            => Game1.player.FarmingLevel < 10 ? this.mod.TractorModConfig.DefaultDistance : this.mod.TractorModConfig.MaxDistance; 
 
         private void OnButtonPressed(object? sender, ButtonPressedEventArgs e)
         {
@@ -62,39 +67,32 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 return;
             }
 
-            int modifier = 0;
+            if (!this.perToolDistance.TryGetValue(newToolName, out int newDistance))
+            {
+                newDistance = this.mod.TractorModConfig.DefaultDistance;
+            }
             if (e.Button == SButton.Add)
             {
-                modifier = 1;
+                ++newDistance;
             }
             else if (e.Button == SButton.Subtract)
             {
-                modifier = -1;
+                --newDistance;
             }
             else
             {
                 return;
             }
 
-            this.toolDistanceOverrides.TryGetValue(newToolName, out int oldModifier);
-            modifier = Math.Min(MaxDistanceModifierForCurrentFarmer, Math.Max(-1, oldModifier + modifier));
-            if (modifier == oldModifier)
-            {
-                return;
-            }
-
-            this.toolDistanceOverrides[newToolName] = modifier;
-            Game1.player.modData[ToolDistanceModDataKey] = string.Join("|",
-                this.toolDistanceOverrides
+            newDistance = Math.Min(this.MaxDistanceForThisFarmer, Math.Max(0, newDistance));
+            this.mod.TractorModConfig.CurrentDistance = newDistance;
+            this.perToolDistance[newToolName] = newDistance;
+            Game1.player.modData[PerToolDistanceModDataKey] = string.Join("|",
+                this.perToolDistance
                     .OrderBy(pair => pair.Key)
                     .Select(pair => $"{pair.Key}={pair.Value}"));
-
-            this.mod.TractorModConfig.SetDistanceModifier(modifier);
         }
 
-        private static int MaxDistanceModifierForCurrentFarmer => Game1.player.GetSkillLevel(Farmer.farmingSkill) == 10 ? 1 : 0;
-
-        private const string ToolDistanceModDataKey = "QuestableTractor.ToolDistanceModifier";
         private bool IsPlayerRidingTractor()
             => Game1.player.mount?.modData.ContainsKey("Pathoschild.TractorMod") == true;
 
@@ -111,8 +109,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 return null;
         }
 
-        private Dictionary<string, int> toolDistanceOverrides = new Dictionary<string, int>();
+        private Dictionary<string, int> perToolDistance = new Dictionary<string, int>();
 
+        [EventPriority(EventPriority.High)] // To get in front of TractorMod
         private void OnUpdateTicked(object? sender, UpdateTickedEventArgs e)
         {
             if (!this.IsPlayerRidingTractor())
@@ -121,16 +120,13 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
 
             string? newToolName = this.GetNameOfHeldTool();
-            int newDistanceModifier = 0;
-            if (newToolName is not null)
+            int newDistance = this.mod.TractorModConfig.DefaultDistance;
+            if (newToolName is not null && this.perToolDistance.TryGetValue(newToolName, out int savedDistance))
             {
-                this.toolDistanceOverrides.TryGetValue(newToolName, out newDistanceModifier);
-                {
-                    newDistanceModifier = Math.Min(MaxDistanceModifierForCurrentFarmer, Math.Max(-1, newDistanceModifier));
-                }
+                newDistance = Math.Min(this.MaxDistanceForThisFarmer, Math.Max(0, savedDistance));
             }
 
-            this.mod.TractorModConfig.SetDistanceModifier(newDistanceModifier);
+            this.mod.TractorModConfig.CurrentDistance = newDistance;
         }
     }
 }

@@ -30,8 +30,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         private Mod tractorModEntry = null!;
         private Func<object> getTractorModConfig = null!;
         private Action<object> setTractorModConfig = null!;
-
-        private PropertyInfo? distanceProperty = null;
+        private PropertyInfo distanceProperty = null!;
 
         /// <summary>
         ///   This is the copy of the config that TractorMod will use during gameplay; it has sections of it
@@ -61,12 +60,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 return;
             }
 
-            if (this.mod.Helper.ModRegistry.Get("spacechase0.GenericModConfigMenu") is null)
-            {
-                this.mod.LogInfo($"Generic Mod Config Menu is not installed, so not dealing with run-time changes to configuration");
-                return;
-            }
-
             this.tractorModEntry = (Mod)modInfo.GetType().GetProperty("Mod")!.GetValue(modInfo)!;
             var tractorModConfigField = this.tractorModEntry.GetType().GetField("Config", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public | BindingFlags.GetField)!;
             var tractorModUpdateConfigMethod = this.tractorModEntry.GetType().GetMethod("UpdateConfig", BindingFlags.Instance | BindingFlags.NonPublic | BindingFlags.Public)!;
@@ -74,24 +67,19 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.getTractorModConfig = () => tractorModConfigField.GetValue(this.tractorModEntry)!;
             this.setTractorModConfig = config => tractorModConfigField.SetValue(this.tractorModEntry, config);
 
-            var apiType = this.tractorModEntry.GetType().Assembly.GetType("Pathoschild.Stardew.TractorMod.Framework.GenericModConfigMenuIntegrationForTractor", true)!;
-            instance = this;
-            var constructors = apiType.GetConstructors();
-            ModEntry.Instance.Harmony.Patch(
-                original: AccessTools.Constructor(apiType, constructors.First().GetParameters().Select(pi => pi.ParameterType).ToArray()),
-                prefix: new HarmonyMethod(typeof(TractorModConfig), nameof(GenericModConfigMenuIntegrationForTractor_Ctor_PrefixStatic)));
-        }
-
-
-
-        public void SetDistanceModifier(int newValue)
-        {
-            if (this.distanceProperty is null)
+            if (this.mod.Helper.ModRegistry.Get("spacechase0.GenericModConfigMenu") is null)
             {
-                this.distanceProperty = this.tractorModConfigForInGame.GetType().GetProperty("Distance")!;
+                this.mod.LogInfo($"Generic Mod Config Menu is not installed, so not dealing with run-time changes to configuration");
             }
-
-            this.distanceProperty.SetValue(this.tractorModConfigForInGame, newValue + (int)this.distanceProperty.GetValue(this.tractorModConfigForStorage)!);
+            else
+            {
+                var apiType = this.tractorModEntry.GetType().Assembly.GetType("Pathoschild.Stardew.TractorMod.Framework.GenericModConfigMenuIntegrationForTractor", true)!;
+                instance = this;
+                var constructors = apiType.GetConstructors();
+                ModEntry.Instance.Harmony.Patch(
+                    original: AccessTools.Constructor(apiType, constructors.First().GetParameters().Select(pi => pi.ParameterType).ToArray()),
+                    prefix: new HarmonyMethod(typeof(TractorModConfig), nameof(GenericModConfigMenuIntegrationForTractor_Ctor_PrefixStatic)));
+            }
         }
 
         private static TractorModConfig instance = null!;
@@ -100,8 +88,10 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         private bool GenericModConfigMenuIntegrationForTractor_Ctor_Prefix(ref object getConfig, ref Action reset, ref Action saveAndApply)
         {
+            // This block is conditionally mirrored in OnDayStart for the case when Generic Mod Config Menu is not installed.
             this.tractorModConfigForInGame = this.getTractorModConfig();
             this.tractorModConfigForStorage = this.tractorModConfigForInGame.DeepClone()!;
+            this.distanceProperty = this.tractorModConfigForInGame.GetType().GetProperty("Distance")!;
 
             // This is a fancy (but necessary) way of writing:  getConfig = ()=>this.tractorModConfigForStorage.
             // Necessary because that produces a Func<Object>, but getConfig is expected to be a Func<ModConfig>
@@ -132,6 +122,16 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
             return true; // run the constructor as normal with our substituted hooks
         }
+
+        public int CurrentDistance
+        {
+            get => (int)this.distanceProperty.GetValue(this.tractorModConfigForInGame)!;
+            set => this.distanceProperty.SetValue(this.tractorModConfigForInGame, value);
+        }
+
+        public int DefaultDistance => (int)this.distanceProperty.GetValue(this.tractorModConfigForStorage)!;
+
+        public int MaxDistance => 1 + (int)this.distanceProperty.GetValue(this.tractorModConfigForStorage)!;
 
         public void TractorGarageBuildingCostChanged()
         {
@@ -176,8 +176,16 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
         }
 
+        [EventPriority(EventPriority.Low)] // Causes us to come after TractorMod's, which does not set EventPriority
         internal void OnDayStarted()
         {
+            if (this.tractorModConfigForInGame is null)
+            {
+                this.tractorModConfigForInGame = this.getTractorModConfig();
+                this.tractorModConfigForStorage = this.tractorModConfigForInGame.DeepClone()!;
+                this.distanceProperty = this.tractorModConfigForInGame.GetType().GetProperty("Distance")!;
+            }
+
             // TractorMod creates a tractor on day start.  We remove it if it's not configured.  Otherwise, doing nothing is the right thing.
             if (Game1.IsMasterGame && !this.mod.RestoreTractorQuestController.IsCompletedByMasterPlayer)
             {
