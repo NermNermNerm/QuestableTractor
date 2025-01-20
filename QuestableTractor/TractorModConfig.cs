@@ -147,17 +147,19 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.SetupTool("Fertilizer", isSpreaderUnlocked);
             this.SetupTool("GrassStarter", isSpreaderUnlocked);
             this.SetupTool("Hoe", isHoeUnlocked);
-            this.SetupTool("MilkPail", false);
-            this.SetupTool("MeleeBlunt", false);
-            this.SetupTool("MeleeDagger", false);
-            this.SetupTool("MeleeSword", false);
             this.SetupTool("PickAxe", isLoaderUnlocked);
             this.SetupTool("Scythe", isHarvesterUnlocked);
             this.SetupTool("Seeds", isSpreaderUnlocked);
-            this.SetupTool("Shears", false);
-            this.SetupTool("Slingshot", false);
             this.SetupTool("WateringCan", isWatererUnlocked);
             this.SetupTool("SeedBagMod", isSpreaderUnlocked);
+
+            bool isTotallyUnlocked = isHoeUnlocked && isLoaderUnlocked && isHarvesterUnlocked && isWatererUnlocked && isSpreaderUnlocked;
+            this.SetupTool("MilkPail", isTotallyUnlocked);
+            this.SetupTool("MeleeBlunt", isTotallyUnlocked);
+            this.SetupTool("MeleeDagger", isTotallyUnlocked);
+            this.SetupTool("MeleeSword", isTotallyUnlocked);
+            this.SetupTool("Shears", isTotallyUnlocked);
+            this.SetupTool("Slingshot", isTotallyUnlocked);
 
             this.TractorGarageBuildingCostChanged();
         }
