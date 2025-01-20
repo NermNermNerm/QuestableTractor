@@ -106,8 +106,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 tractorModReset(); // This replaces TractorMod's Config with a new one!
                 this.tractorModConfigForStorage = this.getTractorModConfig(); // So get the new one
-                this.setTractorModConfig(this.tractorModConfigForInGame); // Put our runtime one back
+                this.tractorModConfigForInGame = this.tractorModConfigForStorage.DeepClone()!; // Copy all the settings
                 this.mod.UpdateTractorModConfig(); // Sync-up with our current quest state
+                this.setTractorModConfig(this.tractorModConfigForInGame); // Put our runtime one back
                 this.tractorModUpdateConfig(); // and tell TractorMod to deal with the merged world.
             };
             var tractorModSaveAndApply = saveAndApply;
@@ -115,8 +116,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 this.setTractorModConfig(this.tractorModConfigForStorage); // Let tractormod see the storage world
                 tractorModSaveAndApply(); // ...so it can save that view 
-                this.setTractorModConfig(this.tractorModConfigForInGame); // Now put our reduced state back
+                this.tractorModConfigForInGame = this.tractorModConfigForStorage.DeepClone()!; // Copy all the saved settings
                 this.mod.UpdateTractorModConfig(); // Merge whatever changes the user made with the quest state
+                this.setTractorModConfig(this.tractorModConfigForInGame); // Now put our reduced state out to TractorMod
                 this.tractorModUpdateConfig(); // and tell TractorMod to deal with the merged world.
             };
 
