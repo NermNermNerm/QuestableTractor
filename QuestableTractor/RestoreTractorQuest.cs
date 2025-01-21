@@ -44,7 +44,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                     break;
 
                 case RestorationState.BuildTractorGarage:
-                    this.currentObjective = L("Get Robin to build you a garage to get the tractor out of the weather.");
+                    this.currentObjective = L("Have Robin build a garage (buy it from her shop).");
                     break;
 
                 case RestorationState.WaitingForSebastianDay1:
