@@ -73,7 +73,17 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else
             {
-                var apiType = this.tractorModEntry.GetType().Assembly.GetType("Pathoschild.Stardew.TractorMod.Framework.GenericModConfigMenuIntegrationForTractor", true)!;
+                Type apiType;
+                if (new SemanticVersion("4.22.0").CompareTo(this.tractorModEntry.ModManifest.Version) <= 0)
+                {
+                    var genericType = this.tractorModEntry.GetType().Assembly.GetType("Pathoschild.Stardew.Common.Integrations.GenericModConfigMenu.GenericModConfigMenuIntegration`1", true)!;
+                    apiType = genericType.MakeGenericType(this.getTractorModConfig().GetType());
+                }
+                else
+                {
+                    apiType = this.tractorModEntry.GetType().Assembly.GetType("Pathoschild.Stardew.TractorMod.Framework.GenericModConfigMenuIntegrationForTractor", true)!;
+                }
+
                 instance = this;
                 var constructors = apiType.GetConstructors();
                 ModEntry.Instance.Harmony.Patch(
