@@ -39,6 +39,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public static ModEntry Instance = null!; // Set in ModEntry
 
+        public static ModConfig Config = null!;
+        public ModConfigMenu ConfigMenu = new ModConfigMenu();
+
         public ModEntry()
         {
             this.TractorModConfig = new TractorModConfig(this);
@@ -50,6 +53,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
         {
             Instance = this;
             this.Harmony = new Harmony(this.ModManifest.UniqueID);
+
+            Config = this.Helper.ReadConfig<ModConfig>();
+            this.ConfigMenu.Entry(this);
 
             Initialize(this);
             this.TractorModConfig.Entry();

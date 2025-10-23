@@ -52,7 +52,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         }
 
         private int MaxDistanceForThisFarmer
-            => Game1.player.FarmingLevel < 10 ? this.mod.TractorModConfig.DefaultDistance : this.mod.TractorModConfig.MaxDistance; 
+            => Game1.player.FarmingLevel < 10 ? this.mod.TractorModConfig.DefaultDistance : this.mod.TractorModConfig.MaxDistance;
 
         private void OnButtonPressed(object? sender, ButtonPressedEventArgs e)
         {
@@ -71,11 +71,11 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 newDistance = this.mod.TractorModConfig.DefaultDistance;
             }
-            if (e.Button == SButton.Add)
+            if (ModEntry.Config.ExpandToolEffectKeybind.IsDown())
             {
                 ++newDistance;
             }
-            else if (e.Button == SButton.Subtract)
+            else if (ModEntry.Config.ContractToolEffectKeybind.IsDown())
             {
                 --newDistance;
             }
