@@ -1,0 +1,1362 @@
+// Do not manually edit this file!  Follow these instructions to import changes:
+// https://github.com/NermNermNerm/LocalizeFromSource?tab=readme-ov-file#ingesting-translations
+{
+  "translations": [
+    {
+      "source": "This item is for unlocking the tractor - only the host can advance this quest.  Give this item to the host.  (You have to put in a chest for them.)",
+      "translation": "このアイテムはトラクターのロックを解除するためのものです。このクエストを進めることができるのはホストのみです。このアイテムをホストに渡してください。(ホスト用の箱に入れる必要があります。)",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "We need a bigger pole",
+      "translation": "もっと丈夫な釣り竿が必要だ",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "There's something big down at the bottom of the farm pond.  Maybe Willy can loan me something to help get it out.",
+      "translation": "農場の水底に大きなものが沈んでいる。どうにか引き上げられないか、ウィリーに相談しよう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Go find Willy in his shop",
+      "translation": "ウィリーの店に行く",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Use Willy's harpoon to haul in whatever's at the bottom of the pond",
+      "translation": "ウィリーのモリを使って水底にあるものを釣り上げよう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Give the Harpoon back to Willy",
+      "translation": "ウィリーにモリを返す",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ya reeled that ol water tank on wheels in, did ya laddy!$3#$b#Aye I do believe this'll be the talk of the Stardrop for many Fridays to come!$1",
+      "translation": "よう、坊主。あの古い散水機を釣り上げたのか！^よう、嬢ちゃん。あの古い散水機を釣り上げたのか！$3#$b#へへ、しばらくサルーンはお前さんの話題で持ちきりになるだろうな！$1",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ah laddy...  I do think I know what you mighta hooked into and yer right that ya need a lot more pole than what ya got.^Ah lass...  I do think I know what you mighta hooked into and yer right that ya need a lot more pole than what you got.#$b#Here's a wee bit o' fishin' kit that my great great grandpappy used to land whales back before we knew better.#$b#I think ya will find it fit for tha purpose.",
+      "translation": "ああ、坊主…何を引っ掛けたのかは分かってるぜ。お前さんの言うとおり、その釣り竿よりずっと丈夫な竿が必要だ。^ああ、嬢ちゃん…何を引っ掛けたのかは分かってるぜ。お前さんの言うとおり、その釣り竿よりずっと丈夫な竿が必要だ。#$b#こいつは釣りの道具の一種で、オレがまだ幼い頃にひいじいさんがクジラを捕まえるのに使ってたもんだ。#$b#今のお前さんにピッタリの得物さ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Come visit me in my shop.  I've got a little somethin' behind the counter that might be just the thing you need.",
+      "translation": "店に来な。カウンターの後ろに、お前さんにピッタリのもんがあるかもしれねえ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Whoah, I snagged onto something big down there, but this line's nowhere near strong enough to yank it up!",
+      "translation": "うわ、何か大きなものが引っかかったけど、この釣り糸じゃあ無理だ！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Aaahhh! ! I had it!",
+      "translation": "ああああ！！もう少しだったのに！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Nope...  nothing",
+      "translation": "残念、何も引っ掛からなかった…。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ooohhh!  So close!",
+      "translation": "うおおお！あと少しだったのに！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Dang! Snapped a line on that waterer again!  Perhaps switching rods to Willy's Harpoon would help.",
+      "translation": "しまった！また釣り糸が切れた！ウィリーのモリならどうだろう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Great Grandpappy's Harpoon",
+      "translation": "ひいおじいさんのモリ",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Willy's Great Grandpappy used this to hunt whales back in the day.",
+      "translation": "ウィリーのひいおじいさんは、これを使ってクジラを捕っていたらしい。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  It's off on the west side of the farm, in behind some trees in an old lean-to.  It's just about one with the vegetation now, but it hasn't rusted away completely.  It sure would be fun to see it run!",
+      "translation": "古いトラクターはもう見つけた？農場の西側に手作りガレージがあったの。今は草木に埋もれてるだろうけど、まだ使えるんじゃないかな。走っている姿を見られたら、きっと楽しいでしょうね！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I used to tromp around your old farm; I loved the empty, haunted feel to it...$2#$b#Anyway...  I saw some things that probably work with the tractor, over on the South side of your farm near Marnie's ranch.#$b#One of them is buried under and old log and one is wedged into a boulder.#$b#Hey, if you get them working, does this mean I can drive the tractor?$4",
+      "translation": "昔、よく農場を探検してたの。寂しくて幽霊が出そうな雰囲気が大好きでさ。$2#$b#…それで農場の南側、マーニー牧場の近くで、トラクターのパーツっぽいものをいくつか見たんだ。#$b#一つは古い丸太の下で、もう一つは岩に挟まってたと思う。#$b#ねえ、もし動くようになったらトラクターを運転してみてもいいかな？$4",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  I doubt it still works, but maybe it could be restored.",
+      "translation": "古いトラクターはもう見つけたかい？まだ動くとは思えないが、直せるかもしれないよ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Hey I saw you take those shoes.  I would have charged gold for them if I thought anybody would be stupid enough to want them.#$b#They don't fit. That's why I chucked them over there.  I'm glad you hauled off that junk.",
+      "translation": "なあ、その靴を拾うのを見たよ。欲しがる奴がいるとわかってたら売り物にしたのに。#$b#サイズが合わないから捨てたんだ。ゴミを処分してくれてありがとな。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "You granddad loved that tractor of his, bless his heart, but you could never tell that judging by the dents and broken off parts!#$b#He left little bits of that thing scattered all over the farm, I'm afraid.  You'll probably come across bits of it here and there!",
+      "translation": "あなたのおじいさんはトラクターが大好きだったんですよ。でも、今のボロボロの姿を見たら大切にしていたとは思えないかもしれないわねえ。#$b#トラブルがあって農場中にトラクターの部品を散らかしちゃったのよ。きっとあちこちで部品が見つかるわ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  Your Grandpa kept it stored in a lean to out on the West side.#$b#It was a piece of junk when he bought it.  No idea how he kept it running.  He had no mechanical ability at all.  None.",
+      "translation": "古いトラクターはもう見つけたのかね？お前さんのおじいさんが農場の西側にガレージ屋根を作って置いていたんだ。#$b#買った時はガラクタ同然だったのに、どうやって動かしたのやら…。彼は機械の知識なんて全くなかった。*全く*だ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I hear you found that old tractor - you should get Robin to tell you the tale of the irrigator.",
+      "translation": "あの古いトラクターを見つけたんだってね。ロビンに話を聞いてみたかい？",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "You know your Grandad and George were really good friends; it hit George pretty hard when your Granddad passed.$2#$b#You might do well to be nice to George, he might know a few secrets about your farm.",
+      "translation": "知ってるかも知れないけど、おじいさんとジョージは本当に仲が良かったんだ。おじいさんが亡くなった時、彼はひどくショックを受けていたよ。$2#$b#ジョージと仲良くしてやってほしい…。おじいさんと農場の昔話が聞けるかもしれないよ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Hey, wanna know a secret about your farm?  Down in the brambles near Marnie's house, there's Greebles.  They've made some weird machines too.$3#$b#No...  I've never seen a Greeble, but cats can!",
+      "translation": "ねえ、あなたの農場の秘密を知りたい？マーニー牧場の近くの茂みに妖精がいて、ヘンテコな機械を作ってるの。$3#$b#ううん…妖精は見たことないけど、猫なら見たことあるよ！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "The kids used to play out in the south field near Marnie's house.  They often came home with tales of high adventure!$1#$b#You might poke around down there sometime when you need a break, who knows what you'll find!",
+      "translation": "子供たちは農場の南側で遊ぶのが大好きでね、よく楽しい冒険談を聞かせてくれたの！$1#$b#暇な時にでも行ってみたら？何か見つかるかも！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "One day your granddad came to ask me for help because he had wedged the front-end loader under a boulder he was moving on the south side of the farm.#$b#I told him that maybe his little tractor wasn't up to moving such a big rock...  He seemed to take that kinda personal; he did love that little tractor.$2#$b#But then his eyes lit up and he ran into Pierre's.$1#$b#I'm not sure what happened after that.",
+      "translation": "ある日、君のおじいさんが助けを求めてきたんだ。農場の南側にある大きな岩を動かそうとして、可動式ショベルが挟まったらしい。#$b#あのトラクターでは大きな岩なんて動かせないだろうと言ったんだが…。彼は本当にそのトラクターが大好きでね。$2#$b#そして、とつぜん目を輝かせたと思ったら、ピエールのところに走っていってしまった。$1#$b#その後どうなったのかはよく知らないんだ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "You know the kids used to play at your farm.  I've asked them to stay clear now that you're back.#$b#It's hard enough to run a farm with chickens running around, let alone kids!$1#$b#Ask me how I know...$2",
+      "translation": "子供たちがあなたの農場で遊んでいたのは知ってる？あなたが来たから、もう近寄らないように言ったの。#$b#走り回るニワトリを追いかけるだけでも大変なのに、子供たちまで来たら大変でしょう？$1#$b#私がそうだったから分かるんだ…。$2",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I hear you found the tractor!  Just a word of advice - might be best not to bring up the subject around my dad...$2#$b#It's a bit of a sore subject.#$b#You can talk to my Mom about it though - your only trouble will be getting her to stop!$1",
+      "translation": "トラクターを見つけたんだってね！一言アドバイスなんだけど、父さんの前ではその話はしない方がいいかも…。$2#$b#ちょっとデリケートな話題なんだ。#$b#母さんになら話してもいいよ。ただ、話し始めたら止まらないかも！$1",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  If you could get it running, it'd sure help you get more crops in the ground.#$b#If you need help finding it, Abigail might know where it is.",
+      "translation": "古いトラクターはもう見つけましたか？もし動くようになったら、作物をもっとたくさん育てられますよ。#$b#トラクターの場所ならアビゲイルが知っているかもしれません。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I hear you found that old tractor - I wonder where all the attachments are?  One that's not a mystery is the irrigation rig.#$b#That's somewhere at the bottom of the farm pond, along with a big chunk of Demetrius' pride!#1",
+      "translation": "聞きましたよ、あの古いトラクターを見つけたそうですね。パーツも見つけましたか？私は散水機の場所しか知りません。#$b#農場の池の底に、ディメトリウスの大きなプライドと一緒に沈んでますよ！#1",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Did you ever find the front-end loader?  One day your Granddad came running into the store, bought a whole bunch of bombs and ran back out again.#$b#Lewis tells me he wedged the loader under a big rock and was trying to get it out...  So if you do find it, it might be in pieces!#1#$b#I'm just glad your Granddad didn't end up in pieces.$2#$b#That's why I don't sell explosives anymore.$2",
+      "translation": "可動式ショベルは見つかりました？ある日、おじいさんが店に駆け込んできて、爆弾を山ほど買っていったんです。#$b#ルイスさんが言うには、大きな岩の下じきになったショベルを取り出そうとしていたとか…。もし見つかってもバラバラになっているかも！#1#$b#おじいさんがバラバラにならなくて本当に良かったです…。$2#$b#爆発物はもう二度と売りません。$2",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  That thing has some stories to tell, let me tell you.  It might make a good decoration for your front yard someday.",
+      "translation": "古いトラクターはもう見つけた？\u3000あれには色々と物語があるの。いつかあなたの家の庭に飾ったら素敵かもね。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oh you want to find the tractor's irrigator?  Ha!  Good luck with that!$4#$b#Who knows, maybe you can fish it out!$1#$b#Demetrius tried to winch it out and ended up, well, let's just say the creases on his trousers weren't quite as crisp as usual after that attempt!$4",
+      "translation": "トラクターの散水機を探してるんだって？応援するよ！$4#$b#もしかしたら、水の底から引っ張り出せるかも！$1#$b#ディメトリウスも一度ウィンチで引っ張り出そうとしたことがあるんだけど、結局ズボンがぬれただけだったんだ！$4",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "You know your Grandad and George were really good friends and it hit George pretty hard when your Granddad passed.$2#$b#You might do well to be nice to George; he might know a few secrets about your farm.",
+      "translation": "知ってると思うけど、あなたのおじいさんとジョージは本当に仲良しだったんだ。おじいさんが亡くなった時、彼はすごくショックを受けたみたい。$2#$b#彼と仲良くしてあげてね。おじいさんと農場の昔話が聞けるかもしれないよ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Have you been out on the west side of your property yet?  Your Granddad had a tractor that he kept under a lean-to that always teetered on the brink of collapse.#$b#Know how he got it?  Me and Pappy boated it in from Knopperville.$l#$b#I didn't understand why he bought it -- the engine had thrown a rod, had bent crankshaft and a cracked case.$s#$b#But somehow he got it to live again!  Funny that.  He wasn't much of a mechanic...",
+      "translation": "農場の西側には行ってみたかい？そこにトラクター用の手作りガレージがあったんだ。#$b#彼がトラクターをどこで手に入れたかって？オレと親父がノッパーヴィルからボートで運んできたのさ。$l#$b#どうしてあれを買う気になったのか分からんよ。エンジンロッドが外れてクランクシャフトは曲がり、ケースなんか割れてたのにな。$s#$b#でも、どういうわけか復活させちまったんだ！機械いじりは苦手だったはずなのにさ…",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ah, but yaknow, the biggest catch on your farm isn't the fish!  Nay laddy, it's the watering wagon for the tractor!$3#$b#That ol' thing sunk into the depths of the pond ne'er to be seen again!$1#$b#You'll probably lose a lure or two to it if you fish on your pond.$3",
+      "translation": "ああ、でもな、お前さんの農場で一番の獲物は魚じゃない。トラクターの散水機さ！$3#$b#古い散水機が水底に沈んでんだ。二度と見つからないかもしれないな！$1#$b#釣りをしたら、ルアーを1つか2つ失うことになるぜ。$3",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I saw in one of Haley's magazines where it says that women unconsciously rate men based on their shoes...#$b#Hah!  I must be doing it wrong then.  If I ever did look at a man's shoes and I saw scuffed up old work boots, I'd be more attracted to him, not less!",
+      "translation": "ヘイリーの雑誌にね、女性は無意識に男性がいい靴を履いているかどうかで判断するって書いてあったんだけど…#$b#もしそうなら私は例外ってことなのかな。男性がすり減った古い作業靴を履いていたら、幻滅するどころか魅力的だと思うもの！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Your Grandad used to come in every Thursday night.  He had a standing date with George and Lewis; they'd play some cards and swap stories...#$b#That kept George going in the early years after the accident.  As you Granddad's mind started to slip away, that, well...$s#$b#George didn't need one more thing to feel bitter about, but life handed it to him anyway.$s",
+      "translation": "君のおじいさんは毎週木曜日の夜に来ていたんだ。ジョージやルイスといつものようにカードゲームをしたり、お互いの話をしたり…。#$b#事故の後の数年間、それがジョージの支えだった。それなのに…$s#$b#ジョージはもう辛い思いをする必要なんてなかったのに、人生にはそういうこともあるんだよ。$s",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I have a bit of a confession to make...When I told you how to repair the tractor engine, you didn't *really* need to run around the chest six times...  I just...  Well...#$b#Sometimes I just can't help myself.",
+      "translation": "少々打ち明けたいことがあるのだ…。実は、トラクターのエンジンを直すのに、箱の周りを6周もする必要はなかった…。ただ…そうだな…。#$b#時々、どうしようもなく我慢できなくなるのだ。面目ない。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "This looks like an old tractor.  Perhaps it could help you out around the farm, but it's been out in the weather a long time.  It'll need some fixing.  Maybe somebody in town can help?",
+      "translation": "古いトラクターだ。農場で役立つかもしれないけど、長い間風雨にさらされていて修理が必要だろう。誰か手伝ってくれるかな？",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "This looks like an old tractor.  You should tell {{arg0}} about this thing.",
+      "translation": "古いトラクターだ。{{arg0}}に教えてあげよう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Fix the loader",
+      "translation": "可動式ショベルの修理",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I found the front end loader attachment for the tractor, but it's all bent up and rusted through in spots.",
+      "translation": "トラクターの可動式ショベルが見つかったが、ところどころ曲がって錆びている。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "This looks like a the sort of thing a blacksmith could fix.",
+      "translation": "鍛冶屋なら直せそうだ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Somehow I've been railroaded into finding Clint some new shoes.  Maybe some of the younger townspeople know where I could get some for cheap.",
+      "translation": "どういうわけか、クリントに新しい靴を探すことになってしまった。町の若者なら安く買える場所を知っているかもしれない。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Somehow I've been maneuvered into finding Clint some new shoes.  Alex wears the same shoe size and tosses out shoes regularly...  Hm...  Ew...  Hm...",
+      "translation": "どういうわけか、クリントに新しい靴を探すことになってしまった。アレックスの靴のサイズは彼と同じで、しょっちゅう靴を捨てているらしい…うーん…うーん…",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I've got Linus recruited to look out for shoes in Alex's trash can, but he warns me that there's something else that might be looking as well...  Who could that be?",
+      "translation": "アレックスが捨てた靴を探すようライナスに頼んだところ、他にもゴミ箱をあさっている者がいるらしい。…一体誰なんだろう？",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Somehow I need to disguise these shoes so that Alex doesn't recognize them...  And maybe do something about that smudge.  Perhaps Sam or Sebastian would loan me some shoe polish.",
+      "translation": "アレックスに気づかれないよう、何とかしてこの靴をカモフラージュしないと…。それに、この汚れも。サムかセバスチャンが靴墨を貸してくれるかもしれない。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Give the shoes and the old loader to Clint",
+      "translation": "靴と古い可動式ショベルをクリントに渡そう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Take the fixed loader attachment to the tractor garage.",
+      "translation": "可動式ショベルをガレージに持っていこう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Wait for Clint to finish repairing the loader.",
+      "translation": "クリントが可動式ショベルの修理を終えるまで待とう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Clint should be done repairing the loader by now.",
+      "translation": "クリントはもう可動式ショベルの修理を終えている頃だ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Shoes.  That's my problem.  I wear these scuffed up old work boots all over the place.$2#$b#What??  Oh.  Sorry.  Just been a bit distracted because I saw on TV that women judge a man by their shoes and look at these...  No wonder I've got no luck with the ladies.$3#$b#What?  You want me to fix that thing?  Sure, looks like it'd be just a bit of reforging, some welds here and there...#$b#Wait!  You're from the city, you know all about shoes!  Tell you what, you get me a nice pair of shoes and I'll fix your loader.  Deal??#$b#GREAT!  I wear 14EEE.",
+      "translation": "靴。それがおれの悩みなんだ。この擦り切れた古い作業靴を、いつも履いてる。$2#$b#何の話だって？？ああ、ごめん。テレビで女性が男性を靴で判断すると言ってたから、ちょっと気になってるんだ。これじゃあモテないのも無理ないよな。$3#$b#え？そんなことより、これを修理してくれって？ああ、ちょっとハンマーで叩いて溶接すれば直るよ…。#$b#あっ！都会から来たなら靴のことも詳しいよな！いい靴を持ってきてくれたら、あんたの可動式ショベルを修理するよ。#$b#よし！おれの靴のサイズは14EEEだ！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Shoes, yeah man, nice shoes cost a fortune.  My gig at the library barely pays, so I roll around in these supercheapies from Joja.  I color mine every once in a while so they look fresh.",
+      "translation": "そうそう、いい靴は高いんだよ。図書館の仕事はほとんど稼げないから、Jojaの超安い靴を履いてる。たまに色を塗って、新品みたいにしてさ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Cheap shoes!  And you somehow deduce that *I* am authority on such matters?$5#$b#Heh.  Perhaps I am!$1#$b#Back before the Jojamart we'd order them online, but now, I've learned the art of Thrift Stores.  I'm actually kindof glad it happened, I really like shopping at thrift stores.#$b#Cheaper than that?  Welp, you could try dumpster-diving!$1",
+      "translation": "安い靴が欲しい？どうしてそれをあたしに聞くかな？$5#$b#まあ、いいところを知ってるけどね！$1#$b#Jojaマートができる前はオンラインで注文してたけど、今はリサイクルショップを活用してるの。我ながら名案だったわ、掘り出し物を探すのってすっごく楽しいんだもん。#$b#え、それより安く？…じゃあ、ゴミ箱でもあさってみたら？$1",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ladies' shoes I know.  Men's shoes I don't.  'Cheap' shoes is definitely not something I spend time thinking about.$3",
+      "translation": "女性ものの靴ならともかく、男ものは知らないわ。『安い』靴のことなんて、考えてる暇ないし。$3",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Well, I mostly get my shoes from secondhand stores, but I don't really know about men's shoes.  Have you asked Sam, or Alex?",
+      "translation": "ええと、靴は大体いつも古着屋で買ってるの。男性用の靴のことはよく知らないから、サムかアレックスに聞いてみたらどうかな？",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Shoes..  Yeah man, decent shoes cost a fortune.  I always wear black, though, which makes it easy.  Blacken anything and it looks cool.",
+      "translation": "靴ね…。ちゃんとした靴は結構高いんだ。オレはいつも黒にしてるから簡単だけどな。黒にしとけばいい感じに見えるだろ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I got these new shoes yesterday 'cuz my old pair had a brown smudge.#$b#I just threw them into the garbage. I would've donated them but I don't like the idea of some weirdo wearing my shoes, ya know?#$b#What size do I wear?  14EEE. . . .  Wait, why do you ask?",
+      "translation": "昨日、靴に茶色いシミがついたから新しい靴を買ったんだ。#$b#古い方はゴミ箱に捨てたよ。寄付しようと思ったけど、変な人に履かれるのが嫌でさ。#$b#靴のサイズ？14EEEだけど…、なんで聞くんだ？",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": ". . . So...  what I think I'm hearing you say is you want me to scout the Mullner's trash can for shoes...#$b#You promise this is for a good cause?  Hm...  Okay.  I'll let you know if I come across them.#$b#I don't want to disturb you, but I'm not the only one nosing around town late at night.  I might not find them first.",
+      "translation": "…つまり…ミュルナー家のゴミ箱から靴を探してほしい、というふうに聞こえるが…。#$b#何か正当な理由があると約束してくれるかい？うーん…わかった。見つけたら知らせるよ。#$b#驚かせたくはないけど、夜遅くに町をうろついているのはわたしだけじゃないんだ。もしかしたら、先を越されてる可能性もある。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "No luck last night, but I'm keeping an eye out for those shoes!",
+      "translation": "昨夜は残念ながら運がなかったけど、靴のことは忘れてないよ！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "sashimi",
+      "translation": "刺身",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "pizza",
+      "translation": "ピザ",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "You want to borrow my shoe polish?  That's kindof an odd request but, you know what?  Sure.  Knock yourself out.#$b#There better be some {{arg0}} in this for me somewhere down the road.",
+      "translation": "靴墨を借りたい？ちょっと変な頼みだけど、いいよ。ほら、どうぞ。#$b#親切にしておけば、いつか{{arg0}}になって返ってくるかもしれないしな。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ah, these shoes look great!  Fit good too.  But somehow I still don't quite feel like a ladykiller.#$b#Welp.  A deal's a deal.  I'll fix the loader.  You can pick it up in a couple days.",
+      "translation": "ああ、この靴、すごくいいね！フィット感もいい。でも、なんだかまだ自信が持てないな…。#$b#まあ、いいか。約束は約束だ。可動式ショベルを修理するから。数日後に取りに来てくれ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Those shoes look great!  Come back with the loader and I'll get to work on it.",
+      "translation": "その靴、すごくいいね！可動式ショベルを持ってきてくれたら、すぐ作業に取り掛かるよ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Have you found any shoes for me yet?  Bring them by when you can, I'd love to see them!",
+      "translation": "もう靴は見つかったか？できるだけ早く持ってきてくれ。どんな靴か楽しみでしかたないんだ！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Here's your front-end loader, all fixed up.  Stick to small rocks, right?#$b#If you need to move big ones, get some explosives for the job.  Oh, and let me know when you're doing it.  I'll bring beer.",
+      "translation": "ほら可動式ショベルが直ったぞ。運ぶのは小さな石だけにしてくれよな？#$b#大きな石を動かしたい時は爆薬が必要だ。ああ、やる時は知らせてくれよ。ビールを持っていくからさ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Sweet!  You've now got a front-end loader attachment for your tractor to clear out debris!#$b#HINT: To use it, equip the pick or the axe while on the tractor.",
+      "translation": "やった！これでトラクターに乗って農場の石や枝を一気に片付けられるぞ！#$b#ヒント：使用するには、トラクターに乗っている時にツルハシかオノを装備してください。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Hey there!^I talked with Sebastian about your tractor and he has agreed to work on it, but only if he's got a decent place to work.  I understand that you're just starting out here and don't have a lot of money laying around, so I'm willing to do it at-cost.^ ^For my part, I'll need 300 wood, 200 stone and 350g for supplies.  Sebastian insisted that you bring a cup of coffee as well.  He's still a bit surly I think.  I caved on that one; gotta pick your battles.^ ^See you soon!^  - Robin",
+      "translation": "こんにちは！^セバスチャンにトラクターのことを相談したら、ちゃんとした作業場所があれば引き受けてもいいって。引っ越してきたばかりで余裕がないと思うから、ガレージの建設は原価で引き受けるよ。^材料は木材300個と石材200個、そして350ゴールドが必要です。^セバスチャンがまだ少し不機嫌そうにしていて、コーヒーも1杯持ってきてと言ってました。多目に見てやってね。^それじゃあまた！^^ - ロビンより",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Build the garage",
+      "translation": "ガレージを建てる",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I got everything working except this engine.  I've never seen anything like it.  I mean, it's like it doesn't even need gas!^I don't know what you're gonna need to do to make it work, but I know I'm out of my area here.^If you manage to figure it out, bring it back up to my place and I'll see about getting it installed.^  - Sebastian",
+      "translation": "エンジン以外はすべて動くようになった。こんなエンジンは見たことない、…ガソリンすら必要ないみたいなんだ！^^正直お手上げだよ。^もし直ったら持ってきてくれ。取り付けるからさ。^^ - セバスチャンより",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Wonky engine",
+      "translation": "壊れたエンジン",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Thanks for letting me work on this!  I even let my Dad do some of the work on it so that he got to feel like maybe he finally did make good on his promise to your Granddad all those years ago.  But me, well, I just like gadgets!  If it ever breaks down, let me know, I have a 10-year warranty on all my work :)",
+      "translation": "私に任せてくれてありがとう！^父さんにも少し手伝ってもらったんだ。あなたのおじいさんとの約束をやっと果たせたって実感できたみたい。^私の方は…機械いじりがとっても楽しかった！^^もしまた何かあれば、教えてね。私が直したものにはすべて\u300010年保証が付いてます (*'v'*)/^^ - マルより",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Irrigator is fixed",
+      "translation": "散水機の修理完了！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I hear you're restoring that old tractor.  Here's the seeder - it spreads fertilizer and seeds.  Your Grandpa gave it to me to fix after he decided to try going organic and put chicken droppings in it. I got it cleaned up, but it needed some iron bars.  Your Grandpa took his time rounding those up, and, well, my accident and his decline put an end to it.  But you're young, you can find somebody to fix it. I'm too old to be of any use anymore.",
+      "translation": "古いトラクターを修理していると聞いた。これがトラクター用のタネまき機だ。タネだけじゃなく肥料もまける。^^お前さんのおじいさんが肥料代わりのニワトリのふんを詰まらせて、修理のために預かっていたものだ。^きれいにしたあと修理に取り掛かったものの、鉄ののべ棒が足りなくなってな。彼は時間をかけて集めてくれたが、ワシの事故と彼の体調悪化で修理は叶わなかった。^^お前さんなら修理できる人を見つけられるだろう。ワシがもっと元気なら手伝ってやれたんだろうが…。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Seeder from George",
+      "translation": "ジョージからタネまき機",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Hello Dear,^I gave what you said a lot of thought and I think I have a way.  George would be really uncomfortable with you doing work he would want to do.^But George has had to get used to letting Alex do a lot of things for him already.^I talked to Alex about it, but he is reluctant and he wouldn't say why.  Maybe if someone nearer his own age, who he trusted, talked to him he would come around.^Good luck!^ - Granny",
+      "translation": "こんにちは。^あの後よく考えてみて、いい方法を思いついたの。ジョージはね、自分がやりたい仕事をあなたに任せるのは落ち着かないみたいなのよ。^でも、アレックスに何か任せることには慣れてるわ。^^アレックスにも相談したけれど、乗り気じゃないようで理由も教えてくれなくて…。信頼している人から相談されたら、考えが変わるかもしれないわね。^頑張って！^^ - おばあちゃんより",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "@ - I think you'll find Alex is a little more... inspired... today.^ - Haley",
+      "translation": "@へ^^今日のアレックスは少し…やる気になったと思うよ。^^ - ヘイリーより",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Haley has motivated Alex",
+      "translation": "アレックスのやる気",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Hey!^Grandpa and I got the seeder working last night!  You can pick it up from Grandpa whenever.  Now that it's done, I'm really happy you rooked me into doing this. I really love my grandpa, and well, sometimes it's hard to find things to do together.  And hey, maybe if the Gridball thing doesn't work out I can get a job repairing farm equipment!^ - Your friend,^   Alex",
+      "translation": "よう！^昨日の夜、じいちゃんと一緒にタネまき機を動かしてみたんだ！じいちゃんからいつでも受け取れるぜ。^^修理のこと、オレに相談してくれてありがとな。じいちゃんのことは大好きなんだけど、一緒にできることってあまりなくてさ。^それに、もしグリッドボールがダメになったとしても、農機具の修理の仕事に就けるかもしれないだろ！^^ - おまえの相棒アレックスより^",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Waterer is ready",
+      "translation": "タネまき機の修理完了",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "The tractor's all ready to go!  It was kinda strange, I didn't really know how it all attached, but when I tried to plug something into the wrong place, it just wouldn't go.  Screws wouldn't find their threads, belts would jump off of pullies...^ ^But when I got a part even near the right spot, it'd just jump into place!  So I guess that engine really likes being in that tractor!^ ^Oh and the tiller was on the tractor when we found it.  It seems okay, so you'll be able to hoe areas.  The other attachments are probably around someplace!^ ^ - M^ ^HINT: To use the tractor, get on it and select your hoe.",
+      "translation": "トラクターの修理が完了したよ！最初はどう取り付ければいいのかよくわからなくて、間違った場所に差し込もうとしたり、取り付けたはずの部品が外れたり大変だったの。^ ^でも、正しい位置にエンジンを近づけただけで、すんなりと収まったんだ！このエンジンはトラクターに乗っているのが好きなんだと思う！^ ^そうそう、気付いた時には耕運機も付いてたの。これで畑を耕せるね。他のアタッチメントもどこかにあるはず！^ ^ - マルより^ ^ヒント：トラクターを使うには、乗り込んでクワを選択してください。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Tractor is ready to go",
+      "translation": "トラクターの修理完了",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I found shoes in the garbage last night.  You're right, these are perfectly good shoes, ready for a second life!  I hope you give them a good home.",
+      "translation": "昨夜、ゴミ箱で靴を見つけたんだ。君が言ってた通り、これは新品同様ですぐに使えると思う！いい人に引き取ってもらえるといいね。^ ^ - ライナスより",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Linus found shoes",
+      "translation": "ライナスが靴を発見",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Hey @!  Maru here!  I forgot to tell you something about your tractor!  There's a knob down by your left knee that you can use to widen or narrow the spread of your tools!  It works well to go narrow, but the wide setting is really fiddly.  I'm sure you'll get the hang of it with practice!^ - M^ ^(Hint - use the keypad plus and minus keys to increase or decrease the area of effect of your tools.  The max area is 3x3 until you get farming skill of 10, when it goes to 5x5.)",
+      "translation": "やあ@、マルだよ！^トラクターについて話し忘れてることがあったの。左ひざのあたりにノブがあって、これを使ってツールの有効範囲を広げたり狭めたりできるんだ！狭めるのは簡単だけど、広げるのは本当に面倒なの。練習すればきっとコツがつかめるよ！^^ - マルより^ ^(ヒント - テンキーのプラスとマイナスキーでツールの効果範囲を増減できます。農業スキルがlv10になるまでは最大3x3、lv10で5x5にアップ。)",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Tractor Tool Shift Knob HowTo",
+      "translation": "ツールシフトノブの使い方",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Funky looking engine that doesn't work",
+      "translation": "動かない奇妙なエンジン",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Sebastian pulled this off of the rusty tractor.  I need to find someone to fix it.",
+      "translation": "セバスチャンがトラクターから取り外したエンジンだ。修理してくれる人を探そう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Junimo-powered tractor engine",
+      "translation": "ジュニモ駆動エンジン",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "The engine for the tractor!  I need to find someone to install it.",
+      "translation": "トラクターのエンジン！取り付けてくれる人を探さなきゃ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Core of the harvesting attachment for the tractor",
+      "translation": "収穫機のコア",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "This looks like it was a tractor attachment for harvesting crops, but it doesn't seem to be all together.",
+      "translation": "作物を収穫するためのトラクターアタッチメントのようだが、パーツが足りない。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Harvesting attachment for the tractor",
+      "translation": "収穫機",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Just need to bring this to the tractor garage to be able to use it with the tractor!",
+      "translation": "ガレージに持っていって、トラクターと一緒に使おう！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Crop shakerlooser",
+      "translation": "収穫用ふるい",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "One of the missing parts for the scythe attachment",
+      "translation": "収穫機の欠けた部品の一つ",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Shiny sprocket",
+      "translation": "キラキラのスプロケット",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Broken watering attachment for the tractor",
+      "translation": "壊れた散水機",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "This looks like it was a tractor attachment for watering crops.  Sure hope somebody can help me get it working again, watering can really be a drag.",
+      "translation": "作物に水をまくためのトラクターアタッチメントだ。水やりは本当に面倒だから、はやく修理してくれる人を探そう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Watering attachment for the tractor",
+      "translation": "散水機",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "The watering attachment for the tractor - it needs to be brought back to the tractor garage.",
+      "translation": "トラクター用の散水機。ガレージに置いておこう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Bent up and rusty front-end loader for the tractor",
+      "translation": "錆びて曲がった可動式ショベル",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "This was the front-end loader attachment (for picking up rocks and sticks), but it's all bent up and rusted through in spots.  It needs to be fixed to be usable.",
+      "translation": "石や枝を除去するためのトラクターアタッチメントのようだが、ところどころ曲がって錆びている。使えるようにするには修理が必要だ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Front-end loader attachment for my tractor",
+      "translation": "可動式ショベル",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "This will allow me to clear rocks and sticks on my farm.  It needs to go into the tractor garage so I can use it.",
+      "translation": "これで農場の石や枝を片付けられる。ガレージに置いておこう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Alex's old shoes",
+      "translation": "アレックスの古い靴",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "14EEE, slightly smudged",
+      "translation": "14EEE、少し汚れあり",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Cleverly repackaged pair of shoes",
+      "translation": "新品に見える靴",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Alex's old shoes, cleverly dyed.  Nobody will ever know.",
+      "translation": "アレックスの古い靴を巧みに染色。誰にも気付かれませんように。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Broken fertilizer and seeder",
+      "translation": "壊れたタネまき機",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "The fertilizer and seed spread for the old tractor.  It needs a good bit of fiddling to make work.",
+      "translation": "肥料とタネをまくためのトラクターアタッチメント。使えるようにするには修理が必要だ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Fertilizer and seeder attachment for the tractor",
+      "translation": "タネまき機",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Just needs to be brought back to the garage to use it on the tractor.",
+      "translation": "トラクターで使うためガレージに置いておこう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I wonder what {{arg0}} has been up to...",
+      "translation": "{{arg0}}は一体何をしていたんだろう…",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Pets sometimes have an uncanny ability to spot missing things!$0#$b#Just last week I lost my favorite milking bucket.  I came across it a few days later and my cat, Muffin, was sleeping in it.$1#$b#Well, I guess she didn't exactly find it for me, but at least she knew where it was!$0",
+      "translation": "ペットって、時々、なくしたものを見つける不思議な能力を持ってるんだ！$0#$b#先週、お気に入りのミルクバケツをなくしちゃってね。数日後に見つけたら、猫のマフィンが中で寝てたのよ。$1#$b#まあ、マフィンが見つけてくれたわけじゃないけど、少なくとも場所を知ってたみたい！$0",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Do I miss my \"normal\" life on days like this?$2#$b#No, not really.  Except for Jeremy Clarkson...$1#$b#...My pet Schnauzer.  He had an uncanny ability to fetch the thing I wanted before I even knew I wanted it.$0",
+      "translation": "こんな日には「普通の」生活が恋しくなるかって？$2#$b#いや、そうでもないな。ただ、ジェレミー・クラークソンは別だ…。$1#$b#…わたしが飼っていたシュナウザーの名前だよ。彼は、わたしが欲しいと思う前に欲しいものを持ってきてくれる不思議な力を持ってたんだ。$0",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Investigate the tractor",
+      "translation": "トラクターを調べる",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "There's a rusty old tractor in the fields; it sure would be nice if it could be restored.  Perhaps the townspeople can help.",
+      "translation": "農場で錆びた古いトラクターを見つけた。修理できたら素晴らしいだろう。町の人々が手伝ってくれるかもしれない。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Talk to mayor Lewis",
+      "translation": "ルイスと話そう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ask Sebastian to help restore the tractor",
+      "translation": "セバスチャンにトラクターの修理を手伝ってもらおう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Welp, Sebastian was a bust.  Maybe Mayor Lewis knows somebody else who could be more helpful.",
+      "translation": "セバスチャンはダメだった。ルイス町長なら頼みを聞いてくれそうな人を知っているかもしれない。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Wait for Lewis to work his magic",
+      "translation": "ルイスが魔法をかけるのを待とう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Have Robin build a garage (buy it from her shop).",
+      "translation": "ロビンにガレージを建ててもらおう（彼女の店で購入）。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Sebastian promised to get on the job right after the barn got built.  Hopefully he's actually on the case.",
+      "translation": "セバスチャンはガレージが完成したらすぐに仕事に取り掛かると約束してくれた。ちゃんと取り組んでいるといいんだけど…。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ask for help with the strange tractor motor.",
+      "translation": "奇妙なトラクターのエンジンについて聞いてみよう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Put the engine, 20 sap, 5 mixed seeds and an aquamarine in a chest in the secret woods.",
+      "translation": "秘密の森に箱を置いて、エンジン、樹液20個、ミックスシード5個、アクアマリン1個を入れ、箱の周りを時計回りに6周する。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Hopefully the Junimo magic worked!  Get the engine out of the secret woods and bring it to Sebastian.",
+      "translation": "ジュニモの魔法が効いてればいいな！エンジンをセバスチャンのところへ持っていこう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Bring the engine to Maru to install.",
+      "translation": "エンジンをマルのところへ持って行き、取り付けてもらおう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Maru says that after the engine is installed, it should actually run!  Just have to wait a little bit longer...",
+      "translation": "マルによると、エンジンを取り付ければちゃんと動くらしい！もう少しの辛抱だ…。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "An old tractor you say?#$b#I know your Grandfather had one - I thought he had sold it off before he died.  He never could keep it on the furrows.$h#$b#If you want to get it fixed, I suggest you talk to Robin's son, Sebastian; he's actually quite the gearhead.  Maybe he can help.",
+      "translation": "古いトラクターだって？#$b#おじいさんが持っていたはずだが、亡くなる前に売ってしまったと思っていたよ。$h#$b#修理したいなら、ロビンの息子のセバスチャンに相談してみるといい。かなりの車好きだから、もしかしたら助けてくれるかもしれん。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Let me get this straight - I barely know who you are and I'm supposed to fix your rusty old tractor?$a#$b#Sorry, but I've got a lot of stuff going on and can't really spare the time.",
+      "translation": "はっきりさせておきたいんだが、おまえのことをほとんど知らないのに、なんでオレがトラクターを修理することになってるんだ？$a#$b#悪いけど、忙しくてそんな暇はないよ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Sebastian said that?$a#$b#Well, I can't say I'm really surprised...  Just a bit disappointed.$s#$b#Hm. . .$u#$b#Welp, I guess this is why they pay me the big money, eh?  I'll see if I can make this happen for you, but it might take a couple days.",
+      "translation": "セバスチャンがそんなことを？$a#$b#まあ、驚きはしないが…少しがっかりしてね。$s#$b#ふむ…$u#$b#まあ、こんな時のために高い給料をもらっているのだし、説得してみよう。数日かかるかもしれんが、待っていてくれ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Trust me, I'm working on it, but I also have my day-gig to worry about.  I work odd hours, so you might not be around when I'm working on it.  Oh and thanks for the coffee.",
+      "translation": "信じてくれ。修理はしてるけど、日中の仕事もあるんだ。不規則な時間帯に働いてるから、おまえがいない時に作業することもある。…それと、コーヒーありがとう。うまかったよ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I made a lot of progress last night.  Most of it is cleaning up okay, but the engine itself is, well, it seems a little out of the ordinary. . .",
+      "translation": "昨夜はかなり進んだよ。ほとんど問題ないが、エンジンは…まあ、ちょっと調子が悪いみたいだな…",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oh...  Now where did you get that??!$l#$b#Ooooh... Ah.  Yes.  I see...  Mmm...$s#$b#Yes.  Your grandfather dabbled a bit in Forest Magic.  He was nowhere near as adept as myself, of course...#$b#He lacked the mechanical ability to restore the mundane engine, so he enlisted some forest magic to make one.#$b#As you can see, the Junimos that he recruited to keep the motor running have gotten bored and wandered away.  You'll need to coax them back.$s#$b#Now, pay attention!  This will require your utmost concentration!$a#$b#You must place the engine, 20 sap, 5 mixed seeds and an aquamarine in a chest in the secret woods in front of the statue...#$b#Then, you must run around the chest, six times, clockwise very, very quickly.  Overnight, your engine will be restored.#$b#Now GO!  I have concerns much greater than yours right now.$a",
+      "translation": "むむ…どこで手に入れたのだ？！$l#$b#おお…そうか、なるほど…うむ…。$s#$b#そう、貴殿の祖父は森の魔術に手を出しておった。むろん、我輩ほど達者ではなかったがな。#$b#彼はエンジンを修理するため、森の魔術を行使したのだ。#$b#見ての通り、エンジンを動かすために呼んだジュニモたちは退屈してどこかへ行ってしまった。彼らをなだめて戻さねばならぬ。$s#$b#さあ、心して臨むがいい！これには最大限の集中力が必要になるぞ！$a#$b#像がたたずむ森深くに箱を置き、エンジン、樹液20個、ミックスシード5個、アクアマリン1個を入れ…#$b#箱の周りを時計回りに6回、全力で走るのだ。一晩で、エンジンは元の力を取り戻すだろう。#$b#行きたまえ！我輩は貴殿よりはるかに忙しいのだからな。$a",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "That is the craziest engine I've ever seen.  Have  you shown it to Clint?  I mean, he knows something about metalworking.  Maybe it's some kinda weird alloy?^ ^Or...^Maybe aliens.",
+      "translation": "今まで見た中で一番クレイジーなエンジンだ。クリントに見せたか？彼は金属加工に詳しいからな。もしかして珍しい合金か？^ ^あるいは…^エイリアンかも。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Uh...#$b#What is it?  you say it's an Engine?$s#$b#I say it's weird. . .  Hey, is that thing moving?$a#$b#I don't know.  Maybe the Wizard would know what it is, and even if he doesn't, he'll sure pretend like he does if you show it to him.",
+      "translation": "えーと…#$b#何だって？エンジン？$s#$b#…なあ、今動かなかったか？$a#$b#おれには分からないよ。魔術師なら何か分かるかも。…たとえ分からなくても、見せればきっと物知り顔で話してくれるだろ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oh wow...#$b#Can I have it?",
+      "translation": "わあ、すごい…#$b#もらってもいい？",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "AAAAHHH!!!  IT'S MOVING!  TAKE IT AWAY!$4",
+      "translation": "ああああ！！！動いてる！持ってって！$4",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I've never seen anything like that before...#$b#It gives me this uncanny feeling like...  it's missing something.#$b#Weird.",
+      "translation": "こんなの初めて見た…。#$b#何かが足りないような気がするけど…。#$b#うーん、何だろ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Whoah....$s#$b#I mean, if you say it's fixed, I can believe it.  Definitely has a look of workiness about it!$l#$b#But seriously...  I shouldn't be installing this thing.  It's, yaknow, out of my area but...$s#$b#I hate to say it, my sister would be able to figure it out, no matter how weird it is.",
+      "translation": "うわ…$s#$b#お前が言うなら直ったんだろうな。確かに動いてるし！$l#$b#でも、マジで…こんなの取り付けるのか？オレの専門とは違うだろ…。$s#$b#持ってきてもらったのに悪いが、こういう常識外れなものは妹の方が適してると思う。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Wow!  I mean I have no idea what it does, but I'm sure it'll look cool doing it!$h#$b#You want me to install it in the tractor?  Sure, I'll do it.  I helped Seb haul it out of the mud.  He really did a great job polishing it up.#$b#Just give me a day or so, k?  And be sure to drive it up here sometime, I want to ride it around!$l",
+      "translation": "わあ！何の部品かさっぱり分からないけどカッコいい！$h#$b#トラクターに取り付けようか？もちろん、やるよ。だって、セブが泥だらけだったのを磨いてここまでキレイにしてくれたんでしょ。#$b#1日くらい時間くれる？それと、いつかここへ運転して来てくれると嬉しいな。乗ってみたいんだ！$l",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Fix the harvester",
+      "translation": "収穫機の修理",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I found the harvester attachment for the tractor, but won't work like it is now.  I should ask around town about it.",
+      "translation": "トラクター用の収穫機を見つけたけど、このままじゃ使えない。町で聞いてみよう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Let's see what you go there...$s#$b#You know, there's no real metalwork to do here.  It basically needs a good cleaning and oiling.$h#$b#But something seems wrong about it still, like are you sure you got all of it out of the weeds?",
+      "translation": "ちょっと見せてくれ…。$s#$b#そうだな、おれの出番はないみたいだ。しっかり洗浄してオイルを差すだけでいい。$h#$b#でも、部品が足りない気がする。草の根わけて探してみたか？",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oh you found the old harvester!  I think your Grandpa broke every other thing, but I don't recall any misadventures with that part.  If you can't get it to work, you might ask Demetrius or Maru.  They're good at metalworking.",
+      "translation": "わお、古い収穫機を見つけたんだね！おじいさんは他のものは全部壊しちゃってたみたいだけど、この部品ではとくに問題はなかったはずだよ。もし動かないなら、ディメトリウスかマルに聞いてみて。こういうのは得意だからさ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oh you found the old harvester!  You know, just looking at it, I think it's okay, but I don't think it's quite complete.  Looks like there might be some parts missing.#$b#You're getting pretty good around the farm, I'm sure you could get it to work again if you can find the rest of the parts.  Let me know if you need help with it, though, I'd be happy to help.",
+      "translation": "わあ、古い収穫機を見つけたんだ！見た感じでは大丈夫そうだけど、部品がいくつか足りないみたい。#$b#農場での作業にも慣れてきたみたいだし、残りの部品さえ見つかれば使えるようにできるんじゃないかな。私に手伝えることがあれば、いつでも言ってね。喜んでお手伝いするよ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oh I'm not much for farm equipment.  You say that's a harvester?  Well, I'll have to take your word for it!$h#$b#Yaknow he broke a lot of stuff on that tractor, but I don't recall that being one of them.  Maybe it just needs cleaning and oiling?",
+      "translation": "農機具にはあまり詳しくなくてね。それが収穫機かい？君が言うならそうなんだろう。$h#$b#おじいさんがあれこれ壊してしまったのは知ってるが、これがそのうちの一つだったかは覚えていないんだ。案外、掃除とオイル差しだけで済むかもしれんな？",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oh that's the old harvester!  Or most of one anyway...$s#$b#Well, did you look around where you found that piece?  Might be more pieces under that log.#$b#You might enlist Jas and Vincent to help - they used to play out in your south pasture, but when you moved back in, I asked them to keep clear so you could get your work done.  But they know that area pretty well.",
+      "translation": "あら、古い収穫機じゃない！というか、ほぼ収穫機…？$s#$b#それを見つけた場所を探したら、もっと部品が見つかるかもしれないよ。#$b#ジャスとヴィンセントに手伝ってもらうのもいいかもね。以前は農場の南の牧草地で遊んでいたの。あなたが戻ってきてからは仕事の邪魔をしないよう言っておいたけど、きっと何か知ってるんじゃない？",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oh that's a *harvester*?  I never would have guessed!  Yep, I saw it on your farm and always wondered about it...#$b#Well, unless I was prepared to accept Jas and Vincent's explanation that it was a machine made by Greebles!$l",
+      "translation": "あら、まさかそれって*収穫機*？あなたの農場で見かけてから、ずっと気になってたんだ…。#$b#妖精が作ったんだって、ジャスとヴィンセントがよく言ってたから。$l",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "That's the old harvester for the tractor?  I guess it looks like that.#$b#I'm sorry, I don't know anything about farming.$2",
+      "translation": "それって、たぶんトラクター用の古い収穫機…よね？#$b#ごめんなさい、農業のことはよく知らないの。$2",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Missing parts for a 'harvester'?$s#$b#You might ask Jas and Vincent to help look for other parts like that - they told me they used to play out in your south pasture, but they don't anymore because Marnie shooed them away.$4",
+      "translation": "収穫機の部品が足りない？$s#$b#えーと、ジャスとヴィンセントに探すのを手伝ってもらったらどうかしら。マーニーに注意される前は、あなたの農場の南の牧草地で遊んでいたらしいの。$4",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oh yeah I've seen that - wedged under a tree, right?  Must have been a feat to get it out!#$b#Did Jas or Vincent tell you where to find it?  They used to play near it quite a bit.",
+      "translation": "それ、見たことあるよ。木の下に挟まってたよね？取り出すの大変だったでしょ！#$b#ジャスかヴィンセントにも聞いてみた？昔はよくそこら辺で遊んでたよ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "What is that thing?  A harvester?  Sure, if you say so...  I tell you though, something about that thing seems familiar to me.$s#$b#Well, it looks like a mess, and I've cleaned up a lot messes.  It must be that!$l",
+      "translation": "それは何？収穫機？そう言われると確かに…。でも、何か見覚えがあるような…。$s#$b#まあ、今まで子供たちが汚したり壊したものを散々片付けてきたから、そんな気がするだけね！$l",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "That's the old harvester for the tractor?  I guess it looks like that.  You think it's incomplete?$s#$b#You might ask Jas and Vincent to help look for other parts like that - they used to play out in your south pasture, but don't worry!  Marnie and I asked them not to since you moved in.#$b#You've got enough on your hands without those two hooligans running through the corn!$l",
+      "translation": "それってトラクターの古い収穫機？こんな感じだったかしら…何か足りないような？$s#$b#ヴィンセントとジャスに、似たような部品を探してもらったら？昔はあなたの農場の南でよく遊んでいたのよ。ああ、今はあなたの邪魔をしないよう言ってあるから心配しないで！#$b#あの二人のいたずらっ子がトウモロコシ畑を走り回ってなくても、農作業は大変だものね！$l",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Aha!!!!  I FORESEE THAT YOU HAVE NEED OF A SCRY!$a#$b#And you've come at the perfect time.  I happen to have need to flex my muscles from time to time, to keep in tip top form, you know.  Let's have a look#$b#Aahh through the mists I see two people, NO, CHILDREN, in your farm playing...#$b#They have taken parts of off and headed off...  But wait, there's more...  Yes...#$b#They will each need to be placated to get them to give the parts back.  The boy will want 3 crayfish and the girl will want a gemstone, but her tastes are not yet developed, so a cheap one will do...",
+      "translation": "おお!!!! 貴殿が占術を必要としていることは予見していた！$a#$b#まさに絶好のタイミングだ。我輩もたまには腕をふるわないと最高の状態を保てぬからな。少し見てみよう。#$b#ああ、霧の向こうに貴殿の農場で遊んでいる二人の人、いや、子供たちが見える…#$b#彼らは部品を外してどこかへ行ってしまった…。いや待て、まだある…そう…#$b#部品を返してもらうには、それぞれをなだめる必要があるだろう。男の子はザリガニ3匹、女の子は宝石を欲しがっておる。彼女はまだ幼い、宝石なら何でも喜ぶであろう…。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "BAH!  Begone with this mundane contrivance!  Return on Friday or Saturday and I may have time.$a",
+      "translation": "はっ！貴殿に付き合っている暇はない！金曜か土曜にまた来るといい。時間があるやもしれぬ。$a",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I love how my jumprope sparkles in the sun now!  Did you have any luck getting it to fit back together?",
+      "translation": "縄跳びが太陽の光でキラキラかがやいて最高！それで、直すのはうまくいった？",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ooh!  Oh this {{arg0}} is very sparkly!  Thanks!  Here's your thingamajig.  I sure hope it works!  I really want to ride on your tractor some day!$l",
+      "translation": "わあ！この{{arg0}}、すごくキラキラしてる！ありがとう！これがあなたの探しものよ。うまくいくといいね！いつかあなたのトラクターに乗ってみたい！$l",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oohh when are you gonna bring me something shiny!  I'm really looking forward to it!",
+      "translation": "わあ、いつキラキラしたものを持ってきてくれるの？すごく楽しみ！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ooh!  You found the Greeble machine!$h#$b#Vincent and I used to play games with that, but we had to stop because Aunt Marnie told us we couldn't go into your pasture anymore unless you invite us.#$b#There are parts missing?  Well of course there are!  Vincent and I kept some of the shinier bits, see, one's on my jumprope!  It's so shiny, it sparkles when I jump!  Oh, and FINDERS KEEPERS!$l#$b#Well, I suppose I could give it back to you...  BUT ONLY IF YOU TRADE ME SOMETHING REALLY SHINY!$h",
+      "translation": "わぁ！妖精さんの機械を見つけたのね！$h#$b#ヴィンセントと一緒に、よくそれで遊んでたの。マーニーおばさんに「勝手に農場で遊んじゃダメよ」って言われてから遊んでないけど。#$b#部品が足りない？もちろんあるよ！キラキラした部品をいくつか取っておいたんだ。ほら、なわとびにつけてるから、跳ぶとキラキラ光るの！早い者がちよ！$l#$b#そうね、何かすごくキラキラしたものをくれたら交換してもいいよ！$h",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Did you have any luck getting it to fit back together?  I could probably help you put it back together, it sure came apart easy!$l",
+      "translation": "機械は元に戻せた？バラバラにする時も簡単だったし、手伝ってあげてもいいよ！$l",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ooh!  Oh these 3 crawdads would be great!  Thanks!  Here's your thingamajig.  I Hope it works!$l#$b#Sure, I won't tell Mom that you gave them to me if you want...  Why?$s",
+      "translation": "わあ！このザリガニ3匹、超かっこいい！ありがとう！これが部品だよ。うまくいくといいね！$l#$b#もちろん、あなたがザリガニをくれたことは、おかあさんには言わないよ…どうして？$s",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Did you get the bugs?  3 Big ones?",
+      "translation": "虫は取れた？大きなやつ3匹くらいだよ？",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "The Greeble machine!$h#$b#Jas and I used to play games with that, but we had to stop because Marnie told us we couldn't go into your pasture anymore unless you invite us.#$b#There are parts missing?  Sure there are!  Me and Jas took a couple of pieces.  I used mine in a trap I was building to trap the Greebles under my bed!  It didn't work.  Hey, have you got any good bugs on your farm?  I'll find it for you if you can bring me some really big crawly ones!$h",
+      "translation": "妖精の機械！$h#$b#ジャスとよくそれで遊んでたんだけど、マーニーさんに「勝手に農場であそんじゃダメ」って言われてやめちゃった。#$b#部品が足りない？あるよ！ふたりでいくつか部品を持ってきたんだ。ボクは妖精をつかまえたくて、ワナを作ってベッドの下に置いたけどダメだった。ねえ、あなたの農場に何かカッコいい虫はいる？すごく大きな虫を持ってきてくれたら、交換してあげるよ！$h",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "It seems some parts are missing, but I know there's nothing else out there in that field, at least not that's easy to see.  Maybe somebody else who noses around the farm would know about it.",
+      "translation": "いくつか部品が欠けているが、他に何も見当たらなかった。もしかしたら、かつて農場で何か見つけた人がいるかもしれない。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ask Jas and Vincent about the harvester",
+      "translation": "ジャスとヴィンセントに収穫機のことを聞く",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Fix the scythe attachment (HINT: craft it from the parts)",
+      "translation": "収穫機を組み立てる（ヒント：パーツからクラフトする）",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Get a 'shiny thing' for Jas (perhaps a gem?) and 3 big bugs for Vincent.  (Hm.  The bugs in the mines seem TOO big...  Maybe a lobster?  Hm.  Again maybe too big...)",
+      "translation": "ジャスに光るもの（宝石？）、ヴィンセントに大きな虫を3匹手に入れる（うーん。鉱山の虫は大きすぎるし…ロブスターかな？いや、もう少し小さくないと…)",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Find a way to get the kids to give me the parts",
+      "translation": "子供たちに部品を渡してもらう方法を見つける",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Take the fixed scythe attachment to the tractor garage.",
+      "translation": "収穫機をガレージに持っていこう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Sweet!  You've now got a harvester attachment for your tractor!#$b#HINT: To use it, equip the scythe while on the tractor.",
+      "translation": "やった！これでトラクターに乗って一気に収穫できるぞ！#$b#ヒント：使用するには、トラクターに乗る時にカマを装備してください。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Fix the seeder",
+      "translation": "タネまき機を修理する",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Turns out George had the seeder attachment, maybe he can be talked into fixing it.",
+      "translation": "ジョージがトラクター用のタネまき機を持っていたらしい。修理してもらえないか彼に相談してみよう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Young people just don't listen.  I told you, I'm too old to repair your equipment.$a",
+      "translation": "まったく、若いもんは話を聞かん。言っただろう、それを修理するにはワシは年を取りすぎたと。$a",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Hm.  George said that did he...  Hm.  This *is* a thorny problem.  I think you need to consult a politician.  Try Lewis.",
+      "translation": "うーん、ジョージさんがそんなことを…。こういう時は町長に相談してみたらどうかな。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I'm honored that you're asking me to look at this, but it'd really be better if George did the work...#$b#I know it won't be easy for him...  Maybe he'll need help.$s#$b#But if he actually did it, well, it'd do him a lot of good.#$b#You should talk to Lewis.  He and George go back a long way.  He'll know what to do.#$b#If it all goes wrong, come back to me and I'll try to fix it.",
+      "translation": "見せてもらえて光栄だけど、ジョージさんにやってもらった方がいいんじゃないかな…#$b#難しいってことは分かってる…助っ人が必要だろうし。$s#$b#やっぱり自分で修理する方が彼のためにも良いと思うから。#$b#ルイスさんに相談してみたらどうかな。ジョージさんとは長い付き合いのはずだし、何か思いつくかも。#$b#もし上手くいかなかったら、また私に相談してね。解決できるよう頑張るよ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I'm flattered that Alex thinks I can fix it...  Maybe I can, but we should stick to Evelyn's plan.  Alex and I don't exactly click, but I'm sure there's somebody who knows Alex well enough to help convince him to do it.",
+      "translation": "アレックスが？私なら解決できると思ってくれてるなんて光栄だね。…でも、エブリンさんの計画に従った方がいいんじゃないかな。アレックスとはあまり気が合わないし、彼と親しい人に説得してもらってね。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oh dear oh dear oh dear...$2#$b#Hm...$2#$b#George isn't wrong -- physically, he's just not in good shape.  Mentally, though, he's still as sharp as ever.  Alas, not like your Grandpa, towards the end.$s#$b#But if he can somehow do this, or at least help in doing it, it'll do him so much good.#$b#We need some help here...  We need Evelyn, and YOU have to get her to cajole George into trying this.  I can't be seen to be involved for, err...  reasons.#$b#You need to build some trust with her before you broach the topic, however.  Tread carefully.",
+      "translation": "そうか、困ったものだ…$2#$b#ふむ…$2#$b#ジョージは悪くない。体力的に難しいだけで頭は冴えている。$s#$b#もし彼が修理をやり遂げられたら、少なくとも誰かと一緒に修理できれば、きっと彼にとって大きなプラスになるだろう。#$b#ここで助けが必要だな…エブリンにジョージを説得してもらい、挑戦させなければ。私が関わっているようには見えないように、えーと…色々とあってね。#$b#ただ、エブリンに協力してもらうには、ある程度の信頼関係が必要だろう。慎重に進めてくれたまえ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ohhh...  I know George *could* repair that thing...  But he could also fail miserably, you see, it's not just his legs that have let him down.  Have you seen his hands, how they shake?  It's not so bad, but it really frustrates him.#$b#Oh deary, I'm old too...  I need time to think about this.",
+      "translation": "ええ…ジョージなら修理できるでしょう。…ただ、大失敗する可能性もあるわ。悪いのは足だけじゃないのよ。彼の手が震えてるのを見たことあります？そんなにひどくはないけれど、とてもイライラしてるみたい。#$b#ああ、私も歳をとったのねえ…少し考えさせてちょうだい。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Sorry, what did you say?  I didn't quite hear...",
+      "translation": "ごめんなさい、何ておっしゃいました？よく聞こえなかったの…",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Look, I got my life to live, and it doesn't involve fixing farm equipment.",
+      "translation": "いいか、オレにはオレの人生があって、農機具の修理なんて関係ないんだ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Nah man, these hands were made for gridball.  You're good with this sort of thing, you should talk Grandpa into showing you how.  Or get Maru, she's good at mechanical stuff.$3",
+      "translation": "いや、この手はグリッドボールのためにあるんだ。お前こそ器用なんだから、じいちゃんに教えてもらったらいいだろ。それか、マルに頼むとかさ。彼女、機械いじりが得意だろ。$3",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Heh, isn't easy is it.  Keep it up, maybe you'll learn how to be mayor someday!$1#$b#Evelyn was probably right, in that somebody his own age could convince him.  Somebody he spends a lot of time with.",
+      "translation": "ふむ、簡単にはいかないだろうな。そのまま頑張れば、いつか市長になれるかもしれないぞ！$1#$b#エブリンの言う通り、年が近くていつも一緒にいる者なら彼を説得できるだろう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "You think *I* have a clue what goes on inside Alex's head??$5#$b#Oh wait, I *DO* know...  Absolutely nothing.$4",
+      "translation": "アレックスの頭の中がどうなっているか、知ってると思う？$5#$b#ああ待った、*知ってる* か、…何も知らないってことを。$4",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oh I hate to admit it, but the solution to your problem is Haley.  She can make any boy do any thing, ESPECIALLY Alex.$2#$b#She might seem vaccuous at times, but trust me, if you need some guy manipulated, she can do it.  I'm not saying it's a good thing all the time, but this sounds like a good cause.$4",
+      "translation": "ああ、認めたくないけど、きみの問題を解決できるのはヘイリーだよ。男の子の扱いが上手いから。とくにアレックスはね。$2#$b#そんなふうに見えないかもしれないけど、彼女ならきっと上手いことやってくれると思う。…人助けのためみたいだし、今回はいいよね。$4",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Hah.  Alex does more with his hands than just play Gridball.$3#$b#Tell me everything. every. little. detail.$7#$b#Ah...  I see...#$b#I'll take care of this for you.  Just give me a day or two.  I'll let you know.$2#$b#*Sigh*  Confidence is so very attractive in a man.$7",
+      "translation": "アレックスはグリッドボール以外でも意外と器用よ。$3#$b#とりあえず事情を話してみてよ、どんなささいなこともね。$7#$b#ふうん…なるほどね…。#$b#OK、やってみる。1、2日待ってて、後で知らせるから。$2#$b#*ため息* やっぱり、ステキな男性に自信は必要不可欠よね。$7",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Okay, I can do this.  Grandpa seems fired up too.  Give me the {{arg0}} iron bars Grandpa said we need and the broken seeder and we'll get on it.",
+      "translation": "ああ、やってみるよ。じいちゃんも張り切ってるみたいだし。{{arg0}}個の鉄ののべ棒と壊れたタネまき機をくれれば、すぐに始められる。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Thanks, that's all the stuff.  Well, I'm off the the garage with Gramps.  I'll send mail or something after we get it working.",
+      "translation": "ありがとう。これで全部だ。さて、じいちゃんとガレージに行くよ。直ったら連絡するぜ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "We'll need the old seeder and {{arg0}} iron bars.  Bring 'em by when you can.",
+      "translation": "古いタネまき機と{{arg0}}本の鉄ののべ棒が必要だ。用意できたら持ってきてくれ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "There you go.  Fixed it myself.  Alex didn't screw it up too much; he's a good kid.#$b#Don't try and sprinkle chicken manure with the thing.  I don't want to see this thing back here again.",
+      "translation": "ほら、直ったぞ。アレックスも手伝ってくれた。いい子じゃからな。#$b#肥料代わりにニワトリのふんをまかないように。二度目はないぞ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Hm.  I wonder what I should do.  I certainly can't fix it, and it'd cost a fortune to send it to Zuzu city.",
+      "translation": "うーん、どうしよう。自分で修理なんて無理だし、ズズシティに送ったら大金がかかるぞ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Talking to George didn't go well.  I'm going to have to find a different angle.",
+      "translation": "ジョージと話しても上手くいかなかった。別の角度から考えないといけないようだ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Get Evelyn to help (Talk to her after getting her to {{arg0}} hearts)",
+      "translation": "エブリンに協力してもらおう（ハートを{{arg0}}個まで上げて話しかける）",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Granny said she'll think about it.  I guess we'll wait to hear from her.",
+      "translation": "エブリンおばあちゃんが方法を考えると言ってくれた。彼女からの返事を待つことにしよう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Granny's mail said I should gain Alex's trust (2 hearts) and try and talk him into it.",
+      "translation": "おばあちゃんからの手紙には、アレックスの信頼（ハート2つ）を得てから、説得してみるべきだと書いてあった。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Alex still seems resistant to the idea.  Maybe I need to get somebody else to give me another angle.",
+      "translation": "アレックスはまだ考えを変える気はないようだ。別の角度から意見できる人を探した方がいいかもしれない。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Wait for Haley to cajole Alex into helping.",
+      "translation": "ヘイリーがアレックスを説得するのを待とう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Talk to Alex",
+      "translation": "アレックスと話そう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Bring Alex the old seeder and {{arg0}} iron bars",
+      "translation": "アレックスに古いタネまき機と{{arg0}}本の鉄ののべ棒を持っていこう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Hopefully Alex and George are getting on with it.  Alex said he'd send mail when it's working.",
+      "translation": "アレックスとジョージが上手くやっているといいのだが。アレックスからの連絡を待とう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Alex's mail says the seeder is done and I just need to get it from George.",
+      "translation": "アレックスからの手紙によると、タネまき機の修理が完了したらしい。あとはジョージから受け取るだけだ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Bring the fixed seeder to the tractor garage.",
+      "translation": "タネまき機をガレージに持っていこう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Awesome!  You've now got a way to plant and fertilize crops with your tractor!#$b#HINT: To use it, equip seeds or fertilizers while on the tractor.",
+      "translation": "すごい！トラクターでタネや肥料をまけるようになった！#$b#ヒント：使うには、トラクターに乗る時にタネか肥料を装備してください。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ask the people in town about this thing.",
+      "translation": "町の人にこれのことを聞いてみよう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Fix the waterer",
+      "translation": "散水機を修理する",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I found the watering attachment for the tractor, but it's in bad shape, I should ask around town.",
+      "translation": "トラクター用の散水機を見つけたが状態が良くないようだ。町の人に相談しよう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oh, that isn't...  It is!  It's your grandpa's legendary irrigation attachment!  And you *fished* it up you say?  Hah!  Well you would'a had to, wouldn'tya!$1#$b#. . . #$b#Sorry, I gotta compose myself.  You'll want to take this up to the mountain.  Show it to Robin, she can give you the first-hand account.$1#$b#It might not be safe to show it to Demetrius.  I think he's still working through the aftereffects...$s",
+      "translation": "それは…、おじいさんの伝説の散水機！それを*釣り上げて*きたって？あはは、まあそうするしかなかないか！$1#$b#…#$b#ごめん、ごめん。山に持って行ってロビンに見せた方がいいよ。直接話を聞いてみて。$1#$b#でも、ディメトリウスには見せない方がいいかも。あの日のことをまだ引きずってるだろうから…。$s",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oh my!  Is that the irrigation system?  It is!  None of us expected to see that again, not after that . . .$3#$b#Wait, did Robin put you up to this?#$b#Nope, I don't want to know.  Well, yes, I got very wet, but it wasn't any big deal.  Not nearly as much as she plays it up to be.  Not at all...#4#$b#But you just want the thing fixed, don't you.  Well, it seems like a complicated device, but I bet Maru would have no trouble with it.  Why don't you show it to her?",
+      "translation": "おっと！それは散水機だね？まさかまた目にするとは思ってなかったよ…$3#$b#ロビンの差し金かい？#$b#いや、言わなくていい。確かにあの日びしょ濡れになったが、大したことじゃないんだ。…まったくね。#4#$b#きみはただそれを直してほしいだけなんだろう？複雑な装置みたいだが、マルならきっと簡単に直せる。見せてきたらどうだい？",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Oh you didn't!!  You fished up the watering doohickey?  Oh my I'll never forget that day!  Your granddad had the idea that instead of using the pump to fill it up he could just back his tractor into the pond.  Suffice it to say the tractor came out, but the irrigator did not!  He huffed up to the mountain, half soaked, thinking that Demetrius would have a net.  Well Demetrius was feeling especially can-do that day and offered to come help and, well, Maru was quite small and just had to go with her Dad everywhere and so I came along to ride herd.  Long story short, Demetrius ended up covered in mud right up to his starched buttoned up collar.  Maru decided to go rescue him, I went chasing after her, and, well, we all ended up wet, but Demetrius, well, his self-image took a hit that day, heh.#$b#Heh, and you know what happened to the irrigator, donchanow!$l#$b#You should take it to Maru and, heh, youknow, best not to bring it up with Demetrius!$4",
+      "translation": "まさか！あの散水機を釣り上げたの？ああ、あの日のことは一生忘れられないわ！おじいさんはポンプで水を汲む代わりに、トラクターごと池にバックさせればいいと考えたの。トラクターは出てきたけど、散水機は出てこなかったってだけの話ね！彼はディメトリウスが網を持っているだろうと思って、半分ずぶ濡れになりながら息を切らしてやってきたわ。ディメトリウスはやる気満々で引き受けた。マルはまだ小さかったし、どこへ行くにもパパと一緒に行くって聞かなかったから、私も馬でついて行ったのよ。要するに、ディメトリウスはノリの利いたエリまで泥だらけになってしまったんだ。マルはパパを助けようとして、私はマルを追いかけて、つまり、みんなびしょ濡れになったってわけ。ディメトリウスは、まあ、自分のイメージが崩れてプライドが傷ついたみたい。#$b#へへ、それから散水機がどうなったか知ってるでしょ！$l#$b#マルに持って行った方がいいよ。それと…ふふ、あのね、ディメトリウスにはその話をしない方がいいわ！$4",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Sure, I'd love to have a go at fixing it, afterall, it's practically a family heirloom!$4#$b#But let's have a look at it...  Hm...$2#$b#Yeah, all the fittings are shot.  If you can get me {{arg0}} gold bars, I can get it working again.#$b#I know, usually brass is used for this sort of thing, but it's surprisingly hard to come by around here.",
+      "translation": "もちろん、修理してみたいよ。だって、家族の想い出の品だもん！$4#$b#ちょっと見せて…うーん…$2#$b#部品が全部ダメになってるね。金ののべ棒を{{arg0}}本用意してくれたら、また使えるようにできるんだけど。#$b#ああ、こういうのは普通*真ちゅう*を使うんだけど、この辺りでは意外と手に入りにくいんだよね。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Alrighty, I'll get to work on it and have it back to you in a couple days.  I'll just drop it in the mail for you.",
+      "translation": "わかったよ。すぐ修理に取り掛かって、数日中に返すね。郵送するから。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Have you found some gold bars yet?  Gotta go pretty deep in the mines to get it, but I'm sure you're up for it.",
+      "translation": "金鉱脈は見つかった？鉱山のかなり奥深くまで行かなきゃいけないけど、きっとあなたなら大丈夫だよ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I'm still working on the irrigation system; you should have it day after tomorrow.",
+      "translation": "散水機の修理はまだ終わらないけど、明後日には完成するはずだよ。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "I'm working through the bugs on the irrigation system; you should have it tomorrow if nothing goes haywire.$3",
+      "translation": "散水機の不具合を直してるところだよ。問題なければ明日には届くはず。$3",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Ask Robin about this thing.",
+      "translation": "この件についてロビンに聞いてみよう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Take it to Maru to see if she'll fix it.",
+      "translation": "マルのところに持って行って、直せるかどうか聞いてみよう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Bring the watering can and {{arg0}} gold bars to Maru.",
+      "translation": "壊れた散水機と{{arg0}}本の金ののべ棒をマルに持って行こう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Just gotta wait - should be in the mail any day now.",
+      "translation": "あと少しで届くはず。もうすぐ届くはず。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Bring the fixed waterer to the garage.",
+      "translation": "散水機をガレージに持っていこう。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Maru came through!  Time to take it to the garage and water some crops!",
+      "translation": "マルが散水機を修理してくれた！ガレージに持っていって作物に水をやろう！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Awesome!  You've now got a way to water your crops with your tractor!#$b#HINT: To use it, equip the watering can while on the tractor.",
+      "translation": "すごい！これでトラクターに乗って一気に水やりできるぞ！#$b#ヒント：使うには、トラクターに乗る時にジョウロを装備してください。",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    },
+    {
+      "source": "Whoah that was heavy!  Looks like an irrigator attachment for a tractor under all that mud!",
+      "translation": "うわー、重かった！泥の下に隠れていたのはトラクター用の散水機だったみたいだ！",
+      "author": "nexus:yoinonya",
+      "ingestionDate": "2025-12-03T19:31:23.8465372-08:00"
+    }
+  ]
+}
