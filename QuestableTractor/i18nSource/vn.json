@@ -1,0 +1,1386 @@
+// Do not manually edit this file!  Follow these instructions to import changes:
+// https://github.com/NermNermNerm/LocalizeFromSource?tab=readme-ov-file#ingesting-translations
+{
+  "translations": [
+    {
+      "source": "This item is for unlocking the tractor - only the host can advance this quest.  Give this item to the host.  (You have to put in a chest for them.)",
+      "translation": "Vật phẩm này dùng để mở khóa máy kéo - chỉ có chủ phòng (host) mới có thể thúc đẩy nhiệm vụ này. Hãy đưa vật phẩm này cho chủ phòng. (Bạn phải đặt nó vào một chiếc rương để họ lấy.)",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "We need a bigger pole",
+      "translation": "Chúng ta cần một chiếc cần câu lớn hơn",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "There's something big down at the bottom of the farm pond.  Maybe Willy can loan me something to help get it out.",
+      "translation": "Có thứ gì đó rất lớn dưới đáy ao ở nông trại. Có lẽ Willy có thể cho tôi mượn thứ gì đó để giúp lôi nó lên.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Go find Willy in his shop",
+      "translation": "Đi tìm Willy trong cửa hàng của ông ấy",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Use Willy's harpoon to haul in whatever's at the bottom of the pond",
+      "translation": "Sử dụng lao móc của Willy để kéo bất cứ thứ gì dưới đáy ao lên",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Give the Harpoon back to Willy",
+      "translation": "Trả lại Lao móc cho Willy",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ya reeled that ol water tank on wheels in, did ya laddy!$3#$b#Aye I do believe this'll be the talk of the Stardrop for many Fridays to come!$1",
+      "translation": "Cậu kéo được cái bể nước cũ có bánh xe đó lên rồi sao, chàng trai!$3#$b#Chà, ta tin chắc đây sẽ là chủ đề bàn tán tại quán Stardrop trong nhiều ngày Thứ Sáu tới đây!$1",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ah laddy...  I do think I know what you mighta hooked into and yer right that ya need a lot more pole than what ya got.^Ah lass...  I do think I know what you mighta hooked into and yer right that ya need a lot more pole than what you got.#$b#Here's a wee bit o' fishin' kit that my great great grandpappy used to land whales back before we knew better.#$b#I think ya will find it fit for tha purpose.",
+      "translation": "Ái chà chàng trai... Ta nghĩ ta biết cậu đã mắc câu vào thứ gì rồi và cậu nói đúng đấy, cậu cần một cái cần câu to hơn nhiều so với thứ cậu đang có.^Ái chà cô gái... Ta nghĩ ta biết cô đã mắc câu vào thứ gì rồi và cô nói đúng đấy, cô cần một cái cần câu to hơn nhiều so với thứ cô đang có.#$b#Đây là một món đồ câu nhỏ mà ông cố cố của ta từng dùng để săn cá voi hồi chúng ta chưa biết điều.#$b#Ta nghĩ cậu/cô sẽ thấy nó phù hợp với mục đích của mình đấy.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Come visit me in my shop.  I've got a little somethin' behind the counter that might be just the thing you need.",
+      "translation": "Hãy đến thăm ta tại cửa hàng. Ta có một thứ nhỏ giấu sau quầy thanh toán, có thể chính là thứ cậu/cô cần.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Whoah, I snagged onto something big down there, but this line's nowhere near strong enough to yank it up!",
+      "translation": "Ái chà, mình móc trúng một thứ gì đó lớn lắm dưới kia, nhưng dây câu này không đủ chắc để kéo nó lên!",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Aaahhh! ! I had it!",
+      "translation": "Aaa! Mình sắp kéo được rồi!",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Nope...  nothing",
+      "translation": "Không... chẳng có gì cả",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ooohhh!  So close!",
+      "translation": "Ồ! Gần được rồi!",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Dang! Snapped a line on that waterer again!  Perhaps switching rods to Willy's Harpoon would help.",
+      "translation": "Chết tiệt! Lại đứt dây vào cái bình tưới nước đó nữa rồi! Có lẽ đổi cần câu sang cái Lao móc của Willy sẽ giúp ích.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Great Grandpappy's Harpoon",
+      "translation": "Lao móc của Cụ Cố",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Willy's Great Grandpappy used this to hunt whales back in the day.",
+      "translation": "Cụ cố của Willy từng dùng thứ này để săn cá voi vào thời xưa.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  It's off on the west side of the farm, in behind some trees in an old lean-to.  It's just about one with the vegetation now, but it hasn't rusted away completely.  It sure would be fun to see it run!",
+      "translation": "Cậu đã tình cờ thấy chiếc máy kéo cũ chưa? Nó nằm ở phía tây nông trại, ẩn sau những tán cây trong một cái lán cũ. Giờ nó gần như hòa lẫn với thảm thực vật rồi, nhưng nó vẫn chưa bị rỉ sét hoàn toàn đâu. Sẽ rất thú vị nếu được thấy nó chạy lại!",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I used to tromp around your old farm; I loved the empty, haunted feel to it...$2#$b#Anyway...  I saw some things that probably work with the tractor, over on the South side of your farm near Marnie's ranch.#$b#One of them is buried under and old log and one is wedged into a boulder.#$b#Hey, if you get them working, does this mean I can drive the tractor?$4",
+      "translation": "Tôi từng hay đi dạo quanh nông trại cũ của bạn; tôi thích cảm giác trống vắng, ma mị ở đó...$2#$b#Dù sao thì... Tôi đã thấy một vài thứ có vẻ hoạt động được với máy kéo, nằm ở phía Nam nông trại của bạn gần trang trại nhà Marnie.#$b#Một món bị vùi dưới khúc gỗ cũ và một món bị kẹt vào một tảng đá.#$b#Này, nếu bạn làm cho chúng hoạt động lại, liệu tôi có được lái máy kéo không?$4",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  I doubt it still works, but maybe it could be restored.",
+      "translation": "Cậu đã tình cờ thấy chiếc máy kéo cũ chưa? Tôi nghi ngờ khả năng nó vẫn còn hoạt động, nhưng biết đâu nó có thể được phục chế lại.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Hey I saw you take those shoes.  I would have charged gold for them if I thought anybody would be stupid enough to want them.#$b#They don't fit. That's why I chucked them over there.  I'm glad you hauled off that junk.",
+      "translation": "Này, tôi thấy cậu lấy đôi giày đó đấy. Tôi đã tính tính phí bằng vàng cho chúng nếu tôi nghĩ có ai đủ ngu ngốc để muốn lấy chúng.#$b#Chúng không vừa. Đó là lý do tôi quăng chúng ra đó. Tôi rất vui vì cậu đã dọn dẹp đống rác đó đi.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "You granddad loved that tractor of his, bless his heart, but you could never tell that judging by the dents and broken off parts!#$b#He left little bits of that thing scattered all over the farm, I'm afraid.  You'll probably come across bits of it here and there!",
+      "translation": "Ông của cháu rất yêu quý chiếc máy kéo đó của ông ấy, cầu Chúa phù hộ cho ông, nhưng cháu sẽ không bao giờ nhận ra điều đó nếu nhìn vào những vết lõm và những bộ phận bị gãy rụng!#$b#E là ông ấy đã để lại những mảnh vỡ nhỏ của thứ đó rải rác khắp nông trại. Cháu có thể sẽ tình cờ bắt gặp những mảnh vỡ của nó ở chỗ này chỗ kia!",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  Your Grandpa kept it stored in a lean to out on the West side.#$b#It was a piece of junk when he bought it.  No idea how he kept it running.  He had no mechanical ability at all.  None.",
+      "translation": "Cậu đã tình cờ thấy chiếc máy kéo cũ chưa? Ông của cậu đã cất nó trong một cái lán ở phía Tây.#$b#Lúc ông mua thì nó đã là một mớ phế liệu rồi. Không hiểu sao ông ấy vẫn giữ cho nó chạy được. Ông ấy chẳng có chút năng khiếu cơ khí nào cả. Không một chút nào.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I hear you found that old tractor - you should get Robin to tell you the tale of the irrigator.",
+      "translation": "Tôi nghe nói cậu đã tìm thấy chiếc máy kéo cũ đó - cậu nên bảo Robin kể cho nghe câu chuyện về cái máy tưới.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "You know your Grandad and George were really good friends; it hit George pretty hard when your Granddad passed.$2#$b#You might do well to be nice to George, he might know a few secrets about your farm.",
+      "translation": "Cháu biết không, ông của cháu và George từng là những người bạn rất thân; George đã suy sụp nặng nề khi ông cháu qua đời.$2#$b#Cháu nên đối xử tốt với George, ông ấy có thể biết một vài bí mật về nông trại của cháu đấy.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Hey, wanna know a secret about your farm?  Down in the brambles near Marnie's house, there's Greebles.  They've made some weird machines too.$3#$b#No...  I've never seen a Greeble, but cats can!",
+      "translation": "Này, muốn biết một bí mật về nông trại của bạn không? Xa tít trong bụi rậm gần nhà Marnie, có Greebles đấy. Chúng còn tạo ra một vài cỗ máy kỳ lạ nữa.$3#$b#Không... Mình chưa từng nhìn thấy Greebles, nhưng lũ mèo thì có thể!",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "The kids used to play out in the south field near Marnie's house.  They often came home with tales of high adventure!$1#$b#You might poke around down there sometime when you need a break, who knows what you'll find!",
+      "translation": "Bọn trẻ từng hay chơi đùa ngoài cánh đồng phía nam gần nhà Marnie. Chúng thường trở về nhà với những câu chuyện phiêu lưu kỳ thú!$1#$b#Cháu có thể dạo quanh dưới đó lúc nào cần nghỉ ngơi, ai biết được cháu sẽ tìm thấy gì!",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "One day your granddad came to ask me for help because he had wedged the front-end loader under a boulder he was moving on the south side of the farm.#$b#I told him that maybe his little tractor wasn't up to moving such a big rock...  He seemed to take that kinda personal; he did love that little tractor.$2#$b#But then his eyes lit up and he ran into Pierre's.$1#$b#I'm not sure what happened after that.",
+      "translation": "Một ngày nọ, ông của cậu đến nhờ tôi giúp vì ông ấy làm kẹt cái gầu xúc lật phía trước dưới một tảng đá mà ông đang dọn ở phía nam nông trại.#$b#Tôi đã bảo ông ấy rằng có lẽ chiếc máy kéo nhỏ của ông không đủ sức dọn một tảng đá lớn như vậy... Ông ấy dường như tự ái vì chuyện đó; ông ấy rất yêu chiếc máy kéo nhỏ đó.$2#$b#Nhưng rồi mắt ông ấy sáng lên và ông chạy vào tiệm của Pierre.$1#$b#Tôi không chắc chuyện gì đã xảy ra sau đó.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "You know the kids used to play at your farm.  I've asked them to stay clear now that you're back.#$b#It's hard enough to run a farm with chickens running around, let alone kids!$1#$b#Ask me how I know...$2",
+      "translation": "Cháu biết đấy, bọn trẻ trước đây hay chơi đùa ở nông trại của cháu. Ta đã bảo chúng tránh xa ra từ khi cháu quay về.#$b#Vận hành một nông trại với bầy gà chạy lung tung đã đủ khó rồi, chưa nói đến lũ trẻ!$1#$b#Hỏi xem sao ta biết đi...$2",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I hear you found the tractor!  Just a word of advice - might be best not to bring up the subject around my dad...$2#$b#It's a bit of a sore subject.#$b#You can talk to my Mom about it though - your only trouble will be getting her to stop!$1",
+      "translation": "Tôi nghe nói bạn đã tìm thấy máy kéo! Chỉ là một lời khuyên nhỏ - có lẽ tốt nhất là đừng nhắc đến chuyện đó trước mặt bố tôi...$2#$b#Đó là một chủ đề hơi nhạy cảm.#$b#Nhưng bạn có thể nói chuyện với Mẹ tôi về nó - vấn đề duy nhất của bạn sẽ là làm sao để bà ấy ngừng nói!$1",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  If you could get it running, it'd sure help you get more crops in the ground.#$b#If you need help finding it, Abigail might know where it is.",
+      "translation": "Cậu đã tình cờ thấy chiếc máy kéo cũ chưa? Nếu cậu làm nó chạy được, chắc chắn nó sẽ giúp cậu trồng được nhiều hoa màu hơn xuống đất đấy.#$b#Nếu cậu cần giúp tìm nó, Abigail có thể biết nó ở đâu đấy.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I hear you found that old tractor - I wonder where all the attachments are?  One that's not a mystery is the irrigation rig.#$b#That's somewhere at the bottom of the farm pond, along with a big chunk of Demetrius' pride!#1",
+      "translation": "Tôi nghe nói cậu đã tìm thấy chiếc máy kéo cũ đó - Tôi tự hỏi không biết các phụ kiện đi kèm đang ở đâu nhỉ? Có một thứ không phải là bí ẩn, đó là hệ thống tưới tiêu.#$b#Nó đang nằm đâu đó dưới đáy ao nông trại, cùng với một phần lớn lòng tự tôn của Demetrius!#1",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Did you ever find the front-end loader?  One day your Granddad came running into the store, bought a whole bunch of bombs and ran back out again.#$b#Lewis tells me he wedged the loader under a big rock and was trying to get it out...  So if you do find it, it might be in pieces!#1#$b#I'm just glad your Granddad didn't end up in pieces.$2#$b#That's why I don't sell explosives anymore.$2",
+      "translation": "Cậu đã bao giờ tìm thấy gầu xúc lật phía trước chưa? Một ngày nọ, ông của cậu chạy tạt vào cửa hàng, mua cả đống bom rồi lại chạy biến ra ngoài.#$b#Lewis kể tôi nghe ông cậu làm kẹt cái gầu xúc dưới một tảng đá lớn và đang cố lấy nó ra... Vậy nên nếu cậu tìm thấy nó, có lẽ nó đã vỡ vụn thành từng mảnh rồi!#1#$b#Tôi chỉ mừng là ông cậu không bị nổ thành từng mảnh.$2#$b#Đó là lý do tôi không bán chất nổ nữa.$2",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Have you run across the old tractor yet?  That thing has some stories to tell, let me tell you.  It might make a good decoration for your front yard someday.",
+      "translation": "Cậu đã tình cờ thấy chiếc máy kéo cũ chưa? Thứ đó chứa đựng nhiều câu chuyện để kể đấy, để tôi nói cho cậu nghe. Một ngày nào đó nó có thể trở thành món đồ trang trí tuyệt vời cho sân trước nhà cậu.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oh you want to find the tractor's irrigator?  Ha!  Good luck with that!$4#$b#Who knows, maybe you can fish it out!$1#$b#Demetrius tried to winch it out and ended up, well, let's just say the creases on his trousers weren't quite as crisp as usual after that attempt!$4",
+      "translation": "Ồ cậu muốn tìm máy tưới của máy kéo à? Ha! Chúc may mắn nhé!$4#$b#Ai mà biết được, biết đâu cậu câu được nó lên thì sao!$1#$b#Demetrius từng cố dùng tời để kéo nó lên nhưng kết cục là, ừm, cứ cho là nếp ly trên quần anh ấy đã không còn phẳng phiu như thường lệ sau nỗ lực đó!$4",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "You know your Grandad and George were really good friends and it hit George pretty hard when your Granddad passed.$2#$b#You might do well to be nice to George; he might know a few secrets about your farm.",
+      "translation": "Cháu biết không, ông của cháu và George từng là những người bạn rất thân và George đã suy sụp nặng nề khi ông cháu qua đời.$2#$b#Cháu nên đối xử tốt với George; ông ấy có thể biết một vài bí mật về nông trại của cháu đấy.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Have you been out on the west side of your property yet?  Your Granddad had a tractor that he kept under a lean-to that always teetered on the brink of collapse.#$b#Know how he got it?  Me and Pappy boated it in from Knopperville.$l#$b#I didn't understand why he bought it -- the engine had thrown a rod, had bent crankshaft and a cracked case.$s#$b#But somehow he got it to live again!  Funny that.  He wasn't much of a mechanic...",
+      "translation": "Cậu đã bao giờ ra phía tây khu đất của mình chưa? Ông cậu có một chiếc máy kéo được cất dưới một cái lán luôn chực chờ sập xuống bất cứ lúc nào.#$b#Cậu biết ông ấy lấy nó bằng cách nào không? Tôi và Pappy đã chở nó bằng thuyền từ Knopperville đến đấy.$l#$b#Tôi không hiểu tại sao ông ấy lại mua nó -- động cơ thì bị gãy dên, trục khuỷu thì cong vênh và vỏ máy thì nứt nẻ.$s#$b#Nhưng không hiểu bằng cách nào mà ông ấy đã khiến nó sống lại! Lạ lùng thật. Ông ấy không giỏi về cơ khí cho lắm...",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ah, but yaknow, the biggest catch on your farm isn't the fish!  Nay laddy, it's the watering wagon for the tractor!$3#$b#That ol' thing sunk into the depths of the pond ne'er to be seen again!$1#$b#You'll probably lose a lure or two to it if you fish on your pond.$3",
+      "translation": "Chà, nhưng cậu biết đấy, mẻ cá lớn nhất ở nông trại của cậu không phải là cá! Không đâu chàng trai, đó là cái bồn tưới nước cho máy kéo!$3#$b#Thứ cũ kỹ đó đã chìm sâu xuống đáy ao không bao giờ được nhìn thấy nữa!$1#$b#Có lẽ cậu sẽ mất một hoặc hai cái mồi giả nếu câu cá trên cái ao đó đấy.$3",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I saw in one of Haley's magazines where it says that women unconsciously rate men based on their shoes...#$b#Hah!  I must be doing it wrong then.  If I ever did look at a man's shoes and I saw scuffed up old work boots, I'd be more attracted to him, not less!",
+      "translation": "Tôi có đọc được trong một tờ tạp chí của Haley nói rằng phụ nữ vô thức đánh giá đàn ông qua đôi giày của họ...#$b#Hah! Vậy chắc là tôi làm sai rồi. Nếu tôi có nhìn vào giày của một người đàn ông và thấy một đôi bốt lao động cũ sờn, tôi sẽ bị anh ta thu hút nhiều hơn chứ không phải ít hơn!",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Your Grandad used to come in every Thursday night.  He had a standing date with George and Lewis; they'd play some cards and swap stories...#$b#That kept George going in the early years after the accident.  As you Granddad's mind started to slip away, that, well...$s#$b#George didn't need one more thing to feel bitter about, but life handed it to him anyway.$s",
+      "translation": "Ông của cháu thường ghé qua vào mỗi tối Thứ Năm. Ông ấy có lịch hẹn cố định với George và Lewis; họ hay chơi bài và tán gẫu...#$b#Điều đó đã giúp George có động lực sống trong những năm đầu sau vụ tai nạn. Khi trí nhớ của ông cháu bắt đầu suy giảm, điều đó, ừm...$s#$b#George không cần thêm một điều gì nữa để cảm thấy cay đắng, nhưng cuộc sống vẫn cứ giáng nó xuống ông ấy.$s",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I have a bit of a confession to make...When I told you how to repair the tractor engine, you didn't *really* need to run around the chest six times...  I just...  Well...#$b#Sometimes I just can't help myself.",
+      "translation": "Tôi có chút chuyện muốn thú nhận... Khi tôi chỉ cậu cách sửa động cơ máy kéo, cậu không *thực sự* cần phải chạy quanh cái rương sáu vòng đâu... Tôi chỉ... Ầy...#$b#Đôi khi tôi không kiềm chế được bản thân mình.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "This looks like an old tractor.  Perhaps it could help you out around the farm, but it's been out in the weather a long time.  It'll need some fixing.  Maybe somebody in town can help?",
+      "translation": "Trông có vẻ giống một chiếc máy kéo cũ. Có lẽ nó có thể giúp bạn việc đồng áng, nhưng nó đã nằm dãi dầu mưa nắng quá lâu rồi. Sẽ cần phải sửa chữa đôi chút. Có lẽ ai đó trong thị trấn có thể giúp?",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "This looks like an old tractor.  You should tell {{arg0}} about this thing.",
+      "translation": "Trông có vẻ giống một chiếc máy kéo cũ. Bạn nên nói với {{arg0}} về thứ này.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Fix the loader",
+      "translation": "Sửa gầu xúc lật",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I found the front end loader attachment for the tractor, but it's all bent up and rusted through in spots.",
+      "translation": "Tôi đã tìm thấy phụ kiện gầu xúc lật phía trước cho máy kéo, nhưng nó bị cong vênh và rỉ sét thành từng mảng.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "This looks like a the sort of thing a blacksmith could fix.",
+      "translation": "Trông có vẻ là thứ mà thợ rèn có thể sửa được.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Somehow I've been railroaded into finding Clint some new shoes.  Maybe some of the younger townspeople know where I could get some for cheap.",
+      "translation": "Không hiểu sao tôi lại bị đẩy vào tình thế phải tìm cho Clint vài đôi giày mới. Có lẽ vài người dân trẻ tuổi trong thị trấn biết tôi có thể mua giày giá rẻ ở đâu.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Somehow I've been maneuvered into finding Clint some new shoes.  Alex wears the same shoe size and tosses out shoes regularly...  Hm...  Ew...  Hm...",
+      "translation": "Không hiểu sao tôi lại bị dẫn dụ vào việc tìm cho Clint vài đôi giày mới. Alex đi cùng cỡ giày và thường xuyên vứt giày cũ... Hừm... Gớm... Hừm...",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I've got Linus recruited to look out for shoes in Alex's trash can, but he warns me that there's something else that might be looking as well...  Who could that be?",
+      "translation": "Tôi đã nhờ Linus trông chừng giày trong thùng rác của Alex, nhưng ông ấy cảnh báo rằng có một ai đó khác cũng có thể đang nhòm ngó... Đó có thể là ai?",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Somehow I need to disguise these shoes so that Alex doesn't recognize them...  And maybe do something about that smudge.  Perhaps Sam or Sebastian would loan me some shoe polish.",
+      "translation": "Bằng cách nào đó tôi cần phải ngụy trang đôi giày này để Alex không nhận ra chúng... Và có lẽ làm gì đó với vết nhòe kia. Biết đâu Sam hoặc Sebastian sẽ cho tôi mượn chút xi đánh giày.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Give the shoes and the old loader to Clint",
+      "translation": "Đưa giày và chiếc gầu xúc cũ cho Clint",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Take the fixed loader attachment to the tractor garage.",
+      "translation": "Mang phụ kiện gầu xúc đã sửa xong tới nhà để xe máy kéo.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Wait for Clint to finish repairing the loader.",
+      "translation": "Chờ Clint sửa xong gầu xúc.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Clint should be done repairing the loader by now.",
+      "translation": "Chắc hẳn bây giờ Clint đã sửa xong gầu xúc rồi.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Shoes.  That's my problem.  I wear these scuffed up old work boots all over the place.$2#$b#What??  Oh.  Sorry.  Just been a bit distracted because I saw on TV that women judge a man by their shoes and look at these...  No wonder I've got no luck with the ladies.$3#$b#What?  You want me to fix that thing?  Sure, looks like it'd be just a bit of reforging, some welds here and there...#$b#Wait!  You're from the city, you know all about shoes!  Tell you what, you get me a nice pair of shoes and I'll fix your loader.  Deal??#$b#GREAT!  I wear 14EEE.",
+      "translation": "Giày. Đó là rắc rối của tôi. Tôi toàn đi đôi bốt lao động cũ sờn này khắp nơi.$2#$b#Cái gì?? Ồ. Xin lỗi. Chỉ là hơi phân tâm vì tôi xem trên TV thấy bảo phụ nữ đánh giá đàn ông qua đôi giày của họ và nhìn những thứ này xem... Chẳng trách tôi không có tí may mắn nào với phụ nữ.$3#$b#Gì cơ? Cậu muốn tôi sửa thứ đó à? Chắc rồi, có vẻ chỉ cần rèn lại một chút, hàn vài chỗ ở đây và kia...#$b#Khoan đã! Cậu từ thành phố đến, cậu biết rõ về giày dép! Nói nghe này, cậu kiếm cho tôi một đôi giày tử tế rồi tôi sẽ sửa gầu xúc cho cậu. Thỏa thuận chứ??#$b#TUYỆT! Tôi đi cỡ 14EEE.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Shoes, yeah man, nice shoes cost a fortune.  My gig at the library barely pays, so I roll around in these supercheapies from Joja.  I color mine every once in a while so they look fresh.",
+      "translation": "Giày á, đúng rồi anh bạn, giày xịn tốn cả đống tiền đấy. Công việc của tôi ở thư viện trả lương bèo bọt lắm, nên tôi toàn đi loanh quanh với mấy đôi siêu rẻ từ Joja này. Thỉnh thoảng tôi lại tô màu lại để trông chúng như mới.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Cheap shoes!  And you somehow deduce that *I* am authority on such matters?$5#$b#Heh.  Perhaps I am!$1#$b#Back before the Jojamart we'd order them online, but now, I've learned the art of Thrift Stores.  I'm actually kindof glad it happened, I really like shopping at thrift stores.#$b#Cheaper than that?  Welp, you could try dumpster-diving!$1",
+      "translation": "Giày rẻ tiền! Và bằng cách nào đó bạn suy ra rằng *tôi* là chuyên gia về những vấn đề như vậy?$5#$b#Hê. Có lẽ tôi là chuyên gia thật!$1#$b#Hồi trước khi có Jojamart, chúng tôi thường đặt hàng trực tuyến, nhưng giờ thì tôi đã học được nghệ thuật Săn Đồ Cũ. Thực ra tôi hơi mừng vì điều đó đã xảy ra, tôi rất thích mua sắm ở cửa hàng đồ cũ.#$b#Còn muốn rẻ hơn thế nữa á? Chà, bạn có thể thử bới thùng rác xem!$1",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ladies' shoes I know.  Men's shoes I don't.  'Cheap' shoes is definitely not something I spend time thinking about.$3",
+      "translation": "Giày nữ thì tôi biết. Giày nam thì chịu. Giày 'rẻ tiền' thì chắc chắn không phải thứ tôi dành thời gian để suy nghĩ rồi.$3",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Well, I mostly get my shoes from secondhand stores, but I don't really know about men's shoes.  Have you asked Sam, or Alex?",
+      "translation": "À thì, đa số giày của tôi mua ở các cửa hàng đồ cũ, nhưng tôi không rành về giày nam lắm. Bạn đã thử hỏi Sam hay Alex chưa?",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Shoes..  Yeah man, decent shoes cost a fortune.  I always wear black, though, which makes it easy.  Blacken anything and it looks cool.",
+      "translation": "Giày.. Đúng rồi anh bạn, giày đàng hoàng tốn cả đống tiền đấy. Nhưng tôi luôn mang giày đen, thế cho dễ. Cứ bôi đen thứ gì là trông nó sẽ ngầu ngay.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I got these new shoes yesterday 'cuz my old pair had a brown smudge.#$b#I just threw them into the garbage. I would've donated them but I don't like the idea of some weirdo wearing my shoes, ya know?#$b#What size do I wear?  14EEE. . . .  Wait, why do you ask?",
+      "translation": "Tôi mới tậu đôi giày này hôm qua vì đôi cũ bị dính một vệt bẩn màu nâu.#$b#Tôi ném chúng vào thùng rác rồi. Đáng ra tôi định mang đi quyên góp nhưng tôi không thích ý nghĩ có gã quái đản nào đó đi đôi giày của mình, cậu hiểu không?#$b#Tôi đi cỡ nào á? 14EEE. . . . Khoan, sao cậu lại hỏi vậy?",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": ". . . So...  what I think I'm hearing you say is you want me to scout the Mullner's trash can for shoes...#$b#You promise this is for a good cause?  Hm...  Okay.  I'll let you know if I come across them.#$b#I don't want to disturb you, but I'm not the only one nosing around town late at night.  I might not find them first.",
+      "translation": ". . . Vậy... tôi nghĩ tôi đang nghe thấy bạn nói là bạn muốn tôi do thám thùng rác nhà Mullner để tìm giày...#$b#Bạn hứa việc này là vì mục đích tốt chứ? Hừm... Được thôi. Tôi sẽ cho bạn biết nếu tôi tình cờ thấy chúng.#$b#Tôi không muốn làm bạn phiền lòng đâu, nhưng tôi không phải là người duy nhất tọc mạch quanh thị trấn vào đêm khuya. Biết đâu tôi không phải là người tìm thấy chúng đầu tiên.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "No luck last night, but I'm keeping an eye out for those shoes!",
+      "translation": "Tối qua không có may mắn nào, nhưng tôi vẫn đang để mắt tới đôi giày đó!",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "sashimi",
+      "translation": "Sashimi",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "pizza",
+      "translation": "Pizza",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "You want to borrow my shoe polish?  That's kindof an odd request but, you know what?  Sure.  Knock yourself out.#$b#There better be some {{arg0}} in this for me somewhere down the road.",
+      "translation": "Bạn muốn mượn xi đánh giày của tôi à? Đó là một yêu cầu hơi kỳ quặc đấy, nhưng bạn biết gì không? Chắc chắn rồi. Cứ tự nhiên nhé.#$b#Tốt nhất là nên có {{arg0}} để lại cho tôi vào một lúc nào đó đấy.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ah, these shoes look great!  Fit good too.  But somehow I still don't quite feel like a ladykiller.#$b#Welp.  A deal's a deal.  I'll fix the loader.  You can pick it up in a couple days.",
+      "translation": "Chà, đôi giày này trông tuyệt đấy! Vừa in luôn. Nhưng không hiểu sao tôi vẫn không có cảm giác mình là một tay sát gái.#$b#Chà. Thỏa thuận là thỏa thuận. Tôi sẽ sửa cái gầu xúc. Cậu có thể đến lấy nó trong vài ngày tới.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Those shoes look great!  Come back with the loader and I'll get to work on it.",
+      "translation": "Đôi giày đó trông tuyệt đấy! Hãy quay lại với cái gầu xúc và tôi sẽ bắt tay vào làm việc.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Have you found any shoes for me yet?  Bring them by when you can, I'd love to see them!",
+      "translation": "Cậu đã tìm được đôi giày nào cho tôi chưa? Hãy mang chúng đến khi nào cậu rảnh, tôi rất muốn thấy chúng!",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Here's your front-end loader, all fixed up.  Stick to small rocks, right?#$b#If you need to move big ones, get some explosives for the job.  Oh, and let me know when you're doing it.  I'll bring beer.",
+      "translation": "Đây là gầu xúc lật phía trước của cậu, đã được sửa sang toàn bộ. Hãy bám vào những tảng đá nhỏ thôi, được chứ?#$b#Nếu cậu cần dọn những tảng lớn, hãy kiếm ít chất nổ cho công việc đó. Ồ, và nhớ cho tôi biết khi nào cậu làm thế nhé. Tôi sẽ mang bia đến.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Sweet!  You've now got a front-end loader attachment for your tractor to clear out debris!#$b#HINT: To use it, equip the pick or the axe while on the tractor.",
+      "translation": "Tuyệt cú mèo! Giờ bạn đã có phụ kiện gầu xúc lật phía trước cho máy kéo của mình để dọn dẹp các mảnh vỡ rồi!#$b#MẸO: Để sử dụng nó, hãy trang bị cuốc chim hoặc rìu khi đang ngồi trên máy kéo.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Hey there!^I talked with Sebastian about your tractor and he has agreed to work on it, but only if he's got a decent place to work.  I understand that you're just starting out here and don't have a lot of money laying around, so I'm willing to do it at-cost.^ ^For my part, I'll need 300 wood, 200 stone and 350g for supplies.  Sebastian insisted that you bring a cup of coffee as well.  He's still a bit surly I think.  I caved on that one; gotta pick your battles.^ ^See you soon!^  - Robin",
+      "translation": "Chào bạn!^Tôi đã nói chuyện với Sebastian về chiếc máy kéo của bạn và nó đã đồng ý sửa nó, nhưng chỉ khi nó có một chỗ tử tế để làm việc. Tôi hiểu là bạn mới bắt đầu ở đây và không có nhiều tiền dư dả, nên tôi sẵn sàng làm nó với giá gốc.^ ^Về phần mình, tôi sẽ cần 300 gỗ, 200 đá và 350g tiền vật liệu. Sebastian khăng khăng yêu cầu bạn mang theo một tách cà phê nữa. Nó vẫn hơi cục cằn tôi nghĩ vậy. Tôi đã nhượng bộ chuyện đó; phải biết chọn trận mà đánh chứ.^ ^Hẹn sớm gặp bạn!^  - Robin",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Build the garage",
+      "translation": "Xây dựng nhà để xe",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I got everything working except this engine.  I've never seen anything like it.  I mean, it's like it doesn't even need gas!^I don't know what you're gonna need to do to make it work, but I know I'm out of my area here.^If you manage to figure it out, bring it back up to my place and I'll see about getting it installed.^  - Sebastian",
+      "translation": "Tôi đã làm cho mọi thứ hoạt động ngoại trừ cái động cơ này. Tôi chưa bao giờ thấy thứ gì giống thế này. Ý tôi là, nó giống như không thèm cả đổ xăng ấy!^Tôi không biết bạn sẽ phải làm gì để khiến nó hoạt động, nhưng tôi biết là tôi đã bó tay với mảng này rồi.^Nếu bạn xoay sở tìm ra cách, hãy mang nó lên chỗ tôi và tôi sẽ xem xét việc cài đặt nó.^  - Sebastian",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Wonky engine",
+      "translation": "Động cơ kỳ quái",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Thanks for letting me work on this!  I even let my Dad do some of the work on it so that he got to feel like maybe he finally did make good on his promise to your Granddad all those years ago.  But me, well, I just like gadgets!  If it ever breaks down, let me know, I have a 10-year warranty on all my work :)",
+      "translation": "Cảm ơn vì đã để tôi sửa thứ này! Tôi thậm chí đã để Bố tôi làm một số phần việc trên nó để ông ấy có cảm giác như cuối cùng thì ông ấy cũng thực hiện được lời hứa với ông của cậu vào những năm trước. Nhưng tôi thì, à thì, tôi chỉ thích đồ cơ khí thôi! Nếu nó có hỏng hóc gì, cứ cho tôi biết, tôi bảo hành 10 năm cho mọi công việc của mình :)",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Irrigator is fixed",
+      "translation": "Máy tưới nước đã được sửa",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I hear you're restoring that old tractor.  Here's the seeder - it spreads fertilizer and seeds.  Your Grandpa gave it to me to fix after he decided to try going organic and put chicken droppings in it. I got it cleaned up, but it needed some iron bars.  Your Grandpa took his time rounding those up, and, well, my accident and his decline put an end to it.  But you're young, you can find somebody to fix it. I'm too old to be of any use anymore.",
+      "translation": "Ta nghe nói cháu đang phục chế chiếc máy kéo cũ đó. Đây là máy gieo hạt - nó vừa rải phân bón vừa rải hạt giống. Ông của cháu đã đưa nó cho ta sửa sau khi ông ấy quyết định thử chuyển sang trồng trọt hữu cơ và nhét phân gà vào đó. Ta đã làm sạch nó, nhưng nó cần vài thỏi sắt. Ông của cháu đã dành thời gian đi gom chúng, và, ừm, tai nạn của ta cùng sự suy yếu của ông ấy đã đặt dấu chấm hết cho chuyện đó. Nhưng cháu còn trẻ, cháu có thể tìm ai đó để sửa nó. Ta quá già để có thể giúp ích gì nữa rồi.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Seeder from George",
+      "translation": "Máy gieo hạt từ George",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Hello Dear,^I gave what you said a lot of thought and I think I have a way.  George would be really uncomfortable with you doing work he would want to do.^But George has had to get used to letting Alex do a lot of things for him already.^I talked to Alex about it, but he is reluctant and he wouldn't say why.  Maybe if someone nearer his own age, who he trusted, talked to him he would come around.^Good luck!^ - Granny",
+      "translation": "Chào cháu yêu,^Bà đã suy nghĩ rất nhiều về những gì cháu nói và bà nghĩ bà có một cách. George sẽ thực sự cảm thấy không thoải mái nếu cháu làm công việc mà ông ấy muốn làm.^Nhưng George đã phải quen với việc để Alex làm rất nhiều việc cho ông ấy rồi.^Bà đã nói chuyện với Alex về chuyện đó, nhưng thằng bé miễn cưỡng và không chịu nói tại sao. Có lẽ nếu có ai đó trạc tuổi thằng bé, người mà nó tin tưởng, nói chuyện với nó thì nó sẽ đổi ý đấy.^Chúc may mắn!^ - Bà ngoại",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "@ - I think you'll find Alex is a little more... inspired... today.^ - Haley",
+      "translation": "@ - Tôi nghĩ bạn sẽ thấy hôm nay Alex... dạt dào cảm hứng hơn một chút đấy.^ - Haley",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Haley has motivated Alex",
+      "translation": "Haley đã tạo động lực cho Alex",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Hey!^Grandpa and I got the seeder working last night!  You can pick it up from Grandpa whenever.  Now that it's done, I'm really happy you rooked me into doing this. I really love my grandpa, and well, sometimes it's hard to find things to do together.  And hey, maybe if the Gridball thing doesn't work out I can get a job repairing farm equipment!^ - Your friend,^   Alex",
+      "translation": "Này!^Ông và tôi đã làm cho máy gieo hạt hoạt động tối qua rồi! Cậu có thể đến lấy nó từ chỗ ông bất cứ lúc nào. Giờ thì xong việc rồi, tôi thực sự rất vui vì cậu đã dụ tôi làm việc này. Tôi thực sự yêu ông của mình, và ừm, đôi khi rất khó để tìm được việc gì đó để cùng làm với nhau. Và này, nếu sự nghiệp Gridball không đi đến đâu thì có lẽ tôi có thể kiếm được công việc sửa chữa thiết bị nông nghiệp đấy!^ - Bạn của cậu,^   Alex",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Waterer is ready",
+      "translation": "Máy tưới nước đã sẵn sàng",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "The tractor's all ready to go!  It was kinda strange, I didn't really know how it all attached, but when I tried to plug something into the wrong place, it just wouldn't go.  Screws wouldn't find their threads, belts would jump off of pullies...^ ^But when I got a part even near the right spot, it'd just jump into place!  So I guess that engine really likes being in that tractor!^ ^Oh and the tiller was on the tractor when we found it.  It seems okay, so you'll be able to hoe areas.  The other attachments are probably around someplace!^ ^ - M^ ^HINT: To use the tractor, get on it and select your hoe.",
+      "translation": "Máy kéo đã sẵn sàng để chạy! Thật khá kỳ lạ, tôi không thực sự biết mọi thứ được kết nối như thế nào, nhưng khi tôi cố cắm một thứ gì đó vào sai vị trí, nó không chịu khớp vào.^Các ốc vít không tìm thấy ren của chúng, dây đai nhảy ra khỏi ròng rọc...^Nhưng khi tôi đặt một bộ phận gần đúng vị trí, nó sẽ tự động nhảy vào đúng chỗ! Nên tôi đoán cái động cơ đó thực sự rất thích nằm trong chiếc máy kéo đó!^ ^À và cái máy xới đất đã nằm sẵn trên máy kéo khi chúng tôi tìm thấy nó. Nó có vẻ ổn, nên bạn sẽ có thể cuốc đất được các khu vực. Các bộ phận đi kèm khác có lẽ vẫn còn nằm đâu đó quanh đây!^ ^ - M^ ^MẸO: Để sử dụng máy kéo, hãy ngồi lên nó và chọn cái cuốc của bạn.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Tractor is ready to go",
+      "translation": "Máy kéo đã sẵn sàng để chạy",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I found shoes in the garbage last night.  You're right, these are perfectly good shoes, ready for a second life!  I hope you give them a good home.",
+      "translation": "Tôi đã tìm thấy giày trong thùng rác tối qua. Bạn nói đúng, đôi giày này vẫn còn dùng rất tốt, sẵn sàng cho cuộc đời thứ hai! Tôi hy vọng bạn tìm được cho chúng một mái nhà tốt.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Linus found shoes",
+      "translation": "Linus đã tìm thấy giày",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Hey @!  Maru here!  I forgot to tell you something about your tractor!  There's a knob down by your left knee that you can use to widen or narrow the spread of your tools!  It works well to go narrow, but the wide setting is really fiddly.  I'm sure you'll get the hang of it with practice!^ - M^ ^(Hint - use the keypad plus and minus keys to increase or decrease the area of effect of your tools.  The max area is 3x3 until you get farming skill of 10, when it goes to 5x5.)",
+      "translation": "Chào @! Maru đây! Tôi quên chưa nói cho bạn một thứ về máy kéo của bạn! Có một núm xoay nằm ở đầu gối trái của bạn mà bạn có thể dùng để mở rộng hoặc thu hẹp phạm vi của các công cụ! Nó hoạt động rất tốt khi thu hẹp, nhưng cài đặt mở rộng thì khá rắc rối. Tôi chắc chắn bạn sẽ quen dần khi thực hành nhiều!^ - M^ ^(Gợi ý - sử dụng phím cộng và trừ trên bàn phím số để tăng hoặc giảm vùng tác dụng của các công cụ. Diện tích tối đa là 3x3 cho đến khi bạn đạt cấp độ kỹ năng Nông nghiệp 10, khi đó nó sẽ tăng lên 5x5.)",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Tractor Tool Shift Knob HowTo",
+      "translation": "Cách Dùng Núm Xoay Chuyển Đổi Công Cụ Máy Kéo",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Expand Tractor Effect",
+      "translation": "Mở rộng Tác dụng Máy Kéo",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Press this key to increase the action radius of tools when riding on the tractor.  Capped at +1 tile from the normal size configured in TractorMod.",
+      "translation": "Nhấn phím này để tăng bán kính tác dụng của các công cụ khi đang cưỡi trên máy kéo. Giới hạn ở mức +1 ô so với kích thước bình thường được cấu hình trong TractorMod.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Contract Tractor Effect",
+      "translation": "Thu hẹp Tác dụng Máy Kéo",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Press this key to reduce the action radius of tools when riding on the tractor.  Capped at -1 tile from the normal size configured in TractorMod.",
+      "translation": "Nhấn phím này để giảm bán kính tác dụng của các công cụ khi đang cưỡi trên máy kéo. Giới hạn ở mức -1 ô so với kích thước bình thường được cấu hình trong TractorMod.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Funky looking engine that doesn't work",
+      "translation": "Động cơ có hình dạng kỳ dị không hoạt động",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Sebastian pulled this off of the rusty tractor.  I need to find someone to fix it.",
+      "translation": "Sebastian đã tháo thứ này ra khỏi chiếc máy kéo rỉ sét. Tôi cần tìm ai đó để sửa nó.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Junimo-powered tractor engine",
+      "translation": "Động cơ máy kéo chạy bằng sức mạnh Junimo",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "The engine for the tractor!  I need to find someone to install it.",
+      "translation": "Động cơ của máy kéo! Tôi cần tìm ai đó để cài đặt nó.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Core of the harvesting attachment for the tractor",
+      "translation": "Cốt lõi của phụ kiện thu hoạch cho máy kéo",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "This looks like it was a tractor attachment for harvesting crops, but it doesn't seem to be all together.",
+      "translation": "Trông có vẻ như đây từng là một phụ kiện máy kéo dùng để thu hoạch hoa màu, nhưng dường như nó không được lắp ráp hoàn chỉnh.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Harvesting attachment for the tractor",
+      "translation": "Phụ kiện thu hoạch cho máy kéo",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Just need to bring this to the tractor garage to be able to use it with the tractor!",
+      "translation": "Chỉ cần mang cái này đến nhà để xe máy kéo là có thể sử dụng cùng với máy kéo!",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Crop shakerlooser",
+      "translation": "Máy rung thu hoạch",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "One of the missing parts for the scythe attachment",
+      "translation": "Một trong những bộ phận còn thiếu cho phụ kiện lưỡi hái",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Shiny sprocket",
+      "translation": "Bánh răng sáng bóng",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Broken watering attachment for the tractor",
+      "translation": "Phụ kiện tưới nước bị hỏng cho máy kéo",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "This looks like it was a tractor attachment for watering crops.  Sure hope somebody can help me get it working again, watering can really be a drag.",
+      "translation": "Trông có vẻ như đây từng là một phụ kiện máy kéo dùng để tưới hoa màu. Chắc chắn hy vọng ai đó có thể giúp tôi sửa cho nó hoạt động lại, việc tưới nước bằng bình có thể thực sự là một cực hình.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Watering attachment for the tractor",
+      "translation": "Phụ kiện tưới nước cho máy kéo",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "The watering attachment for the tractor - it needs to be brought back to the tractor garage.",
+      "translation": "Phụ kiện tưới nước cho máy kéo - nó cần được mang về nhà để xe máy kéo.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Bent up and rusty front-end loader for the tractor",
+      "translation": "Gầu xúc lật phía trước bị cong vênh và rỉ sét cho máy kéo",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "This was the front-end loader attachment (for picking up rocks and sticks), but it's all bent up and rusted through in spots.  It needs to be fixed to be usable.",
+      "translation": "Đây từng là phụ kiện gầu xúc lật phía trước (dùng để gắp đá và củi), nhưng nó đã bị cong vênh và rỉ sét thành từng mảng. Cần phải được sửa chữa mới có thể sử dụng được.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Front-end loader attachment for my tractor",
+      "translation": "Phụ kiện gầu xúc lật phía trước cho máy kéo của tôi",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "This will allow me to clear rocks and sticks on my farm.  It needs to go into the tractor garage so I can use it.",
+      "translation": "Thứ này sẽ cho phép tôi dọn dẹp đá và củi trên nông trại của mình. Cần phải đưa nó vào nhà để xe máy kéo mới có thể sử dụng được.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Alex's old shoes",
+      "translation": "Giày cũ của Alex",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "14EEE, slightly smudged",
+      "translation": "Cỡ 14EEE, hơi lem luốc đôi chút",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Cleverly repackaged pair of shoes",
+      "translation": "Đôi giày được đóng gói lại một cách khéo léo",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Alex's old shoes, cleverly dyed.  Nobody will ever know.",
+      "translation": "Giày cũ của Alex, được nhuộm lại một cách khéo léo. Sẽ không ai biết được đâu.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Broken fertilizer and seeder",
+      "translation": "Máy gieo hạt và bón phân bị hỏng",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "The fertilizer and seed spread for the old tractor.  It needs a good bit of fiddling to make work.",
+      "translation": "Bộ phận rải phân bón và hạt giống cho chiếc máy kéo cũ. Sẽ cần phải mày mò tinh chỉnh một chút mới hoạt động được.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Fertilizer and seeder attachment for the tractor",
+      "translation": "Phụ kiện gieo hạt và bón phân cho máy kéo",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Just needs to be brought back to the garage to use it on the tractor.",
+      "translation": "Chỉ cần mang lại nhà để xe là có thể sử dụng trên máy kéo.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I wonder what {{arg0}} has been up to...",
+      "translation": "Tôi tự hỏi không biết {{arg0}} đang làm gì...",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Pets sometimes have an uncanny ability to spot missing things!$0#$b#Just last week I lost my favorite milking bucket.  I came across it a few days later and my cat, Muffin, was sleeping in it.$1#$b#Well, I guess she didn't exactly find it for me, but at least she knew where it was!$0",
+      "translation": "Thú cưng đôi khi có khả năng kỳ lạ trong việc phát hiện ra những món đồ bị mất!$0#$b#Mới tuần trước tôi bị mất cái xô vắt sữa yêu thích. Vài ngày sau tôi tình cờ tìm thấy nó và con mèo của tôi, Muffin, đang ngủ trong đó.$1#$b#Chà, tôi đoán là nó không hẳn đã tìm thấy cho tôi, nhưng ít nhất thì nó cũng biết cái xô đó ở đâu!$0",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Do I miss my \"normal\" life on days like this?$2#$b#No, not really.  Except for Jeremy Clarkson...$1#$b#...My pet Schnauzer.  He had an uncanny ability to fetch the thing I wanted before I even knew I wanted it.$0",
+      "translation": "Tôi có nhớ cuộc sống \"bình thường\" của mình vào những ngày như thế này không?$2#$b#Không, không hẳn. Ngoại trừ Jeremy Clarkson...$1#$b#...Chú chó Schnauzer cưng của tôi. Nó có khả năng kỳ lạ trong việc tìm nạp thứ tôi muốn trước cả khi tôi nhận ra mình muốn nó.$0",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Investigate the tractor",
+      "translation": "Kiểm tra máy kéo",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "There's a rusty old tractor in the fields; it sure would be nice if it could be restored.  Perhaps the townspeople can help.",
+      "translation": "Có một chiếc máy kéo cũ rỉ sét trên cánh đồng; sẽ rất tuyệt nếu nó có thể được phục chế lại. Có lẽ người dân trong thị trấn có thể giúp đỡ.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Talk to mayor Lewis",
+      "translation": "Nói chuyện với thị trưởng Lewis",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ask Sebastian to help restore the tractor",
+      "translation": "Nhờ Sebastian giúp phục chế máy kéo",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Welp, Sebastian was a bust.  Maybe Mayor Lewis knows somebody else who could be more helpful.",
+      "translation": "Chà, Sebastian đúng là một thất bại. Biết đâu Thị trưởng Lewis biết một ai đó khác có thể giúp ích hơn.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Wait for Lewis to work his magic",
+      "translation": "Chờ Lewis trổ tài phép thuật của ông ấy",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Have Robin build a garage (buy it from her shop).",
+      "translation": "Nhờ Robin xây một nhà để xe (mua nó từ cửa hàng của cô ấy).",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Sebastian promised to get on the job right after the barn got built.  Hopefully he's actually on the case.",
+      "translation": "Sebastian đã hứa sẽ bắt tay vào việc ngay sau khi nhà kho được xây xong. Hy vọng là cậu ấy thực sự đang theo sát vụ này.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ask for help with the strange tractor motor.",
+      "translation": "Xin giúp đỡ với cái động cơ máy kéo kỳ lạ.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Put the engine, 20 sap, 5 mixed seeds and an aquamarine in a chest in the secret woods.",
+      "translation": "Đặt động cơ, 20 nhựa cây, 5 hạt giống hỗn hợp và một viên ngọc hải ly (aquamarine) vào một cái rương trong khu rừng bí mật.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Hopefully the Junimo magic worked!  Get the engine out of the secret woods and bring it to Sebastian.",
+      "translation": "Hy vọng ma thuật của Junimo đã hiệu nghiệm! Lấy động cơ ra khỏi khu rừng bí mật và mang đến cho Sebastian.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Bring the engine to Maru to install.",
+      "translation": "Mang động cơ đến cho Maru để cài đặt.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Maru says that after the engine is installed, it should actually run!  Just have to wait a little bit longer...",
+      "translation": "Maru nói rằng sau khi động cơ được cài đặt, nó sẽ thực sự chạy được! Chỉ cần đợi thêm một chút nữa...",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "An old tractor you say?#$b#I know your Grandfather had one - I thought he had sold it off before he died.  He never could keep it on the furrows.$h#$b#If you want to get it fixed, I suggest you talk to Robin's son, Sebastian; he's actually quite the gearhead.  Maybe he can help.",
+      "translation": "Một chiếc máy kéo cũ cháu nói ư?#$b#Ta biết ông của cháu có một chiếc - Ta tưởng ông ấy đã bán tống bán tháo nó trước khi mất rồi. Ông ấy chẳng bao giờ giữ nó đi đúng luống cày được.$h#$b#Nếu cháu muốn sửa nó, ta khuyên cháu nên nói chuyện với con trai của Robin, Sebastian; cậu ấy thực sự khá rành rẽ về máy móc đấy. Biết đâu cậu ấy có thể giúp.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Let me get this straight - I barely know who you are and I'm supposed to fix your rusty old tractor?$a#$b#Sorry, but I've got a lot of stuff going on and can't really spare the time.",
+      "translation": "Để tôi làm rõ chuyện này - tôi còn chưa biết rõ cậu là ai và cậu muốn tôi phải sửa chiếc máy kéo cũ rỉ sét của cậu á?$a#$b#Xin lỗi, nhưng tôi đang có rất nhiều việc phải giải quyết và không thực sự rảnh rỗi đâu.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Sebastian said that?$a#$b#Well, I can't say I'm really surprised...  Just a bit disappointed.$s#$b#Hm. . .$u#$b#Welp, I guess this is why they pay me the big money, eh?  I'll see if I can make this happen for you, but it might take a couple days.",
+      "translation": "Sebastian đã nói vậy sao?$a#$b#Chà, ta không thể nói là mình thực sự ngạc nhiên... Chỉ hơi thất vọng chút thôi.$s#$b#Hừm. . .$u#$b#Chà, ta đoán đây là lý do họ trả ta rất nhiều tiền nhỉ? Ta sẽ xem liệu mình có thể dàn xếp chuyện này cho cháu không, nhưng có thể sẽ mất vài ngày đấy.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Trust me, I'm working on it, but I also have my day-gig to worry about.  I work odd hours, so you might not be around when I'm working on it.  Oh and thanks for the coffee.",
+      "translation": "Tin tôi đi, tôi đang làm việc đó, nhưng tôi cũng còn công việc kiếm cơm hàng ngày phải lo nữa. Tôi làm việc vào những giờ giấc bất thường, nên có thể cậu sẽ không có mặt lúc tôi đang sửa nó đâu. Ồ và cảm ơn vì cốc cà phê nhé.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I made a lot of progress last night.  Most of it is cleaning up okay, but the engine itself is, well, it seems a little out of the ordinary. . .",
+      "translation": "Tôi đã tạo ra rất nhiều tiến triển vào tối qua. Hầu hết nó đang được làm sạch khá ổn, nhưng bản thân cái động cơ thì, à thì, nó có vẻ hơi khác thường một chút. . .",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oh...  Now where did you get that??!$l#$b#Ooooh... Ah.  Yes.  I see...  Mmm...$s#$b#Yes.  Your grandfather dabbled a bit in Forest Magic.  He was nowhere near as adept as myself, of course...#$b#He lacked the mechanical ability to restore the mundane engine, so he enlisted some forest magic to make one.#$b#As you can see, the Junimos that he recruited to keep the motor running have gotten bored and wandered away.  You'll need to coax them back.$s#$b#Now, pay attention!  This will require your utmost concentration!$a#$b#You must place the engine, 20 sap, 5 mixed seeds and an aquamarine in a chest in the secret woods in front of the statue...#$b#Then, you must run around the chest, six times, clockwise very, very quickly.  Overnight, your engine will be restored.#$b#Now GO!  I have concerns much greater than yours right now.$a",
+      "translation": "Ồ... Cậu lấy thứ đó từ đâu vậy??!$l#$b#Ooooh... À. Phải rồi. Ta hiểu rồi... Mmm...$s#$b#Phải. Ông nội của cậu đã từng nhúng tay vào Phép thuật Rừng rậm. Tất nhiên, ông ấy hoàn toàn không thông thạo như ta...#$b#Ông ấy thiếu kỹ năng cơ khí để phục chế loại động cơ phàm tục đó, nên ông đã tranh thủ chút ma thuật rừng rậm để tạo ra một cái.#$b#Như cậu có thể thấy, những Junimo mà ông ấy chiêu mộ để giữ cho động cơ hoạt động đã cảm thấy nhàm chán và bỏ đi mất. Cậu sẽ cần phải dỗ dành chúng quay lại.$s#$b#Bây giờ, hãy chú ý! Việc này sẽ đòi hỏi sự tập trung tối đa của cậu!$a#$b#Cậu phải đặt động cơ, 20 nhựa cây, 5 hạt giống hỗn hợp và một viên ngọc hải ly (aquamarine) vào một cái rương trong khu rừng bí mật, trước bức tượng...#$b#Sau đó, cậu phải chạy quanh cái rương sáu vòng theo chiều kim đồng hồ thật, thật nhanh. Qua đêm, động cơ của cậu sẽ được khôi phục.#$b#Giờ thì ĐI ĐI! Ta đang có những mối bận tâm lớn hơn nhiều so với cậu lúc này đấy.$a",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "That is the craziest engine I've ever seen.  Have  you shown it to Clint?  I mean, he knows something about metalworking.  Maybe it's some kinda weird alloy?^ ^Or...^Maybe aliens.",
+      "translation": "Đó là cái động cơ điên rồ nhất mà tôi từng thấy. Cậu đã đưa nó cho Clint xem chưa? Ý tôi là, anh ta biết đôi chút về gia công kim loại. Có thể nó là một loại hợp kim kỳ lạ nào đó?^ ^Hoặc...^Có thể là người ngoài hành tinh.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Uh...#$b#What is it?  you say it's an Engine?$s#$b#I say it's weird. . .  Hey, is that thing moving?$a#$b#I don't know.  Maybe the Wizard would know what it is, and even if he doesn't, he'll sure pretend like he does if you show it to him.",
+      "translation": "Ừm...#$b#Nó là cái gì vậy? cậu nói nó là Động cơ á?$s#$b#Tôi thì thấy nó dị thật. . . Này, cái thứ đó có đang chuyển động không?$a#$b#Tôi không biết nữa. Có lẽ Pháp sư sẽ biết nó là gì, và ngay cả khi ông ta không biết, ông ta chắc chắn sẽ giả vờ như mình biết nếu cậu đưa nó cho ông ta xem.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oh wow...#$b#Can I have it?",
+      "translation": "Ồ chà...#$b#Tôi có thể lấy nó không?",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "AAAAHHH!!!  IT'S MOVING!  TAKE IT AWAY!$4",
+      "translation": "AAAAHHH!!! NÓ ĐANG ĐỘNG ĐẬY KÌA! MANG NÓ ĐI CHỖ KHÁC ĐI!$4",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I've never seen anything like that before...#$b#It gives me this uncanny feeling like...  it's missing something.#$b#Weird.",
+      "translation": "Tôi chưa bao giờ thấy thứ gì giống thế này trước đây...#$b#Nó mang lại cho tôi cảm giác kỳ lạ này giống như... nó đang thiếu một cái gì đó.#$b#Kỳ quái thật.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Whoah....$s#$b#I mean, if you say it's fixed, I can believe it.  Definitely has a look of workiness about it!$l#$b#But seriously...  I shouldn't be installing this thing.  It's, yaknow, out of my area but...$s#$b#I hate to say it, my sister would be able to figure it out, no matter how weird it is.",
+      "translation": "Chà....$s#$b#Ý tôi là, nếu cậu nói nó đã được sửa, thì tôi có thể tin điều đó. Chắc chắn nó có vẻ gì đó là có thể hoạt động!$l#$b#Nhưng nghiêm túc mà nói... Tôi không nên lắp đặt thứ này. Nó, cậu biết đấy, nằm ngoài chuyên môn của tôi nhưng...$s#$b#Tôi ghét phải nói điều này, em gái tôi sẽ có thể tìm ra cách, bất kể nó có kỳ quái đến đâu.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Wow!  I mean I have no idea what it does, but I'm sure it'll look cool doing it!$h#$b#You want me to install it in the tractor?  Sure, I'll do it.  I helped Seb haul it out of the mud.  He really did a great job polishing it up.#$b#Just give me a day or so, k?  And be sure to drive it up here sometime, I want to ride it around!$l",
+      "translation": "Tuyệt quá! Ý tôi là tôi không biết nó hoạt động thế nào, nhưng tôi chắc chắn nó sẽ trông rất ngầu khi vận hành đấy!$h#$b#Cậu muốn tôi lắp nó vào máy kéo à? Chắc chắn rồi, tôi sẽ làm. Tôi đã giúp Seb kéo nó ra khỏi bùn mà. Cậu ấy đã làm rất tốt việc đánh bóng nó.#$b#Chỉ cần cho tôi một hoặc hai ngày, được chứ? Và nhớ lái nó lên đây một lúc nào đó nhé, tôi muốn chạy thử nó!$l",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Fix the harvester",
+      "translation": "Sửa máy gặt",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I found the harvester attachment for the tractor, but won't work like it is now.  I should ask around town about it.",
+      "translation": "Tôi đã tìm thấy phụ kiện máy gặt cho máy kéo, nhưng nó sẽ không hoạt động ở tình trạng như hiện tại. Tôi nên hỏi thăm xung quanh thị trấn về nó.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Let's see what you go there...$s#$b#You know, there's no real metalwork to do here.  It basically needs a good cleaning and oiling.$h#$b#But something seems wrong about it still, like are you sure you got all of it out of the weeds?",
+      "translation": "Để xem cậu có gì ở đó nào...$s#$b#Cậu biết không, thực ra chẳng có công việc kim khí thực sự nào để làm ở đây cả. Về cơ bản nó chỉ cần được làm sạch và tra dầu mỡ đúng cách thôi.$h#$b#Nhưng có thứ gì đó có vẻ vẫn không ổn về nó, kiểu như cậu có chắc là cậu đã lôi hết tất cả các bộ phận của nó ra khỏi đám cỏ dại không?",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oh you found the old harvester!  I think your Grandpa broke every other thing, but I don't recall any misadventures with that part.  If you can't get it to work, you might ask Demetrius or Maru.  They're good at metalworking.",
+      "translation": "Ồ, cháu đã tìm thấy máy gặt cũ rồi! Bác nghĩ ông nội cháu đã làm hỏng từng bộ phận khác, nhưng bác không nhớ là có bất kỳ tai nạn nào với phần này. Nếu cháu không thể làm cho nó hoạt động, cháu có thể nhờ Demetrius hoặc Maru. Họ rất giỏi về kim khí.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oh you found the old harvester!  You know, just looking at it, I think it's okay, but I don't think it's quite complete.  Looks like there might be some parts missing.#$b#You're getting pretty good around the farm, I'm sure you could get it to work again if you can find the rest of the parts.  Let me know if you need help with it, though, I'd be happy to help.",
+      "translation": "Ồ, cậu đã tìm thấy máy gặt cũ rồi! Cậu biết không, chỉ nhìn vào nó, tôi nghĩ nó vẫn ổn, nhưng tôi không nghĩ nó đã hoàn chỉnh. Có vẻ như có một số bộ phận bị thiếu.#$b#Cậu đang ngày càng thành thạo công việc quanh nông trại, tôi tin chắc cậu có thể làm nó hoạt động trở lại nếu cậu tìm thấy các bộ phận còn lại. Hãy cho tôi biết nếu cậu cần giúp đỡ nhé, tôi rất sẵn lòng.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oh I'm not much for farm equipment.  You say that's a harvester?  Well, I'll have to take your word for it!$h#$b#Yaknow he broke a lot of stuff on that tractor, but I don't recall that being one of them.  Maybe it just needs cleaning and oiling?",
+      "translation": "Ồ tôi không rành về thiết bị nông nghiệp lắm đâu. Cậu nói đó là máy gặt à? Chà, tôi sẽ tin lời cậu nói vậy!$h#$b#Cậu biết đấy, ông ấy đã làm vỡ rất nhiều thứ trên chiếc máy kéo đó, nhưng tôi không nhớ phần này có trong số đó. Có lẽ nó chỉ cần được làm sạch và tra dầu?",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oh that's the old harvester!  Or most of one anyway...$s#$b#Well, did you look around where you found that piece?  Might be more pieces under that log.#$b#You might enlist Jas and Vincent to help - they used to play out in your south pasture, but when you moved back in, I asked them to keep clear so you could get your work done.  But they know that area pretty well.",
+      "translation": "Ồ đó là cái máy gặt cũ! Hay nói đúng hơn là hầu hết các phần của nó...$s#$b#Chà, cháu đã nhìn quanh khu vực cháu tìm thấy mảnh vỡ đó chưa? Có thể còn nhiều mảnh khác nằm dưới khúc gỗ đó đấy.#$b#Cháu có thể nhờ Jas và Vincent giúp đỡ - chúng từng hay chơi ở đồng cỏ phía nam của cháu, nhưng từ khi cháu chuyển về, cô đã bảo chúng tránh xa để cháu có thể tập trung làm việc. Nhưng chúng biết khá rõ khu vực đó đấy.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oh that's a *harvester*?  I never would have guessed!  Yep, I saw it on your farm and always wondered about it...#$b#Well, unless I was prepared to accept Jas and Vincent's explanation that it was a machine made by Greebles!$l",
+      "translation": "Ồ đó là *máy gặt* á? Tôi không bao giờ đoán ra được! Đúng thế, tôi đã nhìn thấy nó trên nông trại của bạn và luôn thắc mắc về nó...#$b#Trừ phi tôi chuẩn bị tinh thần để chấp nhận lời giải thích của Jas và Vincent rằng đó là cỗ máy do Greebles tạo ra!$l",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "That's the old harvester for the tractor?  I guess it looks like that.#$b#I'm sorry, I don't know anything about farming.$2",
+      "translation": "Đó là cái máy gặt cũ cho máy kéo à? Tôi đoán là trông nó giống như vậy.#$b#Tôi xin lỗi, tôi không biết gì về trồng trọt cả.$2",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Missing parts for a 'harvester'?$s#$b#You might ask Jas and Vincent to help look for other parts like that - they told me they used to play out in your south pasture, but they don't anymore because Marnie shooed them away.$4",
+      "translation": "Bị thiếu vài bộ phận cho 'máy gặt' sao?$s#$b#Cháu có thể nhờ Jas và Vincent giúp tìm các bộ phận khác tương tự - chúng từng kể cho ta nghe là chúng hay chơi ngoài đồng cỏ phía nam của cháu, nhưng bây giờ thì không nữa vì Marnie đã xua chúng đi rồi.$4",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oh yeah I've seen that - wedged under a tree, right?  Must have been a feat to get it out!#$b#Did Jas or Vincent tell you where to find it?  They used to play near it quite a bit.",
+      "translation": "À đúng rồi, ta từng thấy thứ đó - bị kẹt dưới một cái cây phải không? Kéo nó ra hẳn là một kỳ công đấy!#$b#Jas hay Vincent có chỉ cho cháu biết chỗ tìm nó không? Bọn trẻ từng hay chơi đùa gần đó lắm.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "What is that thing?  A harvester?  Sure, if you say so...  I tell you though, something about that thing seems familiar to me.$s#$b#Well, it looks like a mess, and I've cleaned up a lot messes.  It must be that!$l",
+      "translation": "Cái thứ đó là gì vậy? Một cái máy gặt à? Chắc chắn rồi, nếu cậu đã nói vậy... Nhưng tôi nói cho cậu nghe, có gì đó ở cái thứ đó trông rất quen thuộc với tôi.$s#$b#Chà, nó trông giống như một mớ hỗn độn, và tôi thì đã dọn dẹp rất nhiều mớ hỗn độn rồi. Chắc hẳn là vậy!$l",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "That's the old harvester for the tractor?  I guess it looks like that.  You think it's incomplete?$s#$b#You might ask Jas and Vincent to help look for other parts like that - they used to play out in your south pasture, but don't worry!  Marnie and I asked them not to since you moved in.#$b#You've got enough on your hands without those two hooligans running through the corn!$l",
+      "translation": "Đó là máy gặt cũ cho máy kéo á? Tôi đoán nó trông có vẻ giống thế. Cậu nghĩ nó chưa hoàn chỉnh sao?$s#$b#Cậu có thể nhờ Jas và Vincent giúp tìm các bộ phận khác tương tự - chúng từng hay chơi ngoài đồng cỏ phía nam của cậu, nhưng đừng lo! Marnie và tôi đã bảo chúng không được làm thế nữa kể từ khi cậu chuyển đến.#$b#Cậu đã đủ bận rộn rồi, đâu cần thêm hai đứa quậy phá này chạy lăng xăng qua những luống ngô nữa!$l",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Aha!!!!  I FORESEE THAT YOU HAVE NEED OF A SCRY!$a#$b#And you've come at the perfect time.  I happen to have need to flex my muscles from time to time, to keep in tip top form, you know.  Let's have a look#$b#Aahh through the mists I see two people, NO, CHILDREN, in your farm playing...#$b#They have taken parts of off and headed off...  But wait, there's more...  Yes...#$b#They will each need to be placated to get them to give the parts back.  The boy will want 3 crayfish and the girl will want a gemstone, but her tastes are not yet developed, so a cheap one will do...",
+      "translation": "Aha!!!! TA DỰ ĐOÁN RẰNG NGƯƠI ĐANG CẦN MỘT QUẺ BÓI!$a#$b#Và ngươi đã đến rất đúng lúc. Thỉnh thoảng ta cũng cần phải khởi động lại gân cốt, để duy trì phong độ đỉnh cao, ngươi biết đấy. Hãy xem nào#$b#Aahh qua làn sương mù, ta thấy hai người, KHÔNG, HAI ĐỨA TRẺ, đang chơi đùa trên nông trại của ngươi...#$b#Chúng đã lấy đi các bộ phận và rời đi... Nhưng khoan đã, còn nữa... Đúng rồi...#$b#Sẽ cần phải dỗ dành từng đứa để chúng trả lại các bộ phận. Thằng bé sẽ muốn 3 con tôm hùm đất và cô bé sẽ muốn một viên đá quý, nhưng gu của con bé chưa được tinh tế đâu, nên một viên rẻ tiền là đủ rồi...",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "BAH!  Begone with this mundane contrivance!  Return on Friday or Saturday and I may have time.$a",
+      "translation": "BAH! Cút đi cùng với cái phát minh trần tục này! Hãy trở lại vào thứ Sáu hoặc thứ Bảy, khi đó ta may ra mới rảnh.$a",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I love how my jumprope sparkles in the sun now!  Did you have any luck getting it to fit back together?",
+      "translation": "Cháu rất thích cách dây nhảy của cháu lấp lánh dưới ánh nắng mặt trời bây giờ! Chú/Cô có may mắn ghép lại được nó không?",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ooh!  Oh this {{arg0}} is very sparkly!  Thanks!  Here's your thingamajig.  I sure hope it works!  I really want to ride on your tractor some day!$l",
+      "translation": "Ooh! Ôi {{arg0}} này lấp lánh quá! Cháu cảm ơn! Đây là món đồ của chú/cô. Cháu chắc chắn hy vọng nó hoạt động! Một ngày nào đó cháu thực sự muốn ngồi trên chiếc máy kéo của chú/cô!$l",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oohh when are you gonna bring me something shiny!  I'm really looking forward to it!",
+      "translation": "Oohh khi nào chú/cô mang cho cháu thứ gì đó sáng bóng! Cháu đang rất mong chờ đó!",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ooh!  You found the Greeble machine!$h#$b#Vincent and I used to play games with that, but we had to stop because Aunt Marnie told us we couldn't go into your pasture anymore unless you invite us.#$b#There are parts missing?  Well of course there are!  Vincent and I kept some of the shinier bits, see, one's on my jumprope!  It's so shiny, it sparkles when I jump!  Oh, and FINDERS KEEPERS!$l#$b#Well, I suppose I could give it back to you...  BUT ONLY IF YOU TRADE ME SOMETHING REALLY SHINY!$h",
+      "translation": "Ooh! Chú/Cô đã tìm thấy cỗ máy Greeble rồi!$h#$b#Vincent và cháu từng chơi trò chơi với nó, nhưng tụi cháu phải dừng lại vì Dì Marnie bảo tụi cháu không được vào đồng cỏ của chú/cô nữa trừ khi chú/cô mời tụi cháu.#$b#Có bộ phận bị thiếu ư? Thì dĩ nhiên rồi! Vincent và cháu đã giữ lại vài mẩu sáng bóng, xem này, một cái nằm trên dây nhảy của cháu đó! Nó cực kỳ lấp lánh, nó tỏa sáng khi cháu nhảy! Ồ, và AI NHẶT ĐƯỢC NGƯỜI NẤY GIỮ!$l#$b#Chà, cháu đoán cháu có thể trả lại nó cho chú/cô... NHƯNG CHỈ KHI CHÚ/CÔ ĐỔI CHO CHÁU THỨ GÌ ĐÓ THỰC SỰ LẤP LÁNH!$h",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Did you have any luck getting it to fit back together?  I could probably help you put it back together, it sure came apart easy!$l",
+      "translation": "Anh/Chị có may mắn ghép lại được nó không? Em có lẽ có thể giúp anh/chị ráp nó lại với nhau, nó bị tháo ra cực kỳ dễ dàng luôn!$l",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ooh!  Oh these 3 crawdads would be great!  Thanks!  Here's your thingamajig.  I Hope it works!$l#$b#Sure, I won't tell Mom that you gave them to me if you want...  Why?$s",
+      "translation": "Ooh! Ôi 3 con tôm hùm đất này sẽ tuyệt lắm đây! Em cảm ơn! Đây là món đồ của anh/chị. Hy vọng nó hoạt động!$l#$b#Chắc chắn rồi, em sẽ không nói với Mẹ là anh/chị đưa chúng cho em nếu anh/chị muốn... Tại sao vậy?$s",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Did you get the bugs?  3 Big ones?",
+      "translation": "Anh/Chị đã bắt được bọ chưa? 3 con thật bự ấy?",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "The Greeble machine!$h#$b#Jas and I used to play games with that, but we had to stop because Marnie told us we couldn't go into your pasture anymore unless you invite us.#$b#There are parts missing?  Sure there are!  Me and Jas took a couple of pieces.  I used mine in a trap I was building to trap the Greebles under my bed!  It didn't work.  Hey, have you got any good bugs on your farm?  I'll find it for you if you can bring me some really big crawly ones!$h",
+      "translation": "Cỗ máy Greeble!$h#$b#Em và Jas từng chơi trò chơi với nó, nhưng tụi em phải dừng lại vì cô Marnie bảo tụi em không được vào đồng cỏ của anh/chị nữa trừ khi anh/chị mời tụi em.#$b#Có bộ phận bị thiếu ư? Chắc chắn rồi! Em và Jas đã lấy một vài mảnh. Em dùng mảnh của mình trong một cái bẫy em đang dựng để bắt đám Greebles dưới gầm giường! Nhưng nó không hoạt động. Này, anh/chị có con bọ nào ngon ở nông trại của anh/chị không? Em sẽ tìm mảnh đó cho anh/chị nếu anh/chị có thể mang cho em vài con thực sự bự đang bò lúc nhúc!$h",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "It seems some parts are missing, but I know there's nothing else out there in that field, at least not that's easy to see.  Maybe somebody else who noses around the farm would know about it.",
+      "translation": "Có vẻ như thiếu một vài bộ phận, nhưng tôi biết không còn thứ gì khác ngoài cánh đồng đó, ít nhất là không có thứ gì dễ nhìn thấy. Có lẽ ai đó khác thường sục sạo quanh nông trại sẽ biết về chuyện đó.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ask Jas and Vincent about the harvester",
+      "translation": "Hỏi Jas và Vincent về máy gặt",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Fix the scythe attachment (HINT: craft it from the parts)",
+      "translation": "Sửa phụ kiện lưỡi hái (GỢI Ý: chế tạo nó từ các bộ phận)",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Get a 'shiny thing' for Jas (perhaps a gem?) and 3 big bugs for Vincent.  (Hm.  The bugs in the mines seem TOO big...  Maybe a lobster?  Hm.  Again maybe too big...)",
+      "translation": "Kiếm một 'món đồ lấp lánh' cho Jas (có thể là một viên ngọc?) và 3 con bọ lớn cho Vincent. (Hừm. Những con bọ trong hầm mỏ có vẻ QUÁ TO... Hay là tôm hùm? Hừm. Lại có lẽ quá to...)",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Find a way to get the kids to give me the parts",
+      "translation": "Tìm cách khiến bọn trẻ đưa cho tôi các bộ phận",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Take the fixed scythe attachment to the tractor garage.",
+      "translation": "Mang phụ kiện lưỡi hái đã sửa xong đến nhà để xe máy kéo.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Sweet!  You've now got a harvester attachment for your tractor!#$b#HINT: To use it, equip the scythe while on the tractor.",
+      "translation": "Tuyệt cú mèo! Giờ bạn đã có phụ kiện thu hoạch cho máy kéo của mình!#$b#MẸO: Để sử dụng nó, hãy trang bị lưỡi hái khi đang ngồi trên máy kéo.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Fix the seeder",
+      "translation": "Sửa máy gieo hạt",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Turns out George had the seeder attachment, maybe he can be talked into fixing it.",
+      "translation": "Hóa ra George có giữ phụ kiện gieo hạt, có thể thuyết phục ông ấy sửa nó chăng.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Young people just don't listen.  I told you, I'm too old to repair your equipment.$a",
+      "translation": "Bọn trẻ bây giờ không chịu lắng nghe. Ta đã nói rồi, ta quá già để sửa thiết bị của cháu.$a",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Hm.  George said that did he...  Hm.  This *is* a thorny problem.  I think you need to consult a politician.  Try Lewis.",
+      "translation": "Hừm. George đã nói vậy sao... Hừm. Đây *đúng là* một vấn đề nan giải. Tôi nghĩ cậu cần tham khảo ý kiến của một chính trị gia. Hãy thử tìm Lewis xem.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I'm honored that you're asking me to look at this, but it'd really be better if George did the work...#$b#I know it won't be easy for him...  Maybe he'll need help.$s#$b#But if he actually did it, well, it'd do him a lot of good.#$b#You should talk to Lewis.  He and George go back a long way.  He'll know what to do.#$b#If it all goes wrong, come back to me and I'll try to fix it.",
+      "translation": "Tôi rất vinh dự khi cậu nhờ tôi xem xét việc này, nhưng sẽ tốt hơn nhiều nếu George làm điều đó...#$b#Tôi biết việc đó sẽ không dễ dàng gì với ông ấy... Có thể ông ấy sẽ cần giúp đỡ.$s#$b#Nhưng nếu ông ấy thực sự làm được, thì điều đó sẽ giúp ích rất nhiều cho ông ấy.#$b#Cậu nên nói chuyện với Lewis. Ông ấy và George có quen biết từ rất lâu rồi. Ông ấy sẽ biết phải làm gì.#$b#Nếu mọi chuyện không suôn sẻ, hãy quay lại gặp tôi và tôi sẽ thử sửa nó.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I'm flattered that Alex thinks I can fix it...  Maybe I can, but we should stick to Evelyn's plan.  Alex and I don't exactly click, but I'm sure there's somebody who knows Alex well enough to help convince him to do it.",
+      "translation": "Tôi rất hãnh diện khi Alex nghĩ tôi có thể sửa nó... Có thể tôi làm được, nhưng chúng ta nên bám sát kế hoạch của Evelyn. Tôi và Alex không thực sự hợp nhau lắm, nhưng tôi chắc chắn có ai đó biết rõ về Alex đủ để giúp thuyết phục cậu ấy làm điều này.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oh dear oh dear oh dear...$2#$b#Hm...$2#$b#George isn't wrong -- physically, he's just not in good shape.  Mentally, though, he's still as sharp as ever.  Alas, not like your Grandpa, towards the end.$s#$b#But if he can somehow do this, or at least help in doing it, it'll do him so much good.#$b#We need some help here...  We need Evelyn, and YOU have to get her to cajole George into trying this.  I can't be seen to be involved for, err...  reasons.#$b#You need to build some trust with her before you broach the topic, however.  Tread carefully.",
+      "translation": "Ôi trời ôi trời ôi trời...$2#$b#Hừm...$2#$b#George không sai đâu -- về mặt thể chất, ông ấy thực sự không có tình trạng tốt. Tuy nhiên, về mặt tinh thần, ông ấy vẫn nhạy bén như xưa. Than ôi, không giống như ông của cậu vào những năm cuối đời.$s#$b#Nhưng nếu ông ấy bằng cách nào đó có thể làm được việc này, hoặc ít nhất là giúp làm nó, thì điều đó sẽ rất tốt cho ông ấy.#$b#Chúng ta cần chút sự trợ giúp ở đây... Chúng ta cần Evelyn, và CẬU phải khiến bà ấy dỗ dành George thử làm việc này. Tôi không thể để bị nhìn thấy là có dính líu vì, ừm... một số lý do.#$b#Tuy nhiên, cậu cần phải xây dựng chút lòng tin với bà ấy trước khi đề cập đến chủ đề này. Hãy bước đi cẩn thận.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ohhh...  I know George *could* repair that thing...  But he could also fail miserably, you see, it's not just his legs that have let him down.  Have you seen his hands, how they shake?  It's not so bad, but it really frustrates him.#$b#Oh deary, I'm old too...  I need time to think about this.",
+      "translation": "Ôiiii... Bà biết George *có thể* sửa được thứ đó... Nhưng ông ấy cũng có thể thất bại thảm hại, cháu hiểu chứ, không chỉ có đôi chân mới phản bội ông ấy đâu. Cháu đã thấy đôi tay của ông ấy chưa, chúng run lẩy bẩy thế nào ấy? Không đến nỗi quá tệ, nhưng nó thực sự khiến ông ấy bực bội.#$b#Ôi cháu yêu, bà cũng già rồi... Bà cần thời gian để suy nghĩ về việc này.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Sorry, what did you say?  I didn't quite hear...",
+      "translation": "Xin lỗi, cháu nói gì cơ? Bà nghe chưa rõ...",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Look, I got my life to live, and it doesn't involve fixing farm equipment.",
+      "translation": "Nghe này, tôi có cuộc sống riêng của mình, và nó không bao gồm việc sửa chữa thiết bị nông nghiệp.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Nah man, these hands were made for gridball.  You're good with this sort of thing, you should talk Grandpa into showing you how.  Or get Maru, she's good at mechanical stuff.$3",
+      "translation": "Không anh bạn, đôi bàn tay này sinh ra là để chơi gridball. Anh rành mấy việc kiểu này, anh nên nói chuyện để Ông hướng dẫn anh cách làm. Hoặc nhờ Maru ấy, cô ấy giỏi mấy thứ máy móc cơ khí.$3",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Heh, isn't easy is it.  Keep it up, maybe you'll learn how to be mayor someday!$1#$b#Evelyn was probably right, in that somebody his own age could convince him.  Somebody he spends a lot of time with.",
+      "translation": "Hê, đâu có dễ đâu phải không. Cứ tiếp tục nhé, biết đâu cậu sẽ học được cách trở thành thị trưởng vào một ngày nào đó!$1#$b#Evelyn có lẽ đã đúng, rằng ai đó trạc tuổi cậu ta có thể thuyết phục được cậu ta. Ai đó mà cậu ta dành nhiều thời gian ở cùng.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "You think *I* have a clue what goes on inside Alex's head??$5#$b#Oh wait, I *DO* know...  Absolutely nothing.$4",
+      "translation": "Cậu nghĩ *TÔI* có bất kỳ manh mối nào về những gì diễn ra trong đầu Alex sao??$5#$b#Ồ khoan đã, tôi *CÓ* biết... Hoàn toàn không có gì.$4",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oh I hate to admit it, but the solution to your problem is Haley.  She can make any boy do any thing, ESPECIALLY Alex.$2#$b#She might seem vaccuous at times, but trust me, if you need some guy manipulated, she can do it.  I'm not saying it's a good thing all the time, but this sounds like a good cause.$4",
+      "translation": "Ồ tôi ghét phải thừa nhận điều này, nhưng giải pháp cho rắc rối của cậu là Haley. Cô ấy có thể khiến bất kỳ chàng trai nào làm bất cứ điều gì, ĐẶC BIỆT là Alex.$2#$b#Đôi lúc cô ấy có vẻ hơi não rỗng, nhưng tin tôi đi, nếu cậu cần thao túng gã nào đó, cô ấy có thể làm được. Tôi không nói điều đó lúc nào cũng tốt, nhưng chuyện này có vẻ là vì một mục đích tốt đẹp.$4",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Hah.  Alex does more with his hands than just play Gridball.$3#$b#Tell me everything. every. little. detail.$7#$b#Ah...  I see...#$b#I'll take care of this for you.  Just give me a day or two.  I'll let you know.$2#$b#*Sigh*  Confidence is so very attractive in a man.$7",
+      "translation": "Hah. Đôi tay của Alex có thể làm được nhiều việc hơn là chỉ chơi Gridball.$3#$b#Kể cho tôi nghe mọi thứ đi. Từng. Chi. Tiết. Nhỏ. Nhất.$7#$b#À... Tôi hiểu rồi...#$b#Tôi sẽ giải quyết chuyện này giúp bạn. Chỉ cần cho tôi một hoặc hai ngày. Tôi sẽ cho bạn biết.$2#$b#*Thở dài* Sự tự tin thực sự rất hấp dẫn ở một người đàn ông.$7",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Okay, I can do this.  Grandpa seems fired up too.  Give me the {{arg0}} iron bars Grandpa said we need and the broken seeder and we'll get on it.",
+      "translation": "Được rồi, tôi làm được chuyện này. Ông nội cũng có vẻ rất hăng hái. Đưa cho tôi {{arg0}} thỏi sắt mà Ông nói chúng tôi cần cộng với máy gieo hạt bị hỏng và chúng tôi sẽ bắt tay vào làm.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Thanks, that's all the stuff.  Well, I'm off the the garage with Gramps.  I'll send mail or something after we get it working.",
+      "translation": "Cảm ơn, như thế là đủ mọi thứ rồi. Thôi, tôi đi ra nhà để xe với Ông đây. Tôi sẽ gửi thư hoặc báo tin sau khi chúng tôi làm cho nó hoạt động nhé.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "We'll need the old seeder and {{arg0}} iron bars.  Bring 'em by when you can.",
+      "translation": "Chúng ta sẽ cần máy gieo hạt cũ và {{arg0}} thỏi sắt. Hãy mang chúng qua khi nào có thể nhé.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "There you go.  Fixed it myself.  Alex didn't screw it up too much; he's a good kid.#$b#Don't try and sprinkle chicken manure with the thing.  I don't want to see this thing back here again.",
+      "translation": "Xong rồi đó. Tự tay ta sửa đấy. Alex đã không làm hỏng nó quá nhiều; nó là một đứa trẻ ngoan.#$b#Đừng cố rải phân gà bằng thứ này nữa nhé. Ta không muốn thấy nó quay lại đây nữa đâu.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Hm.  I wonder what I should do.  I certainly can't fix it, and it'd cost a fortune to send it to Zuzu city.",
+      "translation": "Hừm. Mình tự hỏi mình nên làm gì đây. Mình chắc chắn không thể sửa nó, và nếu gửi nó đến thành phố Zuzu sẽ tốn cả một gia tài.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Talking to George didn't go well.  I'm going to have to find a different angle.",
+      "translation": "Nói chuyện với George không suôn sẻ. Mình sẽ phải tìm một góc tiếp cận khác.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Get Evelyn to help (Talk to her after getting her to {{arg0}} hearts)",
+      "translation": "Nhờ Evelyn giúp đỡ (Hãy nói chuyện với bà ấy sau khi đạt {{arg0}} tim)",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Granny said she'll think about it.  I guess we'll wait to hear from her.",
+      "translation": "Bà đã nói sẽ suy nghĩ về việc đó. Tôi đoán là chúng ta sẽ đợi phản hồi từ bà.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Granny's mail said I should gain Alex's trust (2 hearts) and try and talk him into it.",
+      "translation": "Thư của Bà nói rằng tôi nên giành được sự tin tưởng của Alex (2 tim) và thử nói chuyện với cậu ấy về vấn đề này.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Alex still seems resistant to the idea.  Maybe I need to get somebody else to give me another angle.",
+      "translation": "Alex có vẻ vẫn chống cự với ý tưởng này. Có lẽ tôi cần tìm một người khác để cho tôi một góc độ tiếp cận khác.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Wait for Haley to cajole Alex into helping.",
+      "translation": "Chờ Haley dỗ ngọt Alex để nhờ giúp đỡ.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Talk to Alex",
+      "translation": "Nói chuyện với Alex",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Bring Alex the old seeder and {{arg0}} iron bars",
+      "translation": "Mang máy gieo hạt cũ và {{arg0}} thỏi sắt đến cho Alex",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Hopefully Alex and George are getting on with it.  Alex said he'd send mail when it's working.",
+      "translation": "Hy vọng Alex và George đang xúc tiến công việc. Alex nói cậu ấy sẽ gửi thư khi nó hoạt động.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Alex's mail says the seeder is done and I just need to get it from George.",
+      "translation": "Thư của Alex báo rằng máy gieo hạt đã xong và tôi chỉ việc tới lấy từ George.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Bring the fixed seeder to the tractor garage.",
+      "translation": "Mang máy gieo hạt đã sửa xong tới nhà để xe máy kéo.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Awesome!  You've now got a way to plant and fertilize crops with your tractor!#$b#HINT: To use it, equip seeds or fertilizers while on the tractor.",
+      "translation": "Tuyệt cú mèo! Giờ bạn đã có cách để trồng và bón phân cho hoa màu bằng máy kéo của mình!#$b#MẸO: Để sử dụng, hãy trang bị hạt giống hoặc phân bón khi đang ngồi trên máy kéo.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ask the people in town about this thing.",
+      "translation": "Hỏi người dân trong thị trấn về thứ này.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Fix the waterer",
+      "translation": "Sửa máy tưới nước",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I found the watering attachment for the tractor, but it's in bad shape, I should ask around town.",
+      "translation": "Tôi đã tìm thấy phụ kiện tưới nước cho máy kéo, nhưng nó đang trong tình trạng rất tệ, tôi nên hỏi thăm xung quanh thị trấn.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oh, that isn't...  It is!  It's your grandpa's legendary irrigation attachment!  And you *fished* it up you say?  Hah!  Well you would'a had to, wouldn'tya!$1#$b#. . . #$b#Sorry, I gotta compose myself.  You'll want to take this up to the mountain.  Show it to Robin, she can give you the first-hand account.$1#$b#It might not be safe to show it to Demetrius.  I think he's still working through the aftereffects...$s",
+      "translation": "Ồ, đó không phải là... Đúng là nó! Là phụ kiện tưới tiêu huyền thoại của ông cậu đấy! Và cậu *câu* được nó lên cậu nói vậy ư? Hah! Chà, cậu ắt hẳn phải làm thế rồi, đúng không!$1#$b#. . . #$b#Xin lỗi, tôi phải giữ bình tĩnh. Cậu sẽ muốn mang thứ này lên núi. Cho Robin xem, cô ấy có thể kể lại trực tiếp cho cậu nghe.$1#$b#Sẽ không an toàn nếu cho Demetrius xem nó đâu. Tôi nghĩ anh ấy vẫn đang cố vượt qua những dư chấn...$s",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oh my!  Is that the irrigation system?  It is!  None of us expected to see that again, not after that . . .$3#$b#Wait, did Robin put you up to this?#$b#Nope, I don't want to know.  Well, yes, I got very wet, but it wasn't any big deal.  Not nearly as much as she plays it up to be.  Not at all...#4#$b#But you just want the thing fixed, don't you.  Well, it seems like a complicated device, but I bet Maru would have no trouble with it.  Why don't you show it to her?",
+      "translation": "Ôi chúa ơi! Đó có phải là hệ thống tưới tiêu không? Đúng là nó rồi! Không ai trong chúng tôi ngờ lại được thấy nó một lần nữa, nhất là sau cái . . .$3#$b#Khoan đã, có phải Robin đã xúi bạn làm chuyện này không?#$b#Không, tôi không muốn biết. Chà, đúng là tôi đã ướt nhẹp, nhưng chuyện đó chẳng to tát gì. Không hề lớn như cách cô ấy làm quá lên đâu. Hoàn toàn không...#4#$b#Nhưng bạn chỉ muốn sửa thứ đó thôi, phải không. Chà, có vẻ như nó là một thiết bị phức tạp, nhưng tôi cá là Maru sẽ giải quyết nó một cách dễ dàng. Sao bạn không mang nó cho con bé xem thử?",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Oh you didn't!!  You fished up the watering doohickey?  Oh my I'll never forget that day!  Your granddad had the idea that instead of using the pump to fill it up he could just back his tractor into the pond.  Suffice it to say the tractor came out, but the irrigator did not!  He huffed up to the mountain, half soaked, thinking that Demetrius would have a net.  Well Demetrius was feeling especially can-do that day and offered to come help and, well, Maru was quite small and just had to go with her Dad everywhere and so I came along to ride herd.  Long story short, Demetrius ended up covered in mud right up to his starched buttoned up collar.  Maru decided to go rescue him, I went chasing after her, and, well, we all ended up wet, but Demetrius, well, his self-image took a hit that day, heh.#$b#Heh, and you know what happened to the irrigator, donchanow!$l#$b#You should take it to Maru and, heh, youknow, best not to bring it up with Demetrius!$4",
+      "translation": "Ôi không đùa chứ!! Cậu đã câu được cái thiết bị tưới nước đó sao? Ôi trời, tôi sẽ không bao giờ quên được cái ngày đó! Ông nội của cậu có ý tưởng rằng thay vì dùng máy bơm để bơm đầy nó, ông ấy chỉ cần lùi chiếc máy kéo của mình xuống ao. Đủ để nói rằng máy kéo thì lên được, nhưng cái máy tưới thì không! Ông ấy đi bộ phồng mang trợn má lên núi, ướt sũng một nửa, nghĩ rằng Demetrius sẽ có một cái lưới. Hôm đó Demetrius cảm thấy đặc biệt hăng hái và đề nghị tới giúp đỡ và, ừm, lúc đó Maru còn khá nhỏ và cứ đòi đi theo bố mình khắp nơi nên tôi đi theo để trông chừng. Kể vắn tắt thì, Demetrius kết thúc trong tình trạng ngập ngụa trong bùn lên tới tận cái cổ áo đã cài cúc và hồ cứng của anh ấy. Maru quyết định đi cứu anh ấy, tôi thì chạy theo con bé, và, ừm, tất cả chúng tôi đều ướt nhẹp, nhưng Demetrius, ừm, hình tượng bản thân của anh ấy đã bị giáng một đòn mạnh hôm đó, hê hê.#$b#Hê hê, và cậu cũng biết chuyện gì đã xảy ra với cái máy tưới rồi đấy, phải không!$l#$b#Cậu nên mang nó đến cho Maru và, hê hê, cậu biết đấy, tốt nhất là đừng nhắc đến nó với Demetrius!$4",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Sure, I'd love to have a go at fixing it, afterall, it's practically a family heirloom!$4#$b#But let's have a look at it...  Hm...$2#$b#Yeah, all the fittings are shot.  If you can get me {{arg0}} gold bars, I can get it working again.#$b#I know, usually brass is used for this sort of thing, but it's surprisingly hard to come by around here.",
+      "translation": "Chắc chắn rồi, mình rất muốn thử sửa nó, suy cho cùng, nó gần như là một bảo vật gia truyền mà!$4#$b#Nhưng để mình xem qua nó đã... Hừm...$2#$b#Ừ, tất cả các phụ kiện đều hỏng hết rồi. Nếu cậu có thể kiếm cho mình {{arg0}} thỏi vàng, mình có thể làm cho nó hoạt động trở lại.#$b#Mình biết, thường thì người ta dùng đồng thau cho loại việc này, nhưng ở quanh đây tìm đồng thau lại khó đến bất ngờ.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Alrighty, I'll get to work on it and have it back to you in a couple days.  I'll just drop it in the mail for you.",
+      "translation": "Được rồi, mình sẽ bắt tay vào làm và trả lại cho cậu trong vài ngày tới. Mình sẽ gửi nó qua đường bưu điện cho cậu nhé.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Have you found some gold bars yet?  Gotta go pretty deep in the mines to get it, but I'm sure you're up for it.",
+      "translation": "Cậu đã tìm được thỏi vàng nào chưa? Phải đi khá sâu vào hầm mỏ mới lấy được, nhưng mình chắc chắn cậu có thể làm được.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I'm still working on the irrigation system; you should have it day after tomorrow.",
+      "translation": "Mình vẫn đang sửa chữa hệ thống tưới tiêu; cậu sẽ nhận được nó vào ngày mốt.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "I'm working through the bugs on the irrigation system; you should have it tomorrow if nothing goes haywire.$3",
+      "translation": "Mình đang xử lý những lỗi còn sót lại trên hệ thống tưới tiêu; cậu sẽ nhận được nó vào ngày mai nếu không có gì hỏng hóc nghiêm trọng.$3",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Ask Robin about this thing.",
+      "translation": "Hỏi Robin về thứ này.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Take it to Maru to see if she'll fix it.",
+      "translation": "Mang nó đến cho Maru xem cô ấy có chịu sửa không.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Bring the watering can and {{arg0}} gold bars to Maru.",
+      "translation": "Mang cái máy tưới và {{arg0}} thỏi vàng tới cho Maru.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Just gotta wait - should be in the mail any day now.",
+      "translation": "Chỉ cần đợi thôi - nó có thể được gửi qua đường bưu điện bất cứ ngày nào bây giờ.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Bring the fixed waterer to the garage.",
+      "translation": "Mang máy tưới đã sửa xong tới nhà để xe.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Maru came through!  Time to take it to the garage and water some crops!",
+      "translation": "Maru đã hoàn thành xuất sắc! Đã đến lúc mang nó đến nhà để xe và tưới nước cho vài cây trồng rồi!",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Awesome!  You've now got a way to water your crops with your tractor!#$b#HINT: To use it, equip the watering can while on the tractor.",
+      "translation": "Tuyệt cú mèo! Giờ bạn đã có cách để tưới hoa màu bằng máy kéo của mình!#$b#MẸO: Để sử dụng nó, hãy trang bị bình tưới khi đang ngồi trên máy kéo.",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    },
+    {
+      "source": "Whoah that was heavy!  Looks like an irrigator attachment for a tractor under all that mud!",
+      "translation": "Ái chà, nặng thật đấy! Trông giống như một phụ kiện máy tưới cho máy kéo nằm dưới đống bùn đó!",
+      "author": "nexus:FamAn2006",
+      "ingestionDate": "2026-04-21T09:25:19.4464009-07:00"
+    }
+  ]
+}
