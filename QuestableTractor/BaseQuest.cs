@@ -132,7 +132,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         {
             var item = ItemRegistry.Create<StardewValley.Object>(itemId);
             item.questItem.Value = true;
-            Game1.player.addItemByMenuIfNecessary(item);
+            Game1.player.addItemByMenuIfNecessary(item, null, forceQueue:true);
         }
 
         protected bool TryTakeItemsFromPlayer(string itemId, int count = 1)
