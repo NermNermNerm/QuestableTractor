@@ -86,7 +86,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
             else if (n.Name == "Haley" && this.State < LoaderQuestState.SnagAlexsOldShoes && this.State > LoaderQuestState.TalkToClint)
             {
-                this.Spout(n, L("Ladies' shoes I know.  Men's shoes I don't.  'Cheap' shoes is definitely not something I spend time thinking about.$3"));
+                this.Spout(n, L("Ladies' shoes I know.  Men's shoes I don't.  'Cheap' shoes are definitely not something I spend time thinking about.$3"));
             }
             else if (n.Name == "Emily" && this.State < LoaderQuestState.SnagAlexsOldShoes && this.State > LoaderQuestState.TalkToClint)
             {
