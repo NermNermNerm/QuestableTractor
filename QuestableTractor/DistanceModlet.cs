@@ -61,32 +61,43 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 return;
             }
 
-            string? newToolName = this.GetNameOfHeldTool();
-            if (newToolName is null)
+            string? heldTool = this.GetNameOfHeldTool();
+            if (heldTool is null)
             {
                 return;
             }
 
-            if (!this.perToolDistance.TryGetValue(newToolName, out int newDistance))
+            // This mod introduced the idea of keyboard-configurable distance, which TractorMod
+            // later adopted also.  So what we want to do is transition people to using the
+            // TractorMod setting.  So what we do here is that if the user has set the binding
+            // in TractorMod, we use that and disregard any setting for QuestableTractorMod.
+            int delta;
+            if (ModEntry.Instance.TractorModConfig.IncreaseDistanceKeys.Keybinds.Any()
+                ? ModEntry.Instance.TractorModConfig.IncreaseDistanceKeys.IsDown()
+                : ModEntry.Config.ExpandToolEffectKeybind.IsDown())
             {
-                newDistance = this.mod.TractorModConfig.DefaultDistance;
+                delta = 1;
             }
-            if (ModEntry.Config.ExpandToolEffectKeybind.IsDown())
+            else if (ModEntry.Instance.TractorModConfig.ReduceDistanceKeys.Keybinds.Any()
+                    ? ModEntry.Instance.TractorModConfig.ReduceDistanceKeys.IsDown()
+                    : ModEntry.Config.ContractToolEffectKeybind.IsDown())
             {
-                ++newDistance;
-            }
-            else if (ModEntry.Config.ContractToolEffectKeybind.IsDown())
-            {
-                --newDistance;
+                delta = -1;
             }
             else
             {
                 return;
             }
 
-            newDistance = Math.Min(this.MaxDistanceForThisFarmer, Math.Max(0, newDistance));
-            this.mod.TractorModConfig.CurrentDistance = newDistance;
-            this.perToolDistance[newToolName] = newDistance;
+            if (!this.perToolDistance.TryGetValue(heldTool, out int modifiedDistance))
+            {
+                modifiedDistance = this.mod.TractorModConfig.DefaultDistance;
+            }
+            modifiedDistance += delta;
+
+            modifiedDistance = Math.Min(this.MaxDistanceForThisFarmer, Math.Max(0, modifiedDistance));
+            this.mod.TractorModConfig.CurrentDistance = modifiedDistance;
+            this.perToolDistance[heldTool] = modifiedDistance;
             Game1.player.modData[PerToolDistanceModDataKey] = string.Join("|",
                 this.perToolDistance
                     .OrderBy(pair => pair.Key)

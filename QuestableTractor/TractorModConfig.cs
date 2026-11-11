@@ -8,6 +8,7 @@ using HarmonyLib;
 using NermNermNerm.Stardew.LocalizeFromSource;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
+using StardewModdingAPI.Utilities;
 using StardewValley;
 using StardewValley.Buildings;
 using StardewValley.Characters;
@@ -49,10 +50,11 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.mod = mod;
         }
 
+        public KeybindList IncreaseDistanceKeys { get; private set; } = new();
+        public KeybindList ReduceDistanceKeys { get; private set; } = new();
+
         public void Entry()
         {
-            // TODO: Skip all this hooliganism if GenericModConfigMenu is not installed.
-
             var modInfo = this.mod.Helper.ModRegistry.Get(TractorModId);
             if (modInfo is null)
             {
@@ -125,7 +127,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             saveAndApply = () =>
             {
                 this.setTractorModConfig(this.tractorModConfigForStorage); // Let tractormod see the storage world
-                tractorModSaveAndApply(); // ...so it can save that view 
+                tractorModSaveAndApply(); // ...so it can save that view
                 this.tractorModConfigForInGame = this.tractorModConfigForStorage.DeepClone()!; // Copy all the saved settings
                 this.mod.UpdateTractorModConfig(); // Merge whatever changes the user made with the quest state
                 this.setTractorModConfig(this.tractorModConfigForInGame); // Now put our reduced state out to TractorMod
@@ -170,6 +172,17 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.SetupTool("MeleeSword", isTotallyUnlocked);
             this.SetupTool("Shears", isTotallyUnlocked);
             this.SetupTool("Slingshot", isTotallyUnlocked);
+
+            var controlsProp = this.tractorModConfigForStorage.GetType().GetProperty("Controls")!;
+            object controlsForStorage = controlsProp.GetValue(this.tractorModConfigForStorage)!;
+            var increaseProp = controlsForStorage.GetType().GetProperty("IncreaseDistance")!;
+            this.IncreaseDistanceKeys = (KeybindList)increaseProp.GetValue(controlsForStorage)!;
+            var reduceProp = controlsForStorage.GetType().GetProperty("ReduceDistance")!;
+            this.ReduceDistanceKeys = (KeybindList)reduceProp.GetValue(controlsForStorage)!;
+
+            object controlsForInGame = controlsProp.GetValue(this.tractorModConfigForInGame)!;
+            increaseProp.SetValue(controlsForInGame, new KeybindList());
+            reduceProp.SetValue(controlsForInGame, new KeybindList());
 
             this.TractorGarageBuildingCostChanged();
         }

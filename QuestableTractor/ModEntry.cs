@@ -51,6 +51,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         public override void Entry(IModHelper helper)
         {
+            System.Diagnostics.Debugger.Launch();
+
             Instance = this;
             this.Harmony = new Harmony(this.ModManifest.UniqueID);
 

@@ -34,19 +34,6 @@ public class ModConfigMenu
             reset: () => config = new ModConfig(),
             save: () => this.mod.Helper.WriteConfig(config)
         );
-
-        configMenu.AddKeybindList(
-            mod: modManifest,
-            name: () => L("Expand Tractor Effect"),
-            tooltip: () => L("Press this key to increase the action radius of tools when riding on the tractor.  Capped at +1 tile from the normal size configured in TractorMod."),
-            getValue: () => ModEntry.Config.ExpandToolEffectKeybind,
-            setValue: (v) => ModEntry.Config.ExpandToolEffectKeybind = v);
-
-        configMenu.AddKeybindList(
-            mod: modManifest,
-            name: () => L("Contract Tractor Effect"),
-            tooltip: () => L("Press this key to reduce the action radius of tools when riding on the tractor.  Capped at -1 tile from the normal size configured in TractorMod."),
-            getValue: () => ModEntry.Config.ContractToolEffectKeybind,
-            setValue: (v) => ModEntry.Config.ContractToolEffectKeybind = v);
+        configMenu.AddParagraph(modManifest,() => L("Looking for the expand/contract tractor effect keybinds?  These are now in TractorMod's config."));
     }
 }
