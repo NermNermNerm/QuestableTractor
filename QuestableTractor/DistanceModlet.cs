@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using Microsoft.Xna.Framework;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
@@ -17,6 +18,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
         private const string PerToolDistanceModDataKey = "QuestableTractor.PerToolDistance";
 
         private readonly ModEntry mod;
+        private readonly Dictionary<string, int> perToolDistance = new Dictionary<string, int>();
+        private DateTime lastTimeSpewedJankMessage = DateTime.MinValue;
+
 
         public DistanceModlet(ModEntry mod)
         {
@@ -51,18 +55,40 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
         }
 
-        private int MaxDistanceForThisFarmer
-            => Game1.player.FarmingLevel < 10 ? this.mod.TractorModConfig.DefaultDistance : this.mod.TractorModConfig.MaxDistance;
+        private (int maxDistance, bool isJanky) DistanceLimit
+        {
+            get
+            {
+                int heldToolUpgradeLevel = Game1.player.CurrentTool?.UpgradeLevel ?? Tool.iridium;
+
+                // See if it qualifies for normal radius and return if not.
+                if (Game1.player.FarmingLevel < ModEntry.Config.FarmingLevelForNormalRadius
+                    || heldToolUpgradeLevel < ModEntry.Config.QualityRequiredForNormalRadius)
+                {
+                    return (0, false);
+                }
+
+                // See if it qualifies for maxDistance
+                if (Game1.player.FarmingLevel >= ModEntry.Config.FarmingSkillRequiredForLargeRadius
+                    && heldToolUpgradeLevel >= ModEntry.Config.QualityRequiredForLargeRadius)
+                {
+                    return (
+                        maxDistance: this.mod.TractorModConfig.MaxDistance,
+                        isJanky: (heldToolUpgradeLevel < Tool.iridium
+                                  && heldToolUpgradeLevel == ModEntry.Config.QualityRequiredForLargeRadius));
+                }
+
+                // Else normal distance is the limit
+                return (
+                    maxDistance: this.mod.TractorModConfig.DefaultDistance,
+                    isJanky: (heldToolUpgradeLevel < Tool.iridium
+                              && heldToolUpgradeLevel == ModEntry.Config.QualityRequiredForNormalRadius));
+            }
+        }
 
         private void OnButtonPressed(object? sender, ButtonPressedEventArgs e)
         {
             if (!this.IsPlayerRidingTractor())
-            {
-                return;
-            }
-
-            string? heldTool = this.GetNameOfHeldTool();
-            if (heldTool is null)
             {
                 return;
             }
@@ -89,16 +115,26 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 return;
             }
 
+            this.ChangeDistance(delta);
+        }
+
+        private void ChangeDistance(int delta)
+        {
+            string? heldTool = this.GetNameOfHeldTool();
+            if (heldTool is null)
+            {
+                return;
+            }
             if (!this.perToolDistance.TryGetValue(heldTool, out int modifiedDistance))
             {
                 modifiedDistance = this.mod.TractorModConfig.DefaultDistance;
             }
             modifiedDistance += delta;
 
-            modifiedDistance = Math.Min(this.MaxDistanceForThisFarmer, Math.Max(0, modifiedDistance));
+            modifiedDistance = Math.Min(this.DistanceLimit.maxDistance, Math.Max(0, modifiedDistance));
             this.mod.TractorModConfig.CurrentDistance = modifiedDistance;
             this.perToolDistance[heldTool] = modifiedDistance;
-            Game1.player.modData[PerToolDistanceModDataKey] = string.Join("|",
+            Game1.player.modData[DistanceModlet.PerToolDistanceModDataKey] = string.Join("|",
                 this.perToolDistance
                     .OrderBy(pair => pair.Key)
                     .Select(pair => $"{pair.Key}={pair.Value}"));
@@ -120,8 +156,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 return null;
         }
 
-        private Dictionary<string, int> perToolDistance = new Dictionary<string, int>();
-
         [EventPriority(EventPriority.High)] // To get in front of TractorMod
         private void OnUpdateTicked(object? sender, UpdateTickedEventArgs e)
         {
@@ -131,10 +165,30 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
 
             string? newToolName = this.GetNameOfHeldTool();
-            int newDistance = this.mod.TractorModConfig.DefaultDistance;
-            if (newToolName is not null && this.perToolDistance.TryGetValue(newToolName, out int savedDistance))
+            if (newToolName is null)
             {
-                newDistance = Math.Min(this.MaxDistanceForThisFarmer, Math.Max(0, savedDistance));
+                return;
+            }
+
+            int newDistance = this.mod.TractorModConfig.DefaultDistance;
+            var limits = this.DistanceLimit;
+            if (this.perToolDistance.TryGetValue(newToolName, out int savedDistance))
+            {
+                newDistance = Math.Min(limits.maxDistance, Math.Max(0, savedDistance));
+            }
+
+            //
+            if (limits.isJanky && Game1.random.Next(900) == 0 && newDistance == limits.maxDistance)
+            {
+                Game1.playSound("clank");
+
+                if (DateTime.Now - this.lastTimeSpewedJankMessage > TimeSpan.FromMinutes(30))
+                {
+                    Game1.addHUDMessage(new HUDMessage(LF($"My old {Game1.player.CurrentTool.DisplayName} needs to be upgraded to work well with the tractor.")) { noIcon = true });
+                    this.lastTimeSpewedJankMessage = DateTime.Now;
+                }
+
+                this.ChangeDistance(-1);
             }
 
             this.mod.TractorModConfig.CurrentDistance = newDistance;
