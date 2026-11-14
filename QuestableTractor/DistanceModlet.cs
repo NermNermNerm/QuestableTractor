@@ -7,6 +7,7 @@ using Microsoft.Xna.Framework.Audio;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
+using StardewValley.GameData;
 using StardewValley.Tools;
 using static NermNermNerm.Stardew.LocalizeFromSource.SdvLocalize;
 
@@ -25,8 +26,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
         private string? lastHardStopMessage = null;
         private DateTime lastHardStopMessageTime = DateTime.MinValue;
 
-        private SoundEffect? gearGrindSound = null;
-
         public DistanceModlet(ModEntry mod)
         {
             this.mod = mod;
@@ -38,6 +37,25 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.mod.Helper.Events.Input.ButtonPressed += this.OnButtonPressed;
             this.mod.Helper.Events.GameLoop.SaveLoaded += this.OnSaveLoaded;
             this.mod.Helper.Events.GameLoop.DayStarted += this.OnDayStarted;
+            this.mod.Helper.Events.Content.AssetRequested += this.ContentOnAssetRequested;
+        }
+
+        private void ContentOnAssetRequested(object? sender, AssetRequestedEventArgs e)
+        {
+            if (e.NameWithoutLocale.IsEquivalentTo("Data/AudioChanges"))
+            {
+                e.Edit(asset =>
+                {
+                    var data = asset.AsDictionary<string, AudioCueData>().Data;
+
+                    data[I("QTM_GearGrind")] = new()
+                    {
+                        Id = "QTM_GearGrind",
+                        FilePaths = [ Path.Combine(this.mod.Helper.DirectoryPath, I("assets"), I("geargrind.wav")) ],
+                        Category = I("Sound")
+                    };
+                });
+            }
         }
 
         private void OnDayStarted(object? sender, DayStartedEventArgs e)
@@ -138,19 +156,6 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.ChangeDistance(delta);
         }
 
-        private void PlayGearGrind()
-        {
-            if (this.gearGrindSound is null)
-            {
-                string path = Path.Combine(this.mod.Helper.DirectoryPath, I("assets"), I("geargrind.wav"));
-
-                using FileStream stream = File.OpenRead(path);
-                this.gearGrindSound = SoundEffect.FromStream(stream);
-            }
-
-            this.gearGrindSound.Play();
-        }
-
         private void ChangeDistance(int delta)
         {
             string? heldTool = this.GetNameOfHeldTool();
@@ -168,7 +173,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 if (limit.limitReason is not null)
                 {
-                    this.PlayGearGrind();
+                    Game1.playSound("QTM_GearGrind");
                     if (this.lastHardStopMessage != limit.limitReason || DateTime.Now - this.lastHardStopMessageTime > TimeSpan.FromSeconds(20))
                     {
                         Game1.addHUDMessage(new HUDMessage(limit.limitReason) { noIcon = true });
