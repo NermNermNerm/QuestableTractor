@@ -5,7 +5,7 @@ using Microsoft.Xna.Framework;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
-
+using StardewValley.Tools;
 using static NermNermNerm.Stardew.LocalizeFromSource.SdvLocalize;
 
 namespace NermNermNerm.Stardew.QuestableTractor
@@ -59,7 +59,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         {
             get
             {
-                int heldToolUpgradeLevel = Game1.player.CurrentTool?.UpgradeLevel ?? Tool.iridium;
+                int heldToolUpgradeLevel = this.GetHeldToolUpgradeLevel();
 
                 // See if it qualifies for normal radius and return if not.
                 if (Game1.player.FarmingLevel < ModEntry.Config.FarmingLevelForNormalRadius
@@ -146,14 +146,52 @@ namespace NermNermNerm.Stardew.QuestableTractor
 
         private string? GetNameOfHeldTool()
         {
-            if (Game1.player.CurrentTool is not null)
-                return Game1.player.CurrentTool.Name;
-            else if (Game1.player.ActiveItem is not null && Game1.player.ActiveItem.Category == StardewValley.Object.SeedsCategory)
+            if (Game1.player.CurrentTool is Axe)
+                return I("axe");
+            else if (Game1.player.CurrentTool is Pickaxe)
+                return I("pickaxe");
+            else if (Game1.player.CurrentTool is Hoe)
+                return I("hoe");
+            else if (Game1.player.CurrentTool is WateringCan)
+                return I("wateringcan");
+            else if (Game1.player.CurrentTool?.Name.EndsWith(I("Scythe")) == true)
+                return I("scythe");
+            else if (Game1.player.ActiveItem is not null &&
+                     Game1.player.ActiveItem.Category == StardewValley.Object.SeedsCategory)
                 return I("seeder");
-            else if (Game1.player.ActiveItem is not null && Game1.player.ActiveItem.Category == StardewValley.Object.fertilizerCategory)
+            else if (Game1.player.ActiveItem is not null &&
+                     Game1.player.ActiveItem.Category == StardewValley.Object.fertilizerCategory)
                 return I("fertilizer");
             else
                 return null;
+        }
+
+        private int GetHeldToolUpgradeLevel()
+        {
+            if (Game1.player.CurrentTool is null)
+            {
+                // seeder or fertilizer
+                return Tool.iridium;
+            }
+            else if (Game1.player.CurrentTool.Name == I("Golden Scythe"))
+            {
+                return Tool.gold;
+            }
+            else if (Game1.player.CurrentTool.Name == I("Scythe"))
+            {
+                return Tool.steel;
+            }
+            else if (Game1.player.CurrentTool.Name.EndsWith(I("Scythe")))
+            {
+                // This is a catch-all in case some mod comes along with their own kind of scythe.
+                // we're just calling all things named "*Scythe" (including "Iridium Scythe") to be
+                // of the best quality.
+                return Tool.iridium;
+            }
+            else
+            {
+                return Game1.player.CurrentTool.UpgradeLevel;
+            }
         }
 
         [EventPriority(EventPriority.High)] // To get in front of TractorMod
@@ -164,20 +202,19 @@ namespace NermNermNerm.Stardew.QuestableTractor
                 return;
             }
 
-            string? newToolName = this.GetNameOfHeldTool();
-            if (newToolName is null)
+            string? nameOfHeldTool = this.GetNameOfHeldTool();
+            if (nameOfHeldTool is null)
             {
                 return;
             }
 
             int newDistance = this.mod.TractorModConfig.DefaultDistance;
             var limits = this.DistanceLimit;
-            if (this.perToolDistance.TryGetValue(newToolName, out int savedDistance))
+            if (this.perToolDistance.TryGetValue(nameOfHeldTool, out int savedDistance))
             {
                 newDistance = Math.Min(limits.maxDistance, Math.Max(0, savedDistance));
             }
 
-            //
             if (limits.isJanky && Game1.random.Next(900) == 0 && newDistance == limits.maxDistance)
             {
                 Game1.playSound("clank");
