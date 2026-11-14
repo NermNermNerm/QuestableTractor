@@ -96,7 +96,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
                     return (0, false, LF($"{ModConfig.LocalizedQualities[ModEntry.Config.QualityRequiredForNormalRadius]} tools are needed to make the tractor's area of effect normal sized."));
                 }
 
-                if (Game1.player.FarmingLevel >= ModEntry.Config.FarmingSkillRequiredForLargeRadius)
+                if (Game1.player.FarmingLevel < ModEntry.Config.FarmingSkillRequiredForLargeRadius)
                 {
                     return (
                         maxDistance: this.mod.TractorModConfig.DefaultDistance,
