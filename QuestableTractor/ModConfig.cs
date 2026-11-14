@@ -1,6 +1,8 @@
 using StardewModdingAPI;
 using StardewModdingAPI.Utilities;
 
+using static NermNermNerm.Stardew.LocalizeFromSource.SdvLocalize;
+
 namespace NermNermNerm.Stardew.QuestableTractor;
 
 public class ModConfig
@@ -19,4 +21,6 @@ public class ModConfig
     public int QualityRequiredForLargeRadius { get; set; } = 2; // Iron
     public int FarmingSkillRequiredForLargeRadius { get; set; } = 10;
     public bool JankyIfAtMinimumForLargeRadius { get; set; } = true;
+
+    public static readonly string[] LocalizedQualities = [ L("default"), L("Copper"), L("Iron"), L("Gold"), L("Iridium")];
 }

@@ -20,6 +20,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
         private readonly ModEntry mod;
         private readonly Dictionary<string, int> perToolDistance = new Dictionary<string, int>();
         private DateTime lastTimeSpewedJankMessage = DateTime.MinValue;
+        private string? lastHardStopMessage = null;
+        private DateTime lastHardStopMessageTime = DateTime.MinValue;
 
 
         public DistanceModlet(ModEntry mod)
@@ -55,34 +57,49 @@ namespace NermNermNerm.Stardew.QuestableTractor
             }
         }
 
-        private (int maxDistance, bool isJanky) DistanceLimit
+        private (int maxDistance, bool isJanky, string? limitReason) DistanceLimit
         {
             get
             {
                 int heldToolUpgradeLevel = this.GetHeldToolUpgradeLevel();
 
                 // See if it qualifies for normal radius and return if not.
-                if (Game1.player.FarmingLevel < ModEntry.Config.FarmingLevelForNormalRadius
-                    || heldToolUpgradeLevel < ModEntry.Config.QualityRequiredForNormalRadius)
+                if (Game1.player.FarmingLevel < ModEntry.Config.FarmingLevelForNormalRadius)
                 {
-                    return (0, false);
+                    return (0, false, LF($"Farming skill of {ModEntry.Config.FarmingLevelForNormalRadius} is needed to make the tractor's area of effect normal size."));
                 }
 
-                // See if it qualifies for maxDistance
-                if (Game1.player.FarmingLevel >= ModEntry.Config.FarmingSkillRequiredForLargeRadius
-                    && heldToolUpgradeLevel >= ModEntry.Config.QualityRequiredForLargeRadius)
+                // See if it qualifies for normal radius and return if not.
+                if (heldToolUpgradeLevel < ModEntry.Config.QualityRequiredForNormalRadius)
+                {
+                    return (0, false, LF($"{ModConfig.LocalizedQualities[ModEntry.Config.QualityRequiredForNormalRadius]} tools are needed to make the tractor's area of effect normal sized."));
+                }
+
+                if (Game1.player.FarmingLevel >= ModEntry.Config.FarmingSkillRequiredForLargeRadius)
                 {
                     return (
-                        maxDistance: this.mod.TractorModConfig.MaxDistance,
+                        maxDistance: this.mod.TractorModConfig.DefaultDistance,
                         isJanky: (heldToolUpgradeLevel < Tool.iridium
-                                  && heldToolUpgradeLevel == ModEntry.Config.QualityRequiredForLargeRadius));
+                                  && heldToolUpgradeLevel == ModEntry.Config.QualityRequiredForNormalRadius),
+                        limitReason: LF($"A farming skill of {ModEntry.Config.FarmingSkillRequiredForLargeRadius} is needed to make the tractor's area of effect large.")
+                    );
                 }
 
-                // Else normal distance is the limit
+                if (heldToolUpgradeLevel < ModEntry.Config.QualityRequiredForLargeRadius)
+                {
+                    return (
+                        maxDistance: this.mod.TractorModConfig.DefaultDistance,
+                        isJanky: (heldToolUpgradeLevel < Tool.iridium
+                                  && heldToolUpgradeLevel == ModEntry.Config.QualityRequiredForNormalRadius),
+                        limitReason: LF($"{ModConfig.LocalizedQualities[ModEntry.Config.QualityRequiredForLargeRadius]} tools are needed to make the tractor's area of effect large.")
+                    );
+                }
+
                 return (
-                    maxDistance: this.mod.TractorModConfig.DefaultDistance,
+                    maxDistance: this.mod.TractorModConfig.MaxDistance,
                     isJanky: (heldToolUpgradeLevel < Tool.iridium
-                              && heldToolUpgradeLevel == ModEntry.Config.QualityRequiredForNormalRadius));
+                              && heldToolUpgradeLevel == ModEntry.Config.QualityRequiredForLargeRadius),
+                    limitReason: null);
             }
         }
 
@@ -129,9 +146,24 @@ namespace NermNermNerm.Stardew.QuestableTractor
             {
                 modifiedDistance = this.mod.TractorModConfig.DefaultDistance;
             }
-            modifiedDistance += delta;
 
-            modifiedDistance = Math.Min(this.DistanceLimit.maxDistance, Math.Max(0, modifiedDistance));
+            var limit = this.DistanceLimit;
+            if (modifiedDistance == limit.maxDistance && delta > 0)
+            {
+                Game1.playSound(I("clank")); // Sure would be nice to have a gear-grinding sound
+                if (limit.limitReason is not null)
+                {
+                    if (this.lastHardStopMessage != limit.limitReason || DateTime.Now - this.lastHardStopMessageTime > TimeSpan.FromSeconds(20))
+                    {
+                        Game1.addHUDMessage(new HUDMessage(limit.limitReason) { noIcon = true });
+                        this.lastHardStopMessage = limit.limitReason;
+                        this.lastHardStopMessageTime = DateTime.Now;
+                    }
+                }
+                return;
+            }
+
+            modifiedDistance = Math.Max(0, Math.Min(modifiedDistance + delta, this.DistanceLimit.maxDistance));
             this.mod.TractorModConfig.CurrentDistance = modifiedDistance;
             this.perToolDistance[heldTool] = modifiedDistance;
             Game1.player.modData[DistanceModlet.PerToolDistanceModDataKey] = string.Join("|",

@@ -37,17 +37,15 @@ public class ModConfigMenu
         );
         configMenu.AddParagraph(modManifest,() => L("Looking for the expand/contract tractor effect keybinds?  These are now in TractorMod's config."));
 
-        string[] localizedQualities = [ L("default"), L("Copper"), L("Iron"), L("Gold"), L("Iridium")];
-
         configMenu.AddSectionTitle(
             mod:modManifest,
             text:() => L("Requirements for normal (3x3 grid) use:"));
         configMenu.AddTextOption(
             mod: modManifest,
             name: () => L("Tool quality:"),
-            getValue: () => localizedQualities[Math.Clamp(config.QualityRequiredForNormalRadius, 0, 2)],
-            setValue: (newValueAsLocalizedString) => { config.QualityRequiredForNormalRadius = Math.Max(0, localizedQualities.IndexOf(newValueAsLocalizedString)); },
-            allowedValues: [localizedQualities[0], localizedQualities[1], localizedQualities[2]],
+            getValue: () => ModConfig.LocalizedQualities[Math.Clamp(config.QualityRequiredForNormalRadius, 0, 2)],
+            setValue: (newValueAsLocalizedString) => { config.QualityRequiredForNormalRadius = Math.Max(0, ModConfig.LocalizedQualities.IndexOf(newValueAsLocalizedString)); },
+            allowedValues: [ModConfig.LocalizedQualities[0], ModConfig.LocalizedQualities[1], ModConfig.LocalizedQualities[2]],
             tooltip: () => L("If the tool used with the tractor isn't at this upgrade level, the tractor will only work on the smallest action radius (usually 1x1)."));
         configMenu.AddNumberOption(
             mod: modManifest,
@@ -70,9 +68,9 @@ public class ModConfigMenu
         configMenu.AddTextOption(
             mod: modManifest,
             name: () => L("Tool quality:"),
-            getValue: () => localizedQualities[Math.Clamp(config.QualityRequiredForLargeRadius, 2, 4)],
-            setValue: (newValueAsLocalizedString) => { config.QualityRequiredForLargeRadius = Math.Max(0, localizedQualities.IndexOf(newValueAsLocalizedString)); },
-            allowedValues: localizedQualities,
+            getValue: () => ModConfig.LocalizedQualities[Math.Clamp(config.QualityRequiredForLargeRadius, 2, 4)],
+            setValue: (newValueAsLocalizedString) => { config.QualityRequiredForLargeRadius = Math.Max(0, ModConfig.LocalizedQualities.IndexOf(newValueAsLocalizedString)); },
+            allowedValues: ModConfig.LocalizedQualities,
             tooltip: () => L("If the tool used with the tractor isn't at this upgrade level, the tractor will not be able to do the 5x5 grid."));
         configMenu.AddNumberOption(
             mod: modManifest,
