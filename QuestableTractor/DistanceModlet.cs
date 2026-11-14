@@ -1,7 +1,9 @@
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using Microsoft.Xna.Framework;
+using Microsoft.Xna.Framework.Audio;
 using StardewModdingAPI;
 using StardewModdingAPI.Events;
 using StardewValley;
@@ -23,6 +25,7 @@ namespace NermNermNerm.Stardew.QuestableTractor
         private string? lastHardStopMessage = null;
         private DateTime lastHardStopMessageTime = DateTime.MinValue;
 
+        private SoundEffect? gearGrindSound = null;
 
         public DistanceModlet(ModEntry mod)
         {
@@ -135,6 +138,19 @@ namespace NermNermNerm.Stardew.QuestableTractor
             this.ChangeDistance(delta);
         }
 
+        private void PlayGearGrind()
+        {
+            if (this.gearGrindSound is null)
+            {
+                string path = Path.Combine(this.mod.Helper.DirectoryPath, I("assets"), I("geargrind.wav"));
+
+                using FileStream stream = File.OpenRead(path);
+                this.gearGrindSound = SoundEffect.FromStream(stream);
+            }
+
+            this.gearGrindSound.Play();
+        }
+
         private void ChangeDistance(int delta)
         {
             string? heldTool = this.GetNameOfHeldTool();
@@ -150,9 +166,9 @@ namespace NermNermNerm.Stardew.QuestableTractor
             var limit = this.DistanceLimit;
             if (modifiedDistance == limit.maxDistance && delta > 0)
             {
-                Game1.playSound(I("clank")); // Sure would be nice to have a gear-grinding sound
                 if (limit.limitReason is not null)
                 {
+                    this.PlayGearGrind();
                     if (this.lastHardStopMessage != limit.limitReason || DateTime.Now - this.lastHardStopMessageTime > TimeSpan.FromSeconds(20))
                     {
                         Game1.addHUDMessage(new HUDMessage(limit.limitReason) { noIcon = true });
@@ -160,6 +176,8 @@ namespace NermNermNerm.Stardew.QuestableTractor
                         this.lastHardStopMessageTime = DateTime.Now;
                     }
                 }
+                // Else the player is hitting the maximum size so it's probably just the user spamming the key.
+                // It seems like no sound is the thing to do.
                 return;
             }
 
